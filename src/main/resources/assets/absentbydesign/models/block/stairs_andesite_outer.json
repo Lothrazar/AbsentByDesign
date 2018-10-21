@@ -1,8 +1,8 @@
 {
     "parent": "block/outer_stairs",
     "textures": {
-        "bottom": "blocks/stone_granite",
-        "top": "blocks/stone_granite",
-        "side": "blocks/stone_granite"
+        "bottom": "blocks/stone_andesite",
+        "top": "blocks/stone_andesite",
+        "side": "blocks/stone_andesite"
     }
 }

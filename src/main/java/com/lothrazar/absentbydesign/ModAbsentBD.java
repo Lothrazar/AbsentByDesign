@@ -45,6 +45,9 @@ public class ModAbsentBD {
     registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_granite");
     registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_andesite");
     registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_diorite");
+    registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_granite_smooth");
+    registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_andesite_smooth");
+    registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_diorite_smooth");
   }
 
   @EventHandler
