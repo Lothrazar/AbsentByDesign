@@ -54,6 +54,8 @@ public class ModAbsentBD {
     registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_cobble_moss");
     registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_bricks_mossy");
     registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_bricks_cracked");
+    registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_end_bricks");
+    registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_netherbrick_red");
   }
 
   @EventHandler
