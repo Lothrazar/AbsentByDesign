@@ -1,12 +1,15 @@
 #!/bin/bash
 
-echo "Useage: ./_.sh <destination_filename> <new_texture>"
+echo "Useage: ./_.sh <destination> <new_texture>"
+# for example, to make stairs_andesite block, use _.sh andesite stone_andesite
 
+# I just happened to make granite first
 dest=$1
 texture=$2
 newblock="stairs_${dest}"
-seed="stairs_granite"
-texture_old="stone_granite"
+original="granite"
+seed="stairs_${original}"
+texture_old="stone_${original}"
 modid="absentbydesign"
 folder="src/main/resources/assets/${modid}"
 
@@ -27,6 +30,7 @@ sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
 
 sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}".json
 
-
+sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
+    
 
 echo "Four files written"

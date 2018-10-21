@@ -41,8 +41,10 @@ public class ModAbsentBD {
     logger = event.getModLog();
     registry = new AbsentRegistry();
     MinecraftForge.EVENT_BUS.register(registry);
-    registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()),
-        "stairs_granite");
+    //now register content
+    registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_granite");
+    registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_andesite");
+    registry.registerBlock(new BlockAbsentStairs(Blocks.STONE.getDefaultState()), "stairs_diorite");
   }
 
   @EventHandler
