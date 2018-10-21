@@ -17,9 +17,11 @@ folder="src/main/resources/assets/${modid}"
 
 cp "${folder}"/blockstates/"${seed}".json "${folder}"/blockstates/"${newblock}".json
 
-
-
 cp "${folder}"/models/block/"${seed}".json "${folder}"/models/block/"${newblock}".json
+cp "${folder}"/models/block/"${seed}"_outer.json "${folder}"/models/block/"${newblock}"_outer.json
+cp "${folder}"/models/block/"${seed}"_inner.json "${folder}"/models/block/"${newblock}"_inner.json
+
+
 cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".json
 cp "${folder}"/recipes/"${seed}".json "${folder}"/recipes/"${newblock}".json
 
