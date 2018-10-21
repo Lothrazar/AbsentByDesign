@@ -3,8 +3,13 @@ package com.lothrazar.absentbydesign.registry;
 import java.util.ArrayList;
 import java.util.List;
 import com.lothrazar.absentbydesign.ModAbsentBD;
+import com.lothrazar.absentbydesign.block.BlockAbsentSlab;
+import com.lothrazar.absentbydesign.block.BlockAbsentSlabDouble;
+import com.lothrazar.absentbydesign.block.BlockAbsentSlabHalf;
+import com.lothrazar.absentbydesign.block.BlockAbsentStairs;
 import com.lothrazar.absentbydesign.block.ItemBlockAbsentSlab;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -47,7 +52,19 @@ public class AbsentRegistry {
     }
   }
 
-  public Block registerStairBlock(Block block, String name) {
+  public void createStair(Block baseType, String name) {
+    registerStairBlock(new BlockAbsentStairs(baseType.getDefaultState()), "stairs_" + name);
+  }
+
+  public void createSlab(Material type, String name) {
+    name = "slab_" + name;
+    BlockAbsentSlab half = (BlockAbsentSlab) registerSlabBlock(new BlockAbsentSlabHalf(Material.ROCK), name);
+    BlockAbsentSlab dubs = (BlockAbsentSlab) registerSlabBlock(new BlockAbsentSlabDouble(Material.ROCK), name + "_double");
+    registerSlabItem(new ItemBlockAbsentSlab(half, half, dubs), name);
+    registerSlabItem(new ItemBlockAbsentSlab(dubs, half, dubs), name + "_double");
+  }
+
+  private Block registerStairBlock(Block block, String name) {
     block.setCreativeTab(ModAbsentBD.tab);
     block.setRegistryName(new ResourceLocation(ModAbsentBD.MODID, name));
     block.setUnlocalizedName(name);
@@ -58,7 +75,8 @@ public class AbsentRegistry {
     return block;
   }
 
-  public Block registerSlabBlock(Block block, String name) {
+
+  private Block registerSlabBlock(Block block, String name) {
     block.setCreativeTab(ModAbsentBD.tab);
     block.setRegistryName(new ResourceLocation(ModAbsentBD.MODID, name));
     block.setUnlocalizedName(name);
@@ -67,7 +85,7 @@ public class AbsentRegistry {
     return block;
   }
 
-  public void registerItem(ItemBlockAbsentSlab item, String string) {
+  private void registerSlabItem(ItemBlockAbsentSlab item, String string) {
     item.setRegistryName(string);
     item.setUnlocalizedName(string);
     itemList.add(item);
