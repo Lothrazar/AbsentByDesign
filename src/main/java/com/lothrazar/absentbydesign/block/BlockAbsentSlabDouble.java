@@ -6,13 +6,11 @@ public class BlockAbsentSlabDouble extends BlockAbsentSlab {
 
   public BlockAbsentSlabDouble(Material materialIn) {
     super(materialIn);
-    // TODO Auto-generated constructor stub
   }
 
   @Override
   public boolean isDouble() {
-    // TODO Auto-generated method stub
-    return false;
+    return true;
   }
 
 }
