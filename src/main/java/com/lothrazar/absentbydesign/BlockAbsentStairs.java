@@ -7,5 +7,7 @@ public class BlockAbsentStairs extends BlockStairs {
 
   protected BlockAbsentStairs(IBlockState modelState) {
     super(modelState);
+    this.useNeighborBrightness = true;
   }
+
 }
