@@ -2,9 +2,10 @@
 :: $ ./assetCopyORES.bat silver
  
 set dest=%1
+set seed=stairs_granite
 
-cp src/main/resources/assets/cyclicmagic/blockstates/copper_end_ore.json src/main/resources/assets/cyclicmagic/blockstates/%dest%_end_ore.json
-cp src/main/resources/assets/cyclicmagic/blockstates/copper_nether_ore.json src/main/resources/assets/cyclicmagic/blockstates/%dest%_nether_ore.json
-cp src/main/resources/assets/cyclicmagic/models/block/copper_end_ore.json src/main/resources/assets/cyclicmagic/models/block/%dest%_end_ore.json
-cp src/main/resources/assets/cyclicmagic/models/block/copper_nether_ore.json src/main/resources/assets/cyclicmagic/models/block/%dest%_nether_ore.json
- 
+cp src/main/resources/assets/absentbydesign/blockstates/stairs_granite.json src/main/resources/assets/absentbydesign/blockstates/stairs_%dest%.json
+
+cp src/main/resources/assets/absentbydesign/models/block/stairs_granite.json src/main/resources/assets/absentbydesign/models/block/stairs_%dest%.json
+cp src/main/resources/assets/absentbydesign/models/item/stairs_granite.json src/main/resources/assets/absentbydesign/models/item/stairs_%dest%.json
+                              
