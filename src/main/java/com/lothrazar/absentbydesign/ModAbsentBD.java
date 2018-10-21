@@ -58,6 +58,9 @@ public class ModAbsentBD {
     registry.createSlab(Material.ROCK, "granite");
     registry.createSlab(Material.ROCK, "andesite");
     registry.createSlab(Material.ROCK, "diorite");
+    registry.createSlab(Material.ROCK, "granite_smooth");
+    registry.createSlab(Material.ROCK, "andesite_smooth");
+    registry.createSlab(Material.ROCK, "diorite_smooth");
   }
 
 }

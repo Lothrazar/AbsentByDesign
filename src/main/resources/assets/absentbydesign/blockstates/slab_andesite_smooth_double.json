@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:andesite_smooth"
+    },
+    "variant=true": {
+      "model": "minecraft:andesite_smooth"
+    }
+  }
+}
