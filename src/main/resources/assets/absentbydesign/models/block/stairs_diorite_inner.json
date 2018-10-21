@@ -1,8 +1,6 @@
 {
-    "parent": "block/inner_stairs",
+    "parent": "absentbydesign:parent/stairs_inner",
     "textures": {
-        "bottom": "blocks/stone_diorite",
-        "top": "blocks/stone_diorite",
-        "side": "blocks/stone_diorite"
+        "b": "blocks/stone_diorite"
     }
 }

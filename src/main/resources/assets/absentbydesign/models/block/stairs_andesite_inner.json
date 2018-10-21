@@ -1,8 +1,6 @@
 {
-    "parent": "block/inner_stairs",
+    "parent": "absentbydesign:parent/stairs_inner",
     "textures": {
-        "bottom": "blocks/stone_andesite",
-        "top": "blocks/stone_andesite",
-        "side": "blocks/stone_andesite"
+        "b":  "blocks/stone_andesite"
     }
 }

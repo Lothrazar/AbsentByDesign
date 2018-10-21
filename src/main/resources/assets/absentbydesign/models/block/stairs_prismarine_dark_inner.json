@@ -1,8 +1,6 @@
 {
-    "parent": "block/inner_stairs",
+    "parent": "absentbydesign:parent/stairs_inner",
     "textures": {
-        "bottom": "blocks/prismarine_dark",
-        "top": "blocks/prismarine_dark",
-        "side": "blocks/prismarine_dark"
+        "b": "blocks/prismarine_dark"
     }
 }

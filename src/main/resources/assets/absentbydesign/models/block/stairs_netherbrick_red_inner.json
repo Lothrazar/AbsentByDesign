@@ -1,8 +1,6 @@
 {
-    "parent": "block/inner_stairs",
+    "parent": "absentbydesign:parent/stairs_inner",
     "textures": {
-        "bottom": "blocks/red_nether_brick",
-        "top": "blocks/red_nether_brick",
-        "side": "blocks/red_nether_brick"
+        "b": "blocks/red_nether_brick"
     }
 }

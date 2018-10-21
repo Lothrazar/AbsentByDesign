@@ -1,8 +1,6 @@
 {
-    "parent": "block/outer_stairs",
+    "parent": "absentbydesign:parent/stairs_outer",
     "textures": {
-        "bottom": "blocks/end_bricks",
-        "top": "blocks/end_bricks",
-        "side": "blocks/end_bricks"
+        "b": "blocks/end_bricks"
     }
 }
