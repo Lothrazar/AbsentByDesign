@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "half=bottom,variant=false": {
+      "model": "absentbydesign:slab_andesite"
+    },
+    "half=top,variant=false": {
+      "model": "absentbydesign:slab_andesite_upper"
+    },
+    "half=bottom,variant=true": {
+      "model": "absentbydesign:slab_andesite"
+    },
+    "half=top,variant=true": {
+      "model": "absentbydesign:slab_andesite_upper"
+    }
+  }
+}

@@ -57,6 +57,7 @@ public class ModAbsentBD {
     registry.createStair(Blocks.RED_NETHER_BRICK, "netherbrick_red");
     registry.createSlab(Material.ROCK, "granite");
     registry.createSlab(Material.ROCK, "andesite");
+    registry.createSlab(Material.ROCK, "diorite");
   }
 
 }
