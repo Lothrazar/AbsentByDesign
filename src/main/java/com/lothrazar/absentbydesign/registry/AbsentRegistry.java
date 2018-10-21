@@ -3,6 +3,7 @@ package com.lothrazar.absentbydesign.registry;
 import java.util.ArrayList;
 import java.util.List;
 import com.lothrazar.absentbydesign.ModAbsentBD;
+import com.lothrazar.absentbydesign.block.ItemBlockAbsentSlab;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -46,7 +47,7 @@ public class AbsentRegistry {
     }
   }
 
-  public void registerBlock(Block block, String name) {
+  public Block registerStairBlock(Block block, String name) {
     block.setCreativeTab(ModAbsentBD.tab);
     block.setRegistryName(new ResourceLocation(ModAbsentBD.MODID, name));
     block.setUnlocalizedName(name);
@@ -54,5 +55,21 @@ public class AbsentRegistry {
     ItemBlock ib = new ItemBlock(block);
     ib.setRegistryName(block.getRegistryName()); // ok good this should work yes? yes! http://mcforge.readthedocs.io/en/latest/blocks/blocks/#registering-a-block
     itemList.add(ib);
+    return block;
+  }
+
+  public Block registerSlabBlock(Block block, String name) {
+    block.setCreativeTab(ModAbsentBD.tab);
+    block.setRegistryName(new ResourceLocation(ModAbsentBD.MODID, name));
+    block.setUnlocalizedName(name);
+    blocks.add(block);
+    //both block types go here  
+    return block;
+  }
+
+  public void registerItem(ItemBlockAbsentSlab item, String string) {
+    item.setRegistryName(string);
+    item.setUnlocalizedName(string);
+    itemList.add(item);
   }
 }
