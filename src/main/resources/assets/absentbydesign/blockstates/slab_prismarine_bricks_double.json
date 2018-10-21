@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:prismarine_bricks"
+    },
+    "variant=true": {
+      "model": "minecraft:prismarine_bricks"
+    }
+  }
+}

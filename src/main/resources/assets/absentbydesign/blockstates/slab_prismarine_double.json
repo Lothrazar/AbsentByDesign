@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:prismarine"
+    },
+    "variant=true": {
+      "model": "minecraft:prismarine"
+    }
+  }
+}
