@@ -42,7 +42,12 @@ public class ModAbsentBD {
     MinecraftForge.EVENT_BUS.register(registry);
     //now register content
     registry.createWall(Blocks.STONE, "granite");
-    //  registry.createWall(Blocks.BRICK_BLOCK, "brick");
+    registry.createWall(Blocks.STONE, "andesite");
+    registry.createWall(Blocks.STONE, "diorite");
+    registry.createWall(Blocks.BRICK_BLOCK, "brick");
+    registry.createWall(Blocks.BRICK_BLOCK, "stonebrick_mossy");
+    registry.createWall(Blocks.BRICK_BLOCK, "stonebrick_cracked");
+    registry.createWall(Blocks.BRICK_BLOCK, "stone_slab");
     registry.createStair(Blocks.STONE, "granite");
     registry.createStair(Blocks.STONE, "andesite");
     registry.createStair(Blocks.STONE, "diorite");
