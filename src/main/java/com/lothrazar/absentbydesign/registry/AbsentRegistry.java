@@ -56,14 +56,6 @@ public class AbsentRegistry {
     registerStairBlock(new BlockAbsentStairs(baseType.getDefaultState()), "stairs_" + name);
   }
 
-  public void createSlab(Material type, String name) {
-    name = "slab_" + name;
-    BlockAbsentSlab half = (BlockAbsentSlab) registerSlabBlock(new BlockAbsentSlabHalf(Material.ROCK), name);
-    BlockAbsentSlab dubs = (BlockAbsentSlab) registerSlabBlock(new BlockAbsentSlabDouble(Material.ROCK), name + "_double");
-    registerSlabItem(new ItemBlockAbsentSlab(half, half, dubs), name);
-    registerSlabItem(new ItemBlockAbsentSlab(dubs, half, dubs), name + "_double");
-  }
-
   private Block registerStairBlock(Block block, String name) {
     block.setCreativeTab(ModAbsentBD.tab);
     block.setRegistryName(new ResourceLocation(ModAbsentBD.MODID, name));
@@ -75,7 +67,6 @@ public class AbsentRegistry {
     return block;
   }
 
-
   private Block registerSlabBlock(Block block, String name) {
     block.setCreativeTab(ModAbsentBD.tab);
     block.setRegistryName(new ResourceLocation(ModAbsentBD.MODID, name));
@@ -85,7 +76,16 @@ public class AbsentRegistry {
     return block;
   }
 
+  public void createSlab(Material type, String name) {
+    name = "slab_" + name;
+    BlockAbsentSlab half = (BlockAbsentSlab) registerSlabBlock(new BlockAbsentSlabHalf(Material.ROCK), name);
+    BlockAbsentSlab dubs = (BlockAbsentSlab) registerSlabBlock(new BlockAbsentSlabDouble(Material.ROCK), name + "_double");
+    registerSlabItem(new ItemBlockAbsentSlab(half, half, dubs), name);
+    //   registerSlabItem(new ItemBlockAbsentSlab(dubs, half, dubs), name + "_double");
+  }
+
   private void registerSlabItem(ItemBlockAbsentSlab item, String string) {
+
     item.setRegistryName(string);
     item.setUnlocalizedName(string);
     itemList.add(item);

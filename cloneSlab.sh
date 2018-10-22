@@ -22,23 +22,20 @@ cp "${folder}"/models/block/"${seed}".json "${folder}"/models/block/"${newblock}
 cp "${folder}"/models/block/"${seed}"_upper.json "${folder}"/models/block/"${newblock}"_upper.json
 
 cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".json
-cp "${folder}"/models/item/"${seed}"_double.json "${folder}"/models/item/"${newblock}"_double.json
+rm -rf "${folder}"/models/item/"${newblock}"_double.json
 
 cp "${folder}"/recipes/"${seed}".json "${folder}"/recipes/"${newblock}".json
 
-
-# replace blockids
-
-sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
-
+# string replace for texture and models 
+ 
 sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}".json
 sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_upper.json
+ 
 
-sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/item/"${newblock}".json
-sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/item/"${newblock}"_double.json
-
+sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
+ 
 sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
-sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}"_double.json
+sed -i -e "s/${original}/${texture}/g" "${folder}"/blockstates/"${newblock}"_double.json
     
 
-echo "Four files written"
+echo "Files written"
