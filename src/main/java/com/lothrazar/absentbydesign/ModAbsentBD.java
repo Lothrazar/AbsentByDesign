@@ -44,9 +44,13 @@ public class ModAbsentBD {
     registry.createWall(Blocks.STONE, "granite");
     registry.createWall(Blocks.STONE, "andesite");
     registry.createWall(Blocks.STONE, "diorite");
+    registry.createWall(Blocks.STONE, "granite_smooth");
+    registry.createWall(Blocks.STONE, "andesite_smooth");
+    registry.createWall(Blocks.STONE, "diorite_smooth");
     registry.createWall(Blocks.BRICK_BLOCK, "brick");
     registry.createWall(Blocks.BRICK_BLOCK, "stonebrick_mossy");
     registry.createWall(Blocks.BRICK_BLOCK, "stonebrick_cracked");
+    registry.createWall(Blocks.BRICK_BLOCK, "stonebrick_carved");
     registry.createWall(Blocks.BRICK_BLOCK, "stone_slab");
     registry.createStair(Blocks.STONE, "granite");
     registry.createStair(Blocks.STONE, "andesite");
