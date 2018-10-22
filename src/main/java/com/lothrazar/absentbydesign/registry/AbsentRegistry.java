@@ -7,6 +7,7 @@ import com.lothrazar.absentbydesign.block.BlockAbsentSlab;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlabDouble;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlabHalf;
 import com.lothrazar.absentbydesign.block.BlockAbsentStairs;
+import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import com.lothrazar.absentbydesign.block.ItemBlockAbsentSlab;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -52,11 +53,14 @@ public class AbsentRegistry {
     }
   }
 
+  public void createWall(Block baseType, String name) {
+    registerBlock(new BlockAbsentWall(baseType), "wall_" + name);
+  }
   public void createStair(Block baseType, String name) {
-    registerStairBlock(new BlockAbsentStairs(baseType.getDefaultState()), "stairs_" + name);
+    registerBlock(new BlockAbsentStairs(baseType.getDefaultState()), "stairs_" + name);
   }
 
-  private Block registerStairBlock(Block block, String name) {
+  private Block registerBlock(Block block, String name) {
     block.setCreativeTab(ModAbsentBD.tab);
     block.setRegistryName(new ResourceLocation(ModAbsentBD.MODID, name));
     block.setUnlocalizedName(name);
