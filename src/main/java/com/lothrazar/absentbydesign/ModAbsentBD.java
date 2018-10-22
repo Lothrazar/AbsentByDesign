@@ -55,22 +55,25 @@ public class ModAbsentBD {
     registry.createStair(Blocks.STONEBRICK, "bricks_cracked");
     registry.createStair(Blocks.END_STONE, "end_bricks");
     registry.createStair(Blocks.RED_NETHER_BRICK, "netherbrick_red");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_red");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_blue");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_brown");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_cyan");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_gray");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_green");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_light_blue");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_lime");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_magenta");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_orange");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_pink");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_yellow");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_white");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_silver");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_purple");
-    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_black");
+    registry.createStair(Blocks.CONCRETE, "concrete_red");
+    registry.createStair(Blocks.CONCRETE, "concrete_blue");
+    registry.createStair(Blocks.CONCRETE, "concrete_brown");
+    registry.createStair(Blocks.CONCRETE, "concrete_cyan");
+    registry.createStair(Blocks.CONCRETE, "concrete_gray");
+    registry.createStair(Blocks.CONCRETE, "concrete_green");
+    registry.createStair(Blocks.CONCRETE, "concrete_light_blue");
+    registry.createStair(Blocks.CONCRETE, "concrete_lime");
+    registry.createStair(Blocks.CONCRETE, "concrete_magenta");
+    registry.createStair(Blocks.CONCRETE, "concrete_orange");
+    registry.createStair(Blocks.CONCRETE, "concrete_pink");
+    registry.createStair(Blocks.CONCRETE, "concrete_yellow");
+    registry.createStair(Blocks.CONCRETE, "concrete_white");
+    registry.createStair(Blocks.CONCRETE, "concrete_silver");
+    registry.createStair(Blocks.CONCRETE, "concrete_purple");
+    registry.createStair(Blocks.CONCRETE, "concrete_black");
+    registry.createStair(Blocks.CONCRETE, "stone");
+    registry.createStair(Blocks.CONCRETE, "netherrack");
+    registry.createStair(Blocks.CONCRETE, "end_stone");
     registry.createSlab(Material.ROCK, "granite");
     registry.createSlab(Material.ROCK, "andesite");
     registry.createSlab(Material.ROCK, "diorite");
@@ -101,6 +104,11 @@ public class ModAbsentBD {
     registry.createSlab(Material.ROCK, "concrete_silver");
     registry.createSlab(Material.ROCK, "concrete_purple");
     registry.createSlab(Material.ROCK, "concrete_black");
-
+    registry.createSlab(Material.ROCK, "stone");
+    registry.createSlab(Material.ROCK, "netherrack");
+    registry.createSlab(Material.ROCK, "end_stone");
+    //Snow stairs
+    // ? chiseled brick slab
+    // smoothstone
   }
 }
