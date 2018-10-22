@@ -74,6 +74,7 @@ public class ModAbsentBD {
     registry.createStair(Blocks.CONCRETE, "stone");
     registry.createStair(Blocks.CONCRETE, "netherrack");
     registry.createStair(Blocks.CONCRETE, "end_stone");
+    registry.createStair(Blocks.CONCRETE, "coarse_dirt");
     registry.createSlab(Material.ROCK, "granite");
     registry.createSlab(Material.ROCK, "andesite");
     registry.createSlab(Material.ROCK, "diorite");
@@ -107,6 +108,7 @@ public class ModAbsentBD {
     registry.createSlab(Material.ROCK, "stone");
     registry.createSlab(Material.ROCK, "netherrack");
     registry.createSlab(Material.ROCK, "end_stone");
+    registry.createSlab(Material.ROCK, "coarse_dirt");
     //Snow stairs
     // ? chiseled brick slab
     // smoothstone
