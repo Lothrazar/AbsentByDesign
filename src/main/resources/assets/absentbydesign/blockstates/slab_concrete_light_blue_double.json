@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:light_blue_concrete"
+    },
+    "variant=true": {
+      "model": "minecraft:light_blue_concrete"
+    }
+  }
+}

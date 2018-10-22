@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:stone",
+	  "data":1
+    }
+  },
+  "result": {
+    "item": "absentbydesign:stairs_granite",
+    "count": 4
+  }
+}

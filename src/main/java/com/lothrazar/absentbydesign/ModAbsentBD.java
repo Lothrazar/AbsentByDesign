@@ -55,6 +55,22 @@ public class ModAbsentBD {
     registry.createStair(Blocks.STONEBRICK, "bricks_cracked");
     registry.createStair(Blocks.END_STONE, "end_bricks");
     registry.createStair(Blocks.RED_NETHER_BRICK, "netherbrick_red");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_red");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_blue");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_brown");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_cyan");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_gray");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_green");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_light_blue");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_lime");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_magenta");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_orange");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_pink");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_yellow");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_white");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_silver");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_purple");
+    registry.createStair(Blocks.RED_NETHER_BRICK, "concrete_black");
     registry.createSlab(Material.ROCK, "granite");
     registry.createSlab(Material.ROCK, "andesite");
     registry.createSlab(Material.ROCK, "diorite");
@@ -64,12 +80,27 @@ public class ModAbsentBD {
     registry.createSlab(Material.ROCK, "prismarine");
     registry.createSlab(Material.ROCK, "prismarine_bricks");
     registry.createSlab(Material.ROCK, "prismarine_dark");
-
     registry.createSlab(Material.ROCK, "cobble_moss");
     registry.createSlab(Material.ROCK, "bricks_cracked");
     registry.createSlab(Material.ROCK, "bricks_mossy");
     registry.createSlab(Material.ROCK, "end_bricks");
     registry.createSlab(Material.ROCK, "netherbrick_red");
-  }
+    registry.createSlab(Material.ROCK, "concrete_red");
+    registry.createSlab(Material.ROCK, "concrete_blue");
+    registry.createSlab(Material.ROCK, "concrete_brown");
+    registry.createSlab(Material.ROCK, "concrete_cyan");
+    registry.createSlab(Material.ROCK, "concrete_gray");
+    registry.createSlab(Material.ROCK, "concrete_green");
+    registry.createSlab(Material.ROCK, "concrete_light_blue");
+    registry.createSlab(Material.ROCK, "concrete_lime");
+    registry.createSlab(Material.ROCK, "concrete_magenta");
+    registry.createSlab(Material.ROCK, "concrete_orange");
+    registry.createSlab(Material.ROCK, "concrete_pink");
+    registry.createSlab(Material.ROCK, "concrete_yellow");
+    registry.createSlab(Material.ROCK, "concrete_white");
+    registry.createSlab(Material.ROCK, "concrete_silver");
+    registry.createSlab(Material.ROCK, "concrete_purple");
+    registry.createSlab(Material.ROCK, "concrete_black");
 
+  }
 }

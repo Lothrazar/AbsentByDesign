@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/slab_upper",
+  "textures": {
+    "b": "blocks/concrete_lime"
+  }
+}

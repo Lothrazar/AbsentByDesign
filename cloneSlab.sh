@@ -1,11 +1,12 @@
 #!/bin/bash
 
-echo "Useage: ./_.sh <destination> <new_texture>"
+echo "Useage: ./_.sh <filename> <texture> <fullblockmodel>"
 # for example, to make stairs_andesite block, use _.sh andesite stone_andesite
 
 # I just happened to make granite first
 dest=$1
 texture=$2
+fullblockmodel=$3
 newblock="slab_${dest}"
 original="granite"
 seed="slab_${original}"
@@ -35,7 +36,7 @@ sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
  
 sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
-sed -i -e "s/${original}/${texture}/g" "${folder}"/blockstates/"${newblock}"_double.json
+sed -i -e "s/${original}/${fullblockmodel}/g" "${folder}"/blockstates/"${newblock}"_double.json
     
 
 echo "Files written"
