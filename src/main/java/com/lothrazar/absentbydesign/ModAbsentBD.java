@@ -64,6 +64,12 @@ public class ModAbsentBD {
     registry.createSlab(Material.ROCK, "prismarine");
     registry.createSlab(Material.ROCK, "prismarine_bricks");
     registry.createSlab(Material.ROCK, "prismarine_dark");
+
+    registry.createSlab(Material.ROCK, "cobble_moss");
+    registry.createSlab(Material.ROCK, "bricks_cracked");
+    registry.createSlab(Material.ROCK, "bricks_mossy");
+    registry.createSlab(Material.ROCK, "end_bricks");
+    registry.createSlab(Material.ROCK, "netherbrick_red");
   }
 
 }
