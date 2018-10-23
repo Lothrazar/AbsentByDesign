@@ -49,6 +49,7 @@ public class ModAbsentBD {
     registry.createWall(Blocks.STONEBRICK, "granite_smooth");
     registry.createWall(Blocks.STONEBRICK, "andesite_smooth");
     registry.createWall(Blocks.STONEBRICK, "diorite_smooth");
+    registry.createWall(Blocks.STONEBRICK, "stonebrick");
     registry.createWall(Blocks.STONEBRICK, "stonebrick_mossy");
     registry.createWall(Blocks.STONEBRICK, "stonebrick_cracked");
     registry.createWall(Blocks.STONEBRICK, "stonebrick_carved");
@@ -57,6 +58,9 @@ public class ModAbsentBD {
     registry.createWall(Blocks.SANDSTONE, "sandstone_red");
     registry.createWall(Blocks.SANDSTONE, "sandstone_smooth");
     registry.createWall(Blocks.SANDSTONE, "sandstone_red_smooth");
+    registry.createWall(Blocks.STONEBRICK, "purpur");
+    registry.createWall(Blocks.STONEBRICK, "end_bricks");
+    //  registry.createWall(Blocks.STONEBRICK, "end_stone");
     registry.createStair(Blocks.STONE, "granite");
     registry.createStair(Blocks.STONE, "andesite");
     registry.createStair(Blocks.STONE, "diorite");
@@ -125,8 +129,11 @@ public class ModAbsentBD {
     registry.createSlab(Material.ROCK, "netherrack");
     registry.createSlab(Material.ROCK, "end_stone");
     registry.createSlab(Material.ROCK, "coarse_dirt");
-    //Snow stairs
-    // ? chiseled brick slab
-    // smoothstone
+    //STAIRS ONLY: Snow 
+    // SLAB ONLY:  chiseled brick, grass_path
+    //fence: red netherbrick, quartz , ? log? 
+    //snow layers: sand, red_sand, gravel, soulsand, clay, dirt
+    // Trapdoor: 6x wood plank
+    // IRON BARS: gold, obsidian
   }
 }
