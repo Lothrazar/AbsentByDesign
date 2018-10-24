@@ -131,6 +131,7 @@ public class ModAbsentBD {
     registry.createSlab(Material.ROCK, "end_stone");
     registry.createSlab(Material.ROCK, "coarse_dirt");
     registry.createFence(Material.ROCK, MapColor.QUARTZ, "quartz");
+    registry.createFence(Material.ROCK, MapColor.QUARTZ, "red_netherbrick");
     //STAIRS ONLY: Snow 
     // SLAB ONLY:  chiseled brick, grass_path
     //fence: red netherbrick, quartz , ? log? 
