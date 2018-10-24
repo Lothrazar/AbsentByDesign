@@ -132,9 +132,14 @@ public class ModAbsentBD {
     registry.createSlab(Material.ROCK, "coarse_dirt");
     registry.createFence(Material.ROCK, MapColor.QUARTZ, "quartz");
     registry.createFence(Material.ROCK, MapColor.QUARTZ, "red_netherbrick");
+    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_oak");
+    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_birch");
+    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_spruce");
+    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_jungle");
+    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_darkoak");
+    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_acacia");
     //STAIRS ONLY: Snow 
     // SLAB ONLY:  chiseled brick, grass_path
-    //fence: red netherbrick, quartz , ? log? 
     //snow layers: sand, red_sand, gravel, soulsand, clay, dirt
     // Trapdoor: 6x wood plank
     // IRON BARS: gold, obsidian
