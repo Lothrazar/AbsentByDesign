@@ -3,6 +3,7 @@ package com.lothrazar.absentbydesign.registry;
 import java.util.ArrayList;
 import java.util.List;
 import com.lothrazar.absentbydesign.ModAbsentBD;
+import com.lothrazar.absentbydesign.block.BlockAbsentFence;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlab;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlabDouble;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlabHalf;
@@ -10,6 +11,7 @@ import com.lothrazar.absentbydesign.block.BlockAbsentStairs;
 import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import com.lothrazar.absentbydesign.block.ItemBlockAbsentSlab;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -56,8 +58,13 @@ public class AbsentRegistry {
   public void createWall(Block baseType, String name) {
     registerBlock(new BlockAbsentWall(baseType), "wall_" + name);
   }
+
   public void createStair(Block baseType, String name) {
     registerBlock(new BlockAbsentStairs(baseType.getDefaultState()), "stairs_" + name);
+  }
+
+  public void createFence(Material mat, MapColor map, String name) {
+    registerBlock(new BlockAbsentFence(mat, map), "fence_" + name);
   }
 
   private Block registerBlock(Block block, String name) {
@@ -89,7 +96,6 @@ public class AbsentRegistry {
   }
 
   private void registerSlabItem(ItemBlockAbsentSlab item, String string) {
-
     item.setRegistryName(string);
     item.setUnlocalizedName(string);
     itemList.add(item);

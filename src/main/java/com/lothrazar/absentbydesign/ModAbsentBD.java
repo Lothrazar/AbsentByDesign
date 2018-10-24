@@ -3,6 +3,7 @@ package com.lothrazar.absentbydesign;
 import org.apache.logging.log4j.Logger;
 import com.lothrazar.absentbydesign.registry.AbsentRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -60,7 +61,7 @@ public class ModAbsentBD {
     registry.createWall(Blocks.SANDSTONE, "sandstone_red_smooth");
     registry.createWall(Blocks.STONEBRICK, "purpur");
     registry.createWall(Blocks.STONEBRICK, "end_bricks");
-    //  registry.createWall(Blocks.STONEBRICK, "end_stone");
+    registry.createWall(Blocks.STONEBRICK, "end_stone");
     registry.createStair(Blocks.STONE, "granite");
     registry.createStair(Blocks.STONE, "andesite");
     registry.createStair(Blocks.STONE, "diorite");
@@ -129,6 +130,7 @@ public class ModAbsentBD {
     registry.createSlab(Material.ROCK, "netherrack");
     registry.createSlab(Material.ROCK, "end_stone");
     registry.createSlab(Material.ROCK, "coarse_dirt");
+    registry.createFence(Material.ROCK, MapColor.QUARTZ, "quartz");
     //STAIRS ONLY: Snow 
     // SLAB ONLY:  chiseled brick, grass_path
     //fence: red netherbrick, quartz , ? log? 
