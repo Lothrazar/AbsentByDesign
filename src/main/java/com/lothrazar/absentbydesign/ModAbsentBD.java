@@ -96,6 +96,7 @@ public class ModAbsentBD {
     registry.createStair(Blocks.CONCRETE, "netherrack");
     registry.createStair(Blocks.CONCRETE, "end_stone");
     registry.createStair(Blocks.CONCRETE, "coarse_dirt");
+    registry.createStair(Blocks.CONCRETE, "snow");
     registry.createSlab(Material.ROCK, "granite");
     registry.createSlab(Material.ROCK, "andesite");
     registry.createSlab(Material.ROCK, "diorite");
