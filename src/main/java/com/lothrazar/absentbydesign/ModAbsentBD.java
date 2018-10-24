@@ -8,6 +8,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -142,10 +143,15 @@ public class ModAbsentBD {
     registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_darkoak");
     registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_acacia");
     registry.createLayer(Material.ROCK, Items.CLAY_BALL, "clay");
+    registry.createLayer(Material.ROCK, Item.getItemFromBlock(Blocks.SAND), "sand");
+    registry.createLayer(Material.ROCK, Item.getItemFromBlock(Blocks.SAND), "red_sand");
+    registry.createLayer(Material.ROCK, Item.getItemFromBlock(Blocks.GRAVEL), "gravel");
+    registry.createLayer(Material.ROCK, Items.WHEAT, "hay");// for xisumavoid
+    registry.createLayer(Material.ROCK, Item.getItemFromBlock(Blocks.SOUL_SAND), "soulsand");
     ////////layer_clay 
     //STAIRS ONLY: Snow 
     // SLAB ONLY:  chiseled brick, grass_path
-    //snow layers: sand, red_sand, gravel, soulsand, clay, dirt
+    //snow layers: sand, red_sand, gravel, soulsand, clay, ?dirt
     // IRON BARS: gold, obsidian
     // Trapdoor: 6x wood plank
   }

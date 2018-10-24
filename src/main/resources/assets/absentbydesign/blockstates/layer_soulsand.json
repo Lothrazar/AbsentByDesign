@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "layers=1":  { "model": "absentbydesign:layer_soulsand_height2" },
+        "layers=2":  { "model": "absentbydesign:layer_soulsand_height4" },
+        "layers=3":  { "model": "absentbydesign:layer_soulsand_height6" },
+        "layers=4":  { "model": "absentbydesign:layer_soulsand_height8" },
+        "layers=5":  { "model": "absentbydesign:layer_soulsand_height10" },
+        "layers=6":  { "model": "absentbydesign:layer_soulsand_height12" },
+        "layers=7":  { "model": "absentbydesign:layer_soulsand_height14" },
+        "layers=8":  { "model": "soulsand" }
+    }
+}
