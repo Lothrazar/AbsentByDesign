@@ -2,13 +2,16 @@ package com.lothrazar.absentbydesign.registry;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.annotation.Nullable;
 import com.lothrazar.absentbydesign.ModAbsentBD;
 import com.lothrazar.absentbydesign.block.BlockAbsentFence;
+import com.lothrazar.absentbydesign.block.BlockAbsentLayer;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlab;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlabDouble;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlabHalf;
 import com.lothrazar.absentbydesign.block.BlockAbsentStairs;
 import com.lothrazar.absentbydesign.block.BlockAbsentWall;
+import com.lothrazar.absentbydesign.block.ItemAbsentLayer;
 import com.lothrazar.absentbydesign.block.ItemBlockAbsentSlab;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
@@ -67,12 +70,27 @@ public class AbsentRegistry {
     registerBlock(new BlockAbsentFence(mat, map), "fence_" + name);
   }
 
+  public void createLayer(Material mat, Item drop, String name) {
+    BlockAbsentLayer block = new BlockAbsentLayer(mat, drop);
+    registerBlock(block, "layer_" + name, new ItemAbsentLayer(block));
+  }
+
   private Block registerBlock(Block block, String name) {
+    return this.registerBlock(block, name, null);
+  }
+
+  private Block registerBlock(Block block, String name, @Nullable ItemBlock itemblock) {
     block.setCreativeTab(ModAbsentBD.tab);
     block.setRegistryName(new ResourceLocation(ModAbsentBD.MODID, name));
     block.setUnlocalizedName(name);
     blocks.add(block);
-    ItemBlock ib = new ItemBlock(block);
+    ItemBlock ib;
+    if (itemblock == null) {
+      ib = new ItemBlock(block);
+    }
+    else {
+      ib = itemblock;
+    }
     ib.setRegistryName(block.getRegistryName()); // ok good this should work yes? yes! http://mcforge.readthedocs.io/en/latest/blocks/blocks/#registering-a-block
     itemList.add(ib);
     return block;
