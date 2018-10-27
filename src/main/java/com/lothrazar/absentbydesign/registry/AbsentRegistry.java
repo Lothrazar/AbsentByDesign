@@ -120,7 +120,7 @@ public class AbsentRegistry {
     itemList.add(ib);
   }
 
-  private Block registerSlabBlock(Block block, String name) {
+  private BlockAbsentSlab registerSlabBlock(BlockAbsentSlab block, String name) {
     block.setCreativeTab(ModAbsentBD.tab);
     block.setRegistryName(new ResourceLocation(ModAbsentBD.MODID, name));
     block.setUnlocalizedName(name);
@@ -129,10 +129,10 @@ public class AbsentRegistry {
     return block;
   }
 
-  public void createSlab(Material type, String name) {
+  public void createSlab(Material type, ItemStack i, String name) {
     name = "slab_" + name;
-    BlockAbsentSlab half = (BlockAbsentSlab) registerSlabBlock(new BlockAbsentSlabHalf(Material.ROCK), name);
-    BlockAbsentSlab dubs = (BlockAbsentSlab) registerSlabBlock(new BlockAbsentSlabDouble(Material.ROCK), name + "_double");
+    BlockAbsentSlab half = registerSlabBlock(new BlockAbsentSlabHalf(Material.ROCK, i), name);
+    BlockAbsentSlab dubs = registerSlabBlock(new BlockAbsentSlabDouble(Material.ROCK), name + "_double");
     registerSlabItem(new ItemBlockAbsentSlab(half, half, dubs), name);
     //   registerSlabItem(new ItemBlockAbsentSlab(dubs, half, dubs), name + "_double");
   }

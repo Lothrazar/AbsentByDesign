@@ -11,6 +11,7 @@ import net.minecraft.item.ItemStack;
 public abstract class BlockAbsentSlab extends BlockSlab {
 
   private static final PropertyBool VARIANT_PROPERTY = PropertyBool.create("variant");
+
   public BlockAbsentSlab(Material materialIn) {
     super(materialIn);
     this.useNeighborBrightness = true;
