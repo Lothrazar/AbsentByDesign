@@ -3,6 +3,7 @@ package com.lothrazar.absentbydesign.registry;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nullable;
+import com.lothrazar.absentbydesign.IHasRecipe;
 import com.lothrazar.absentbydesign.ModAbsentBD;
 import com.lothrazar.absentbydesign.block.BlockAbsentFence;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlab;
@@ -17,6 +18,8 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -27,12 +30,23 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class AbsentRegistry {
 
-  public static List<Item> itemList = new ArrayList<Item>();
-  public static List<Block> blocks = new ArrayList<Block>();
+  private static List<Item> itemList = new ArrayList<Item>();
+  private static List<Block> blocks = new ArrayList<Block>();
+  private static List<IRecipe> recipes = new ArrayList<>();
+
+  @SubscribeEvent
+  public void onRegisterRecipe(RegistryEvent.Register<IRecipe> event) {
+
+    event.getRegistry().registerAll(RecipeRegistry.recipes.toArray(new IRecipe[0]));
+  }
+
+  @SubscribeEvent
+  public void onRecipeEvent(RegistryEvent.Register<IRecipe> event) {
+    event.getRegistry().registerAll(recipes.toArray(new IRecipe[0]));
+  }
 
   @SubscribeEvent
   public void onRegistryEvent(RegistryEvent.Register<Block> event) {
-
     event.getRegistry().registerAll(blocks.toArray(new Block[0]));
   }
 
@@ -40,6 +54,14 @@ public class AbsentRegistry {
   public void registerItems(RegistryEvent.Register<Item> event) {
     for (Item item : itemList) {
       event.getRegistry().register(item);
+
+      if (item instanceof IHasRecipe) {
+        ((IHasRecipe) item).addRecipe();
+      }
+      Block blockItem = Block.getBlockFromItem(item);
+      if (blockItem instanceof IHasRecipe) {
+        ((IHasRecipe) blockItem).addRecipe();
+      }
       //      String block = item.getUnlocalizedName();
       //      block = block.replace("tile.wall_", "").replace("tile.slab_", "").replace("tile.stairs_", "").replace("tile.fence_", "");
       //      String type = item.getUnlocalizedName().replace("tile.", "").split("_")[0];
@@ -65,8 +87,8 @@ public class AbsentRegistry {
     registerBlock(new BlockAbsentWall(baseType), "wall_" + name);
   }
 
-  public void createStair(Block baseType, String name) {
-    registerBlock(new BlockAbsentStairs(baseType.getDefaultState()), "stairs_" + name);
+  public void createStair(Block baseType, ItemStack ing, String name) {
+    registerBlock(new BlockAbsentStairs(baseType.getDefaultState(), ing), "stairs_" + name);
   }
 
   public void createFence(Material mat, MapColor map, String name) {
@@ -91,8 +113,12 @@ public class AbsentRegistry {
       ib = itemblock;
     }
     ib.setRegistryName(block.getRegistryName()); // ok good this should work yes? yes! http://mcforge.readthedocs.io/en/latest/blocks/blocks/#registering-a-block
-    itemList.add(ib);
+    addItem(ib);
     return block;
+  }
+
+  private void addItem(ItemBlock ib) {
+    itemList.add(ib);
   }
 
   private Block registerSlabBlock(Block block, String name) {
