@@ -13,7 +13,6 @@ import com.lothrazar.absentbydesign.block.BlockAbsentStairs;
 import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import com.lothrazar.absentbydesign.block.ItemBlockAbsentSlab;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -91,8 +90,8 @@ public class AbsentRegistry {
     registerBlock(new BlockAbsentStairs(baseType.getDefaultState(), ing), "stairs_" + name);
   }
 
-  public void createFence(Material mat, MapColor map, String name) {
-    registerBlock(new BlockAbsentFence(mat, map), "fence_" + name);
+  public void createFence(Material mat, ItemStack i, String name) {
+    registerBlock(new BlockAbsentFence(mat, i), "fence_" + name);
   }
 
 

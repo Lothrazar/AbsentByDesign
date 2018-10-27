@@ -4,10 +4,10 @@ import org.apache.logging.log4j.Logger;
 import com.lothrazar.absentbydesign.registry.AbsentRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
+import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.BlockPrismarine;
 import net.minecraft.block.BlockStone;
 import net.minecraft.block.BlockStoneBrick;
-import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -138,15 +138,15 @@ public class ModAbsentBD {
     registry.createSlab(Material.ROCK, "end_stone");
     registry.createSlab(Material.GRASS, "coarse_dirt");
     registry.createSlab(Material.SNOW, "snow");
-    registry.createFence(Material.ROCK, MapColor.QUARTZ, "quartz");
-    registry.createFence(Material.ROCK, MapColor.QUARTZ, "red_netherbrick");
-    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_oak");
-    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_birch");
-    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_spruce");
-    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_jungle");
-    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_darkoak");
-    registry.createFence(Material.ROCK, MapColor.QUARTZ, "log_acacia");
-    ////////layer_clay 
+    registry.createFence(Material.ROCK, new ItemStack(Blocks.QUARTZ_BLOCK), "quartz");
+    registry.createFence(Material.ROCK, new ItemStack(Blocks.RED_NETHER_BRICK), "red_netherbrick");
+    registry.createFence(Material.WOOD, new ItemStack(Blocks.LOG, 1, BlockPlanks.EnumType.OAK.getMetadata()), "log_oak");
+    registry.createFence(Material.WOOD, new ItemStack(Blocks.LOG, 1, BlockPlanks.EnumType.BIRCH.getMetadata()), "log_birch");
+    registry.createFence(Material.WOOD, new ItemStack(Blocks.LOG, 1, BlockPlanks.EnumType.SPRUCE.getMetadata()), "log_spruce");
+    registry.createFence(Material.WOOD, new ItemStack(Blocks.LOG, 1, BlockPlanks.EnumType.JUNGLE.getMetadata()), "log_jungle");
+    registry.createFence(Material.WOOD, new ItemStack(Blocks.LOG2, 1, 1), "log_darkoak");
+    registry.createFence(Material.WOOD, new ItemStack(Blocks.LOG2, 1, 0), "log_acacia");
+    //TODO: red Nether fences connect to self not wood 
     //STAIRS ONLY: Snow 
     // SLAB ONLY:  chiseled brick, grass_path
 
