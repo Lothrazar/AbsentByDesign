@@ -2,6 +2,8 @@ package com.lothrazar.absentbydesign.block;
 
 import java.util.List;
 import javax.annotation.Nullable;
+import com.lothrazar.absentbydesign.IHasRecipe;
+import com.lothrazar.absentbydesign.registry.RecipeRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFenceGate;
 import net.minecraft.block.properties.IProperty;
@@ -13,6 +15,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -22,7 +25,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockAbsentWall extends Block {
+public class BlockAbsentWall extends Block implements IHasRecipe {
 
   public static final PropertyBool UP = PropertyBool.create("up");
   public static final PropertyBool NORTH = PropertyBool.create("north");
@@ -33,12 +36,23 @@ public class BlockAbsentWall extends Block {
       new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D) };
   protected static final AxisAlignedBB[] CLIP_AABB_BY_INDEX = new AxisAlignedBB[] { AABB_BY_INDEX[0].setMaxY(1.5D), AABB_BY_INDEX[1].setMaxY(1.5D), AABB_BY_INDEX[2].setMaxY(1.5D), AABB_BY_INDEX[3].setMaxY(1.5D), AABB_BY_INDEX[4].setMaxY(1.5D), AABB_BY_INDEX[5].setMaxY(1.5D), AABB_BY_INDEX[6].setMaxY(1.5D), AABB_BY_INDEX[7].setMaxY(1.5D), AABB_BY_INDEX[8].setMaxY(1.5D), AABB_BY_INDEX[9].setMaxY(1.5D), AABB_BY_INDEX[10].setMaxY(1.5D), AABB_BY_INDEX[11].setMaxY(1.5D), AABB_BY_INDEX[12].setMaxY(1.5D), AABB_BY_INDEX[13].setMaxY(1.5D), AABB_BY_INDEX[14].setMaxY(1.5D), AABB_BY_INDEX[15].setMaxY(1.5D) };
 
-  public BlockAbsentWall(Block modelBlock) {
+  private ItemStack ingredient;
+
+  public BlockAbsentWall(Block modelBlock, ItemStack ing) {
     super(modelBlock.getMaterial(modelBlock.getDefaultState()));
     this.setDefaultState(this.blockState.getBaseState().withProperty(UP, true).withProperty(NORTH, false).withProperty(EAST, false).withProperty(SOUTH, false).withProperty(WEST, false));
     //    this.setHardness(modelBlock.blockHardness);
     //    this.setResistance(modelBlock.blockResistance / 3.0F);
     this.setSoundType(modelBlock.getSoundType());
+    ingredient = ing;
+  }
+
+  @Override
+  public IRecipe addRecipe() {
+    return RecipeRegistry.addShapedRecipe(new ItemStack(this, 6),
+        "sss",
+        "sss",
+        's', ingredient);
   }
 
   @Override

@@ -83,8 +83,8 @@ public class AbsentRegistry {
     }
   }
 
-  public void createWall(Block baseType, String name) {
-    registerBlock(new BlockAbsentWall(baseType), "wall_" + name);
+  public void createWall(Block baseType, ItemStack s, String name) {
+    registerBlock(new BlockAbsentWall(baseType, s), "wall_" + name);
   }
 
   public void createStair(Block baseType, ItemStack ing, String name) {
