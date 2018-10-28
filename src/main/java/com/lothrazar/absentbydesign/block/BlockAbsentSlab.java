@@ -1,7 +1,7 @@
 package com.lothrazar.absentbydesign.block;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockStateContainer;
@@ -12,9 +12,11 @@ public abstract class BlockAbsentSlab extends BlockSlab {
 
   private static final PropertyBool VARIANT_PROPERTY = PropertyBool.create("variant");
 
-  public BlockAbsentSlab(Material materialIn) {
-    super(materialIn);
+  public BlockAbsentSlab(Block modelBlock) {
+    super(modelBlock.getMaterial(modelBlock.getDefaultState()));
     this.useNeighborBrightness = true;
+    this.setHardness(modelBlock.getBlockHardness(modelBlock.getDefaultState(), null, null));
+    this.setSoundType(modelBlock.getSoundType());
   }
 
   @Override

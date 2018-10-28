@@ -38,12 +38,11 @@ public class BlockAbsentWall extends Block implements IHasRecipe {
 
   private ItemStack ingredient;
 
-  public BlockAbsentWall(Block modelBlock, ItemStack ing) {
-    super(modelBlock.getMaterial(modelBlock.getDefaultState()));
+  public BlockAbsentWall(Block main, ItemStack ing) {
+    super(main.getMaterial(main.getDefaultState()));
     this.setDefaultState(this.blockState.getBaseState().withProperty(UP, true).withProperty(NORTH, false).withProperty(EAST, false).withProperty(SOUTH, false).withProperty(WEST, false));
-    //    this.setHardness(modelBlock.blockHardness);
-    //    this.setResistance(modelBlock.blockResistance / 3.0F);
-    this.setSoundType(modelBlock.getSoundType());
+    this.setHardness(main.getBlockHardness(main.getDefaultState(), null, null));
+    this.setSoundType(main.getSoundType());
     ingredient = ing;
   }
 

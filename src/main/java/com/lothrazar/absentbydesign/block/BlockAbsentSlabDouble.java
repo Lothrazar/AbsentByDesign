@@ -1,11 +1,11 @@
 package com.lothrazar.absentbydesign.block;
 
-import net.minecraft.block.material.Material;
+import net.minecraft.block.Block;
 
 public class BlockAbsentSlabDouble extends BlockAbsentSlab {
 
-  public BlockAbsentSlabDouble(Material materialIn) {
-    super(materialIn);
+  public BlockAbsentSlabDouble(Block modelBlock) {
+    super(modelBlock);
   }
 
   @Override

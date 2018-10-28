@@ -13,7 +13,6 @@ import com.lothrazar.absentbydesign.block.BlockAbsentStairs;
 import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import com.lothrazar.absentbydesign.block.ItemBlockAbsentSlab;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -87,10 +86,10 @@ public class AbsentRegistry {
   }
 
   public void createStair(Block baseType, ItemStack ing, String name) {
-    registerBlock(new BlockAbsentStairs(baseType.getDefaultState(), ing), "stairs_" + name);
+    registerBlock(new BlockAbsentStairs(baseType, ing), "stairs_" + name);
   }
 
-  public void createFence(Material mat, ItemStack i, String name) {
+  public void createFence(Block mat, ItemStack i, String name) {
     registerBlock(new BlockAbsentFence(mat, i), "fence_" + name);
   }
 
@@ -129,10 +128,10 @@ public class AbsentRegistry {
     return block;
   }
 
-  public void createSlab(Material type, ItemStack i, String name) {
+  public void createSlab(Block type, ItemStack i, String name) {
     name = "slab_" + name;
-    BlockAbsentSlab half = registerSlabBlock(new BlockAbsentSlabHalf(Material.ROCK, i), name);
-    BlockAbsentSlab dubs = registerSlabBlock(new BlockAbsentSlabDouble(Material.ROCK), name + "_double");
+    BlockAbsentSlab half = registerSlabBlock(new BlockAbsentSlabHalf(type, i), name);
+    BlockAbsentSlab dubs = registerSlabBlock(new BlockAbsentSlabDouble(type), name + "_double");
     registerSlabItem(new ItemBlockAbsentSlab(half, half, dubs), name);
     //   registerSlabItem(new ItemBlockAbsentSlab(dubs, half, dubs), name + "_double");
   }
