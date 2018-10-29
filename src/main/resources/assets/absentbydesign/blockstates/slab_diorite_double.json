@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:diorite"
+    },
+    "variant=true": {
+      "model": "minecraft:diorite"
+    }
+  }
+}

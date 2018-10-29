@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:prismarine_dark"
+    },
+    "variant=true": {
+      "model": "minecraft:prismarine_dark"
+    }
+  }
+}

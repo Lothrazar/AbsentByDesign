@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:orange_concrete"
+    },
+    "variant=true": {
+      "model": "minecraft:orange_concrete"
+    }
+  }
+}

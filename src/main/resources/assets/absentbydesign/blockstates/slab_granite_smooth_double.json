@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:granite_smooth"
+    },
+    "variant=true": {
+      "model": "minecraft:granite_smooth"
+    }
+  }
+}

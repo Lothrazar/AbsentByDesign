@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:granite"
+    },
+    "variant=true": {
+      "model": "minecraft:granite"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:netherrack"
+    },
+    "variant=true": {
+      "model": "minecraft:netherrack"
+    }
+  }
+}

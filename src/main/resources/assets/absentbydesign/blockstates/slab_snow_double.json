@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:snow"
+    },
+    "variant=true": {
+      "model": "minecraft:snow"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:mossy_cobblestone"
+    },
+    "variant=true": {
+      "model": "minecraft:mossy_cobblestone"
+    }
+  }
+}

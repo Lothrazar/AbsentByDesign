@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:end_stone"
+    },
+    "variant=true": {
+      "model": "minecraft:end_stone"
+    }
+  }
+}

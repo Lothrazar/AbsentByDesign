@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=false": {
+      "model": "minecraft:stonebrick_mossy"
+    },
+    "variant=true": {
+      "model": "minecraft:stonebrick_mossy"
+    }
+  }
+}
