@@ -21,7 +21,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod(modid = ModAbsentBD.MODID)
+@Mod(modid = ModAbsentBD.MODID, updateJSON = "https://raw.githubusercontent.com/PrinceOfAmber/AbsentByDesign/master/update.json")
 public class ModAbsentBD {
 
   @GameRegistry.ObjectHolder(ModAbsentBD.MODID + ":stairs_granite")
