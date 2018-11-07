@@ -14,6 +14,7 @@ import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import com.lothrazar.absentbydesign.block.ItemBlockAbsentSlab;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -25,22 +26,34 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistryModifiable;
 
 public class AbsentRegistry {
 
   private static List<Item> itemList = new ArrayList<Item>();
   private static List<Block> blocks = new ArrayList<Block>();
-  private static List<IRecipe> recipes = new ArrayList<>();
 
   @SubscribeEvent
   public void onRegisterRecipe(RegistryEvent.Register<IRecipe> event) {
-
+    IForgeRegistryModifiable modRegistry = (IForgeRegistryModifiable) event.getRegistry();
+    modRegistry.remove(new ResourceLocation("minecraft:recipes/building_blocks/stone_brick_stairs"));
+    modRegistry.remove(new ResourceLocation("minecraft:recipes/building_blocks/stone_brick_slab"));//5
+    for (IRecipe r : event.getRegistry()) {
+      ItemStack output = r.getRecipeOutput();
+      if (output.getItem() == Item.getItemFromBlock(Blocks.STONE_SLAB) ||
+          output.getItem() == Item.getItemFromBlock(Blocks.STONE_BRICK_STAIRS)) {
+        modRegistry.remove(r.getRegistryName());
+      }
+    }
+    RecipeRegistry.addShapedRecipe(new ItemStack(Blocks.STONE_SLAB, 4, 5),
+        "sss",
+        's', new ItemStack(Blocks.STONEBRICK, 1, 0));
+    RecipeRegistry.addShapedRecipe(new ItemStack(Blocks.STONE_BRICK_STAIRS, 4),
+        "s  ",
+        "ss ",
+        "sss",
+        's', new ItemStack(Blocks.STONEBRICK, 1, 0));
     event.getRegistry().registerAll(RecipeRegistry.recipes.toArray(new IRecipe[0]));
-  }
-
-  @SubscribeEvent
-  public void onRecipeEvent(RegistryEvent.Register<IRecipe> event) {
-    event.getRegistry().registerAll(recipes.toArray(new IRecipe[0]));
   }
 
   @SubscribeEvent
@@ -52,7 +65,6 @@ public class AbsentRegistry {
   public void registerItems(RegistryEvent.Register<Item> event) {
     for (Item item : itemList) {
       event.getRegistry().register(item);
-
       if (item instanceof IHasRecipe) {
         ((IHasRecipe) item).addRecipe();
       }
@@ -92,7 +104,6 @@ public class AbsentRegistry {
   public void createFence(Block mat, ItemStack i, String name) {
     registerBlock(new BlockAbsentFence(mat, i), "fence_" + name);
   }
-
 
   private Block registerBlock(Block block, String name) {
     return this.registerBlock(block, name, null);
