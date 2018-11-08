@@ -35,13 +35,11 @@ public class AbsentRegistry {
 
   @SubscribeEvent
   public void onRegisterRecipe(RegistryEvent.Register<IRecipe> event) {
-    IForgeRegistryModifiable modRegistry = (IForgeRegistryModifiable) event.getRegistry();
-    modRegistry.remove(new ResourceLocation("minecraft:recipes/building_blocks/stone_brick_stairs"));
-    modRegistry.remove(new ResourceLocation("minecraft:recipes/building_blocks/stone_brick_slab"));//5
+    IForgeRegistryModifiable<IRecipe> modRegistry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
     for (IRecipe r : event.getRegistry()) {
       ItemStack output = r.getRecipeOutput();
-      if (output.getItem() == Item.getItemFromBlock(Blocks.STONE_SLAB) ||
-          output.getItem() == Item.getItemFromBlock(Blocks.STONE_BRICK_STAIRS)) {
+      if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.STONE_SLAB, 6, 5)) ||
+          ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.STONE_BRICK_STAIRS, 4, 0))) {
         modRegistry.remove(r.getRegistryName());
       }
     }
