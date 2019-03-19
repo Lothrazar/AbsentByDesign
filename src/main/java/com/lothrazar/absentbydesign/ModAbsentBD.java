@@ -16,12 +16,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.event.FMLFingerprintViolationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod(modid = ModAbsentBD.MODID, updateJSON = "https://raw.githubusercontent.com/PrinceOfAmber/AbsentByDesign/master/update.json")
+@Mod(modid = ModAbsentBD.MODID, certificateFingerprint = "@FINGERPRINT@", updateJSON = "https://raw.githubusercontent.com/Lothrazar/AbsentByDesign/master/update.json")
 public class ModAbsentBD {
 
   @GameRegistry.ObjectHolder(ModAbsentBD.MODID + ":stairs_granite")
@@ -154,5 +155,18 @@ public class ModAbsentBD {
 
     // IRON BARS: gold, obsidian
     // Trapdoor: 6x wood plank
+  }
+
+  @EventHandler
+  public void onFingerprintViolation(FMLFingerprintViolationEvent event) {
+    // https://tutorials.darkhax.net/tutorials/jar_signing/
+    String source = (event.getSource() == null) ? "" : event.getSource().getName() + " ";
+    String msg = MODID + "Invalid fingerprint detected! The file " + source + "may have been tampered with. This version will NOT be supported by the author!";
+    if (logger == null) {
+      System.out.println(msg);
+    }
+    else {
+      logger.error(msg);
+    }
   }
 }

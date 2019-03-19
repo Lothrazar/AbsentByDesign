@@ -119,7 +119,7 @@ public class AbsentRegistry {
     else {
       ib = itemblock;
     }
-    ib.setRegistryName(block.getRegistryName()); // ok good this should work yes? yes! http://mcforge.readthedocs.io/en/latest/blocks/blocks/#registering-a-block
+    ib.setRegistryName(block.getRegistryName());
     addItem(ib);
     return block;
   }
