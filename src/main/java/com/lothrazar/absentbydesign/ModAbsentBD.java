@@ -1,8 +1,13 @@
 package com.lothrazar.absentbydesign;
 
+import com.lothrazar.absentbydesign.block.BlockAbsentFence;
 import com.lothrazar.absentbydesign.setup.ClientProxy;
 import com.lothrazar.absentbydesign.setup.IProxy;
 import com.lothrazar.absentbydesign.setup.ServerProxy;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -47,6 +52,23 @@ public class ModAbsentBD {
 //  };
 
   private AbsentRegistry registry;
+
+  @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+  public static class RegistryEvents {
+    ////    registry.createFence(Blocks.QUARTZ_BLOCK, new ItemStack(Blocks.QUARTZ_BLOCK), "quartz");
+    @SubscribeEvent
+    public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
+      event.getRegistry().register(new BlockAbsentFence(Blocks.QUARTZ_BLOCK, new ItemStack(Blocks.QUARTZ_BLOCK)));
+    }
+
+    @SubscribeEvent
+    public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
+      Item.Properties properties = new Item.Properties()
+//          .group(setup.itemGroup);
+      ;
+       event.getRegistry().register(new BlockItem(AbsentRegistry.FENCE_QUARTZ, properties).setRegistryName("fence_quartz"));
+    }
+  }
 
 //  @EventHandler
 //  public void preInit(FMLPreInitializationEvent event) {
