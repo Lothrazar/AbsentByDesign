@@ -12,12 +12,14 @@ import net.minecraft.item.crafting.IRecipe;
 public class BlockAbsentFence extends FenceBlock  {
 // implements IHasRecipe
   private ItemStack ingredient;
-
-  public BlockAbsentFence(Block main, ItemStack i) {
+private String rawName;
+  public BlockAbsentFence(Block main, ItemStack i, String reg) {
     super(Block.Properties.create(Material.ROCK)
     .sound(main.getSoundType(null))
     .hardnessAndResistance(main.getBlockHardness(main.getDefaultState(), null, null)));
 
+    this.rawName = reg;
+    this.setRegistryName(reg);
 
 //    super(main.getMaterial(main.getDefaultState()), main.getMaterial(main.getDefaultState()).getMaterialMapColor());
 //    this.setSoundType(main.getSoundType());
@@ -25,6 +27,9 @@ public class BlockAbsentFence extends FenceBlock  {
     ingredient = i;
   }
 
+  public String rawName(){
+    return rawName;
+  }
 //  @Override
 //  public IRecipe addRecipe() {
 //    return RecipeRegistry.addShapedRecipe(new ItemStack(this, 3),

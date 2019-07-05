@@ -58,7 +58,8 @@ public class ModAbsentBD {
     ////    registry.createFence(Blocks.QUARTZ_BLOCK, new ItemStack(Blocks.QUARTZ_BLOCK), "quartz");
     @SubscribeEvent
     public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
-      event.getRegistry().register(new BlockAbsentFence(Blocks.QUARTZ_BLOCK, new ItemStack(Blocks.QUARTZ_BLOCK)));
+      event.getRegistry()
+          .register(new BlockAbsentFence(Blocks.QUARTZ_BLOCK, new ItemStack(Blocks.QUARTZ_BLOCK),"fence_quartz"));
     }
 
     @SubscribeEvent
@@ -66,7 +67,7 @@ public class ModAbsentBD {
       Item.Properties properties = new Item.Properties()
 //          .group(setup.itemGroup);
       ;
-       event.getRegistry().register(new BlockItem(AbsentRegistry.FENCE_QUARTZ, properties).setRegistryName("fence_quartz"));
+       event.getRegistry().register(new BlockItem(AbsentRegistry.FENCE_QUARTZ, properties).setRegistryName(AbsentRegistry.FENCE_QUARTZ.rawName()));
     }
   }
 

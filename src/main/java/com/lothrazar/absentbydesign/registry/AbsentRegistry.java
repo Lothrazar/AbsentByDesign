@@ -5,7 +5,7 @@ import java.util.List;
 import javax.annotation.Nullable;
 import com.lothrazar.absentbydesign.IHasRecipe;
 import com.lothrazar.absentbydesign.ModAbsentBD;
-import com.lothrazar.absentbydesign.block.BlockAbsentFence; 
+import com.lothrazar.absentbydesign.block.BlockAbsentFence;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
@@ -26,8 +26,8 @@ public class AbsentRegistry {
 
 
 
-  @ObjectHolder(ModAbsentBD.MODID + ":quartz_fence")
-  public static Block FENCE_QUARTZ;
+  @ObjectHolder(ModAbsentBD.MODID + ":fence_quartz")
+  public static BlockAbsentFence FENCE_QUARTZ;
 
   private static List<Item> itemList = new ArrayList<Item>();
   private static List<Block> blocks = new ArrayList<Block>();
