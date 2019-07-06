@@ -73,6 +73,7 @@ public class ModAbsentBD {
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_silver"));
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_white"));
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_yellow"));
+      //stairs_bricks_cracked
     }
 
     @SubscribeEvent
