@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "absentbydesign:block/slab_end_stone" },
         "type=top": { "model": "absentbydesign:block/slab_end_stone_upper" },
-        "type=double": { "model": "absentbydesign:block/slab_end_stone" }
+        "type=double": { "model": "block/end_stone" }
     }
 }
