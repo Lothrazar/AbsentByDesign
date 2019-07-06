@@ -1,6 +1,7 @@
 package com.lothrazar.absentbydesign.registry;
 import com.lothrazar.absentbydesign.ModAbsentBD;
 import com.lothrazar.absentbydesign.block.BlockAbsentFence;
+import com.lothrazar.absentbydesign.block.BlockAbsentSlab;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -37,6 +38,24 @@ public class AbsentRegistry {
   public static BlockAbsentFence fence_log_oak;
   @ObjectHolder(ModAbsentBD.MODID + ":fence_log_spruce")
   public static BlockAbsentFence fence_log_spruce;
+  @ObjectHolder(ModAbsentBD.MODID + ":slab_end_stone")
+  public static BlockAbsentSlab slab_end_stone;
+
+  public static BlockAbsentFence createFence(Block block, Material mat, String name) {
+    return new BlockAbsentFence(Block.Properties.create(mat, MaterialColor.QUARTZ)
+        .sound(block.getSoundType(null))
+        .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
+            null, null))
+        , name);
+  }
+
+  public static BlockAbsentSlab createSlab(Block block, Material mat, String name) {
+    return new BlockAbsentSlab(Block.Properties.create(mat, MaterialColor.QUARTZ)
+        .sound(block.getSoundType(null))
+        .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
+            null, null))
+        , name);
+  }
   //  @SubscribeEvent
 //  public void onRegisterRecipe(RegistryEvent.Register<IRecipe> event) {
 //    IForgeRegistryModifiable<IRecipe> modRegistry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
@@ -99,13 +118,6 @@ public class AbsentRegistry {
 //    registerBlock(new BlockAbsentStairs(baseType, ing), "stairs_" + name);
 //  }
 //
-public static BlockAbsentFence createFence(Block block, Material mat, String name) {
-  return new BlockAbsentFence(Block.Properties.create(mat, MaterialColor.QUARTZ)
-      .sound(block.getSoundType(null))
-      .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
-          null, null))
-      ,name);
-  }
 //
 //  private Block registerBlock(Block block, String name) {
 //    return this.registerBlock(block, name, null);

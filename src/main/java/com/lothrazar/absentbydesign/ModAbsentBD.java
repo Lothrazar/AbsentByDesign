@@ -52,8 +52,8 @@ public class ModAbsentBD {
       event.getRegistry().register(AbsentRegistry.createFence(Blocks.JUNGLE_LOG, Material.WOOD, "fence_log_jungle"));
       event.getRegistry().register(AbsentRegistry.createFence(Blocks.OAK_LOG, Material.WOOD, "fence_log_oak"));
       event.getRegistry().register(AbsentRegistry.createFence(Blocks.SPRUCE_LOG, Material.WOOD, "fence_log_spruce"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_end_stone"));
     }
-
 
     @SubscribeEvent
     public static void onItemsRegistry(RegistryEvent.Register<Item> event) {
@@ -66,6 +66,7 @@ public class ModAbsentBD {
       blocks.add(AbsentRegistry.fence_log_jungle);
       blocks.add(AbsentRegistry.fence_log_oak);
       blocks.add(AbsentRegistry.fence_log_spruce);
+      blocks.add(AbsentRegistry.slab_end_stone);
       Item.Properties properties = new Item.Properties().group(AbsentRegistry.itemGroup);
       for(Block b : blocks) {
         event.getRegistry().register(new BlockItem(b, properties)
