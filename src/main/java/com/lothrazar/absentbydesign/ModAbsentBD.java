@@ -1,10 +1,13 @@
 package com.lothrazar.absentbydesign;
 
 import com.lothrazar.absentbydesign.block.BlockAbsentFence;
+import com.lothrazar.absentbydesign.block.IBlockAbsent;
 import com.lothrazar.absentbydesign.setup.ClientProxy;
 import com.lothrazar.absentbydesign.setup.IProxy;
 import com.lothrazar.absentbydesign.setup.ServerProxy;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
@@ -20,6 +23,9 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Mod(ModAbsentBD.MODID)
 //, certificateFingerprint = "@FINGERPRINT@", updateJSON = "https://raw.githubusercontent.com/Lothrazar/AbsentByDesign/master/update.json")
@@ -55,19 +61,35 @@ public class ModAbsentBD {
 
   @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
   public static class RegistryEvents {
-    ////    registry.createFence(Blocks.QUARTZ_BLOCK, new ItemStack(Blocks.QUARTZ_BLOCK), "quartz");
     @SubscribeEvent
     public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
-      event.getRegistry()
-          .register(new BlockAbsentFence(Blocks.QUARTZ_BLOCK, new ItemStack(Blocks.QUARTZ_BLOCK),"fence_quartz"));
+      AbsentRegistry builder = new AbsentRegistry();
+
+      event.getRegistry().register(builder.createFence(Blocks.QUARTZ_BLOCK, "fence_quartz"));
+     // event.getRegistry().register(builder.createFence(Blocks.RED_NETHER_BRICKS, "fence_red_netherbrick"));
     }
+
 
     @SubscribeEvent
     public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
+      List<Block> blocks = new ArrayList<>();
+      blocks.add(AbsentRegistry.FENCE_QUARTZ);
+//      blocks.add(AbsentRegistry.fence_red_netherbrick);
+
+
       Item.Properties properties = new Item.Properties()
 //          .group(setup.itemGroup);
       ;
-       event.getRegistry().register(new BlockItem(AbsentRegistry.FENCE_QUARTZ, properties).setRegistryName(AbsentRegistry.FENCE_QUARTZ.rawName()));
+
+      for(Block b : blocks){
+        //reg
+
+        event.getRegistry().register(new BlockItem(b, properties)
+            .setRegistryName((  (IBlockAbsent)b  ).rawName()));
+      }
+//
+//       event.getRegistry().register(new BlockItem(AbsentRegistry.FENCE_QUARTZ, properties)
+//           .setRegistryName(AbsentRegistry.FENCE_QUARTZ.rawName()));
     }
   }
 

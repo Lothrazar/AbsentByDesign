@@ -8,6 +8,8 @@ import com.lothrazar.absentbydesign.ModAbsentBD;
 import com.lothrazar.absentbydesign.block.BlockAbsentFence;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
@@ -29,8 +31,10 @@ public class AbsentRegistry {
   @ObjectHolder(ModAbsentBD.MODID + ":fence_quartz")
   public static BlockAbsentFence FENCE_QUARTZ;
 
+  @ObjectHolder(ModAbsentBD.MODID + ":fence_red_netherbrick")
+  public static BlockAbsentFence fence_red_netherbrick;
+
   private static List<Item> itemList = new ArrayList<Item>();
-  private static List<Block> blocks = new ArrayList<Block>();
 
 //  @SubscribeEvent
 //  public void onRegisterRecipe(RegistryEvent.Register<IRecipe> event) {
@@ -94,9 +98,13 @@ public class AbsentRegistry {
 //    registerBlock(new BlockAbsentStairs(baseType, ing), "stairs_" + name);
 //  }
 //
-//  public void createFence(Block mat, ItemStack i, String name) {
-//    registerBlock(new BlockAbsentFence(mat, i), "fence_" + name);
-//  }
+  public BlockAbsentFence createFence(Block mat , String name) {
+  return new BlockAbsentFence(Block.Properties.create(Material.ROCK, MaterialColor.QUARTZ)
+      .sound(mat.getSoundType(null))
+      .hardnessAndResistance(mat.getBlockHardness(mat.getDefaultState(),
+          null, null))
+      ,name);
+  }
 //
 //  private Block registerBlock(Block block, String name) {
 //    return this.registerBlock(block, name, null);
