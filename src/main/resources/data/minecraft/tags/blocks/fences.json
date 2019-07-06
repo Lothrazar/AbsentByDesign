@@ -2,6 +2,12 @@
   "replace": false,
   "values": [
     "absentbydesign:fence_quartz",
-    "absentbydesign:fence_red_netherbrick"
+    "absentbydesign:fence_red_netherbrick",
+    "absentbydesign:fence_log_acacia",
+    "absentbydesign:fence_log_birch",
+    "absentbydesign:fence_log_darkoak",
+    "absentbydesign:fence_log_jungle",
+    "absentbydesign:fence_log_oak",
+    "absentbydesign:fence_log_spruce"
   ]
 }

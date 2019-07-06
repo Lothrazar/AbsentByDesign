@@ -6,6 +6,7 @@ import com.lothrazar.absentbydesign.setup.IProxy;
 import com.lothrazar.absentbydesign.setup.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -43,15 +44,14 @@ public class ModAbsentBD {
   public static class RegistryEvents {
     @SubscribeEvent
     public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
-      AbsentRegistry builder = new AbsentRegistry();
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, "fence_quartz"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, "fence_red_netherbrick"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.ACACIA_LOG, "fence_log_acacia"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.BIRCH_LOG, "fence_log_birch"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.DARK_OAK_LOG, "fence_log_darkoak"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.JUNGLE_LOG, "fence_log_jungle"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.OAK_LOG, "fence_log_oak"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.SPRUCE_LOG, "fence_log_spruce"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, Material.ROCK, "fence_quartz"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.RED_NETHER_BRICKS, Material.ROCK, "fence_red_netherbrick"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.ACACIA_LOG, Material.WOOD, "fence_log_acacia"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.BIRCH_LOG, Material.WOOD, "fence_log_birch"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.DARK_OAK_LOG, Material.WOOD, "fence_log_darkoak"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.JUNGLE_LOG, Material.WOOD, "fence_log_jungle"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.OAK_LOG, Material.WOOD, "fence_log_oak"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.SPRUCE_LOG, Material.WOOD, "fence_log_spruce"));
     }
 
 

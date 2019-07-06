@@ -99,10 +99,10 @@ public class AbsentRegistry {
 //    registerBlock(new BlockAbsentStairs(baseType, ing), "stairs_" + name);
 //  }
 //
-public static BlockAbsentFence createFence(Block mat, String name) {
-  return new BlockAbsentFence(Block.Properties.create(Material.ROCK, MaterialColor.QUARTZ)
-      .sound(mat.getSoundType(null))
-      .hardnessAndResistance(mat.getBlockHardness(mat.getDefaultState(),
+public static BlockAbsentFence createFence(Block block, Material mat, String name) {
+  return new BlockAbsentFence(Block.Properties.create(mat, MaterialColor.QUARTZ)
+      .sound(block.getSoundType(null))
+      .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
           null, null))
       ,name);
   }
