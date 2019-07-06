@@ -53,10 +53,10 @@ public class ModAbsentBD {
       event.getRegistry().register(AbsentRegistry.createFence(Blocks.SPRUCE_LOG, Material.WOOD, "fence_log_spruce"));
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_end_stone"));
       //
-      //      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_netherrack"));
-      //      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.SNOW_BLOCK, Material.ROCK, "slab_snow"));
-      //      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.CRACKED_STONE_BRICKS, Material.ROCK, "slab_bricks_cracked"));
-      //      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.COARSE_DIRT, Material.ROCK, "slab_coarse_dirt"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_netherrack"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.SNOW_BLOCK, Material.ROCK, "slab_snow"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.CRACKED_STONE_BRICKS, Material.ROCK, "slab_bricks_cracked"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.COARSE_DIRT, Material.ROCK, "slab_coarse_dirt"));
     }
 
     @SubscribeEvent

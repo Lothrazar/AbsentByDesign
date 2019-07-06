@@ -1,6 +1,6 @@
 {
   "parent": "absentbydesign:parent/slab_upper",
   "textures": {
-    "b": "blocks/red_nether_brick"
+    "b": "block/red_nether_bricks"
   }
 }
