@@ -1,34 +1,28 @@
 package com.lothrazar.absentbydesign;
-
-import com.lothrazar.absentbydesign.block.BlockAbsentFence;
 import com.lothrazar.absentbydesign.block.IBlockAbsent;
+import com.lothrazar.absentbydesign.registry.AbsentRegistry;
 import com.lothrazar.absentbydesign.setup.ClientProxy;
 import com.lothrazar.absentbydesign.setup.IProxy;
 import com.lothrazar.absentbydesign.setup.ServerProxy;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLFingerprintViolationEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.lothrazar.absentbydesign.registry.AbsentRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.Mod;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Mod(ModAbsentBD.MODID)
-//, certificateFingerprint = "@FINGERPRINT@", updateJSON = "https://raw.githubusercontent.com/Lothrazar/AbsentByDesign/master/update.json")
 public class ModAbsentBD {
   public static final String MODID = "absentbydesign";
   public static final IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
@@ -42,45 +36,37 @@ public class ModAbsentBD {
 //    MinecraftForge.EVENT_BUS.register(new DyeEventHandler());
   }
 
-  private void setup(final FMLCommonSetupEvent event) {
+  private void setup(FMLCommonSetupEvent event) {
   }
-//  @GameRegistry.ObjectHolder(ModAbsentBD.MODID + ":stairs_granite")
-//  public static final Block icon = null;
-//  @Instance(ModAbsentBD.MODID)
-//  public static ModAbsentBD instance;
-//  public static final CreativeTabs tab = new CreativeTabs(ModAbsentBD.MODID) {
-//
-//    @Override
-//    @SideOnly(Side.CLIENT)
-//    public ItemStack getTabIconItem() {
-//      return new ItemStack(icon);
-//    }
-//  };
-
-  private AbsentRegistry registry;
 
   @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
   public static class RegistryEvents {
     @SubscribeEvent
-    public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
+    public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
       AbsentRegistry builder = new AbsentRegistry();
-
-      event.getRegistry().register(builder.createFence(Blocks.QUARTZ_BLOCK, "fence_quartz"));
-     event.getRegistry().register(builder.createFence(Blocks.RED_NETHER_BRICKS, "fence_red_netherbrick"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, "fence_quartz"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, "fence_red_netherbrick"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.ACACIA_LOG, "fence_log_acacia"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.BIRCH_LOG, "fence_log_birch"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.DARK_OAK_LOG, "fence_log_darkoak"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.JUNGLE_LOG, "fence_log_jungle"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.OAK_LOG, "fence_log_oak"));
+      event.getRegistry().register(AbsentRegistry.createFence(Blocks.SPRUCE_LOG, "fence_log_spruce"));
     }
 
 
     @SubscribeEvent
-    public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
+    public static void onItemsRegistry(RegistryEvent.Register<Item> event) {
       List<Block> blocks = new ArrayList<>();
       blocks.add(AbsentRegistry.FENCE_QUARTZ);
       blocks.add(AbsentRegistry.fence_red_netherbrick);
-
-
-      Item.Properties properties = new Item.Properties()
-//          .group(setup.itemGroup);
-      ;
-
+      blocks.add(AbsentRegistry.fence_log_acacia);
+      blocks.add(AbsentRegistry.fence_log_birch);
+      blocks.add(AbsentRegistry.fence_log_darkoak);
+      blocks.add(AbsentRegistry.fence_log_jungle);
+      blocks.add(AbsentRegistry.fence_log_oak);
+      blocks.add(AbsentRegistry.fence_log_spruce);
+      Item.Properties properties = new Item.Properties().group(AbsentRegistry.itemGroup);
       for(Block b : blocks) {
         event.getRegistry().register(new BlockItem(b, properties)
             .setRegistryName(((IBlockAbsent) b).rawName()));
@@ -205,7 +191,7 @@ public class ModAbsentBD {
 //  }
 
   @SubscribeEvent
-  public void onFingerprintViolation(FMLFingerprintViolationEvent event) {
+  public static void onFingerprintViolation(FMLFingerprintViolationEvent event) {
     // https://tutorials.darkhax.net/tutorials/jar_signing/
     String source = (event.getSource() == null) ? "" : event.getSource().getName() + " ";
     String msg = MODID + "Invalid fingerprint detected! The file " + source + "may have been tampered with. This version will NOT be supported by the author!";
