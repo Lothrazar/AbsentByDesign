@@ -1,6 +1,6 @@
 {
     "parent": "absentbydesign:parent/stairs",
     "textures": {
-        "b": "blocks/coarse_dirt"
+        "b": "block/coarse_dirt"
     }
 }
