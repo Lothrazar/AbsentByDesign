@@ -52,11 +52,27 @@ public class ModAbsentBD {
       event.getRegistry().register(AbsentRegistry.createFence(Blocks.OAK_LOG, Material.WOOD, "fence_log_oak"));
       event.getRegistry().register(AbsentRegistry.createFence(Blocks.SPRUCE_LOG, Material.WOOD, "fence_log_spruce"));
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_end_stone"));
-      //
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_netherrack"));
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.SNOW_BLOCK, Material.ROCK, "slab_snow"));
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.CRACKED_STONE_BRICKS, Material.ROCK, "slab_bricks_cracked"));
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.COARSE_DIRT, Material.ROCK, "slab_coarse_dirt"));
+      //
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_black"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_blue"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_brown"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_cyan"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_gray"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_green"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_light_blue"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_lime"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_magenta"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_orange"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_pink"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_purple"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_red"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_silver"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_white"));
+      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_yellow"));
     }
 
     @SubscribeEvent

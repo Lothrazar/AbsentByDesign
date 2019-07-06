@@ -1,16 +1,7 @@
 {
-  "variants": {
-    "half=bottom,variant=false": {
-      "model": "absentbydesign:block/slab_concrete_orange"
-    },
-    "half=top,variant=false": {
-      "model": "absentbydesign:block/slab_concrete_orange_upper"
-    },
-    "half=bottom,variant=true": {
-      "model": "absentbydesign:block/slab_concrete_orange"
-    },
-    "half=top,variant=true": {
-      "model": "absentbydesign:block/slab_concrete_orange_upper"
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_concrete_orange" },
+        "type=top": { "model": "absentbydesign:block/slab_concrete_orange_upper" },
+        "type=double": { "model": "block/orange_concrete" }
     }
-  }
 }
