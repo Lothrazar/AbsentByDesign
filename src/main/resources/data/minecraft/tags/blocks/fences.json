@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "absentbydesign:fence_quartz"
+    "absentbydesign:fence_quartz",
+    "absentbydesign:fence_red_netherbrick"
   ]
 }

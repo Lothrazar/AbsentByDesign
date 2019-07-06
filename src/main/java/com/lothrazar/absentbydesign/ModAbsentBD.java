@@ -66,7 +66,7 @@ public class ModAbsentBD {
       AbsentRegistry builder = new AbsentRegistry();
 
       event.getRegistry().register(builder.createFence(Blocks.QUARTZ_BLOCK, "fence_quartz"));
-     // event.getRegistry().register(builder.createFence(Blocks.RED_NETHER_BRICKS, "fence_red_netherbrick"));
+     event.getRegistry().register(builder.createFence(Blocks.RED_NETHER_BRICKS, "fence_red_netherbrick"));
     }
 
 
@@ -74,22 +74,17 @@ public class ModAbsentBD {
     public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
       List<Block> blocks = new ArrayList<>();
       blocks.add(AbsentRegistry.FENCE_QUARTZ);
-//      blocks.add(AbsentRegistry.fence_red_netherbrick);
+      blocks.add(AbsentRegistry.fence_red_netherbrick);
 
 
       Item.Properties properties = new Item.Properties()
 //          .group(setup.itemGroup);
       ;
 
-      for(Block b : blocks){
-        //reg
-
+      for(Block b : blocks) {
         event.getRegistry().register(new BlockItem(b, properties)
-            .setRegistryName((  (IBlockAbsent)b  ).rawName()));
+            .setRegistryName(((IBlockAbsent) b).rawName()));
       }
-//
-//       event.getRegistry().register(new BlockItem(AbsentRegistry.FENCE_QUARTZ, properties)
-//           .setRegistryName(AbsentRegistry.FENCE_QUARTZ.rawName()));
     }
   }
 
