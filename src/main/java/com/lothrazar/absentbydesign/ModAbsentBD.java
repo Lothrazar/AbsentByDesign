@@ -20,7 +20,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Mod(ModAbsentBD.MODID)
@@ -53,20 +52,16 @@ public class ModAbsentBD {
       event.getRegistry().register(AbsentRegistry.createFence(Blocks.OAK_LOG, Material.WOOD, "fence_log_oak"));
       event.getRegistry().register(AbsentRegistry.createFence(Blocks.SPRUCE_LOG, Material.WOOD, "fence_log_spruce"));
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_end_stone"));
+      //
+      //      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_netherrack"));
+      //      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.SNOW_BLOCK, Material.ROCK, "slab_snow"));
+      //      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.CRACKED_STONE_BRICKS, Material.ROCK, "slab_bricks_cracked"));
+      //      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.COARSE_DIRT, Material.ROCK, "slab_coarse_dirt"));
     }
 
     @SubscribeEvent
     public static void onItemsRegistry(RegistryEvent.Register<Item> event) {
-      List<Block> blocks = new ArrayList<>();
-      blocks.add(AbsentRegistry.FENCE_QUARTZ);
-      blocks.add(AbsentRegistry.fence_red_netherbrick);
-      blocks.add(AbsentRegistry.fence_log_acacia);
-      blocks.add(AbsentRegistry.fence_log_birch);
-      blocks.add(AbsentRegistry.fence_log_darkoak);
-      blocks.add(AbsentRegistry.fence_log_jungle);
-      blocks.add(AbsentRegistry.fence_log_oak);
-      blocks.add(AbsentRegistry.fence_log_spruce);
-      blocks.add(AbsentRegistry.slab_end_stone);
+      List<Block> blocks = AbsentRegistry.getBlocks();
       Item.Properties properties = new Item.Properties().group(AbsentRegistry.itemGroup);
       for(Block b : blocks) {
         event.getRegistry().register(new BlockItem(b, properties)

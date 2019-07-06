@@ -8,11 +8,18 @@ import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.registries.ObjectHolder;
+
+import java.util.ArrayList;
+import java.util.List;
 //import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 //import net.minecraftforge.fml.relauncher.Side;
 //import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class AbsentRegistry {
+
+  private static final List<Block> blocks = new ArrayList<>();
+  @ObjectHolder(ModAbsentBD.MODID + ":fence_quartz")
+  private static BlockAbsentFence FENCE_QUARTZ;
 
   public static ItemGroup itemGroup = new ItemGroup(ModAbsentBD.MODID) {
 
@@ -22,39 +29,27 @@ public class AbsentRegistry {
     }
   };
 
-  @ObjectHolder(ModAbsentBD.MODID + ":fence_quartz")
-  public static BlockAbsentFence FENCE_QUARTZ;
-  @ObjectHolder(ModAbsentBD.MODID + ":fence_red_netherbrick")
-  public static BlockAbsentFence fence_red_netherbrick;
-  @ObjectHolder(ModAbsentBD.MODID + ":fence_log_acacia")
-  public static BlockAbsentFence fence_log_acacia;
-  @ObjectHolder(ModAbsentBD.MODID + ":fence_log_birch")
-  public static BlockAbsentFence fence_log_birch;
-  @ObjectHolder(ModAbsentBD.MODID + ":fence_log_darkoak")
-  public static BlockAbsentFence fence_log_darkoak;
-  @ObjectHolder(ModAbsentBD.MODID + ":fence_log_jungle")
-  public static BlockAbsentFence fence_log_jungle;
-  @ObjectHolder(ModAbsentBD.MODID + ":fence_log_oak")
-  public static BlockAbsentFence fence_log_oak;
-  @ObjectHolder(ModAbsentBD.MODID + ":fence_log_spruce")
-  public static BlockAbsentFence fence_log_spruce;
-  @ObjectHolder(ModAbsentBD.MODID + ":slab_end_stone")
-  public static BlockAbsentSlab slab_end_stone;
-
+  public static List<Block> getBlocks() {
+    return blocks;
+  }
   public static BlockAbsentFence createFence(Block block, Material mat, String name) {
-    return new BlockAbsentFence(Block.Properties.create(mat, MaterialColor.QUARTZ)
+    BlockAbsentFence b = new BlockAbsentFence(Block.Properties.create(mat, MaterialColor.QUARTZ)
         .sound(block.getSoundType(null))
         .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
             null, null))
         , name);
+    blocks.add(b);
+    return b;
   }
 
   public static BlockAbsentSlab createSlab(Block block, Material mat, String name) {
-    return new BlockAbsentSlab(Block.Properties.create(mat, MaterialColor.QUARTZ)
+    BlockAbsentSlab b = new BlockAbsentSlab(Block.Properties.create(mat, MaterialColor.QUARTZ)
         .sound(block.getSoundType(null))
         .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
             null, null))
         , name);
+    blocks.add(b);
+    return b;
   }
   //  @SubscribeEvent
 //  public void onRegisterRecipe(RegistryEvent.Register<IRecipe> event) {
