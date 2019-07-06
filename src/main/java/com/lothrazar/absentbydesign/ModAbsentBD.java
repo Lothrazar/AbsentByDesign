@@ -75,6 +75,10 @@ public class ModAbsentBD {
       event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_yellow"));
       //stairs_bricks_cracked
       event.getRegistry().register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_coarse_dirt"));
+      event.getRegistry().register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_end_stone"));
+      event.getRegistry().register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_bricks_cracked"));
+      event.getRegistry().register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_netherrack"));
+      event.getRegistry().register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_snow"));
     }
 
     @SubscribeEvent
