@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:blue_concrete"
+      "item": "minecraft:green_concrete"
     }
   },
   "result": {
-    "item": "absentbydesign:slab_concrete_blue",
+    "item": "absentbydesign:slab_concrete_green",
     "count": 6
   }
 }
