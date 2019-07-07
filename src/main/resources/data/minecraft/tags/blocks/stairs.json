@@ -1,6 +1,26 @@
 {
   "replace": false,
   "values": [
-     "absentbydesign:stairs_coarse_dirt"
+      "absentbydesign:stairs_coarse_dirt",
+      "absentbydesign:stairs_end_stone",
+      "absentbydesign:stairs_bricks_cracked",
+      "absentbydesign:stairs_netherrack",
+      "absentbydesign:stairs_snow",
+      "absentbydesign:stairs_concrete_black",
+      "absentbydesign:stairs_concrete_black",
+      "absentbydesign:stairs_concrete_blue",
+      "absentbydesign:stairs_concrete_brown",
+      "absentbydesign:stairs_concrete_cyan",
+      "absentbydesign:stairs_concrete_gray",
+      "absentbydesign:stairs_concrete_green",
+      "absentbydesign:stairs_concrete_light_blue",
+      "absentbydesign:stairs_concrete_lime",
+      "absentbydesign:stairs_concrete_magenta",
+      "absentbydesign:stairs_concrete_orange",
+      "absentbydesign:stairs_concrete_pink",
+      "absentbydesign:stairs_concrete_red",
+      "absentbydesign:stairs_concrete_silver",
+      "absentbydesign:stairs_concrete_white",
+      "absentbydesign:stairs_concrete_yellow"
   ]
 }
