@@ -1,6 +1,6 @@
 {
   "parent": "block/wall_inventory",
   "textures": {
-    "wall": "blocks/stone_diorite_smooth"
+    "wall": "block/polished_diorite"
   }
 }

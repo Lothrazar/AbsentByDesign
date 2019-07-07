@@ -1,6 +1,0 @@
-{
-  "parent": "absentbydesign:parent/wall_side",
-  "textures": {
-    "wall": "blocks/stone_andesite"
-  }
-}

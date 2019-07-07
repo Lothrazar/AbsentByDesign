@@ -1,6 +1,0 @@
-{
-  "parent": "absentbydesign:parent/wall_post",
-  "textures": {
-    "wall": "blocks/stonebrick_mossy"
-  }
-}

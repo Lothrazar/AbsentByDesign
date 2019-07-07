@@ -1,6 +1,17 @@
 {
   "replace": false,
   "values": [
-    "absentbydesign:wall_quartz"
+    "absentbydesign:wall_andesite_smooth",
+    "absentbydesign:wall_diorite_smooth",
+    "absentbydesign:wall_end_stone",
+    "absentbydesign:wall_granite_smooth",
+    "absentbydesign:wall_purpur",
+    "absentbydesign:wall_quartz",
+    "absentbydesign:wall_sandstone_red_smooth",
+    "absentbydesign:wall_sandstone_smooth",
+    "absentbydesign:wall_stone",
+    "absentbydesign:wall_stone_slab",
+    "absentbydesign:wall_stonebrick_carved",
+    "absentbydesign:wall_stonebrick_cracked"
   ]
 }
