@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:concrete_gray"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:stairs_concrete_gray",
+    "count": 4
+  }
+}
