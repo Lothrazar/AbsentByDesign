@@ -1,6 +1,6 @@
 {
     "parent": "absentbydesign:parent/stairs",
     "textures": {
-        "b": "blocks/concrete_green"
+        "b": "block/green_concrete"
     }
 }

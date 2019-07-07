@@ -17,6 +17,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLFingerprintViolationEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -43,42 +44,57 @@ public class ModAbsentBD {
   public static class RegistryEvents {
     @SubscribeEvent
     public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, Material.ROCK, "fence_quartz"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.RED_NETHER_BRICKS, Material.ROCK, "fence_red_netherbrick"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.ACACIA_LOG, Material.WOOD, "fence_log_acacia"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.BIRCH_LOG, Material.WOOD, "fence_log_birch"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.DARK_OAK_LOG, Material.WOOD, "fence_log_darkoak"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.JUNGLE_LOG, Material.WOOD, "fence_log_jungle"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.OAK_LOG, Material.WOOD, "fence_log_oak"));
-      event.getRegistry().register(AbsentRegistry.createFence(Blocks.SPRUCE_LOG, Material.WOOD, "fence_log_spruce"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_end_stone"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_netherrack"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.SNOW_BLOCK, Material.ROCK, "slab_snow"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.CRACKED_STONE_BRICKS, Material.ROCK, "slab_bricks_cracked"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.COARSE_DIRT, Material.ROCK, "slab_coarse_dirt"));
-      //
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_black"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_blue"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_brown"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_cyan"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_gray"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_green"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_light_blue"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_lime"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_magenta"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_orange"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_pink"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_purple"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_red"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_silver"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_white"));
-      event.getRegistry().register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_yellow"));
-      //stairs_bricks_cracked
-      event.getRegistry().register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_coarse_dirt"));
-      event.getRegistry().register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_end_stone"));
-      event.getRegistry().register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_bricks_cracked"));
-      event.getRegistry().register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_netherrack"));
-      event.getRegistry().register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_snow"));
+      IForgeRegistry<Block> reg = event.getRegistry();
+      reg.register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, Material.ROCK, "fence_quartz"));
+      reg.register(AbsentRegistry.createFence(Blocks.RED_NETHER_BRICKS, Material.ROCK, "fence_red_netherbrick"));
+      reg.register(AbsentRegistry.createFence(Blocks.ACACIA_LOG, Material.WOOD, "fence_log_acacia"));
+      reg.register(AbsentRegistry.createFence(Blocks.BIRCH_LOG, Material.WOOD, "fence_log_birch"));
+      reg.register(AbsentRegistry.createFence(Blocks.DARK_OAK_LOG, Material.WOOD, "fence_log_darkoak"));
+      reg.register(AbsentRegistry.createFence(Blocks.JUNGLE_LOG, Material.WOOD, "fence_log_jungle"));
+      reg.register(AbsentRegistry.createFence(Blocks.OAK_LOG, Material.WOOD, "fence_log_oak"));
+      reg.register(AbsentRegistry.createFence(Blocks.SPRUCE_LOG, Material.WOOD, "fence_log_spruce"));
+      reg.register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_end_stone"));
+      reg.register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_netherrack"));
+      reg.register(AbsentRegistry.createSlab(Blocks.SNOW_BLOCK, Material.ROCK, "slab_snow"));
+      reg.register(AbsentRegistry.createSlab(Blocks.CRACKED_STONE_BRICKS, Material.ROCK, "slab_bricks_cracked"));
+      reg.register(AbsentRegistry.createSlab(Blocks.COARSE_DIRT, Material.SNOW, "slab_coarse_dirt"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_black"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_blue"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_brown"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_cyan"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_gray"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_green"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_light_blue"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_lime"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_magenta"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_orange"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_pink"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_purple"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_red"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_silver"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_white"));
+      reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_yellow"));
+      reg.register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_coarse_dirt"));
+      reg.register(AbsentRegistry.createStair(Blocks.END_STONE, Material.ROCK, "stairs_end_stone"));
+      reg.register(AbsentRegistry.createStair(Blocks.CRACKED_STONE_BRICKS, Material.ROCK, "stairs_bricks_cracked"));
+      reg.register(AbsentRegistry.createStair(Blocks.NETHERRACK, Material.ROCK, "stairs_netherrack"));
+      reg.register(AbsentRegistry.createStair(Blocks.SNOW_BLOCK, Material.SNOW, "stairs_snow"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_CONCRETE, Material.ROCK, "stairs_concrete_black"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLUE_CONCRETE, Material.ROCK, "stairs_concrete_blue"));
+      reg.register(AbsentRegistry.createStair(Blocks.BROWN_CONCRETE, Material.ROCK, "stairs_concrete_brown"));
+      reg.register(AbsentRegistry.createStair(Blocks.CYAN_CONCRETE, Material.ROCK, "stairs_concrete_cyan"));
+      reg.register(AbsentRegistry.createStair(Blocks.GRAY_CONCRETE, Material.ROCK, "stairs_concrete_gray"));
+      reg.register(AbsentRegistry.createStair(Blocks.GREEN_CONCRETE, Material.ROCK, "stairs_concrete_green"));
+      reg.register(AbsentRegistry.createStair(Blocks.LIGHT_BLUE_CONCRETE, Material.ROCK, "stairs_concrete_light_blue"));
+      reg.register(AbsentRegistry.createStair(Blocks.LIME_CONCRETE, Material.ROCK, "stairs_concrete_lime"));
+      reg.register(AbsentRegistry.createStair(Blocks.MAGENTA_CONCRETE, Material.ROCK, "stairs_concrete_magenta"));
+      reg.register(AbsentRegistry.createStair(Blocks.ORANGE_CONCRETE, Material.ROCK, "stairs_concrete_orange"));
+      reg.register(AbsentRegistry.createStair(Blocks.PINK_CONCRETE, Material.ROCK, "stairs_concrete_pink"));
+      reg.register(AbsentRegistry.createStair(Blocks.PURPLE_CONCRETE, Material.ROCK, "stairs_concrete_purple"));
+      reg.register(AbsentRegistry.createStair(Blocks.RED_CONCRETE, Material.ROCK, "stairs_concrete_red"));
+      reg.register(AbsentRegistry.createStair(Blocks.LIGHT_GRAY_CONCRETE, Material.ROCK, "stairs_concrete_silver"));
+      reg.register(AbsentRegistry.createStair(Blocks.WHITE_CONCRETE, Material.ROCK, "stairs_concrete_white"));
+      reg.register(AbsentRegistry.createStair(Blocks.YELLOW_CONCRETE, Material.ROCK, "stairs_concrete_yellow"));
     }
 
     @SubscribeEvent

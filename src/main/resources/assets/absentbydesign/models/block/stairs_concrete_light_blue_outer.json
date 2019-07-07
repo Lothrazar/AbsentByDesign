@@ -1,6 +1,6 @@
 {
     "parent": "absentbydesign:parent/stairs_outer",
     "textures": {
-        "b": "blocks/concrete_light_blue"
+        "b": "block/light_blue_concrete"
     }
 }
