@@ -45,6 +45,13 @@ public class ModAbsentBD {
     @SubscribeEvent
     public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
       IForgeRegistry<Block> reg = event.getRegistry();
+      // REGULAR DIRT ?
+      // STRIPPED BARK EVERYTHING?
+      // TERRACOTTA EVERYTHING ?
+      // ICE? 
+      // WOOL EVERYTHING?
+      // OBSIDIAN EVERYTHING
+      // smooth_stone EVERYTHING
       reg.register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, Material.ROCK, "fence_quartz"));
       reg.register(AbsentRegistry.createFence(Blocks.RED_NETHER_BRICKS, Material.ROCK, "fence_red_netherbrick"));
       reg.register(AbsentRegistry.createFence(Blocks.ACACIA_LOG, Material.WOOD, "fence_log_acacia"));
