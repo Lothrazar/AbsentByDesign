@@ -1,6 +1,6 @@
 {
   "parent": "absentbydesign:parent/wall_post",
   "textures": {
-    "wall": "blocks/quartz_block_side"
+    "wall": "block/quartz_block_side"
   }
 }

@@ -48,10 +48,11 @@ public class ModAbsentBD {
       // REGULAR DIRT ?
       // STRIPPED BARK EVERYTHING?
       // TERRACOTTA EVERYTHING ?
-      // ICE? 
+      // ICE?
       // WOOL EVERYTHING?
       // OBSIDIAN EVERYTHING
       // smooth_stone EVERYTHING
+      //TODO: DATA TAGS MISSING ON STAIR/SLAB
       reg.register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, Material.ROCK, "fence_quartz"));
       reg.register(AbsentRegistry.createFence(Blocks.RED_NETHER_BRICKS, Material.ROCK, "fence_red_netherbrick"));
       reg.register(AbsentRegistry.createFence(Blocks.ACACIA_LOG, Material.WOOD, "fence_log_acacia"));
@@ -102,6 +103,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.LIGHT_GRAY_CONCRETE, Material.ROCK, "stairs_concrete_silver"));
       reg.register(AbsentRegistry.createStair(Blocks.WHITE_CONCRETE, Material.ROCK, "stairs_concrete_white"));
       reg.register(AbsentRegistry.createStair(Blocks.YELLOW_CONCRETE, Material.ROCK, "stairs_concrete_yellow"));
+      reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BLOCK, Material.ROCK, "wall_quartz"));
     }
 
     @SubscribeEvent

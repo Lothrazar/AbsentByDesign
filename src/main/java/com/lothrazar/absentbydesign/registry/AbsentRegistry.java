@@ -3,6 +3,7 @@ import com.lothrazar.absentbydesign.ModAbsentBD;
 import com.lothrazar.absentbydesign.block.BlockAbsentFence;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlab;
 import com.lothrazar.absentbydesign.block.BlockAbsentStair;
+import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -43,6 +44,15 @@ public class AbsentRegistry {
     return b;
   }
 
+  public static BlockAbsentWall createWall(Block block, Material mat, String name) {
+    BlockAbsentWall b = new BlockAbsentWall(Block.Properties.create(mat, MaterialColor.QUARTZ)
+        .sound(block.getSoundType(null))
+        .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
+            null, null))
+        , name);
+    blocks.add(b);
+    return b;
+  }
   public static BlockAbsentSlab createSlab(Block block, Material mat, String name) {
     BlockAbsentSlab b = new BlockAbsentSlab(Block.Properties.create(mat, MaterialColor.QUARTZ)
         .sound(block.getSoundType(null))

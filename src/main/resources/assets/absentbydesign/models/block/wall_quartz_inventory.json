@@ -1,6 +1,6 @@
 {
   "parent": "block/wall_inventory",
   "textures": {
-    "wall": "blocks/quartz_block_side"
+    "wall": "block/quartz_block_side"
   }
 }
