@@ -13,9 +13,6 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import java.util.ArrayList;
 import java.util.List;
-//import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-//import net.minecraftforge.fml.relauncher.Side;
-//import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class AbsentRegistry {
 
