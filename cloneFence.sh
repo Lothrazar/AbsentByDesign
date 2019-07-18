@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Useage: ./_.sh <destination> <new_texture>"
+echo "Useage: ./_.sh <destination> <texture_filename>"
 # for example, to make stairs_andesite block, use _.sh andesite stone_andesite
 
 # I just happened to make granite first
@@ -12,8 +12,13 @@ seed="fence_${original}"
 texture_old="${original}_block_side"
 modid="absentbydesign"
 folder="src/main/resources/assets/${modid}"
+folderdata="src/main/resources/data/${modid}"
 
 # create the files
+
+
+cp "${folderdata}"/loot_tables/blocks/${seed}.json "${folderdata}"/loot_tables/blocks/"${newblock}".json
+cp "${folderdata}"/recipes/${seed}.json "${folderdata}"/recipes/"${newblock}".json
 
 cp "${folder}"/blockstates/"${seed}".json "${folder}"/blockstates/"${newblock}".json
 
