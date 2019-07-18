@@ -82,6 +82,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_silver"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_white"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_yellow"));
+      reg.register(AbsentRegistry.createSlab(Blocks.OBSIDIAN, Material.ROCK, "slab_obsidian"));
       //
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_black"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_blue"));
@@ -121,6 +122,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.LIGHT_GRAY_CONCRETE, Material.ROCK, "stairs_concrete_silver"));
       reg.register(AbsentRegistry.createStair(Blocks.WHITE_CONCRETE, Material.ROCK, "stairs_concrete_white"));
       reg.register(AbsentRegistry.createStair(Blocks.YELLOW_CONCRETE, Material.ROCK, "stairs_concrete_yellow"));
+      reg.register(AbsentRegistry.createStair(Blocks.OBSIDIAN, Material.ROCK, "stairs_obsidian"));
       // WALLS
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BLOCK, Material.ROCK, "wall_andesite_smooth"));
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BLOCK, Material.ROCK, "wall_diorite_smooth"));
@@ -134,6 +136,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BLOCK, Material.ROCK, "wall_stone_slab"));
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BLOCK, Material.ROCK, "wall_stonebrick_carved"));
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BLOCK, Material.ROCK, "wall_stonebrick_cracked"));
+      reg.register(AbsentRegistry.createWall(Blocks.OBSIDIAN, Material.ROCK, "wall_obsidian"));
 
     }
 

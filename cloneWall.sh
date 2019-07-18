@@ -7,13 +7,20 @@ echo "Useage: ./_.sh <destination> <new_texture>"
 dest=$1
 texture=$2
 newblock="wall_${dest}"
-original="granite"
+original="stone"
 seed="wall_${original}"
-texture_old="stone_${original}"
 modid="absentbydesign"
 folder="src/main/resources/assets/${modid}"
 
+folderdata="src/main/resources/data/${modid}"
+
 # create the files
+
+
+cp "${folderdata}"/loot_tables/blocks/${seed}.json "${folderdata}"/loot_tables/blocks/"${newblock}".json
+cp "${folderdata}"/recipes/${seed}.json "${folderdata}"/recipes/"${newblock}".json
+sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/recipes/"${newblock}".json
+sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/loot_tables/blocks/"${newblock}".json
 
 cp "${folder}"/blockstates/"${seed}".json "${folder}"/blockstates/"${newblock}".json
 
@@ -29,9 +36,9 @@ cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".
 
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
 
-sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_inventory.json
-sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_post.json
-sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_side.json
+sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_inventory.json
+sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_post.json
+sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_side.json
 
 sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
     
