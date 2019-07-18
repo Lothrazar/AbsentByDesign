@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:lime_wool"
+      "item": "minecraft:purple_wool"
     }
   },
   "result": {
-    "item": "absentbydesign:stairs_wool_lime",
+    "item": "absentbydesign:stairs_wool_purple",
     "count": 4
   }
 }

@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:coarse_dirt"
+      "item": "minecraft:yellow_wool"
     }
   },
   "result": {
-    "item": "absentbydesign:stairs_woo_yellow",
+    "item": "absentbydesign:stairs_wool_yellow",
     "count": 4
   }
 }
