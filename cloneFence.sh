@@ -39,6 +39,10 @@ sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"
 sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_side.json
 
 sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
-    
+
+sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/recipes/"${newblock}".json
+sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/loot_tables/blocks/"${newblock}".json
+
+
 
 echo "Files written"

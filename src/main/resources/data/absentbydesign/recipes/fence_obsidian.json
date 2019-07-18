@@ -6,14 +6,14 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:quartz_block"
+      "item": "minecraft:obsidian"
     },
     "-": {
       "item": "minecraft:nether_brick"
     }
   },
   "result": {
-    "item": "absentbydesign:fence_quartz",
+    "item": "absentbydesign:fence_obsidian",
     "count": 6
   }
 }
