@@ -25,11 +25,12 @@ import java.util.List;
 
 @Mod(ModAbsentBD.MODID)
 public class ModAbsentBD {
+
   public static final String MODID = "absentbydesign";
   public static final IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
   public static final Logger LOGGER = LogManager.getLogger();
 
-  public ModAbsentBD(){
+  public ModAbsentBD() {
     FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
     //only for server starting
     MinecraftForge.EVENT_BUS.register(this);
@@ -40,6 +41,7 @@ public class ModAbsentBD {
 
   @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
   public static class RegistryEvents {
+
     @SubscribeEvent
     public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
       IForgeRegistry<Block> reg = event.getRegistry();
@@ -123,6 +125,22 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.WHITE_CONCRETE, Material.ROCK, "stairs_concrete_white"));
       reg.register(AbsentRegistry.createStair(Blocks.YELLOW_CONCRETE, Material.ROCK, "stairs_concrete_yellow"));
       reg.register(AbsentRegistry.createStair(Blocks.OBSIDIAN, Material.ROCK, "stairs_obsidian"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_black"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_blue"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_brown"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_cyan"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_gray"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_green"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_light_blue"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_lime"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_magenta"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_orange"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_woole_pink"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_woole_purple"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_red"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_silver"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_white"));
+      reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_yellow"));
       // WALLS
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BLOCK, Material.ROCK, "wall_andesite_smooth"));
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BLOCK, Material.ROCK, "wall_diorite_smooth"));
@@ -137,14 +155,13 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BLOCK, Material.ROCK, "wall_stonebrick_carved"));
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BLOCK, Material.ROCK, "wall_stonebrick_cracked"));
       reg.register(AbsentRegistry.createWall(Blocks.OBSIDIAN, Material.ROCK, "wall_obsidian"));
-
     }
 
     @SubscribeEvent
     public static void onItemsRegistry(RegistryEvent.Register<Item> event) {
       List<Block> blocks = AbsentRegistry.getBlocks();
       Item.Properties properties = new Item.Properties().group(AbsentRegistry.itemGroup);
-      for(Block b : blocks) {
+      for (Block b : blocks) {
         event.getRegistry().register(new BlockItem(b, properties)
             .setRegistryName(((IBlockAbsent) b).rawName()));
       }

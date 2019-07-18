@@ -1,0 +1,6 @@
+{
+    "parent": "absentbydesign:parent/stairs_outer",
+    "textures": {
+        "b": "block/brown_wool"
+    }
+}
