@@ -3,8 +3,10 @@
   "promos": {
     "1.12.2-latest": "1.0.3",
     "1.12.2-recommended": "1.0.3",
-    "1.14.3-latest": "1.0.1",
-    "1.14.3-recommended": "1.0.1"
+    "1.14.3-latest": "1.0.2",
+    "1.14.3-recommended": "1.0.2",
+    "1.14.4-latest": "1.0.3",
+    "1.14.4-recommended": "1.0.3"
   },
   "1.12.2": {
     "1.0.0": "Release ",
@@ -16,5 +18,8 @@
     "1.0.0": "Release ",
     "1.0.1": "Fixed loot_tables so items are dropped.  Fix snow slab recipe. ",
     "1.0.2": " Obsidian blocks.  Wool Stairs."
+  },
+  "1.14.4": {
+    "1.0.3": "Update to Minecraft 1.14.4"
   }
 }
