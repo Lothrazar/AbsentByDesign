@@ -47,5 +47,6 @@ sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
  
 sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
     
+echo "\"blocks.absentbydesign.${newblock}\":\"lang\"    
 
 echo "Files written"

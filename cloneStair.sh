@@ -35,6 +35,9 @@ cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".
 
 # replace blockids
 
+
+sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
+
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
 
 sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}".json
@@ -44,4 +47,5 @@ sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_in
 sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
     
 
-echo "Four files written"
+echo "\"blocks.absentbydesign.${newblock}\":\"lang\""    
+echo "Files written"
