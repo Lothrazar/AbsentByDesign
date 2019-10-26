@@ -85,8 +85,41 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_white"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_yellow"));
       reg.register(AbsentRegistry.createSlab(Blocks.OBSIDIAN, Material.ROCK, "slab_obsidian"));
+      //
       reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.WHITE_TERRACOTTA)
           .hardnessAndResistance(1.25F, 4.2F), "slab_white_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.ORANGE_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_orange_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.MAGENTA_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_magenta_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.LIGHT_BLUE_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_light_blue_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.YELLOW_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_yellow_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.LIME_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_lime_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.PINK_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_pink_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.GRAY_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_gray_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.LIGHT_GRAY_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_light_gray_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.CYAN_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_cyan_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.PURPLE_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_purple_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.BLUE_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_blue_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.BROWN_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_brown_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.GREEN_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_green_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.RED_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_red_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.BLACK_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_black_terracotta"));
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.CLAY)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_terracotta"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_black"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_blue"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_brown"));

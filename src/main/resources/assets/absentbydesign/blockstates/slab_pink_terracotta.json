@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_pink_terracotta" },
+        "type=top": { "model": "absentbydesign:block/slab_pink_terracotta_upper" },
+        "type=double": { "model": "block/pink_terracotta" }
+    }
+}

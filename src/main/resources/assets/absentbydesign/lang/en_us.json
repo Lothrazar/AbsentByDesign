@@ -134,5 +134,22 @@
     "block.absentbydesign.fence_log_spruce": "Spruce Log Fence",
     "block.absentbydesign.fence_log_jungle": "Jungle Log Fence",
     "block.absentbydesign.fence_log_darkoak": "Darkoak Log Fence",
-    "block.absentbydesign.fence_log_acacia": "Acacia Log Fence"
+    "block.absentbydesign.fence_log_acacia": "Acacia Log Fence",
+    "block.absentbydesign.slab_terracotta": "Terracotta Slab",
+    "block.absentbydesign.slab_red_terracotta": "Red Terracotta Slab",
+    "block.absentbydesign.slab_blue_terracotta": "Blue Terracotta Slab",
+    "block.absentbydesign.slab_brown_terracotta": "Brown Terracotta Slab",
+    "block.absentbydesign.slab_cyan_terracotta": "Cyan Terracotta Slab",
+    "block.absentbydesign.slab_gray_terracotta": "Gray Terracotta Slab",
+    "block.absentbydesign.slab_green_terracotta": "Green Terracotta Slab",
+    "block.absentbydesign.slab_light_blue_terracotta": "Light Blue Terracotta Slab",
+    "block.absentbydesign.slab_lime_terracotta": "Lime Terracotta Slab",
+    "block.absentbydesign.slab_magenta_terracotta": "Magenta Terracotta Slab",
+    "block.absentbydesign.slab_orange_terracotta": "Orange Terracotta Slab",
+    "block.absentbydesign.slab_pink_terracotta": "Pink Terracotta Slab",
+    "block.absentbydesign.slab_yellow_terracotta": "Yellow Terracotta Slab",
+    "block.absentbydesign.slab_white_terracotta": "White Terracotta Slab",
+    "block.absentbydesign.slab_silver_terracotta": "Light Gray Terracotta Slab",
+    "block.absentbydesign.slab_purple_terracotta": "Purple Terracotta Slab",
+    "block.absentbydesign.slab_black_terracotta": "Black Terracotta Slab"
 }

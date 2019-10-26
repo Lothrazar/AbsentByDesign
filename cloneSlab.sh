@@ -5,7 +5,7 @@ echo "Useage: ./_.sh <filename> <texture>"
 
 # I just happened to make granite first
 dest=$1
-texture=$2
+texture=$1
 
 newblock="slab_${dest}"
 original="coarse_dirt"
