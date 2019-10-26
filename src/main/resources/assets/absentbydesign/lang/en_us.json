@@ -169,5 +169,19 @@
     "block.absentbydesign.stairs_terracotta_light_gray": "Light Gray Terracotta Stairs",
     "block.absentbydesign.stairs_terracotta_purple": "Purple Terracotta Stairs",
     "block.absentbydesign.stairs_terracotta_black": "Black Terracotta Stairs",
-    "block.absentbydesign.stairs_smooth_stone":"Smooth Stone Stairs"
+    "block.absentbydesign.stairs_smooth_stone":"Smooth Stone Stairs",
+    "block.absentbydesign.wall_stripped_acacia_log":"Stripped Acacia Wall",
+    "block.absentbydesign.wall_stripped_birch_log":"Stripped Birch Wall",
+    "block.absentbydesign.wall_stripped_dark_oak_log":"Stripped Dark Oak Wall",
+    "block.absentbydesign.wall_stripped_jungle_log":"Stripped Jungle Wall",
+    "block.absentbydesign.wall_stripped_oak_log":"Stripped Oak Wall",
+    "block.absentbydesign.wall_stripped_spruce_log":"Stripped Spruce Wall",
+    "block.absentbydesign.wall_acacia_log":"Acacia Wall",
+    "block.absentbydesign.wall_birch_log":"Birch Wall",
+    "block.absentbydesign.wall_dark_oak_log":"Dark Oak Wall",
+    "block.absentbydesign.wall_jungle_log":"Jungle Wall",
+    "block.absentbydesign.wall_oak_log":"Oak Wall",
+    "block.absentbydesign.wall_spruce_log":"Spruce Wall"
+    
+    
 }          
