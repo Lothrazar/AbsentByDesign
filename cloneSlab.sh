@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo "Useage: ./_.sh <filename> <dest> <texture>"
-# for example, to make stairs_andesite block, use _.sh andesite stone_andesite
+echo "Useage: ./_.sh <filename> <texture>"
+# first is your file name that we put slab_ in front of
+# second is filename of existing texture for example 'black_terracotta.png' exists
+# for example, to make stairs_andesite block, use _.sh terracotta_black black_terracotta
 
 # I just happened to make granite first
 dest=$1
@@ -34,6 +36,8 @@ rm -rf "${folder}"/models/item/"${newblock}"_double.json
 
 
 # string replace for texture and models 
+
+sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
  
 sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}".json
 sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_upper.json

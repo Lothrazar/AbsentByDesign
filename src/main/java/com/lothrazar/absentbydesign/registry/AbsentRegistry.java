@@ -61,13 +61,13 @@ public class AbsentRegistry {
     return b;
   }
 
-  public static BlockAbsentSlab createSlab(String name, Block.Properties prop, String unused) {
+  public static BlockAbsentSlab createSlab(String name, Block.Properties prop) {
     BlockAbsentSlab b = new BlockAbsentSlab(prop, name);
     blocks.add(b);
     return b;
   }
 
-  public static BlockAbsentStair createStair(String name, Block block, Block.Properties prop, String unused) {
+  public static BlockAbsentStair createStair(String name, Block block, Block.Properties prop) {
     BlockAbsentStair b = new BlockAbsentStair(block, prop, name);
     blocks.add(b);
     return b;
