@@ -1,4 +1,8 @@
 package com.lothrazar.absentbydesign;
+
+import java.util.List;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import com.lothrazar.absentbydesign.block.IBlockAbsent;
 import com.lothrazar.absentbydesign.registry.AbsentRegistry;
 import com.lothrazar.absentbydesign.setup.ClientProxy;
@@ -7,6 +11,7 @@ import com.lothrazar.absentbydesign.setup.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -18,10 +23,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLFingerprintViolationEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.util.List;
 
 @Mod(ModAbsentBD.MODID)
 public class ModAbsentBD {
@@ -36,8 +37,7 @@ public class ModAbsentBD {
     MinecraftForge.EVENT_BUS.register(this);
   }
 
-  private void setup(FMLCommonSetupEvent event) {
-  }
+  private void setup(FMLCommonSetupEvent event) {}
 
   @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
   public static class RegistryEvents {
@@ -85,7 +85,8 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_white"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_yellow"));
       reg.register(AbsentRegistry.createSlab(Blocks.OBSIDIAN, Material.ROCK, "slab_obsidian"));
-      //
+      reg.register(AbsentRegistry.createSlab(Block.Properties.create(Material.ROCK, MaterialColor.WHITE_TERRACOTTA)
+          .hardnessAndResistance(1.25F, 4.2F), "slab_white_terracotta"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_black"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_blue"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_brown"));
