@@ -33,6 +33,7 @@ cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".
 
 
 # replace blockids
+sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
 
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
 
