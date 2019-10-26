@@ -1,11 +1,12 @@
 #!/bin/bash
 
-echo "Useage: ./_.sh <destination> <new_texture>"
+echo "Useage: ./_.sh <filename> <texture>"
 # for example, to make stairs_andesite block, use _.sh andesite stone_andesite
 
 # I just happened to make granite first
 dest=$1
 texture=$2
+
 newblock="stairs_${dest}"
 original="coarse_dirt"
 seed="stairs_${original}"
