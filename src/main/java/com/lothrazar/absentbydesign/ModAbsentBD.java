@@ -185,7 +185,6 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.OAK_LOG, Material.WOOD, "wall_oak_log"));
       reg.register(AbsentRegistry.createWall(Blocks.SPRUCE_LOG, Material.WOOD, "wall_spruce_log"));
       //
-      reg.register(AbsentRegistry.createWall(Blocks.SMOOTH_STONE, Material.ROCK, "wall_smooth_stone"));
       reg.register(AbsentRegistry.createWall(Blocks.ANDESITE, Material.ROCK, "wall_andesite_smooth"));
       reg.register(AbsentRegistry.createWall(Blocks.DIORITE, Material.ROCK, "wall_diorite_smooth"));
       reg.register(AbsentRegistry.createWall(Blocks.END_STONE, Material.ROCK, "wall_end_stone"));
