@@ -33,7 +33,6 @@ public class ModAbsentBD {
 
   public ModAbsentBD() {
     FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-    //only for server starting
     MinecraftForge.EVENT_BUS.register(this);
   }
 
@@ -45,8 +44,6 @@ public class ModAbsentBD {
     @SubscribeEvent
     public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
       IForgeRegistry<Block> reg = event.getRegistry();
-      // smooth_stone into WALL
-      // GLAZED?
       //TODO: DATA TAGS MISSING ON STAIR/SLAB
       reg.register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, Material.ROCK, "fence_quartz"));
       reg.register(AbsentRegistry.createFence(Blocks.RED_NETHER_BRICKS, Material.ROCK, "fence_red_netherbrick"));
