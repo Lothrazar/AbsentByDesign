@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:light_blue_wool"
+      "item": "minecraft:smooth_stone"
     }
   },
   "result": {
-    "item": "absentbydesign:stairs_wool_light_blue",
+    "item": "absentbydesign:stairs_smooth_stone",
     "count": 4
   }
 }

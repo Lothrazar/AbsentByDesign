@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Useage: ./_.sh <filename> <texture>"
+echo "Useage: ./_.sh <dest> <texture>"
 # first is your file name that we put slab_ in front of
 # second is filename of existing texture for example 'black_terracotta.png' exists
 # for example, to make stairs_andesite block, use _.sh terracotta_black black_terracotta
@@ -47,6 +47,6 @@ sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
  
 sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
     
-echo "\"blocks.absentbydesign.${newblock}\":\"lang\"    
+echo "\"block.absentbydesign.${newblock}\":\"lang\"    
 
 echo "Files written"

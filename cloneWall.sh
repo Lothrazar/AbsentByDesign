@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Useage: ./_.sh <destination> <new_texture>"
+echo "Useage: ./_.sh <dest> <texture>"
 # for example, to make stairs_andesite block, use _.sh andesite stone_andesite
 
 # I just happened to make granite first
@@ -42,5 +42,6 @@ sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_si
 
 sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
     
+echo "\"block.absentbydesign.${newblock}\":\"lang\"    
 
 echo "Files written"

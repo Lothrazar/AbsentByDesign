@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:seed"
+          "name": "absentbydesign:stairs_smooth_stone"
         }
       ],
       "conditions": [
