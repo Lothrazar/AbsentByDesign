@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo "Useage: ./_.sh <filename> <texture> <fullblockmodel>"
+echo "Useage: ./_.sh <filename> <texture>"
 # for example, to make stairs_andesite block, use _.sh andesite stone_andesite
 
 # I just happened to make granite first
 dest=$1
 texture=$2
-fullblockmodel=$3
+
 newblock="slab_${dest}"
 original="coarse_dirt"
 seed="slab_${original}"
