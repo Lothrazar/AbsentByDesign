@@ -13,6 +13,10 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
+import net.minecraftforge.gradle.common.task.SignJar
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+
 version = "${mc_version}-${mod_version}"
 group = 'com.lothrazar.absentbydesign' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'absentbydesign'
@@ -25,7 +29,7 @@ minecraft {
     // stable_#            Stables are built at the discretion of the MCP team.
     // Use non-default mappings at your own risk. they may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'snapshot', version: '20190913-1.14.3'
+    mappings channel: 'snapshot', version: mappings_version
 
     //makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
@@ -91,8 +95,10 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
-  // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
-  // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
+
+    compile fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
+  //  compile fg.deobf("top.theillusivec4.curios:curios:FORGE-${mc_version}-${curios_version}")
+    
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
     // compile "some.group:artifact:version"
@@ -160,3 +166,21 @@ publishing {
         }
     }
 }
+
+
+task signJar(type: SignJar, dependsOn: jar) {
+
+    project.logger.lifecycle('!Signing jar ' + jar.archivePath.getName());
+    // findProperty allows us to reference the property without it existing. 
+    // Using project.propName would cause the script to fail validation if 
+    // the property did not exist. 
+    keyStore = project.findProperty('keyStore')
+    alias = project.findProperty('keyStoreAlias')
+    storePass = project.findProperty('keyStorePass')
+    keyPass = project.findProperty('keyStoreKeyPass')
+    inputFile = jar.archivePath
+    outputFile = jar.archivePath
+
+}
+
+build.dependsOn signJar
