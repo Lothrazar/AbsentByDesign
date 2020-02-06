@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_wool_pink" },
+        "type=top": { "model": "absentbydesign:block/slab_wool_pink_upper" },
+        "type=double": { "model": "block/pink_wool" }
+    }
+}

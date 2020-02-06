@@ -1,4 +1,5 @@
 
-cp -R build/libs/. c:/users/sam/desktop
+cp -R build/libs/. c:/users/lothr/desktop
 
-cp -R build/libs/. C:/Users/Sam/Documents/Curse/Minecraft/Instances/irnBRU/mods
+rm -Rf build/libs/
+

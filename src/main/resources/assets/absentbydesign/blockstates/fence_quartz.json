@@ -1,17 +1,17 @@
 {
     "multipart": [
-        {   "apply": { "model": "absentbydesign:fence_quartz_post" }},
+        {   "apply": { "model": "absentbydesign:block/fence_quartz_post" }},
         {   "when": { "north": "true" },
-            "apply": { "model": "absentbydesign:fence_quartz_side", "uvlock": true }
+            "apply": { "model": "absentbydesign:block/fence_quartz_side", "uvlock": true }
         },
         {   "when": { "east": "true" },
-            "apply": { "model": "absentbydesign:fence_quartz_side", "y": 90, "uvlock": true }
+            "apply": { "model": "absentbydesign:block/fence_quartz_side", "y": 90, "uvlock": true }
         },
         {   "when": { "south": "true" },
-            "apply": { "model": "absentbydesign:fence_quartz_side", "y": 180, "uvlock": true }
+            "apply": { "model": "absentbydesign:block/fence_quartz_side", "y": 180, "uvlock": true }
         },
         {   "when": { "west": "true" },
-            "apply": { "model": "absentbydesign:fence_quartz_side", "y": 270, "uvlock": true }
+            "apply": { "model": "absentbydesign:block/fence_quartz_side", "y": 270, "uvlock": true }
         }
     ]
 }

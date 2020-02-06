@@ -1,6 +1,0 @@
-{
-    "parent": "absentbydesign:parent/stairs",
-    "textures": {
-        "b":"blocks/red_nether_brick"
-    }
-}

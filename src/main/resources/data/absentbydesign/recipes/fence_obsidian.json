@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#",
+    "#-#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:obsidian"
+    },
+    "-": {
+      "item": "minecraft:nether_brick"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:fence_obsidian",
+    "count": 6
+  }
+}

@@ -10,6 +10,8 @@ libs/
 saves/
 .gradle/
 .settings/
+.idea
+src/generated
 server.properties 
 run/screenshots/
 .metadata/

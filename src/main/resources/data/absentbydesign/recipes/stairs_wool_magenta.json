@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:magenta_wool"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:stairs_wool_magenta",
+    "count": 4
+  }
+}

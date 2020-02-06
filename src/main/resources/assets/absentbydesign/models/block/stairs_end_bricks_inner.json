@@ -1,6 +1,0 @@
-{
-    "parent": "absentbydesign:parent/stairs_inner",
-    "textures": {
-        "b": "blocks/end_bricks"
-    }
-}

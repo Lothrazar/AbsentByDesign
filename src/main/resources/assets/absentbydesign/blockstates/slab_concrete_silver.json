@@ -1,16 +1,7 @@
 {
-  "variants": {
-    "half=bottom,variant=false": {
-      "model": "absentbydesign:slab_concrete_silver"
-    },
-    "half=top,variant=false": {
-      "model": "absentbydesign:slab_concrete_silver_upper"
-    },
-    "half=bottom,variant=true": {
-      "model": "absentbydesign:slab_concrete_silver"
-    },
-    "half=top,variant=true": {
-      "model": "absentbydesign:slab_concrete_silver_upper"
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_concrete_silver" },
+        "type=top": { "model": "absentbydesign:block/slab_concrete_silver_upper" },
+        "type=double": { "model": "block/light_gray_concrete" }
     }
-  }
 }

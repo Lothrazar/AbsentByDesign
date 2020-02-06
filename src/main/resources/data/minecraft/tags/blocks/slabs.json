@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "absentbydesign:slab_bricks_cracked",
+    "absentbydesign:slab_coarse_dirt",
+    "absentbydesign:slab_concrete_black",
+    "absentbydesign:slab_concrete_blue",
+    "absentbydesign:slab_concrete_brown",
+    "absentbydesign:slab_concrete_cyan",
+    "absentbydesign:slab_concrete_gray",
+    "absentbydesign:slab_concrete_green",
+    "absentbydesign:slab_concrete_light_blue",
+    "absentbydesign:slab_concrete_lime",
+    "absentbydesign:slab_concrete_magenta",
+    "absentbydesign:slab_concrete_orange",
+    "absentbydesign:slab_concrete_pink",
+    "absentbydesign:slab_concrete_purple",
+    "absentbydesign:slab_concrete_red",
+    "absentbydesign:slab_concrete_silver",
+    "absentbydesign:slab_concrete_white",
+    "absentbydesign:slab_obsidian"
+  ]
+}

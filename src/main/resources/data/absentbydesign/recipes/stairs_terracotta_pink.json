@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:pink_terracotta"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:stairs_terracotta_pink",
+    "count": 4
+  }
+}

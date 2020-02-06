@@ -1,6 +1,6 @@
 {
   "parent": "absentbydesign:parent/slab_upper",
   "textures": {
-    "b": "blocks/concrete_gray"
+    "b": "block/gray_concrete"
   }
 }

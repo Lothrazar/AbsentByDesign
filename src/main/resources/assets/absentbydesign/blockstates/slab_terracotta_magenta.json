@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_terracotta_magenta" },
+        "type=top": { "model": "absentbydesign:block/slab_terracotta_magenta_upper" },
+        "type=double": { "model": "block/magenta_terracotta" }
+    }
+}

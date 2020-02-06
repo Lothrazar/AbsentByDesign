@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "absentbydesign:wall_andesite_smooth",
+    "absentbydesign:wall_diorite_smooth",
+    "absentbydesign:wall_end_stone",
+    "absentbydesign:wall_granite_smooth",
+    "absentbydesign:wall_purpur",
+    "absentbydesign:wall_quartz",
+    "absentbydesign:wall_sandstone_red_smooth",
+    "absentbydesign:wall_sandstone_smooth",
+    "absentbydesign:wall_stone",
+    "absentbydesign:wall_stone_slab",
+    "absentbydesign:wall_stonebrick_carved",
+    "absentbydesign:wall_obsidian",
+    "absentbydesign:wall_stonebrick_cracked",
+    "absentbydesign:wall_stripped_acacia_log",
+    "absentbydesign:wall_stripped_birch_log",
+    "absentbydesign:wall_stripped_dark_oak_log",
+    "absentbydesign:wall_stripped_jungle_log",
+    "absentbydesign:wall_stripped_oak_log",
+    "absentbydesign:wall_stripped_spruce_log",
+    "absentbydesign:wall_acacia_log",
+    "absentbydesign:wall_birch_log",
+    "absentbydesign:wall_dark_oak_log",
+    "absentbydesign:wall_jungle_log",
+    "absentbydesign:wall_oak_log",
+    "absentbydesign:wall_spruce_log"
+  ]
+}

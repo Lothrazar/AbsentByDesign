@@ -1,6 +1,6 @@
 {
     "parent": "block/fence_side",
     "textures": {
-        "texture": "blocks/log_jungle"
+        "texture": "block/jungle_log"
     }
 }

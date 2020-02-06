@@ -1,6 +1,0 @@
-{
-  "parent": "absentbydesign:parent/wall_post",
-  "textures": {
-    "wall": "blocks/sandstone_normal"
-  }
-}

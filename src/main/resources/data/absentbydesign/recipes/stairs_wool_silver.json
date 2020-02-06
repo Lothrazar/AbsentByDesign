@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:light_gray_wool"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:stairs_wool_silver",
+    "count": 4
+  }
+}

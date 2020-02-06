@@ -1,79 +1,19 @@
 package com.lothrazar.absentbydesign.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockSlab;
-import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyBool;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.item.ItemStack;
+import net.minecraft.block.SlabBlock;
 
-public abstract class BlockAbsentSlab extends BlockSlab {
+public class BlockAbsentSlab extends SlabBlock implements IBlockAbsent {
 
-  private static final PropertyBool VARIANT_PROPERTY = PropertyBool.create("variant");
+  private final String rawName;
 
-  public BlockAbsentSlab(Block modelBlock) {
-    super(modelBlock.getMaterial(modelBlock.getDefaultState()));
-    this.useNeighborBrightness = true;
-    this.setHardness(modelBlock.getBlockHardness(modelBlock.getDefaultState(), null, null));
-    this.setSoundType(modelBlock.getSoundType());
+  public BlockAbsentSlab(Properties properties, String reg) {
+    super(properties);
+    rawName = reg;
+    setRegistryName(reg);
   }
 
   @Override
-  public String getUnlocalizedName(int meta) {
-    return this.getUnlocalizedName();
-  }
-
-
-  @Override
-  public IProperty<?> getVariantProperty() {
-    return VARIANT_PROPERTY;
-  }
-
-  @Override
-  public Comparable<?> getTypeForItem(ItemStack stack) {
-    return false;
-  }
-
-  @Override
-  public final IBlockState getStateFromMeta(final int meta) {
-    IBlockState state = this.getDefaultState();
-    state = state.withProperty(VARIANT_PROPERTY, false);
-    if (!this.isDouble()) {
-      EnumBlockHalf value = EnumBlockHalf.BOTTOM;
-      if ((meta & 8) != 0) {
-        value = EnumBlockHalf.TOP;
-      }
-      state = state.withProperty(HALF, value);
-    }
-    return state;
-  }
-
-  @Override
-  public final int damageDropped(final IBlockState state) {
-    return 0;
-  }
-
-  @Override
-  public final int getMetaFromState(final IBlockState state) {
-    if (this.isDouble()) {
-      return 0;
-    }
-    if (state.getValue(HALF) == EnumBlockHalf.TOP) {
-      return 8;
-    }
-    else {
-      return 0;
-    }
-  }
-
-  @Override
-  protected final BlockStateContainer createBlockState() {
-    if (this.isDouble()) {
-      return new BlockStateContainer(this, VARIANT_PROPERTY);
-    }
-    else {
-      return new BlockStateContainer(this, VARIANT_PROPERTY, HALF);
-    }
+  public String rawName() {
+    return rawName;
   }
 }

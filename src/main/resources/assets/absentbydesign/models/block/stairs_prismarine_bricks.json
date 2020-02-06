@@ -1,6 +1,0 @@
-{
-    "parent": "absentbydesign:parent/stairs",
-    "textures": {
-        "b":"blocks/prismarine_bricks"
-    }
-}

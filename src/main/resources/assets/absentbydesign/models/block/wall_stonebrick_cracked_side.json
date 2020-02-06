@@ -1,6 +1,6 @@
 {
   "parent": "absentbydesign:parent/wall_side",
   "textures": {
-    "wall": "blocks/stonebrick_cracked"
+    "wall": "block/cracked_stone_bricks"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "absentbydesign:parent/wall_post",
   "textures": {
-    "wall": "blocks/stone_granite_smooth"
+    "wall": "block/polished_granite"
   }
 }

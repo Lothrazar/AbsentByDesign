@@ -1,16 +1,7 @@
 {
-  "variants": {
-    "half=bottom,variant=false": {
-      "model": "absentbydesign:slab_end_stone"
-    },
-    "half=top,variant=false": {
-      "model": "absentbydesign:slab_end_stone_upper"
-    },
-    "half=bottom,variant=true": {
-      "model": "absentbydesign:slab_end_stone"
-    },
-    "half=top,variant=true": {
-      "model": "absentbydesign:slab_end_stone_upper"
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_end_stone" },
+        "type=top": { "model": "absentbydesign:block/slab_end_stone_upper" },
+        "type=double": { "model": "block/end_stone" }
     }
-  }
 }

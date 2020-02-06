@@ -1,6 +1,0 @@
-{
-  "parent": "absentbydesign:parent/slab_upper",
-  "textures": {
-    "b": "blocks/stonebrick_mossy"
-  }
-}
