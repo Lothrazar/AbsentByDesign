@@ -132,7 +132,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair("stairs_terracotta_black", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       //               STAIRS
       reg.register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_coarse_dirt"));
-      reg.register(AbsentRegistry.createStair(Blocks.SMOOTH_STONE, Material.EARTH, "stairs_smooth_stone"));
+      reg.register(AbsentRegistry.createStair(Blocks.SMOOTH_STONE, Material.ROCK, "stairs_smooth_stone"));
       reg.register(AbsentRegistry.createStair(Blocks.END_STONE, Material.ROCK, "stairs_end_stone"));
       reg.register(AbsentRegistry.createStair(Blocks.CRACKED_STONE_BRICKS, Material.ROCK, "stairs_bricks_cracked"));
       reg.register(AbsentRegistry.createStair(Blocks.NETHERRACK, Material.ROCK, "stairs_netherrack"));

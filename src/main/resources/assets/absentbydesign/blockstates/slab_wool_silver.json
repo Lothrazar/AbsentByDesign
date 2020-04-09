@@ -1,7 +1,7 @@
 {
     "variants": {
-        "type=bottom": { "model": "absentbydesign:block/slab_wool_black" },
-        "type=top": { "model": "absentbydesign:block/slab_wool_black_upper" },
+        "type=bottom": { "model": "absentbydesign:block/slab_wool_silver" },
+        "type=top": { "model": "absentbydesign:block/slab_wool_silver_upper" },
         "type=double": { "model": "block/light_gray_wool" }
     }
 }
