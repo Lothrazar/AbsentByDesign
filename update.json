@@ -3,14 +3,8 @@
   "promos": {
     "1.12.2-latest": "1.0.3",
     "1.12.2-recommended": "1.0.3",
-    "1.14.3-latest": "1.0.2",
-    "1.14.3-recommended": "1.0.2",
-    "1.14.4-latest": "1.0.5",
-    "1.14.4-recommended": "1.0.5",
-    "1.14.4-latest": "1.0.6",
-    "1.14.4-recommended": "1.0.6",
-    "1.15.2-latest": "1.0.6",
-    "1.15.2-recommended": "1.0.6"
+    "1.15.2-latest": "1.0.7",
+    "1.15.2-recommended": "1.0.7"
   },
   "1.12.2": {
     "1.0.0": "Release ",
@@ -31,6 +25,7 @@
   },
   "1.15.2": {
   	 "1.0.5": "Ported",
-  	 "1.0.6": "Fixed light grey wool slab texture.  Fixed smooth stone stairs hardness"
+  	 "1.0.6": "Fixed light grey wool slab texture.  Fixed smooth stone stairs hardness",
+     "1.0.7":"Fixed red wool slab textures"
   }
 }
