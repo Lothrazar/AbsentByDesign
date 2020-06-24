@@ -194,6 +194,8 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.STONE_BRICKS, Material.ROCK, "wall_stonebrick_carved"));
       reg.register(AbsentRegistry.createWall(Blocks.STONE_BRICKS, Material.ROCK, "wall_stonebrick_cracked"));
       reg.register(AbsentRegistry.createWall(Blocks.OBSIDIAN, Material.ROCK, "wall_obsidian"));
+      //
+      reg.register(AbsentRegistry.createWall(Blocks.PRISMARINE, Material.ROCK, "wall_prismarine_bricks"));
     }
 
     @SubscribeEvent

@@ -181,7 +181,9 @@
     "block.absentbydesign.wall_dark_oak_log":"Dark Oak Wall",
     "block.absentbydesign.wall_jungle_log":"Jungle Wall",
     "block.absentbydesign.wall_oak_log":"Oak Wall",
-    "block.absentbydesign.wall_spruce_log":"Spruce Wall"
+    "block.absentbydesign.wall_spruce_log":"Spruce Wall",
+    "block.absentbydesign.wall_prismarine_bricks":"Prismarine Brick Wall"
+    
     
     
 }          
