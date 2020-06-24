@@ -40,7 +40,6 @@ public class ModAbsentBD {
     @SubscribeEvent
     public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
       IForgeRegistry<Block> reg = event.getRegistry();
-      //TODO: DATA TAGS MISSING ON STAIR/SLAB
       reg.register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, Material.ROCK, "fence_quartz"));
       reg.register(AbsentRegistry.createFence(Blocks.RED_NETHER_BRICKS, Material.ROCK, "fence_red_netherbrick"));
       reg.register(AbsentRegistry.createFence(Blocks.ACACIA_LOG, Material.WOOD, "fence_log_acacia"));
@@ -150,7 +149,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.WHITE_CONCRETE, Material.ROCK, "stairs_concrete_white"));
       reg.register(AbsentRegistry.createStair(Blocks.YELLOW_CONCRETE, Material.ROCK, "stairs_concrete_yellow"));
       reg.register(AbsentRegistry.createStair(Blocks.OBSIDIAN, Material.ROCK, "stairs_obsidian"));
-      //
+      //       WOOL STAIRS
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_black"));
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_blue"));
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_brown"));
@@ -167,7 +166,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_silver"));
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_white"));
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_yellow"));
-      // WALLS
+      //             WOODEN WALLS
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_acacia_log"));
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_birch_log"));
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_dark_oak_log"));
@@ -180,7 +179,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.JUNGLE_LOG, Material.WOOD, "wall_jungle_log"));
       reg.register(AbsentRegistry.createWall(Blocks.OAK_LOG, Material.WOOD, "wall_oak_log"));
       reg.register(AbsentRegistry.createWall(Blocks.SPRUCE_LOG, Material.WOOD, "wall_spruce_log"));
-      //
+      //          STONE WALLS
       reg.register(AbsentRegistry.createWall(Blocks.ANDESITE, Material.ROCK, "wall_andesite_smooth"));
       reg.register(AbsentRegistry.createWall(Blocks.DIORITE, Material.ROCK, "wall_diorite_smooth"));
       reg.register(AbsentRegistry.createWall(Blocks.END_STONE, Material.ROCK, "wall_end_stone"));
@@ -194,8 +193,8 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.STONE_BRICKS, Material.ROCK, "wall_stonebrick_carved"));
       reg.register(AbsentRegistry.createWall(Blocks.STONE_BRICKS, Material.ROCK, "wall_stonebrick_cracked"));
       reg.register(AbsentRegistry.createWall(Blocks.OBSIDIAN, Material.ROCK, "wall_obsidian"));
-      //
       reg.register(AbsentRegistry.createWall(Blocks.PRISMARINE, Material.ROCK, "wall_prismarine_bricks"));
+      reg.register(AbsentRegistry.createWall(Blocks.DARK_PRISMARINE, Material.ROCK, "wall_dark_prismarine"));
     }
 
     @SubscribeEvent
