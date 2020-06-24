@@ -7,6 +7,7 @@ public class BlockAbsentStair extends StairsBlock implements IBlockAbsent {
 
   private final String rawName;
 
+  @SuppressWarnings("deprecation")
   public BlockAbsentStair(Block b, Properties p, String reg) {
     super(b.getDefaultState(), p);
     rawName = reg;

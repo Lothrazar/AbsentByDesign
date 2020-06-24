@@ -19,24 +19,20 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLFingerprintViolationEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod(ModAbsentBD.MODID)
 public class ModAbsentBD {
 
   public static final String MODID = "absentbydesign";
+  @SuppressWarnings("deprecation")
   public static final IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
   public static final Logger LOGGER = LogManager.getLogger();
 
   public ModAbsentBD() {
-    FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
     MinecraftForge.EVENT_BUS.register(this);
   }
-
-  private void setup(FMLCommonSetupEvent event) {}
 
   @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
   public static class RegistryEvents {
