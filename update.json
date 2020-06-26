@@ -1,32 +1,10 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/absent-by-design",
   "promos": {
-    "1.12.2-latest": "1.0.3",
-    "1.12.2-recommended": "1.0.3",
-    "1.15.2-latest": "1.1.0",
-    "1.15.2-recommended": "1.1.0"
+    "1.16.2-latest": "1.1.0",
+    "1.16.2-recommended": "1.1.0"
   },
-  "1.12.2": {
-    "1.0.0": "Release ",
-    "1.0.1": "zh_cn and zh_tw added by mcBegins2Snow",
-    "1.0.2": "Fixed cracked and mossy stone brick recipes making regular stonebrick items. ",
-    "1.0.3": "Fixed zh_cn and zh_tw translation issues.   "
-  },
-  "1.14.3": {
-    "1.0.0": "Release ",
-    "1.0.1": "Fixed loot_tables so items are dropped.  Fix snow slab recipe. ",
-    "1.0.2": " Obsidian blocks.  Wool Stairs."
-  },
-  "1.14.4": {
-    "1.0.3": "Update to Minecraft 1.14.4",
-    "1.0.4": "Added 17 Terracotta Slabs; 17 Terracotta Stairs; Smooth Stone Stairs; 12 Wood Walls.",
-    "1.0.5": "Recipe fixes",
-    "1.0.6": "Fixed light grey wool slab texture.  Fixed smooth stone stairs hardness"
-  },
-  "1.15.2": {
-  	 "1.0.5": "Ported",
-  	 "1.0.6": "Fixed light grey wool slab texture.  Fixed smooth stone stairs hardness",
-     "1.0.7":"Fixed red wool slab textures",
-     "1.1.0":"Fixed two broken recipes.  Added Prismarine Bricks Wall.  Added Dark Prismarine Wall.  "
+  "1.16.2": {
+  	 "1.0.5": "Ported"
   }
 }
