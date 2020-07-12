@@ -3,7 +3,7 @@
  [![](http://cf.way2muchnoise.eu/305840.svg)](https://minecraft.curseforge.com/projects/absent-by-design) 
  [![](http://cf.way2muchnoise.eu/versions/305840.svg)](https://minecraft.curseforge.com/projects/absent-by-design)
  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
- [![Twitter Badge](https://img.shields.io/badge/contact-twitter-blue.svg)](twitter.com/lothrazar)
+ [![Twitter Badge](https://img.shields.io/badge/contact-twitter-blue.svg)](https://twitter.com/lothrazar)
 
 A mod created for Minecraft Forge API
 
