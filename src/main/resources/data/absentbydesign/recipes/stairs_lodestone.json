@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:lodestone"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:stairs_lodestone",
+    "count": 4
+  }
+}

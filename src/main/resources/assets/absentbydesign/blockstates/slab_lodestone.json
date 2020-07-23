@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_lodestone" },
+        "type=top": { "model": "absentbydesign:block/slab_lodestone_upper" },
+        "type=double": { "model": "block/lodestone" }
+    }
+}

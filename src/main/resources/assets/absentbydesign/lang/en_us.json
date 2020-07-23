@@ -5,6 +5,13 @@
     "block.absentbydesign.slab_basalt":"Basalt Slab",
     "block.absentbydesign.slab_polished_basalt":"Polished Basalt Slab",
     "block.absentbydesign.slab_crying_obsidian":"Crying Obsidian Slab",
+    "block.absentbydesign.slab_lodestone":"Lodestone Slab",
+	
+	"block.absentbydesign.stairs_basalt":"Basalt Stairs",
+	"block.absentbydesign.stairs_polished_basalt":"Polished Basalt Stairs",
+    "block.absentbydesign.stairs_crying_obsidian":"Crying Obsidian Stairs",
+    "block.absentbydesign.stairs_lodestone":"Lodestone Stairs",
+    
     
     "block.absentbydesign.wall_quartz": "Quartz Wall",
     "block.absentbydesign.wall_stone": "Stone Wall",

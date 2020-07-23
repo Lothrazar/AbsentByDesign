@@ -78,6 +78,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab(Blocks.BASALT, Material.ROCK, "slab_basalt"));
       reg.register(AbsentRegistry.createSlab(Blocks.POLISHED_BASALT, Material.ROCK, "slab_polished_basalt"));
       reg.register(AbsentRegistry.createSlab(Blocks.CRYING_OBSIDIAN, Material.ROCK, "slab_crying_obsidian"));
+      reg.register(AbsentRegistry.createSlab(Blocks.CRYING_OBSIDIAN, Material.ROCK, "slab_lodestone"));
       //
       //
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_black"));
@@ -132,9 +133,11 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair("stairs_terracotta_green", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createStair("stairs_terracotta_red", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createStair("stairs_terracotta_black", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
-      //    stairs_basalt
-      //stairs_crying_obsidian 
-      //    polished_basalt
+      //    
+      reg.register(AbsentRegistry.createStair("stairs_basalt", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
+      reg.register(AbsentRegistry.createStair("stairs_polished_basalt", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
+      reg.register(AbsentRegistry.createStair("stairs_crying_obsidian", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
+      reg.register(AbsentRegistry.createStair("stairs_lodestone", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       //               STAIRS
       reg.register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_coarse_dirt"));
       reg.register(AbsentRegistry.createStair(Blocks.SMOOTH_STONE, Material.ROCK, "stairs_smooth_stone"));
