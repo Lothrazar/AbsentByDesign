@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/slab_upper",
+  "textures": {
+    "b": "minecraft:block/polished_basalt_top"
+  }
+}

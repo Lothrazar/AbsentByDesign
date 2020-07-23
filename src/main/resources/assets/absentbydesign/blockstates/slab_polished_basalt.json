@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_polished_basalt" },
+        "type=top": { "model": "absentbydesign:block/slab_polished_basalt_upper" },
+        "type=double": { "model": "block/polished_basalt" }
+    }
+}

@@ -75,9 +75,10 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_white"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_CONCRETE, Material.ROCK, "slab_concrete_yellow"));
       reg.register(AbsentRegistry.createSlab(Blocks.OBSIDIAN, Material.ROCK, "slab_obsidian"));
-      //      slab_basalt
-      //      slab_polished_basalt
-      //slab_crying_obsidian
+      reg.register(AbsentRegistry.createSlab(Blocks.BASALT, Material.ROCK, "slab_basalt"));
+      reg.register(AbsentRegistry.createSlab(Blocks.POLISHED_BASALT, Material.ROCK, "slab_polished_basalt"));
+      reg.register(AbsentRegistry.createSlab(Blocks.CRYING_OBSIDIAN, Material.ROCK, "slab_crying_obsidian"));
+      //
       //
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_black"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_blue"));

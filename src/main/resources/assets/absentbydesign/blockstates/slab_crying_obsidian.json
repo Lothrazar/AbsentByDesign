@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_crying_obsidian" },
+        "type=top": { "model": "absentbydesign:block/slab_crying_obsidian_upper" },
+        "type=double": { "model": "block/crying_obsidian" }
+    }
+}
