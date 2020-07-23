@@ -31,12 +31,12 @@ public class AbsentRegistry {
   public static List<Block> getBlocks() {
     return blocks;
   }
+  //    Blocks.SPAWNER.getDefaultState().hardness = -1;
 
   public static BlockAbsentFence createFence(Block block, Material mat, String name) {
     BlockAbsentFence b = new BlockAbsentFence(Block.Properties.create(mat, MaterialColor.QUARTZ)
         .sound(block.getSoundType(null))
-        .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
-            null, null)),
+        .hardnessAndResistance(block.getDefaultState().hardness),
         name);
     blocks.add(b);
     return b;
@@ -45,8 +45,7 @@ public class AbsentRegistry {
   public static BlockAbsentWall createWall(Block block, Material mat, String name) {
     BlockAbsentWall b = new BlockAbsentWall(Block.Properties.create(mat, MaterialColor.QUARTZ)
         .sound(block.getSoundType(null))
-        .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
-            null, null)),
+        .hardnessAndResistance(block.getDefaultState().hardness),
         name);
     blocks.add(b);
     return b;
@@ -55,8 +54,7 @@ public class AbsentRegistry {
   public static BlockAbsentSlab createSlab(Block block, Material mat, String name) {
     BlockAbsentSlab b = new BlockAbsentSlab(Block.Properties.create(mat, MaterialColor.QUARTZ)
         .sound(block.getSoundType(null))
-        .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
-            null, null)),
+        .hardnessAndResistance(block.getDefaultState().hardness),
         name);
     blocks.add(b);
     return b;
@@ -77,8 +75,7 @@ public class AbsentRegistry {
   public static BlockAbsentStair createStair(Block block, Material mat, String name) {
     BlockAbsentStair b = new BlockAbsentStair(block, Block.Properties.create(mat, MaterialColor.QUARTZ)
         .sound(block.getSoundType(null))
-        .hardnessAndResistance(block.getBlockHardness(block.getDefaultState(),
-            null, null)),
+        .hardnessAndResistance(block.getDefaultState().hardness),
         name);
     blocks.add(b);
     return b;
