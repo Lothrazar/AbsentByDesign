@@ -1,11 +1,12 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/absent-by-design",
   "promos": {
-    "1.16.3-latest": "1.1.1",
-    "1.16.3-recommended": "1.1.1"
+    "1.16.4-latest": "1.1.1",
+    "1.16.4-recommended": "1.1.1"
   },
-  "1.16.3": {
+  "1.16.4": {
   	 "1.1.0": "Ported" ,
-	 "1.1.1": "ru-RU localization added by TheDirectorX.  Renamed some items to match source material, for example the new name is Polished Andesite Stairs instead of Smooth Andesite Stairs.  "
+	 "1.1.1": "ru-RU localization added by TheDirectorX.  Renamed some items to match source material, for example the new name is Polished Andesite Stairs instead of Smooth Andesite Stairs.  ",
+	 "1.2.0": "Added Warped Wall, Crimson Wall, Stripped Warped Wall, Stripped Crimson Wall, Crying Obsidian Wall, Basalt Wall, Polished Basalt Wall, Lodestone Wall, 3 Mushroom Walls,  "
   }
 }

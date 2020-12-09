@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_mushroom_stem" },
+        "type=top": { "model": "absentbydesign:block/slab_mushroom_stem_upper" },
+        "type=double": { "model": "absentbydesign:block/slab_mushroom_stem_double" }
+    }
+}

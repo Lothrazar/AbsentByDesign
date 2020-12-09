@@ -1,6 +1,6 @@
 {
   "parent": "absentbydesign:parent/wall_side",
   "textures": {
-    "wall": "block/spruce_log"
+    "wall": "minecraft:block/spruce_log"
   }
 }

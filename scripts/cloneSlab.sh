@@ -17,14 +17,11 @@ modid="absentbydesign"
 folder="src/main/resources/assets/${modid}"
 
 folderdata="src/main/resources/data/${modid}"
-
+#
 # create the files
-
-
+#
 cp "${folderdata}"/loot_tables/blocks/${seed}.json "${folderdata}"/loot_tables/blocks/"${newblock}".json
 cp "${folderdata}"/recipes/${seed}.json "${folderdata}"/recipes/"${newblock}".json
-sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/recipes/"${newblock}".json
-sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/loot_tables/blocks/"${newblock}".json
 
 cp "${folder}"/blockstates/"${seed}".json "${folder}"/blockstates/"${newblock}".json
 
@@ -34,8 +31,12 @@ cp "${folder}"/models/block/"${seed}"_upper.json "${folder}"/models/block/"${new
 cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".json
 rm -rf "${folder}"/models/item/"${newblock}"_double.json
 
+#
+# string replace 
+#
 
-# string replace for texture and models 
+sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/recipes/"${newblock}".json
+sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/loot_tables/blocks/"${newblock}".json
 
 sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
  
@@ -47,6 +48,7 @@ sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
  
 sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
     
-echo "\"block.absentbydesign.${newblock}\":\"lang\"   "    
+echo "\"block.absentbydesign.${newblock}\":\"${newblock} Slab\",   "  
+echo "  \"absentbydesign:${newblock}\",     to the blocks/slabs.json data tag"  
 
 echo "Files written"

@@ -19,7 +19,6 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLFingerprintViolationEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod(ModAbsentBD.MODID)
@@ -40,6 +39,9 @@ public class ModAbsentBD {
     @SubscribeEvent
     public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
       IForgeRegistry<Block> reg = event.getRegistry();
+      //
+      //                FENCES
+      //
       reg.register(AbsentRegistry.createFence(Blocks.QUARTZ_BLOCK, Material.ROCK, "fence_quartz"));
       reg.register(AbsentRegistry.createFence(Blocks.RED_NETHER_BRICKS, Material.ROCK, "fence_red_netherbrick"));
       reg.register(AbsentRegistry.createFence(Blocks.ACACIA_LOG, Material.WOOD, "fence_log_acacia"));
@@ -53,6 +55,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createFence(Blocks.OBSIDIAN, Material.ROCK, "fence_warped"));
       //
       //                SLABS
+      //
       reg.register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_end_stone"));
       reg.register(AbsentRegistry.createSlab(Blocks.END_STONE, Material.ROCK, "slab_netherrack"));
       reg.register(AbsentRegistry.createSlab(Blocks.SNOW_BLOCK, Material.ROCK, "slab_snow"));
@@ -79,8 +82,6 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab(Blocks.POLISHED_BASALT, Material.ROCK, "slab_polished_basalt"));
       reg.register(AbsentRegistry.createSlab(Blocks.CRYING_OBSIDIAN, Material.ROCK, "slab_crying_obsidian"));
       reg.register(AbsentRegistry.createSlab(Blocks.CRYING_OBSIDIAN, Material.ROCK, "slab_lodestone"));
-      //
-      //
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_black"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_blue"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_brown"));
@@ -97,7 +98,6 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_silver"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_white"));
       reg.register(AbsentRegistry.createSlab(Blocks.BLACK_WOOL, Material.WOOL, "slab_wool_yellow"));
-      //
       reg.register(AbsentRegistry.createSlab("slab_terracotta_white", Block.Properties.create(Material.ROCK, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createSlab("slab_terracotta_orange", Block.Properties.create(Material.ROCK, MaterialColor.ORANGE_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createSlab("slab_terracotta_magenta", Block.Properties.create(Material.ROCK, MaterialColor.MAGENTA_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)));
@@ -115,6 +115,11 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab("slab_terracotta_red", Block.Properties.create(Material.ROCK, MaterialColor.RED_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createSlab("slab_terracotta_black", Block.Properties.create(Material.ROCK, MaterialColor.BLACK_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createSlab("slab_terracotta", Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
+      reg.register(AbsentRegistry.createSlab("slab_mushroom_stem", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
+      reg.register(AbsentRegistry.createSlab("slab_red_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
+      reg.register(AbsentRegistry.createSlab("slab_brown_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
+      // 
+      //                STAIRS
       //
       reg.register(AbsentRegistry.createStair("stairs_terracotta", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createStair("stairs_terracotta_white", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
@@ -133,12 +138,10 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair("stairs_terracotta_green", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createStair("stairs_terracotta_red", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createStair("stairs_terracotta_black", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
-      //    
       reg.register(AbsentRegistry.createStair("stairs_basalt", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createStair("stairs_polished_basalt", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createStair("stairs_crying_obsidian", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createStair("stairs_lodestone", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
-      //               STAIRS
       reg.register(AbsentRegistry.createStair(Blocks.COARSE_DIRT, Material.EARTH, "stairs_coarse_dirt"));
       reg.register(AbsentRegistry.createStair(Blocks.SMOOTH_STONE, Material.ROCK, "stairs_smooth_stone"));
       reg.register(AbsentRegistry.createStair(Blocks.END_STONE, Material.ROCK, "stairs_end_stone"));
@@ -162,7 +165,6 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.WHITE_CONCRETE, Material.ROCK, "stairs_concrete_white"));
       reg.register(AbsentRegistry.createStair(Blocks.YELLOW_CONCRETE, Material.ROCK, "stairs_concrete_yellow"));
       reg.register(AbsentRegistry.createStair(Blocks.OBSIDIAN, Material.ROCK, "stairs_obsidian"));
-      //       WOOL STAIRS
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_black"));
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_blue"));
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_brown"));
@@ -179,21 +181,21 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_silver"));
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_white"));
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_yellow"));
-      //             WOODEN WALLS
+      //
+      //                WALLS
+      //
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_acacia_log"));
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_birch_log"));
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_dark_oak_log"));
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_jungle_log"));
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_oak_log"));
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_spruce_log"));
-      //
       reg.register(AbsentRegistry.createWall(Blocks.ACACIA_LOG, Material.WOOD, "wall_acacia_log"));
       reg.register(AbsentRegistry.createWall(Blocks.BIRCH_LOG, Material.WOOD, "wall_birch_log"));
       reg.register(AbsentRegistry.createWall(Blocks.DARK_OAK_LOG, Material.WOOD, "wall_dark_oak_log"));
       reg.register(AbsentRegistry.createWall(Blocks.JUNGLE_LOG, Material.WOOD, "wall_jungle_log"));
       reg.register(AbsentRegistry.createWall(Blocks.OAK_LOG, Material.WOOD, "wall_oak_log"));
       reg.register(AbsentRegistry.createWall(Blocks.SPRUCE_LOG, Material.WOOD, "wall_spruce_log"));
-      //          STONE WALLS
       reg.register(AbsentRegistry.createWall(Blocks.ANDESITE, Material.ROCK, "wall_andesite_smooth"));
       reg.register(AbsentRegistry.createWall(Blocks.DIORITE, Material.ROCK, "wall_diorite_smooth"));
       reg.register(AbsentRegistry.createWall(Blocks.END_STONE, Material.ROCK, "wall_end_stone"));
@@ -209,14 +211,20 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.OBSIDIAN, Material.ROCK, "wall_obsidian"));
       reg.register(AbsentRegistry.createWall(Blocks.PRISMARINE, Material.ROCK, "wall_prismarine_bricks"));
       reg.register(AbsentRegistry.createWall(Blocks.DARK_PRISMARINE, Material.ROCK, "wall_dark_prismarine"));
-      //wall_stripped_crimson_log
-      //wall_stripped_warped_log
-      //wall_crimson_log
-      //wall_warped_log
-      //    basalt
-      //    polished_basalt
-      //wall_lodestone
-      //wall_crying_obsidian
+      reg.register(AbsentRegistry.createWall(Blocks.CRIMSON_STEM, Material.WOOD, "wall_crimson"));
+      reg.register(AbsentRegistry.createWall(Blocks.WARPED_STEM, Material.WOOD, "wall_warped"));
+      reg.register(AbsentRegistry.createWall(Blocks.CRYING_OBSIDIAN, Material.WOOD, "wall_crying_obsidian"));
+      reg.register(AbsentRegistry.createWall(Blocks.BASALT, Material.WOOD, "wall_basalt"));
+      reg.register(AbsentRegistry.createWall(Blocks.POLISHED_BASALT, Material.WOOD, "wall_polished_basalt"));
+      reg.register(AbsentRegistry.createWall(Blocks.LODESTONE, Material.WOOD, "wall_lodestone"));
+      reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_CRIMSON_HYPHAE, Material.WOOD, "wall_stripped_crimson"));
+      reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_WARPED_HYPHAE, Material.WOOD, "wall_stripped_warped"));
+      reg.register(AbsentRegistry.createWall(Blocks.MUSHROOM_STEM, Material.WOOD, "wall_mushroom_stem"));
+      reg.register(AbsentRegistry.createWall(Blocks.RED_MUSHROOM_BLOCK, Material.WOOD, "wall_red_mushroom"));
+      reg.register(AbsentRegistry.createWall(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "wall_brown_mushroom"));
+      //mushroom everything for bysco
+      //
+      // 
     }
 
     @SubscribeEvent
@@ -228,13 +236,5 @@ public class ModAbsentBD {
             .setRegistryName(((IBlockAbsent) b).rawName()));
       }
     }
-  }
-
-  @SubscribeEvent
-  public static void onFingerprintViolation(FMLFingerprintViolationEvent event) {
-    // https://tutorials.darkhax.net/tutorials/jar_signing/
-    String source = (event.getSource() == null) ? "" : event.getSource().getName() + " ";
-    String msg = MODID + "Invalid fingerprint detected! The file " + source + "may have been tampered with. This version will NOT be supported by the author!";
-    System.out.println(msg);
   }
 }

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "absentbydesign:slab_red_mushroom",
+    "absentbydesign:slab_brown_mushroom",  
+    "absentbydesign:slab_mushroom_stem",  
     "absentbydesign:slab_bricks_cracked",
     "absentbydesign:slab_coarse_dirt",
     "absentbydesign:slab_concrete_black",

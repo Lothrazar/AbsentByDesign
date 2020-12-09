@@ -1,6 +1,6 @@
 {
   "parent": "absentbydesign:parent/slab_upper",
   "textures": {
-    "b": "block/netherrack"
+    "b": "minecraft:block/netherrack"
   }
 }

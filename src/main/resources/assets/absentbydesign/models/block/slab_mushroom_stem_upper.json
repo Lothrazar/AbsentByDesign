@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/slab_upper",
+  "textures": {
+    "b": "minecraft:block/mushroom_stem"
+  }
+}

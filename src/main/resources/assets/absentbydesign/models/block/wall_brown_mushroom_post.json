@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/wall_post",
+  "textures": {
+    "wall": "minecraft:block/brown_mushroom_block"
+  }
+}

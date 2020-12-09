@@ -1,6 +1,6 @@
 {
   "parent": "absentbydesign:parent/wall_side",
   "textures": {
-    "wall": "block/stone"
+    "wall": "minecraft:block/stone"
   }
 }

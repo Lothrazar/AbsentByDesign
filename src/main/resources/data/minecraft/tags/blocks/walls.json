@@ -1,6 +1,17 @@
 {
   "replace": false,
   "values": [
+    "absentbydesign:wall_brown_mushroom",    
+    "absentbydesign:wall_red_mushroom", 
+    "absentbydesign:wall_mushroom_stem",   
+    "absentbydesign:wall_stripped_warped",
+    "absentbydesign:wall_stripped_crimson", 
+    "absentbydesign:wall_lodestone",
+    "absentbydesign:wall_polished_basalt", 
+    "absentbydesign:wall_basalt",  
+    "absentbydesign:wall_crying_obsidian", 
+    "absentbydesign:wall_crimson",
+    "absentbydesign:wall_warped",
     "absentbydesign:wall_andesite_smooth",
     "absentbydesign:wall_diorite_smooth",
     "absentbydesign:wall_end_stone",
