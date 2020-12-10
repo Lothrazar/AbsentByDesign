@@ -181,6 +181,9 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_silver"));
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_white"));
       reg.register(AbsentRegistry.createStair(Blocks.BLACK_WOOL, Material.CARPET, "stairs_wool_yellow"));
+      reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_red_mushroom"));
+      reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_brown_mushroom"));
+      reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_mushroom_stem"));
       //
       //                WALLS
       //
@@ -222,7 +225,6 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.MUSHROOM_STEM, Material.WOOD, "wall_mushroom_stem"));
       reg.register(AbsentRegistry.createWall(Blocks.RED_MUSHROOM_BLOCK, Material.WOOD, "wall_red_mushroom"));
       reg.register(AbsentRegistry.createWall(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "wall_brown_mushroom"));
-      //mushroom everything for bysco
       //
       // 
     }
