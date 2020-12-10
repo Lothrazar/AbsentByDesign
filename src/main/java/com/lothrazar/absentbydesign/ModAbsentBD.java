@@ -119,8 +119,11 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab("slab_mushroom_stem", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createSlab("slab_red_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createSlab("slab_brown_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
+      reg.register(AbsentRegistry.createSlab(Blocks.MUSHROOM_STEM, Material.WOOD, "slab_mushroom_polished"));
       reg.register(AbsentRegistry.createSlab("slab_quartz_bricks", Block.Properties.create(Material.ROCK).hardnessAndResistance(1.25F, 4.2F)));
+      reg.register(AbsentRegistry.createSlab("slab_magma", Block.Properties.create(Material.ROCK).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 3)));
       reg.register(AbsentRegistry.createSlab("slab_glowstone", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 15)));
+      reg.register(AbsentRegistry.createSlab("slab_sea_lantern", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 15)));
       // 
       //                STAIRS
       //
@@ -187,8 +190,14 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_red_mushroom"));
       reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_brown_mushroom"));
       reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_mushroom_stem"));
-      reg.register(AbsentRegistry.createStair(Blocks.QUARTZ_BRICKS, Material.WOOD, "stairs_quartz_bricks"));
-      reg.register(AbsentRegistry.createStair("stairs_glowstone", Blocks.GLOWSTONE, Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(1.25F, 4.2F).setLightLevel(s -> 15)));
+      reg.register(AbsentRegistry.createStair(Blocks.MUSHROOM_STEM, Material.WOOD, "stairs_mushroom_polished"));
+      reg.register(AbsentRegistry.createStair(Blocks.QUARTZ_BRICKS, Material.ROCK, "stairs_quartz_bricks"));
+      reg.register(AbsentRegistry.createStair("stairs_magma", Blocks.MAGMA_BLOCK, Block.Properties.create(Material.ROCK, MaterialColor.NETHERRACK)
+          .hardnessAndResistance(1.25F, 4.2F).setLightLevel(s -> 3)));
+      reg.register(AbsentRegistry.createStair("stairs_glowstone", Blocks.GLOWSTONE, Block.Properties.create(Material.ROCK, MaterialColor.SAND)
+          .sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(s -> 15)));
+      reg.register(AbsentRegistry.createStair("stairs_sea_lantern", Blocks.SEA_LANTERN, Block.Properties.create(Material.ROCK, MaterialColor.SAND)
+          .sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(s -> 15)));
       //
       //                WALLS
       //
@@ -230,10 +239,19 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.MUSHROOM_STEM, Material.WOOD, "wall_mushroom_stem"));
       reg.register(AbsentRegistry.createWall(Blocks.RED_MUSHROOM_BLOCK, Material.WOOD, "wall_red_mushroom"));
       reg.register(AbsentRegistry.createWall(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "wall_brown_mushroom"));
+      reg.register(AbsentRegistry.createWall(Blocks.MUSHROOM_STEM, Material.WOOD, "wall_mushroom_polished"));
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BRICKS, Material.ROCK, "wall_quartz_bricks"));
-      reg.register(AbsentRegistry.createWall(Blocks.GLOWSTONE, Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(1.25F, 4.2F).setLightLevel(s -> 15), "wall_glowstone"));
+      reg.register(AbsentRegistry.createWall(Blocks.MAGMA_BLOCK, Block.Properties.create(Material.ROCK, MaterialColor.NETHERRACK)
+          .hardnessAndResistance(1.25F, 4.2F).setLightLevel(s -> 3), "wall_magma"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLOWSTONE, Block.Properties.create(Material.ROCK, MaterialColor.SAND)
+          .hardnessAndResistance(1.25F, 4.2F).sound(SoundType.GLASS).setLightLevel(s -> 15), "wall_glowstone"));
+      reg.register(AbsentRegistry.createWall(Blocks.SEA_LANTERN, Block.Properties.create(Material.ROCK, MaterialColor.SAND)
+          .hardnessAndResistance(1.25F, 4.2F).sound(SoundType.GLASS).setLightLevel(s -> 15), "wall_sea_lantern"));
       //
-      // 
+      //                GATE
+      //
+      reg.register(AbsentRegistry.createGate("gate_nether_bricks", Blocks.NETHER_BRICKS, Block.Properties.create(Material.ROCK)));
+      reg.register(AbsentRegistry.createGate("gate_red_nether_bricks", Blocks.NETHER_BRICKS, Block.Properties.create(Material.ROCK)));
     }
 
     @SubscribeEvent

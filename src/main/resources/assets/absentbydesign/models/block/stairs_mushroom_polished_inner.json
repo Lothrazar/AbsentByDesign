@@ -1,0 +1,6 @@
+{
+    "parent": "absentbydesign:parent/stairs_inner",
+    "textures": {
+        "b": "block/mushroom_block_inside"
+    }
+}

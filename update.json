@@ -1,12 +1,12 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/absent-by-design",
   "promos": {
-    "1.16.4-latest": "1.1.1",
-    "1.16.4-recommended": "1.1.1"
+    "1.16.4-latest": "1.2.0",
+    "1.16.4-recommended": "1.2.0"
   },
-  "1.16.4": {
-  	 "1.1.0": "Ported" ,
-	 "1.1.1": "ru-RU localization added by TheDirectorX.  Renamed some items to match source material, for example the new name is Polished Andesite Stairs instead of Smooth Andesite Stairs.  ",
-	 "1.2.0": "Added Warped Wall, Stripped Warped Wall, Crimson Wall, Stripped Crimson Wall, Crying Obsidian Wall, Basalt Wall, Polished Basalt Wall, Lodestone Wall, 3 Mushroom Walls, 3 Mushroom Slabs, 3 Mushroom Stairs,  Glowstone slab, stairs, and walls, "
+    "1.16.4": {
+    "1.1.0": "Ported" ,
+	  "1.1.1": "ru-RU localization added by TheDirectorX.  Renamed some items to match source material, for example the new name is Polished Andesite Stairs instead of Smooth Andesite Stairs.  ",
+	  "1.2.0": "Gates: Nether Brick.   Added many more blocks, slabs, and stairs support for: Warped, Crimson, Crying Obsidian, Basalt, Polished, Lodestone Wall, 4 types of Mushroom, Glowstone, Sea Lantern, Quartz Bricks, Magma"
   }
 }

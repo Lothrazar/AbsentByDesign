@@ -1,0 +1,6 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "minecraft:block/mushroom_block_inside"
+  }
+}

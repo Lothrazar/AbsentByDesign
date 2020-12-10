@@ -3,13 +3,13 @@
 echo "Useage: ./_.sh <dest> <texture>"
 # for example, to make stairs_andesite block, use _.sh andesite stone_andesite
 
-# I just happened to make granite first
+
 dest=$1
 texture=$2
-newblock="fence_${dest}"
-original="quartz"
-seed="fence_${original}"
-texture_old="${original}_block_side"
+newblock="gate_${dest}"
+original="nether_bricks"
+seed="gate_${original}"
+
 modid="absentbydesign"
 folder="src/main/resources/assets/${modid}"
 folderdata="src/main/resources/data/${modid}"
@@ -29,17 +29,16 @@ sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
 cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".json
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
 
-cp "${folder}"/models/block/"${seed}"_inventory.json "${folder}"/models/block/"${newblock}"_inventory.json
-cp "${folder}"/models/block/"${seed}"_post.json "${folder}"/models/block/"${newblock}"_post.json
-cp "${folder}"/models/block/"${seed}"_side.json "${folder}"/models/block/"${newblock}"_side.json
-
+cp "${folder}"/models/block/"${seed}"_open.json "${folder}"/models/block/"${newblock}"_open.json
+cp "${folder}"/models/block/"${seed}"_wall.json "${folder}"/models/block/"${newblock}"_wall.json
+cp "${folder}"/models/block/"${seed}"_wall_open.json "${folder}"/models/block/"${newblock}"_wall_open.json
 
 sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
-sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_inventory.json
-sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_post.json
-sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_side.json
+sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_open.json
+sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_wall.json
+sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_wall_open.json
 
 echo "  \"block.absentbydesign.${newblock}\":\"lang\"   " 
-echo "  \"absentbydesign:${newblock}\",     to the blocks/fences.json data tag"  
+echo "  \"absentbydesign:${newblock}\",     to the blocks/fence_gates.json data tag"  
 
 echo "Files written"

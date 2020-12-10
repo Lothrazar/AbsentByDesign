@@ -3,7 +3,6 @@
 echo "Useage: ./_.sh <filename> <texture>"
 # for example, to make stairs_andesite block, use _.sh andesite stone_andesite
 
-# I just happened to make granite first
 dest=$1
 texture=$2
 
@@ -47,7 +46,7 @@ sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_in
 sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
     
 
-echo "\"block.absentbydesign.${newblock}\":\"${newblock} Stairs\","
+echo "  \"block.absentbydesign.${newblock}\":\"${newblock} Stairs\","
 echo "  \"absentbydesign:${newblock}\",     to the blocks/stairs.json data tag"  
    
 echo "Files written"

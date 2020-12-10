@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:sea_lantern"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:stairs_sea_lantern",
+    "count": 4
+  }
+}

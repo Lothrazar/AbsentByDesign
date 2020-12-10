@@ -35,7 +35,10 @@ cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".
 
 sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/loot_tables/blocks/"${newblock}".json
 
+
 sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/recipes/"${newblock}".json
+sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
+
 
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
 
@@ -51,7 +54,7 @@ sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
 # print data and instructions
 #
     
-echo "\"block.absentbydesign.${newblock}\":\"${newblock} Wall\", "
+echo "  \"block.absentbydesign.${newblock}\":\"${newblock} Wall\", "
 echo "  \"absentbydesign:${newblock}\",     to the blocks/walls.json data tag"
 
 echo "Files written"

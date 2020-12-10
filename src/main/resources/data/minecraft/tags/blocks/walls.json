@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "absentbydesign:wall_magma",  
+    "absentbydesign:wall_mushroom_polished",  
+    "absentbydesign:wall_sea_lantern",  
     "absentbydesign:wall_glowstone", 
     "absentbydesign:wall_quartz_bricks",
     "absentbydesign:wall_brown_mushroom",    

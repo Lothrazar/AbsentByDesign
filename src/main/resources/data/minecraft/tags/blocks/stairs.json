@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "absentbydesign:stairs_magma",  
+    "absentbydesign:stairs_mushroom_polished", 
+    "absentbydesign:stairs_sea_lantern", 
     "absentbydesign:stairs_glowstone",  
     "absentbydesign:stairs_quartz_bricks",
     "absentbydesign:stairs_mushroom_stem", 
