@@ -10,6 +10,7 @@ import com.lothrazar.absentbydesign.setup.IProxy;
 import com.lothrazar.absentbydesign.setup.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
@@ -119,6 +120,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab("slab_red_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createSlab("slab_brown_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createSlab("slab_quartz_bricks", Block.Properties.create(Material.ROCK).hardnessAndResistance(1.25F, 4.2F)));
+      reg.register(AbsentRegistry.createSlab("slab_glowstone", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 15)));
       // 
       //                STAIRS
       //
@@ -186,6 +188,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_brown_mushroom"));
       reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_mushroom_stem"));
       reg.register(AbsentRegistry.createStair(Blocks.QUARTZ_BRICKS, Material.WOOD, "stairs_quartz_bricks"));
+      reg.register(AbsentRegistry.createStair("stairs_glowstone", Blocks.GLOWSTONE, Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(1.25F, 4.2F).setLightLevel(s -> 15)));
       //
       //                WALLS
       //
@@ -228,6 +231,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.RED_MUSHROOM_BLOCK, Material.WOOD, "wall_red_mushroom"));
       reg.register(AbsentRegistry.createWall(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "wall_brown_mushroom"));
       reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BRICKS, Material.ROCK, "wall_quartz_bricks"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLOWSTONE, Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(1.25F, 4.2F).setLightLevel(s -> 15), "wall_glowstone"));
       //
       // 
     }

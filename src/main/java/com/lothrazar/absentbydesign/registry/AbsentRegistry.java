@@ -9,7 +9,6 @@ import com.lothrazar.absentbydesign.block.BlockAbsentStair;
 import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.registries.ObjectHolder;
@@ -34,7 +33,16 @@ public class AbsentRegistry {
   //    Blocks.SPAWNER.getDefaultState().hardness = -1;
 
   public static BlockAbsentFence createFence(Block block, Material mat, String name) {
-    BlockAbsentFence b = new BlockAbsentFence(Block.Properties.create(mat, MaterialColor.QUARTZ)
+    BlockAbsentFence b = new BlockAbsentFence(Block.Properties.create(mat, mat.getColor())
+        .sound(block.getSoundType(null))
+        .hardnessAndResistance(block.getDefaultState().hardness),
+        name);
+    blocks.add(b);
+    return b;
+  }
+
+  public static BlockAbsentWall createWall(Block block, Block.Properties p, String name) {
+    BlockAbsentWall b = new BlockAbsentWall(p
         .sound(block.getSoundType(null))
         .hardnessAndResistance(block.getDefaultState().hardness),
         name);
@@ -43,7 +51,7 @@ public class AbsentRegistry {
   }
 
   public static BlockAbsentWall createWall(Block block, Material mat, String name) {
-    BlockAbsentWall b = new BlockAbsentWall(Block.Properties.create(mat, MaterialColor.QUARTZ)
+    BlockAbsentWall b = new BlockAbsentWall(Block.Properties.create(mat, mat.getColor())
         .sound(block.getSoundType(null))
         .hardnessAndResistance(block.getDefaultState().hardness),
         name);
@@ -52,7 +60,7 @@ public class AbsentRegistry {
   }
 
   public static BlockAbsentSlab createSlab(Block block, Material mat, String name) {
-    BlockAbsentSlab b = new BlockAbsentSlab(Block.Properties.create(mat, MaterialColor.QUARTZ)
+    BlockAbsentSlab b = new BlockAbsentSlab(Block.Properties.create(mat, mat.getColor())
         .sound(block.getSoundType(null))
         .hardnessAndResistance(block.getDefaultState().hardness),
         name);
@@ -73,7 +81,7 @@ public class AbsentRegistry {
   }
 
   public static BlockAbsentStair createStair(Block block, Material mat, String name) {
-    BlockAbsentStair b = new BlockAbsentStair(block, Block.Properties.create(mat, MaterialColor.QUARTZ)
+    BlockAbsentStair b = new BlockAbsentStair(block, Block.Properties.create(mat, mat.getColor())
         .sound(block.getSoundType(null))
         .hardnessAndResistance(block.getDefaultState().hardness),
         name);

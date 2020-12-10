@@ -24,28 +24,20 @@
   "block.absentbydesign.wall_red_mushroom":"Red Mushroom Wall",
   "block.absentbydesign.wall_mushroom_stem":"Mushroom Stem Wall",
 
+  "block.absentbydesign.stairs_glowstone":"Glowstone Stairs",
+  "block.absentbydesign.slab_glowstone":"Glowstone Slab",
+  "block.absentbydesign.wall_glowstone":"Glowstone Wall",
 
-  
   "block.absentbydesign.slab_mushroom_stem":"Mushroom Stem Slab",
-  
   "block.absentbydesign.slab_red_mushroom":"Red Mushroom Slab",
   "block.absentbydesign.slab_brown_mushroom":"Brown Mushroom Slab",
-
+  "block.absentbydesign.stairs_red_mushroom":"Red Mushroom Stairs",
+  "block.absentbydesign.stairs_brown_mushroom":"Brown Mushroom Stairs",
+  "block.absentbydesign.stairs_mushroom_stem":"Mushroom Stem Stairs",
+  "block.absentbydesign.wall_quartz_bricks":"Quartz Brick Wall",
+  "block.absentbydesign.stairs_quartz_bricks":"Quartz Brick Stairs",
+  "block.absentbydesign.slab_quartz_bricks":"Quartz Brick Slab",
   
-"block.absentbydesign.stairs_red_mushroom":"Red Mushroom Stairs",
-"block.absentbydesign.stairs_brown_mushroom":"Brown Mushroom Stairs",
-"block.absentbydesign.stairs_mushroom_stem":"Mushroom Stem Stairs",
-
-"block.absentbydesign.wall_quartz_bricks":"Quartz Brick Wall",
-
-  
-"block.absentbydesign.stairs_quartz_bricks":"Quartz Brick Stairs",
-  
-"block.absentbydesign.slab_quartz_bricks":"Quartz Brick Slab",
-  
-
-    
-    
 
     "block.absentbydesign.wall_quartz": "Quartz Wall",
     "block.absentbydesign.wall_stone": "Stone Wall",

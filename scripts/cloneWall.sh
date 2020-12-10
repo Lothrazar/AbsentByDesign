@@ -33,10 +33,9 @@ cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".
 # replace blockids in the created files
 #
 
-sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/recipes/"${newblock}".json
 sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/loot_tables/blocks/"${newblock}".json
 
-sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
+sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/recipes/"${newblock}".json
 
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
 

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_glowstone" },
+        "type=top": { "model": "absentbydesign:block/slab_glowstone_upper" },
+        "type=double": { "model": "block/glowstone" }
+    }
+}
