@@ -118,6 +118,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab("slab_mushroom_stem", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createSlab("slab_red_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createSlab("slab_brown_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL).hardnessAndResistance(1.25F, 4.2F)));
+      reg.register(AbsentRegistry.createSlab("slab_quartz_bricks", Block.Properties.create(Material.ROCK).hardnessAndResistance(1.25F, 4.2F)));
       // 
       //                STAIRS
       //
@@ -184,6 +185,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_red_mushroom"));
       reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_brown_mushroom"));
       reg.register(AbsentRegistry.createStair(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "stairs_mushroom_stem"));
+      reg.register(AbsentRegistry.createStair(Blocks.QUARTZ_BRICKS, Material.WOOD, "stairs_quartz_bricks"));
       //
       //                WALLS
       //
@@ -225,6 +227,7 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.MUSHROOM_STEM, Material.WOOD, "wall_mushroom_stem"));
       reg.register(AbsentRegistry.createWall(Blocks.RED_MUSHROOM_BLOCK, Material.WOOD, "wall_red_mushroom"));
       reg.register(AbsentRegistry.createWall(Blocks.BROWN_MUSHROOM_BLOCK, Material.WOOD, "wall_brown_mushroom"));
+      reg.register(AbsentRegistry.createWall(Blocks.QUARTZ_BRICKS, Material.ROCK, "wall_quartz_bricks"));
       //
       // 
     }

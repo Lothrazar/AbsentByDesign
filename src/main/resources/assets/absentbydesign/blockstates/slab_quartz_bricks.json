@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_quartz_bricks" },
+        "type=top": { "model": "absentbydesign:block/slab_quartz_bricks_upper" },
+        "type=double": { "model": "block/quartz_bricks" }
+    }
+}
