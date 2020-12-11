@@ -29,16 +29,18 @@ sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
 cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".json
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
 
+cp "${folder}"/models/block/"${seed}".json "${folder}"/models/block/"${newblock}".json
 cp "${folder}"/models/block/"${seed}"_open.json "${folder}"/models/block/"${newblock}"_open.json
 cp "${folder}"/models/block/"${seed}"_wall.json "${folder}"/models/block/"${newblock}"_wall.json
 cp "${folder}"/models/block/"${seed}"_wall_open.json "${folder}"/models/block/"${newblock}"_wall_open.json
 
 sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
+sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}".json
 sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_open.json
 sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_wall.json
 sed -i -e "s/${original}/${texture}/g" "${folder}"/models/block/"${newblock}"_wall_open.json
 
-echo "  \"block.absentbydesign.${newblock}\":\"lang\"   " 
+echo "  \"block.absentbydesign.${newblock}\":\"lang Gate\",   " 
 echo "  \"absentbydesign:${newblock}\",     to the blocks/fence_gates.json data tag"  
 
 echo "Files written"

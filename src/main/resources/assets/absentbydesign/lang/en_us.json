@@ -5,9 +5,9 @@
 
   "block.absentbydesign.stairs_magma":"Magma Stairs",
   "block.absentbydesign.slab_magma":"Magma Slab",
-  
-  "block.absentbydesign.gate_nether_bricks":"Nether Brick Gate",
 
+  "block.absentbydesign.gate_nether_bricks":"Nether Brick Gate",
+  "block.absentbydesign.gate_red_nether_bricks":"Red Nether Brick Gate",
 
 	"block.absentbydesign.fence_crimson": "Crimson Stem Fence",
 	"block.absentbydesign.fence_log_acacia": "Acacia Log Fence",
