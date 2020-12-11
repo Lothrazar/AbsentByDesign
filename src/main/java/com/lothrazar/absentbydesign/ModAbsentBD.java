@@ -248,10 +248,11 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createWall(Blocks.SEA_LANTERN, Block.Properties.create(Material.ROCK, MaterialColor.SAND)
           .hardnessAndResistance(1.25F, 4.2F).sound(SoundType.GLASS).setLightLevel(s -> 15), "wall_sea_lantern"));
       //
-      //                GATE
+      //                GATE 
       //
       reg.register(AbsentRegistry.createGate("gate_nether_bricks", Blocks.NETHER_BRICKS, Block.Properties.create(Material.ROCK)));
       reg.register(AbsentRegistry.createGate("gate_red_nether_bricks", Blocks.NETHER_BRICKS, Block.Properties.create(Material.ROCK)));
+      reg.register(AbsentRegistry.createGate("gate_quartz", Blocks.QUARTZ_BLOCK, Block.Properties.create(Material.ROCK)));
     }
 
     @SubscribeEvent
