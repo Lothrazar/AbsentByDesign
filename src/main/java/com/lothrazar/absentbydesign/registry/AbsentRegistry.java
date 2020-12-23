@@ -17,7 +17,7 @@ import net.minecraftforge.registries.ObjectHolder;
 @SuppressWarnings("deprecation")
 public class AbsentRegistry {
 
-  private static final List<Block> blocks = new ArrayList<>();
+  public static final List<Block> blocks = new ArrayList<>();
   @ObjectHolder(ModAbsentBD.MODID + ":fence_quartz")
   private static BlockAbsentFence FENCE_QUARTZ;
   public static ItemGroup itemGroup = new ItemGroup(ModAbsentBD.MODID) {
@@ -30,10 +30,38 @@ public class AbsentRegistry {
   static final String ID = ModAbsentBD.MODID + ":";
   @ObjectHolder(ID + "slab_glass")
   public static Block slab_glass;
-
-  public static List<Block> getBlocks() {
-    return blocks;
-  }
+  @ObjectHolder(ID + "slab_glass_white")
+  public static Block slab_glass_white;
+  @ObjectHolder(ID + "slab_glass_orange")
+  public static Block slab_glass_orange;
+  @ObjectHolder(ID + "slab_glass_magenta")
+  public static Block slab_glass_magenta;
+  @ObjectHolder(ID + "slab_glass_light_blue")
+  public static Block slab_glass_light_blue;
+  @ObjectHolder(ID + "slab_glass_yellow")
+  public static Block slab_glass_yellow;
+  @ObjectHolder(ID + "slab_glass_lime")
+  public static Block slab_glass_lime;
+  @ObjectHolder(ID + "slab_glass_pink")
+  public static Block slab_glass_pink;
+  @ObjectHolder(ID + "slab_glass_gray")
+  public static Block slab_glass_gray;
+  @ObjectHolder(ID + "slab_glass_light_gray")
+  public static Block slab_glass_light_gray;
+  @ObjectHolder(ID + "slab_glass_cyan")
+  public static Block slab_glass_cyan;
+  @ObjectHolder(ID + "slab_glass_purple")
+  public static Block slab_glass_purple;
+  @ObjectHolder(ID + "slab_glass_blue")
+  public static Block slab_glass_blue;
+  @ObjectHolder(ID + "slab_glass_brown")
+  public static Block slab_glass_brown;
+  @ObjectHolder(ID + "slab_glass_green")
+  public static Block slab_glass_green;
+  @ObjectHolder(ID + "slab_glass_red")
+  public static Block slab_glass_red;
+  @ObjectHolder(ID + "slab_glass_black")
+  public static Block slab_glass_black;
   //    Blocks.SPAWNER.getDefaultState().hardness = -1;
 
   public static BlockAbsentFence createFence(Block block, Material mat, String name) {

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_glass_orange" },
+        "type=top": { "model": "absentbydesign:block/slab_glass_orange_upper" },
+        "type=double": { "model": "block/orange_stained_glass" }
+    }
+}

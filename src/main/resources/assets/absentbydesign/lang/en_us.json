@@ -1,9 +1,23 @@
 {
   "itemGroup.absentbydesign": "Absent by Design",
   
-  
   "block.absentbydesign.slab_glass":"Glass Slab",
-  
+  "block.absentbydesign.slab_glass_orange":"Orange Glass Slab",
+  "block.absentbydesign.slab_glass_white":"White Glass Slab",
+  "block.absentbydesign.slab_glass_magenta":"Magenta Glass Slab",
+  "block.absentbydesign.slab_glass_light_blue":"Light Blue Glass Slab",
+  "block.absentbydesign.slab_glass_yellow":"Yellow Glass Slab",
+  "block.absentbydesign.slab_glass_lime":"Lime Glass Slab",
+  "block.absentbydesign.slab_glass_black":"Black Glass Slab",
+  "block.absentbydesign.slab_glass_cyan":"Cyan Glass Slab",
+  "block.absentbydesign.slab_glass_light_gray":"Light Gray Glass Slab",
+  "block.absentbydesign.slab_glass_green":"Green Glass Slab",
+  "block.absentbydesign.slab_glass_purple":"Purple Glass Slab",
+  "block.absentbydesign.slab_glass_blue":"Blue Glass Slab",
+  "block.absentbydesign.slab_glass_pink":"Pink Glass Slab",
+  "block.absentbydesign.slab_glass_gray":"Gray Glass Slab",
+  "block.absentbydesign.slab_glass_brown":"Brown Glass Slab",
+  "block.absentbydesign.slab_glass_red":"Red Glass Slab",
 
 	"block.absentbydesign.fence_crimson": "Crimson Stem Fence",
 	"block.absentbydesign.fence_log_acacia": "Acacia Log Fence",

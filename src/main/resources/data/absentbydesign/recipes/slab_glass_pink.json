@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:pink_stained_glass"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:slab_glass_pink",
+    "count": 6
+  }
+}

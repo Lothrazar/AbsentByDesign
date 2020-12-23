@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_glass_white" },
+        "type=top": { "model": "absentbydesign:block/slab_glass_white_upper" },
+        "type=double": { "model": "minecraft:block/white_stained_glass" }
+    }
+}

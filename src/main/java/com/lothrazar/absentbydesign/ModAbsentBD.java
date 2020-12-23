@@ -1,6 +1,5 @@
 package com.lothrazar.absentbydesign;
 
-import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.lothrazar.absentbydesign.block.IBlockAbsent;
@@ -38,8 +37,26 @@ public class ModAbsentBD {
   }
 
   private void setupClient(final FMLClientSetupEvent event) {
-    //    ClientRegistry.setup();
+    //
     RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass, RenderType.getCutout());
+    //
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass, RenderType.getCutout());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_white, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_orange, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_magenta, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_light_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_yellow, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_lime, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_pink, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_light_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_cyan, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_purple, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_brown, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_green, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_red, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_black, RenderType.getTranslucent());
   }
 
   static boolean isntSolid(BlockState state, IBlockReader reader, BlockPos pos) {
@@ -140,30 +157,24 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab("slab_magma", Block.Properties.create(Material.ROCK).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 3)));
       reg.register(AbsentRegistry.createSlab("slab_glowstone", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 15)));
       reg.register(AbsentRegistry.createSlab("slab_sea_lantern", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 15)));
-      //
-      //glass slabs
-      //use = RenderType.getCutout();
-      Block b = Blocks.GLASS;
-      reg.register(AbsentRegistry.createSlab("slab_glass", Block.Properties.create(Material.GLASS)
-          .hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn)
-          .setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-      //
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_white"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_orange"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_magenta"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_light_blue"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_yellow"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_lime"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_pink"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_gray"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_light_gray"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_cyan"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_purple"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_blue"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_brown"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_green"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_red"));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_black"));
+      // 17 glass slabs   
+      reg.register(AbsentRegistry.createSlab("slab_glass", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_white", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_orange", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_magenta", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_light_blue", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_yellow", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_lime", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_pink", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_gray", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_light_gray", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_cyan", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_purple", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_blue", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_brown", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_green", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_red", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createSlab("slab_glass_black", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
       //  
       //                STAIRS
       //
@@ -297,11 +308,9 @@ public class ModAbsentBD {
 
     @SubscribeEvent
     public static void onItemsRegistry(RegistryEvent.Register<Item> event) {
-      List<Block> blocks = AbsentRegistry.getBlocks();
       Item.Properties properties = new Item.Properties().group(AbsentRegistry.itemGroup);
-      for (Block b : blocks) {
-        event.getRegistry().register(new BlockItem(b, properties)
-            .setRegistryName(((IBlockAbsent) b).rawName()));
+      for (Block b : AbsentRegistry.blocks) {
+        event.getRegistry().register(new BlockItem(b, properties).setRegistryName(((IBlockAbsent) b).rawName()));
       }
     }
   }

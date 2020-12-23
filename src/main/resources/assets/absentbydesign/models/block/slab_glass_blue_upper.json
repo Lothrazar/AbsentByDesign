@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/slab_upper",
+  "textures": {
+    "b": "block/blue_stained_glass"
+  }
+}
