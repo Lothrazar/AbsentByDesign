@@ -27,6 +27,9 @@ public class AbsentRegistry {
       return new ItemStack(AbsentRegistry.FENCE_QUARTZ);
     }
   };
+  static final String ID = ModAbsentBD.MODID + ":";
+  @ObjectHolder(ID + "slab_glass")
+  public static Block slab_glass;
 
   public static List<Block> getBlocks() {
     return blocks;

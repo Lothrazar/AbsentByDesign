@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "absentbydesign:slab_glass",   
     "absentbydesign:slab_magma",   
     "absentbydesign:slab_mushroom_polished", 
     "absentbydesign:slab_sea_lantern",  

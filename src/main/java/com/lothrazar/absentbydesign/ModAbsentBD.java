@@ -5,33 +5,49 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.lothrazar.absentbydesign.block.IBlockAbsent;
 import com.lothrazar.absentbydesign.registry.AbsentRegistry;
-import com.lothrazar.absentbydesign.setup.ClientProxy;
-import com.lothrazar.absentbydesign.setup.IProxy;
-import com.lothrazar.absentbydesign.setup.ServerProxy;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockReader;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod(ModAbsentBD.MODID)
 public class ModAbsentBD {
 
   public static final String MODID = "absentbydesign";
-  @SuppressWarnings("deprecation")
-  public static final IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
   public static final Logger LOGGER = LogManager.getLogger();
 
   public ModAbsentBD() {
+    FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient);
     MinecraftForge.EVENT_BUS.register(this);
+  }
+
+  private void setupClient(final FMLClientSetupEvent event) {
+    //    ClientRegistry.setup();
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass, RenderType.getCutout());
+  }
+
+  static boolean isntSolid(BlockState state, IBlockReader reader, BlockPos pos) {
+    return false;
+  }
+
+  static Boolean neverAllowSpawn(BlockState state, IBlockReader reader, BlockPos pos, EntityType<?> entity) {
+    return false;
   }
 
   @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -124,9 +140,30 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab("slab_magma", Block.Properties.create(Material.ROCK).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 3)));
       reg.register(AbsentRegistry.createSlab("slab_glowstone", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 15)));
       reg.register(AbsentRegistry.createSlab("slab_sea_lantern", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 15)));
-      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass"));
+      //
+      //glass slabs
+      //use = RenderType.getCutout();
+      Block b = Blocks.GLASS;
+      reg.register(AbsentRegistry.createSlab("slab_glass", Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn)
+          .setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      //
       reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_white"));
       reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_orange"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_magenta"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_light_blue"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_yellow"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_lime"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_pink"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_gray"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_light_gray"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_cyan"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_purple"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_blue"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_brown"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_green"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_red"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_black"));
       //  
       //                STAIRS
       //

@@ -1,5 +1,9 @@
 {
   "itemGroup.absentbydesign": "Absent by Design",
+  
+  
+  "block.absentbydesign.slab_glass":"Glass Slab",
+  
 
 	"block.absentbydesign.fence_crimson": "Crimson Stem Fence",
 	"block.absentbydesign.fence_log_acacia": "Acacia Log Fence",
