@@ -124,7 +124,10 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab("slab_magma", Block.Properties.create(Material.ROCK).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 3)));
       reg.register(AbsentRegistry.createSlab("slab_glowstone", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 15)));
       reg.register(AbsentRegistry.createSlab("slab_sea_lantern", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1.25F, 4.2F).setLightLevel(state -> 15)));
-      // 
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_white"));
+      reg.register(AbsentRegistry.createSlab(Blocks.GLASS, Material.GLASS, "slab_glass_orange"));
+      //  
       //                STAIRS
       //
       reg.register(AbsentRegistry.createStair("stairs_terracotta", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
