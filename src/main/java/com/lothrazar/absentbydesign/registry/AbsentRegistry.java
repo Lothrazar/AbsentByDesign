@@ -29,6 +29,41 @@ public class AbsentRegistry {
   };
   static final String ID = ModAbsentBD.MODID + ":";
   //
+  @ObjectHolder(ID + "wall_glass_white")
+  public static Block wall_glass_white;
+  @ObjectHolder(ID + "wall_glass_orange")
+  public static Block wall_glass_orange;
+  @ObjectHolder(ID + "wall_glass_magenta")
+  public static Block wall_glass_magenta;
+  @ObjectHolder(ID + "wall_glass_purple")
+  public static Block wall_glass_purple;
+  @ObjectHolder(ID + "wall_glass_blue")
+  public static Block wall_glass_blue;
+  @ObjectHolder(ID + "wall_glass_brown")
+  public static Block wall_glass_brown;
+  @ObjectHolder(ID + "wall_glass_black")
+  public static Block wall_glass_black;
+  @ObjectHolder(ID + "wall_glass_cyan")
+  public static Block wall_glass_cyan;
+  @ObjectHolder(ID + "wall_glass_light_gray")
+  public static Block wall_glass_light_gray;
+  @ObjectHolder(ID + "wall_glass_gray")
+  public static Block wall_glass_gray;
+  @ObjectHolder(ID + "wall_glass_pink")
+  public static Block wall_glass_pink;
+  @ObjectHolder(ID + "wall_glass_lime")
+  public static Block wall_glass_lime;
+  @ObjectHolder(ID + "wall_glass_light_blue")
+  public static Block wall_glass_light_blue;
+  @ObjectHolder(ID + "wall_glass_yellow")
+  public static Block wall_glass_yellow;
+  @ObjectHolder(ID + "wall_glass_green")
+  public static Block wall_glass_green;
+  @ObjectHolder(ID + "wall_glass_red")
+  public static Block wall_glass_red;
+  @ObjectHolder(ID + "wall_glass")
+  public static Block wall_glass;
+  //
   @ObjectHolder(ID + "stairs_glass_purple")
   public static Block stairs_glass_purple;
   @ObjectHolder(ID + "stairs_glass_blue")

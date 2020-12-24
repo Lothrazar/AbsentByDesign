@@ -19,6 +19,27 @@
   "block.absentbydesign.slab_glass_brown":"Brown Glass Slab",
   "block.absentbydesign.slab_glass_red":"Red Glass Slab",
   
+   
+  "block.absentbydesign.wall_glass":"wall_glass Wall",
+  "block.absentbydesign.wall_glass_red":"Red Glass Wall",
+  "block.absentbydesign.wall_glass_brown":"Brown Glass Wall",
+  "block.absentbydesign.wall_glass_gray":"Gray Glass Wall",
+  "block.absentbydesign.wall_glass_pink":"Pink Glass Wall",
+  "block.absentbydesign.wall_glass_magenta":"Magenta Glass Wall",
+  "block.absentbydesign.wall_glass_light_blue":"Blue Glass Wall",
+  "block.absentbydesign.wall_glass_yellow":"Yellow Glass Wall",
+  "block.absentbydesign.wall_glass_orange":"Orange Glass Wall",
+  "block.absentbydesign.wall_glass_lime":"Lime Glass Wall",
+  "block.absentbydesign.wall_glass_light_gray":"Light Gray Glass Wall",
+  "block.absentbydesign.wall_glass_cyan":"Cyan Glass Wall",
+  "block.absentbydesign.wall_glass_purple":"Purple Glass Wall",
+  "block.absentbydesign.wall_glass_blue":"Blue Glass Wall",
+  "block.absentbydesign.wall_glass_white":"White Glass Wall",
+  "block.absentbydesign.wall_glass_green":"Green Glass Wall",
+  "block.absentbydesign.wall_glass_black":"Black Glass Wall",
+  
+  
+  
   "block.absentbydesign.stairs_glass_red":"Red Glass Stairs",
   "block.absentbydesign.stairs_glass_green":"Green Glass Stairs",
   "block.absentbydesign.stairs_glass_blue":"Blue Glass Stairs",

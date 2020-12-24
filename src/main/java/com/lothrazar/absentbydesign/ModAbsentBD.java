@@ -38,6 +38,24 @@ public class ModAbsentBD {
 
   private void setupClient(final FMLClientSetupEvent event) {
     //
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass, RenderType.getCutout());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_white, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_orange, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_magenta, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_light_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_yellow, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_lime, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_pink, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_light_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_cyan, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_purple, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_brown, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_green, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_red, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_black, RenderType.getTranslucent());
+    //
     RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass, RenderType.getCutout());
     RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_white, RenderType.getTranslucent());
     RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_orange, RenderType.getTranslucent());
@@ -287,6 +305,38 @@ public class ModAbsentBD {
       //
       //                WALLS
       //
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Material.GLASS, "wall_glass"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Material.GLASS, "wall_glass_white"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_orange"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_magenta"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_purple"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_blue"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_brown"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_red"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_black"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_cyan"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_light_gray"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_gray"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_pink"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_lime"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_light_blue"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_yellow"));
+      reg.register(AbsentRegistry.createWall(Blocks.GLASS, Block.Properties.create(Material.GLASS)
+          .hardnessAndResistance(0.3F).sound(SoundType.GLASS), "wall_glass_green"));
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_acacia_log"));
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_birch_log"));
       reg.register(AbsentRegistry.createWall(Blocks.STRIPPED_OAK_LOG, Material.WOOD, "wall_stripped_dark_oak_log"));

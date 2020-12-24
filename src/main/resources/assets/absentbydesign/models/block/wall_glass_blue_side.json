@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/wall_side",
+  "textures": {
+    "wall": "minecraft:block/blue_stained_glass"
+  }
+}

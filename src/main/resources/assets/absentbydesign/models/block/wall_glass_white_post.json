@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/wall_post",
+  "textures": {
+    "wall": "minecraft:block/white_stained_glass"
+  }
+}
