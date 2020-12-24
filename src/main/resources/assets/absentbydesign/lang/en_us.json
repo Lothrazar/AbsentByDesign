@@ -1,6 +1,12 @@
 {
   "itemGroup.absentbydesign": "Absent by Design",
-  
+
+  "block.absentbydesign.gate_stone_bricks":"Stone Brick Gate",
+  "block.absentbydesign.gate_blackstone_bricks":"Blackstone Brick Gate",
+  "block.absentbydesign.gate_obsidian":"Obsidian Gate",
+  "block.absentbydesign.gate_bricks":"Brick Gate",
+  "block.absentbydesign.gate_end_stone_bricks":"Endstone Brick Gate",
+    
   "block.absentbydesign.slab_glass":"Glass Slab",
   "block.absentbydesign.slab_glass_orange":"Orange Glass Slab",
   "block.absentbydesign.slab_glass_white":"White Glass Slab",
@@ -18,7 +24,6 @@
   "block.absentbydesign.slab_glass_gray":"Gray Glass Slab",
   "block.absentbydesign.slab_glass_brown":"Brown Glass Slab",
   "block.absentbydesign.slab_glass_red":"Red Glass Slab",
-  
    
   "block.absentbydesign.wall_glass":"Glass Wall",
   "block.absentbydesign.wall_glass_red":"Red Glass Wall",
@@ -26,7 +31,7 @@
   "block.absentbydesign.wall_glass_gray":"Gray Glass Wall",
   "block.absentbydesign.wall_glass_pink":"Pink Glass Wall",
   "block.absentbydesign.wall_glass_magenta":"Magenta Glass Wall",
-  "block.absentbydesign.wall_glass_light_blue":"Blue Glass Wall",
+  "block.absentbydesign.wall_glass_light_blue":"Light Blue Glass Wall",
   "block.absentbydesign.wall_glass_yellow":"Yellow Glass Wall",
   "block.absentbydesign.wall_glass_orange":"Orange Glass Wall",
   "block.absentbydesign.wall_glass_lime":"Lime Glass Wall",
@@ -37,8 +42,6 @@
   "block.absentbydesign.wall_glass_white":"White Glass Wall",
   "block.absentbydesign.wall_glass_green":"Green Glass Wall",
   "block.absentbydesign.wall_glass_black":"Black Glass Wall",
-  
-  
   
   "block.absentbydesign.stairs_glass":"Glass Stairs",
   "block.absentbydesign.stairs_glass_red":"Red Glass Stairs",

@@ -389,6 +389,11 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createGate("gate_nether_bricks", Blocks.NETHER_BRICKS, Block.Properties.create(Material.ROCK)));
       reg.register(AbsentRegistry.createGate("gate_red_nether_bricks", Blocks.NETHER_BRICKS, Block.Properties.create(Material.ROCK)));
       reg.register(AbsentRegistry.createGate("gate_quartz", Blocks.QUARTZ_BLOCK, Block.Properties.create(Material.ROCK)));
+      reg.register(AbsentRegistry.createGate("gate_stone_bricks", Blocks.STONE_BRICKS, Block.Properties.create(Material.ROCK)));
+      reg.register(AbsentRegistry.createGate("gate_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, Block.Properties.create(Material.ROCK)));
+      reg.register(AbsentRegistry.createGate("gate_bricks", Blocks.BRICKS, Block.Properties.create(Material.ROCK)));
+      reg.register(AbsentRegistry.createGate("gate_end_stone_bricks", Blocks.END_STONE_BRICKS, Block.Properties.create(Material.ROCK)));
+      reg.register(AbsentRegistry.createGate("gate_obsidian", Blocks.OBSIDIAN, Block.Properties.create(Material.ROCK)));
     }
 
     @SubscribeEvent

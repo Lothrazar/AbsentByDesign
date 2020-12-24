@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "-#-",
+    "-#-"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stone_bricks"
+    },
+    "-": {
+      "item": "minecraft:cobblestone_wall"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:gate_stone_bricks",
+    "count": 6
+  }
+}
