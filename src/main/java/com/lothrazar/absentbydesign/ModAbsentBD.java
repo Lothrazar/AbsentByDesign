@@ -38,7 +38,24 @@ public class ModAbsentBD {
 
   private void setupClient(final FMLClientSetupEvent event) {
     //
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass, RenderType.getCutout());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass, RenderType.getCutout());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_white, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_orange, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_magenta, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_light_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_yellow, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_lime, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_pink, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_light_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_cyan, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_purple, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_brown, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_green, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_red, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_black, RenderType.getTranslucent());
+    //
     //
     RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass, RenderType.getCutout());
     RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_white, RenderType.getTranslucent());
@@ -177,6 +194,24 @@ public class ModAbsentBD {
       reg.register(AbsentRegistry.createSlab("slab_glass_black", Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
       //  
       //                STAIRS
+      //
+      reg.register(AbsentRegistry.createStair("stairs_glass", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_white", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_orange", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_magenta", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_light_blue", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_yellow", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_lime", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_pink", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_gray", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_light_gray", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_cyan", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_purple", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_blue", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_brown", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_green", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_red", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+      reg.register(AbsentRegistry.createStair("stairs_glass_black", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
       //
       reg.register(AbsentRegistry.createStair("stairs_terracotta", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));
       reg.register(AbsentRegistry.createStair("stairs_terracotta_white", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY).hardnessAndResistance(1.25F, 4.2F)));

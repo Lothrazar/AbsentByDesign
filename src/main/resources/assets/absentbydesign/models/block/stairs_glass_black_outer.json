@@ -1,0 +1,6 @@
+{
+    "parent": "absentbydesign:parent/stairs_outer",
+    "textures": {
+        "b": "block/black_stained_glass"
+    }
+}

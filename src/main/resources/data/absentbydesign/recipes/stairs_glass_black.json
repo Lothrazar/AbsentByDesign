@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:black_stained_glass"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:stairs_glass_black",
+    "count": 4
+  }
+}
