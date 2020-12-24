@@ -20,7 +20,7 @@
   "block.absentbydesign.slab_glass_red":"Red Glass Slab",
   
    
-  "block.absentbydesign.wall_glass":"wall_glass Wall",
+  "block.absentbydesign.wall_glass":"Glass Wall",
   "block.absentbydesign.wall_glass_red":"Red Glass Wall",
   "block.absentbydesign.wall_glass_brown":"Brown Glass Wall",
   "block.absentbydesign.wall_glass_gray":"Gray Glass Wall",
@@ -40,6 +40,7 @@
   
   
   
+  "block.absentbydesign.stairs_glass":"Glass Stairs",
   "block.absentbydesign.stairs_glass_red":"Red Glass Stairs",
   "block.absentbydesign.stairs_glass_green":"Green Glass Stairs",
   "block.absentbydesign.stairs_glass_blue":"Blue Glass Stairs",
