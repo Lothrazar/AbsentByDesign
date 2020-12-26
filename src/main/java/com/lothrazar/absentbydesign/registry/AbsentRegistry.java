@@ -10,35 +10,32 @@ import com.lothrazar.absentbydesign.block.BlockAbsentStair;
 import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import com.lothrazar.absentbydesign.block.IBlockAbsent;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockReader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.ObjectHolder;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AbsentRegistry {
 
-  public static final List<Block> blocks = new ArrayList<>();
-  @ObjectHolder(ModAbsentBD.MODID + ":fence_quartz")
-  private static BlockAbsentFence FENCE_QUARTZ;
-  public static ItemGroup itemGroup = new ItemGroup(ModAbsentBD.MODID) {
-
-    @Override
-    public ItemStack createIcon() {
-      return new ItemStack(AbsentRegistry.FENCE_QUARTZ);
-    }
-  };
-  static final String ID = ModAbsentBD.MODID + ":";
-  //
+  private static final List<Block> BLOCKS = new ArrayList<>();
+  private static final String ID = ModAbsentBD.MODID + ":";
   @ObjectHolder(ID + "wall_glass_white")
   public static Block wall_glass_white;
   @ObjectHolder(ID + "wall_glass_orange")
@@ -73,7 +70,6 @@ public class AbsentRegistry {
   public static Block wall_glass_red;
   @ObjectHolder(ID + "wall_glass")
   public static Block wall_glass;
-  //
   @ObjectHolder(ID + "stairs_glass_purple")
   public static Block stairs_glass_purple;
   @ObjectHolder(ID + "stairs_glass_blue")
@@ -142,6 +138,80 @@ public class AbsentRegistry {
   public static Block slab_glass_red;
   @ObjectHolder(ID + "slab_glass_black")
   public static Block slab_glass_black;
+  @ObjectHolder(ModAbsentBD.MODID + ":fence_quartz")
+  private static BlockAbsentFence FENCE_QUARTZ;
+  private static ItemGroup itemGroup = new ItemGroup(ModAbsentBD.MODID) {
+
+    @Override
+    public ItemStack createIcon() {
+      return new ItemStack(AbsentRegistry.FENCE_QUARTZ);
+    }
+  };
+
+  public static boolean isntSolid(BlockState state, IBlockReader reader, BlockPos pos) {
+    return false;
+  }
+
+  public static Boolean neverAllowSpawn(BlockState state, IBlockReader reader, BlockPos pos, EntityType<?> entity) {
+    return false;
+  }
+
+  public static void setupClient(final FMLClientSetupEvent event) {
+    // walls
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass, RenderType.getCutout());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_white, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_orange, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_magenta, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_light_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_yellow, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_lime, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_pink, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_light_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_cyan, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_purple, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_brown, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_green, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_red, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_black, RenderType.getTranslucent());
+    // stairs
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass, RenderType.getCutout());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_white, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_orange, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_magenta, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_light_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_yellow, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_lime, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_pink, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_light_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_cyan, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_purple, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_brown, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_green, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_red, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_black, RenderType.getTranslucent());
+    // slabs
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass, RenderType.getCutout());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_white, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_orange, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_magenta, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_light_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_yellow, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_lime, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_pink, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_light_gray, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_cyan, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_purple, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_blue, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_brown, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_green, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_red, RenderType.getTranslucent());
+    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_black, RenderType.getTranslucent());
+  }
 
   @SubscribeEvent
   public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
@@ -226,23 +296,23 @@ public class AbsentRegistry {
     reg.register(createSlab("slab_terracotta_red", Block.Properties.create(Material.ROCK, MaterialColor.RED_TERRACOTTA), Blocks.TERRACOTTA));
     reg.register(createSlab("slab_terracotta_black", Block.Properties.create(Material.ROCK, MaterialColor.BLACK_TERRACOTTA), Blocks.TERRACOTTA));
     reg.register(createSlab("slab_terracotta", Block.Properties.create(Material.ROCK, MaterialColor.CLAY), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_glass", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_white", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_orange", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_magenta", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_light_blue", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_yellow", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_lime", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_pink", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_gray", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_light_gray", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_cyan", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_purple", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_blue", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_brown", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_green", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_red", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_black", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_white", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_orange", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_magenta", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_light_blue", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_yellow", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_lime", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_pink", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_gray", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_light_gray", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_cyan", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_purple", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_blue", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_brown", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_green", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_red", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_black", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
     reg.register(createSlab("slab_mushroom_stem", Block.Properties.create(Material.WOOD, MaterialColor.WOOL), Blocks.MUSHROOM_STEM));
     reg.register(createSlab("slab_red_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL), Blocks.RED_MUSHROOM));
     reg.register(createSlab("slab_brown_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL), Blocks.BROWN_MUSHROOM));
@@ -314,23 +384,23 @@ public class AbsentRegistry {
     reg.register(createStair("stairs_terracotta_green", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
     reg.register(createStair("stairs_terracotta_red", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
     reg.register(createStair("stairs_terracotta_black", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_glass", Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid), Blocks.GLASS));
-    reg.register(createStair("stairs_glass_white", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_orange", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_magenta", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_light_blue", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_yellow", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_lime", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_pink", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_gray", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_light_gray", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_cyan", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_purple", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_blue", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_brown", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_green", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_red", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
-    reg.register(createStair("stairs_glass_black", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(ModAbsentBD::neverAllowSpawn).setOpaque(ModAbsentBD::isntSolid).setSuffocates(ModAbsentBD::isntSolid).setBlocksVision(ModAbsentBD::isntSolid)));
+    reg.register(createStair("stairs_glass", Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createStair("stairs_glass_white", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_orange", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_magenta", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_light_blue", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_yellow", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_lime", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_pink", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_gray", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_light_gray", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_cyan", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_purple", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_blue", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_brown", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_green", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_red", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_black", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
     reg.register(createStair("stairs_red_mushroom", Block.Properties.create(Material.WOOD), Blocks.BROWN_MUSHROOM_BLOCK));
     reg.register(createStair("stairs_brown_mushroom", Block.Properties.create(Material.WOOD), Blocks.BROWN_MUSHROOM_BLOCK));
     reg.register(createStair("stairs_mushroom_stem", Block.Properties.create(Material.WOOD), Blocks.MUSHROOM_STEM));
@@ -418,7 +488,7 @@ public class AbsentRegistry {
   @SubscribeEvent
   public static void onItemsRegistry(RegistryEvent.Register<Item> event) {
     Item.Properties properties = new Item.Properties().group(AbsentRegistry.itemGroup);
-    for (Block b : AbsentRegistry.blocks) {
+    for (Block b : AbsentRegistry.BLOCKS) {
       event.getRegistry().register(new BlockItem(b, properties).setRegistryName(((IBlockAbsent) b).rawName()));
     }
   }
@@ -462,7 +532,7 @@ public class AbsentRegistry {
   }
 
   public static Block addBlock(Block b) {
-    blocks.add(b);
+    BLOCKS.add(b);
     return b;
   }
 }
