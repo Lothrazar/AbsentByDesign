@@ -1,7 +1,5 @@
 package com.lothrazar.absentbydesign.registry;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.lothrazar.absentbydesign.ModAbsentBD;
 import com.lothrazar.absentbydesign.block.BlockAbsentFence;
 import com.lothrazar.absentbydesign.block.BlockAbsentGate;
@@ -9,6 +7,8 @@ import com.lothrazar.absentbydesign.block.BlockAbsentSlab;
 import com.lothrazar.absentbydesign.block.BlockAbsentStair;
 import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import com.lothrazar.absentbydesign.block.IBlockAbsent;
+import java.util.ArrayList;
+import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -248,71 +248,71 @@ public class AbsentRegistry {
     reg.register(createSlab("slab_glowstone", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).setLightLevel(state -> 15), Blocks.GLOWSTONE));
     reg.register(createSlab("slab_sea_lantern", Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).setLightLevel(state -> 15), Blocks.SEA_LANTERN));
     reg.register(createSlab("slab_concrete_black", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_blue", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_brown", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_cyan", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_gray", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_green", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_light_blue", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_lime", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_magenta", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_orange", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_pink", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_purple", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_red", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_silver", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_white", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
-    reg.register(createSlab("slab_concrete_yellow", Block.Properties.create(Material.ROCK), Blocks.BLACK_CONCRETE));
+    reg.register(createSlab("slab_concrete_blue", Block.Properties.create(Material.ROCK), Blocks.BLUE_CONCRETE));
+    reg.register(createSlab("slab_concrete_brown", Block.Properties.create(Material.ROCK), Blocks.BROWN_CONCRETE));
+    reg.register(createSlab("slab_concrete_cyan", Block.Properties.create(Material.ROCK), Blocks.CYAN_CONCRETE));
+    reg.register(createSlab("slab_concrete_gray", Block.Properties.create(Material.ROCK), Blocks.GRAY_CONCRETE));
+    reg.register(createSlab("slab_concrete_green", Block.Properties.create(Material.ROCK), Blocks.GREEN_CONCRETE));
+    reg.register(createSlab("slab_concrete_light_blue", Block.Properties.create(Material.ROCK), Blocks.LIGHT_BLUE_CONCRETE));
+    reg.register(createSlab("slab_concrete_lime", Block.Properties.create(Material.ROCK), Blocks.LIME_CONCRETE));
+    reg.register(createSlab("slab_concrete_magenta", Block.Properties.create(Material.ROCK), Blocks.MAGENTA_CONCRETE));
+    reg.register(createSlab("slab_concrete_orange", Block.Properties.create(Material.ROCK), Blocks.ORANGE_CONCRETE));
+    reg.register(createSlab("slab_concrete_pink", Block.Properties.create(Material.ROCK), Blocks.PINK_CONCRETE));
+    reg.register(createSlab("slab_concrete_purple", Block.Properties.create(Material.ROCK), Blocks.PURPLE_CONCRETE));
+    reg.register(createSlab("slab_concrete_red", Block.Properties.create(Material.ROCK), Blocks.RED_CONCRETE));
+    reg.register(createSlab("slab_concrete_silver", Block.Properties.create(Material.ROCK), Blocks.LIGHT_GRAY_CONCRETE));
+    reg.register(createSlab("slab_concrete_white", Block.Properties.create(Material.ROCK), Blocks.WHITE_CONCRETE));
+    reg.register(createSlab("slab_concrete_yellow", Block.Properties.create(Material.ROCK), Blocks.YELLOW_CONCRETE));
     reg.register(createSlab("slab_wool_black", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_blue", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_brown", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_cyan", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_gray", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_green", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_light_blue", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_lime", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_magenta", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_orange", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_pink", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_purple", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_red", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_silver", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_white", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_wool_yellow", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createSlab("slab_terracotta_white", Block.Properties.create(Material.ROCK, MaterialColor.WHITE_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_orange", Block.Properties.create(Material.ROCK, MaterialColor.ORANGE_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_magenta", Block.Properties.create(Material.ROCK, MaterialColor.MAGENTA_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_light_blue", Block.Properties.create(Material.ROCK, MaterialColor.LIGHT_BLUE_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_yellow", Block.Properties.create(Material.ROCK, MaterialColor.YELLOW_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_lime", Block.Properties.create(Material.ROCK, MaterialColor.LIME_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_pink", Block.Properties.create(Material.ROCK, MaterialColor.PINK_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_gray", Block.Properties.create(Material.ROCK, MaterialColor.GRAY_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_light_gray", Block.Properties.create(Material.ROCK, MaterialColor.LIGHT_GRAY_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_cyan", Block.Properties.create(Material.ROCK, MaterialColor.CYAN_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_purple", Block.Properties.create(Material.ROCK, MaterialColor.PURPLE_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_blue", Block.Properties.create(Material.ROCK, MaterialColor.BLUE_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_brown", Block.Properties.create(Material.ROCK, MaterialColor.BROWN_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_green", Block.Properties.create(Material.ROCK, MaterialColor.GREEN_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_red", Block.Properties.create(Material.ROCK, MaterialColor.RED_TERRACOTTA), Blocks.TERRACOTTA));
-    reg.register(createSlab("slab_terracotta_black", Block.Properties.create(Material.ROCK, MaterialColor.BLACK_TERRACOTTA), Blocks.TERRACOTTA));
+    reg.register(createSlab("slab_wool_blue", Block.Properties.create(Material.WOOL), Blocks.BLUE_WOOL));
+    reg.register(createSlab("slab_wool_brown", Block.Properties.create(Material.WOOL), Blocks.BROWN_WOOL));
+    reg.register(createSlab("slab_wool_cyan", Block.Properties.create(Material.WOOL), Blocks.CYAN_WOOL));
+    reg.register(createSlab("slab_wool_gray", Block.Properties.create(Material.WOOL), Blocks.GRAY_WOOL));
+    reg.register(createSlab("slab_wool_green", Block.Properties.create(Material.WOOL), Blocks.GREEN_WOOL));
+    reg.register(createSlab("slab_wool_light_blue", Block.Properties.create(Material.WOOL), Blocks.LIGHT_BLUE_WOOL));
+    reg.register(createSlab("slab_wool_lime", Block.Properties.create(Material.WOOL), Blocks.LIME_WOOL));
+    reg.register(createSlab("slab_wool_magenta", Block.Properties.create(Material.WOOL), Blocks.MAGENTA_WOOL));
+    reg.register(createSlab("slab_wool_orange", Block.Properties.create(Material.WOOL), Blocks.ORANGE_WOOL));
+    reg.register(createSlab("slab_wool_pink", Block.Properties.create(Material.WOOL), Blocks.PINK_WOOL));
+    reg.register(createSlab("slab_wool_purple", Block.Properties.create(Material.WOOL), Blocks.PURPLE_WOOL));
+    reg.register(createSlab("slab_wool_red", Block.Properties.create(Material.WOOL), Blocks.RED_WOOL));
+    reg.register(createSlab("slab_wool_silver", Block.Properties.create(Material.WOOL), Blocks.LIGHT_GRAY_WOOL));
+    reg.register(createSlab("slab_wool_white", Block.Properties.create(Material.WOOL), Blocks.WHITE_WOOL));
+    reg.register(createSlab("slab_wool_yellow", Block.Properties.create(Material.WOOL), Blocks.YELLOW_WOOL));
+    reg.register(createSlab("slab_terracotta_white", Block.Properties.create(Material.ROCK, MaterialColor.WHITE_TERRACOTTA), Blocks.WHITE_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_orange", Block.Properties.create(Material.ROCK, MaterialColor.ORANGE_TERRACOTTA), Blocks.ORANGE_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_magenta", Block.Properties.create(Material.ROCK, MaterialColor.MAGENTA_TERRACOTTA), Blocks.MAGENTA_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_light_blue", Block.Properties.create(Material.ROCK, MaterialColor.LIGHT_BLUE_TERRACOTTA), Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_yellow", Block.Properties.create(Material.ROCK, MaterialColor.YELLOW_TERRACOTTA), Blocks.YELLOW_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_lime", Block.Properties.create(Material.ROCK, MaterialColor.LIME_TERRACOTTA), Blocks.LIME_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_pink", Block.Properties.create(Material.ROCK, MaterialColor.PINK_TERRACOTTA), Blocks.PINK_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_gray", Block.Properties.create(Material.ROCK, MaterialColor.GRAY_TERRACOTTA), Blocks.GRAY_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_light_gray", Block.Properties.create(Material.ROCK, MaterialColor.LIGHT_GRAY_TERRACOTTA), Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_cyan", Block.Properties.create(Material.ROCK, MaterialColor.CYAN_TERRACOTTA), Blocks.CYAN_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_purple", Block.Properties.create(Material.ROCK, MaterialColor.PURPLE_TERRACOTTA), Blocks.PURPLE_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_blue", Block.Properties.create(Material.ROCK, MaterialColor.BLUE_TERRACOTTA), Blocks.BLUE_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_brown", Block.Properties.create(Material.ROCK, MaterialColor.BROWN_TERRACOTTA), Blocks.BROWN_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_green", Block.Properties.create(Material.ROCK, MaterialColor.GREEN_TERRACOTTA), Blocks.GREEN_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_red", Block.Properties.create(Material.ROCK, MaterialColor.RED_TERRACOTTA), Blocks.RED_GLAZED_TERRACOTTA));
+    reg.register(createSlab("slab_terracotta_black", Block.Properties.create(Material.ROCK, MaterialColor.BLACK_TERRACOTTA), Blocks.BLACK_GLAZED_TERRACOTTA));
     reg.register(createSlab("slab_terracotta", Block.Properties.create(Material.ROCK, MaterialColor.CLAY), Blocks.TERRACOTTA));
     reg.register(createSlab("slab_glass", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_white", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_orange", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_magenta", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_light_blue", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_yellow", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_lime", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_pink", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_gray", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_light_gray", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_cyan", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_purple", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_blue", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_brown", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_green", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_red", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createSlab("slab_glass_black", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
+    reg.register(createSlab("slab_glass_white", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.WHITE_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_orange", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.ORANGE_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_magenta", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.MAGENTA_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_light_blue", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.LIGHT_BLUE_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_yellow", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.YELLOW_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_lime", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.LIME_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_pink", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.PINK_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_gray", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GRAY_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_light_gray", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.LIGHT_GRAY_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_cyan", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.CYAN_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_purple", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.PURPLE_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_blue", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.BLUE_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_brown", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.BROWN_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_green", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GREEN_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_red", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.RED_STAINED_GLASS));
+    reg.register(createSlab("slab_glass_black", Block.Properties.create(Material.GLASS).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.BLACK_STAINED_GLASS));
     reg.register(createSlab("slab_mushroom_stem", Block.Properties.create(Material.WOOD, MaterialColor.WOOL), Blocks.MUSHROOM_STEM));
     reg.register(createSlab("slab_red_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL), Blocks.RED_MUSHROOM));
     reg.register(createSlab("slab_brown_mushroom", Block.Properties.create(Material.WOOD, MaterialColor.WOOL), Blocks.BROWN_MUSHROOM));
@@ -352,56 +352,56 @@ public class AbsentRegistry {
     reg.register(createStair("stairs_concrete_white", Block.Properties.create(Material.ROCK), Blocks.WHITE_CONCRETE));
     reg.register(createStair("stairs_concrete_yellow", Block.Properties.create(Material.ROCK), Blocks.YELLOW_CONCRETE));
     reg.register(createStair("stairs_wool_black", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_blue", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_brown", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_cyan", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_gray", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_green", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_light_blue", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_lime", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_magenta", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_orange", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_pink", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_purple", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_red", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_silver", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_white", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
-    reg.register(createStair("stairs_wool_yellow", Block.Properties.create(Material.WOOL), Blocks.BLACK_WOOL));
+    reg.register(createStair("stairs_wool_blue", Block.Properties.create(Material.WOOL), Blocks.BLUE_WOOL));
+    reg.register(createStair("stairs_wool_brown", Block.Properties.create(Material.WOOL), Blocks.BROWN_WOOL));
+    reg.register(createStair("stairs_wool_cyan", Block.Properties.create(Material.WOOL), Blocks.CYAN_WOOL));
+    reg.register(createStair("stairs_wool_gray", Block.Properties.create(Material.WOOL), Blocks.GRAY_WOOL));
+    reg.register(createStair("stairs_wool_green", Block.Properties.create(Material.WOOL), Blocks.GREEN_WOOL));
+    reg.register(createStair("stairs_wool_light_blue", Block.Properties.create(Material.WOOL), Blocks.LIGHT_BLUE_WOOL));
+    reg.register(createStair("stairs_wool_lime", Block.Properties.create(Material.WOOL), Blocks.LIME_WOOL));
+    reg.register(createStair("stairs_wool_magenta", Block.Properties.create(Material.WOOL), Blocks.MAGENTA_WOOL));
+    reg.register(createStair("stairs_wool_orange", Block.Properties.create(Material.WOOL), Blocks.ORANGE_WOOL));
+    reg.register(createStair("stairs_wool_pink", Block.Properties.create(Material.WOOL), Blocks.PINK_WOOL));
+    reg.register(createStair("stairs_wool_purple", Block.Properties.create(Material.WOOL), Blocks.PURPLE_WOOL));
+    reg.register(createStair("stairs_wool_red", Block.Properties.create(Material.WOOL), Blocks.RED_WOOL));
+    reg.register(createStair("stairs_wool_silver", Block.Properties.create(Material.WOOL), Blocks.LIGHT_GRAY_WOOL));
+    reg.register(createStair("stairs_wool_white", Block.Properties.create(Material.WOOL), Blocks.WHITE_WOOL));
+    reg.register(createStair("stairs_wool_yellow", Block.Properties.create(Material.WOOL), Blocks.YELLOW_WOOL));
     reg.register(createStair("stairs_terracotta", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_white", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_orange", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_magenta", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_light_blue", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_yellow", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_lime", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_pink", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_gray", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_light_gray", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_cyan", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_purple", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_blue", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_brown", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_green", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_red", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
-    reg.register(createStair("stairs_terracotta_black", Blocks.TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_white", Blocks.WHITE_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_orange", Blocks.ORANGE_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_magenta", Blocks.MAGENTA_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_light_blue", Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_yellow", Blocks.YELLOW_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_lime", Blocks.LIME_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_pink", Blocks.PINK_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_gray", Blocks.GRAY_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_light_gray", Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_cyan", Blocks.CYAN_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_purple", Blocks.PURPLE_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_blue", Blocks.BLUE_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_brown", Blocks.BROWN_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_green", Blocks.GREEN_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_red", Blocks.RED_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
+    reg.register(createStair("stairs_terracotta_black", Blocks.BLACK_GLAZED_TERRACOTTA, Block.Properties.create(Material.ROCK, MaterialColor.CLAY)));
     reg.register(createStair("stairs_glass", Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid), Blocks.GLASS));
-    reg.register(createStair("stairs_glass_white", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_orange", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_magenta", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_light_blue", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_yellow", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_lime", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_pink", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_gray", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_light_gray", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_cyan", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_purple", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_blue", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_brown", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_green", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_red", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_glass_black", Blocks.GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
-    reg.register(createStair("stairs_red_mushroom", Block.Properties.create(Material.WOOD), Blocks.BROWN_MUSHROOM_BLOCK));
+    reg.register(createStair("stairs_glass_white", Blocks.WHITE_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_orange", Blocks.ORANGE_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_magenta", Blocks.MAGENTA_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_light_blue", Blocks.LIGHT_BLUE_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_yellow", Blocks.YELLOW_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_lime", Blocks.LIME_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_pink", Blocks.PINK_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_gray", Blocks.GRAY_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_light_gray", Blocks.LIGHT_GRAY_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_cyan", Blocks.CYAN_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_purple", Blocks.PURPLE_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_blue", Blocks.BLUE_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_brown", Blocks.BROWN_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_green", Blocks.GREEN_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_red", Blocks.RED_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_glass_black", Blocks.BLACK_STAINED_GLASS, Block.Properties.create(Material.GLASS, MaterialColor.CLAY).notSolid().setAllowsSpawn(AbsentRegistry::neverAllowSpawn).setOpaque(AbsentRegistry::isntSolid).setSuffocates(AbsentRegistry::isntSolid).setBlocksVision(AbsentRegistry::isntSolid)));
+    reg.register(createStair("stairs_red_mushroom", Block.Properties.create(Material.WOOD), Blocks.RED_MUSHROOM_BLOCK));
     reg.register(createStair("stairs_brown_mushroom", Block.Properties.create(Material.WOOD), Blocks.BROWN_MUSHROOM_BLOCK));
     reg.register(createStair("stairs_mushroom_stem", Block.Properties.create(Material.WOOD), Blocks.MUSHROOM_STEM));
     reg.register(createStair("stairs_mushroom_polished", Block.Properties.create(Material.WOOD), Blocks.MUSHROOM_STEM));
@@ -452,27 +452,27 @@ public class AbsentRegistry {
     reg.register(createWall("wall_glowstone", Block.Properties.create(Material.ROCK, MaterialColor.SAND).sound(SoundType.GLASS).setLightLevel(s -> 15), Blocks.GLOWSTONE));
     reg.register(createWall("wall_sea_lantern", Block.Properties.create(Material.ROCK, MaterialColor.SAND).sound(SoundType.GLASS).setLightLevel(s -> 15), Blocks.SEA_LANTERN));
     reg.register(createWall("wall_glass", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_white", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_orange", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_magenta", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_purple", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_blue", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_brown", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_red", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_black", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_cyan", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_light_gray", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_gray", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_pink", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_lime", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_light_blue", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_yellow", Block.Properties.create(Material.GLASS), Blocks.GLASS));
-    reg.register(createWall("wall_glass_green", Block.Properties.create(Material.GLASS), Blocks.GLASS));
+    reg.register(createWall("wall_glass_white", Block.Properties.create(Material.GLASS), Blocks.WHITE_STAINED_GLASS));
+    reg.register(createWall("wall_glass_orange", Block.Properties.create(Material.GLASS), Blocks.ORANGE_STAINED_GLASS));
+    reg.register(createWall("wall_glass_magenta", Block.Properties.create(Material.GLASS), Blocks.MAGENTA_STAINED_GLASS));
+    reg.register(createWall("wall_glass_purple", Block.Properties.create(Material.GLASS), Blocks.PURPLE_STAINED_GLASS));
+    reg.register(createWall("wall_glass_blue", Block.Properties.create(Material.GLASS), Blocks.BLUE_STAINED_GLASS));
+    reg.register(createWall("wall_glass_brown", Block.Properties.create(Material.GLASS), Blocks.BROWN_STAINED_GLASS));
+    reg.register(createWall("wall_glass_red", Block.Properties.create(Material.GLASS), Blocks.RED_STAINED_GLASS));
+    reg.register(createWall("wall_glass_black", Block.Properties.create(Material.GLASS), Blocks.BLACK_STAINED_GLASS));
+    reg.register(createWall("wall_glass_cyan", Block.Properties.create(Material.GLASS), Blocks.CYAN_STAINED_GLASS));
+    reg.register(createWall("wall_glass_light_gray", Block.Properties.create(Material.GLASS), Blocks.LIGHT_GRAY_STAINED_GLASS));
+    reg.register(createWall("wall_glass_gray", Block.Properties.create(Material.GLASS), Blocks.GRAY_STAINED_GLASS));
+    reg.register(createWall("wall_glass_pink", Block.Properties.create(Material.GLASS), Blocks.PINK_STAINED_GLASS));
+    reg.register(createWall("wall_glass_lime", Block.Properties.create(Material.GLASS), Blocks.LIME_STAINED_GLASS));
+    reg.register(createWall("wall_glass_light_blue", Block.Properties.create(Material.GLASS), Blocks.LIGHT_BLUE_STAINED_GLASS));
+    reg.register(createWall("wall_glass_yellow", Block.Properties.create(Material.GLASS), Blocks.YELLOW_STAINED_GLASS));
+    reg.register(createWall("wall_glass_green", Block.Properties.create(Material.GLASS), Blocks.GREEN_STAINED_GLASS));
     //
     //                GATE 
     //
     reg.register(createGate("gate_nether_bricks", Blocks.NETHER_BRICKS, Block.Properties.create(Material.ROCK)));
-    reg.register(createGate("gate_red_nether_bricks", Blocks.NETHER_BRICKS, Block.Properties.create(Material.ROCK)));
+    reg.register(createGate("gate_red_nether_bricks", Blocks.RED_NETHER_BRICKS, Block.Properties.create(Material.ROCK)));
     reg.register(createGate("gate_quartz", Blocks.QUARTZ_BLOCK, Block.Properties.create(Material.ROCK)));
     reg.register(createGate("gate_stone_bricks", Blocks.STONE_BRICKS, Block.Properties.create(Material.ROCK)));
     reg.register(createGate("gate_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, Block.Properties.create(Material.ROCK)));
@@ -481,8 +481,8 @@ public class AbsentRegistry {
     reg.register(createGate("gate_obsidian", Blocks.OBSIDIAN, Block.Properties.create(Material.ROCK)));
     reg.register(createGate("gate_prismarine", Blocks.PRISMARINE, Block.Properties.create(Material.ROCK)));;
     reg.register(createGate("gate_prismarine_brick", Blocks.PRISMARINE, Block.Properties.create(Material.ROCK)));
-    reg.register(createGate("gate_prismarine_dark", Blocks.PRISMARINE, Block.Properties.create(Material.ROCK)));
-    reg.register(createGate("gate_purpur", Blocks.PRISMARINE, Block.Properties.create(Material.ROCK)));
+    reg.register(createGate("gate_prismarine_dark", Blocks.DARK_PRISMARINE, Block.Properties.create(Material.ROCK)));
+    reg.register(createGate("gate_purpur", Blocks.PURPUR_BLOCK, Block.Properties.create(Material.ROCK)));
   }
 
   @SubscribeEvent
@@ -493,8 +493,8 @@ public class AbsentRegistry {
     }
   }
 
-  public static Block createFence(String name, Block block, Block.Properties mat) {
-    return addBlock(new BlockAbsentFence(wrap(mat, block), name));
+  public static Block createFence(String name, Block block, Block.Properties p) {
+    return addBlock(new BlockAbsentFence(wrap(p, block), name));
   }
 
   public static Block createWall(String name, Block.Properties p, Block block) {
@@ -521,14 +521,19 @@ public class AbsentRegistry {
     return addBlock(new BlockAbsentGate(wrap(p, block), name));
   }
 
-  //wrap copies of block properties into new properties
-  //depends on AT cfg for hardness
-  //    Blocks.SPAWNER.getDefaultState().hardness = -1;
   @SuppressWarnings("deprecation")
-  private static Block.Properties wrap(Block.Properties prop, Block block) {
-    return prop
-        .sound(block.getSoundType(block.getDefaultState()))
-        .hardnessAndResistance(block.getDefaultState().hardness);
+  private static Block.Properties wrap(Block.Properties propIn, Block blockIn) {
+    if (blockIn.properties != null
+        && blockIn.properties.blockColors != null) {
+      ModAbsentBD.LOGGER.error(blockIn + " used for map color " + propIn);
+      propIn.blockColors = (state) -> {
+        return blockIn.properties.blockColors.apply(blockIn.getDefaultState());
+      };
+    }
+    else ModAbsentBD.LOGGER.error(blockIn + " null props?");
+    return propIn
+        .sound(blockIn.getSoundType(blockIn.getDefaultState()))
+        .hardnessAndResistance(blockIn.getDefaultState().hardness);
   }
 
   public static Block addBlock(Block b) {
