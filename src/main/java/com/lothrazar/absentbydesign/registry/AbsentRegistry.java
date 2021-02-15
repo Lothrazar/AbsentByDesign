@@ -9,6 +9,7 @@ import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import com.lothrazar.absentbydesign.block.IBlockAbsent;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -22,8 +23,13 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.particles.BasicParticleType;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -241,7 +247,7 @@ public class AbsentRegistry {
     reg.register(createSlab("slab_obsidian", Block.Properties.create(Material.ROCK), Blocks.OBSIDIAN));
     reg.register(createSlab("slab_basalt", Block.Properties.create(Material.ROCK), Blocks.BASALT));
     reg.register(createSlab("slab_polished_basalt", Block.Properties.create(Material.ROCK), Blocks.POLISHED_BASALT));
-    reg.register(createSlab("slab_crying_obsidian", Block.Properties.create(Material.ROCK), Blocks.CRYING_OBSIDIAN));
+    reg.register(createSlab("slab_crying_obsidian", Block.Properties.create(Material.ROCK).setLightLevel(state -> 10), Blocks.CRYING_OBSIDIAN));
     reg.register(createSlab("slab_lodestone", Block.Properties.create(Material.ROCK), Blocks.LODESTONE));
     reg.register(createSlab("slab_quartz_bricks", Block.Properties.create(Material.ROCK), Blocks.QUARTZ_BRICKS));
     reg.register(createSlab("slab_magma", Block.Properties.create(Material.ROCK).setLightLevel(state -> 3), Blocks.MAGMA_BLOCK));
@@ -328,10 +334,10 @@ public class AbsentRegistry {
     reg.register(createStair("stairs_snow", Block.Properties.create(Material.SNOW), Blocks.SNOW_BLOCK));
     reg.register(createStair("stairs_obsidian", Block.Properties.create(Material.ROCK), Blocks.OBSIDIAN));
     reg.register(createStair("stairs_quartz_bricks", Block.Properties.create(Material.ROCK), Blocks.QUARTZ_BRICKS));
-    reg.register(createStair("stairs_basalt", Block.Properties.create(Material.ROCK, MaterialColor.CLAY), Blocks.TERRACOTTA));
-    reg.register(createStair("stairs_polished_basalt", Block.Properties.create(Material.ROCK, MaterialColor.CLAY), Blocks.TERRACOTTA));
-    reg.register(createStair("stairs_crying_obsidian", Block.Properties.create(Material.ROCK, MaterialColor.CLAY), Blocks.TERRACOTTA));
-    reg.register(createStair("stairs_lodestone", Block.Properties.create(Material.ROCK, MaterialColor.CLAY), Blocks.TERRACOTTA));
+    reg.register(createStair("stairs_basalt", Block.Properties.create(Material.ROCK, MaterialColor.CLAY), Blocks.BASALT));
+    reg.register(createStair("stairs_polished_basalt", Block.Properties.create(Material.ROCK, MaterialColor.CLAY), Blocks.POLISHED_BASALT));
+    reg.register(createStair("stairs_crying_obsidian", Block.Properties.create(Material.ROCK, MaterialColor.CLAY).setLightLevel(state -> 10), Blocks.CRYING_OBSIDIAN));
+    reg.register(createStair("stairs_lodestone", Block.Properties.create(Material.ROCK, MaterialColor.CLAY), Blocks.LODESTONE));
     reg.register(createStair("stairs_magma", Block.Properties.create(Material.ROCK, MaterialColor.NETHERRACK).setLightLevel(s -> 3), Blocks.MAGMA_BLOCK));
     reg.register(createStair("stairs_glowstone", Block.Properties.create(Material.ROCK, MaterialColor.SAND).sound(SoundType.GLASS).setLightLevel(s -> 15), Blocks.GLOWSTONE));
     reg.register(createStair("stairs_sea_lantern", Block.Properties.create(Material.ROCK, MaterialColor.SAND).sound(SoundType.GLASS).setLightLevel(s -> 15), Blocks.SEA_LANTERN));
@@ -437,7 +443,7 @@ public class AbsentRegistry {
     reg.register(createWall("wall_dark_prismarine", Blocks.DARK_PRISMARINE, Block.Properties.create(Material.ROCK)));
     reg.register(createWall("wall_crimson", Blocks.CRIMSON_STEM, Block.Properties.create(Material.WOOD)));
     reg.register(createWall("wall_warped", Blocks.WARPED_STEM, Block.Properties.create(Material.WOOD)));
-    reg.register(createWall("wall_crying_obsidian", Blocks.CRYING_OBSIDIAN, Block.Properties.create(Material.WOOD)));
+    reg.register(createWall("wall_crying_obsidian", Blocks.CRYING_OBSIDIAN, Block.Properties.create(Material.WOOD).setLightLevel(state -> 10)));
     reg.register(createWall("wall_basalt", Blocks.BASALT, Block.Properties.create(Material.WOOD)));
     reg.register(createWall("wall_polished_basalt", Blocks.POLISHED_BASALT, Block.Properties.create(Material.WOOD)));
     reg.register(createWall("wall_lodestone", Blocks.LODESTONE, Block.Properties.create(Material.WOOD)));
@@ -498,21 +504,35 @@ public class AbsentRegistry {
   }
 
   public static Block createWall(String name, Block.Properties p, Block block) {
-    return addBlock(new BlockAbsentWall(wrap(p, block), name));
+    Block b = addBlock(new BlockAbsentWall(wrap(p, block), name));
+    if (block == Blocks.CRYING_OBSIDIAN) {
+      ((BlockAbsentWall) b).part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
+    }
+    return b;
   }
 
+  @Deprecated
   public static Block createWall(String name, Block block, Block.Properties p) {
     return createWall(name, p, block);
   }
 
   public static Block createSlab(String name, Block.Properties prop, Block block) {
-    return addBlock(new BlockAbsentSlab(wrap(prop, block), name));
+    Block b = addBlock(new BlockAbsentSlab(wrap(prop, block), name));
+    if (block == Blocks.CRYING_OBSIDIAN) {
+      ((BlockAbsentSlab) b).part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
+    }
+    return b;
   }
 
   public static Block createStair(String name, Block.Properties prop, Block block) {
-    return addBlock(new BlockAbsentStair(block, wrap(prop, block), name));
+    Block b = addBlock(new BlockAbsentStair(block, wrap(prop, block), name));
+    if (block == Blocks.CRYING_OBSIDIAN) {
+      ((BlockAbsentStair) b).part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
+    }
+    return b;
   }
 
+  @Deprecated
   public static Block createStair(String name, Block block, Block.Properties prop) {
     return createStair(name, prop, block);
   }
@@ -534,6 +554,26 @@ public class AbsentRegistry {
     return propIn
         .sound(blockIn.getSoundType(blockIn.getDefaultState()))
         .hardnessAndResistance(blockIn.getDefaultState().hardness);
+  }
+
+  @OnlyIn(Dist.CLIENT)
+  public static void spawnBlockParticles(BasicParticleType partIn, World worldIn, BlockPos pos, Random rand) {
+    double x = pos.getX() + rand.nextDouble();
+    double y = pos.getY() + rand.nextDouble();
+    double z = pos.getZ() + rand.nextDouble();
+    double xSp = (rand.nextDouble() - 0.5D) * 0.5D;
+    double ySp = (rand.nextDouble() - 0.5D) * 0.5D;
+    double zSp = (rand.nextDouble() - 0.5D) * 0.5D;
+    //    int k = rand.nextInt(2) * 2 - 1;
+    //    if (rand.nextBoolean()) {
+    //      z = pos.getZ() + 0.5D + 0.25D * k;
+    //      zSp = rand.nextFloat() * 2.0F * k;
+    //    }
+    //    else {
+    //      x = pos.getX() + 0.5D + 0.25D * k;
+    //      xSp = rand.nextFloat() * 2.0F * k;
+    //    }
+    worldIn.addParticle(partIn, x, y, z, xSp, ySp, zSp);
   }
 
   public static Block addBlock(Block b) {
