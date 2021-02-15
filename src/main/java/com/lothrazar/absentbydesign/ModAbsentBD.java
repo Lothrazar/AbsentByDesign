@@ -14,5 +14,8 @@ public class ModAbsentBD {
 
   public ModAbsentBD() {
     FMLJavaModLoadingContext.get().getModEventBus().addListener(AbsentRegistry::setupClient);
+    //    IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    //    AbsentRegistry.ITEMS.register(eventBus);
+    //    AbsentRegistry.BLOCKS.register(eventBus);
   }
 }

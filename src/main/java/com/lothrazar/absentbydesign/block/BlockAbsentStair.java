@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.particles.BasicParticleType;
+import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
@@ -22,6 +23,12 @@ public class BlockAbsentStair extends StairsBlock implements IBlockAbsent {
     super(b.getDefaultState(), p);
     rawName = reg;
     setRegistryName(reg);
+  }
+
+  @Override
+  @OnlyIn(Dist.CLIENT)
+  public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
+    return adjacentBlockState.getBlock() == this || adjacentBlockState.isIn(this);
   }
 
   @OnlyIn(Dist.CLIENT)

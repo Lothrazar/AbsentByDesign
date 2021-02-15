@@ -6,7 +6,9 @@ import com.lothrazar.absentbydesign.block.BlockAbsentGate;
 import com.lothrazar.absentbydesign.block.BlockAbsentSlab;
 import com.lothrazar.absentbydesign.block.BlockAbsentStair;
 import com.lothrazar.absentbydesign.block.BlockAbsentWall;
+import com.lothrazar.absentbydesign.block.DoorAbsentBlock;
 import com.lothrazar.absentbydesign.block.IBlockAbsent;
+import com.lothrazar.absentbydesign.block.TrapDoorAbsent;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -40,7 +42,7 @@ import net.minecraftforge.registries.ObjectHolder;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AbsentRegistry {
 
-  private static final List<Block> BLOCKS = new ArrayList<>();
+  private static final List<Block> BLOCKLIST = new ArrayList<>();
   private static final String ID = ModAbsentBD.MODID + ":";
   @ObjectHolder(ID + "wall_glass_white")
   public static Block wall_glass_white;
@@ -485,16 +487,24 @@ public class AbsentRegistry {
     reg.register(createGate("gate_bricks", Blocks.BRICKS, Block.Properties.create(Material.ROCK)));
     reg.register(createGate("gate_end_stone_bricks", Blocks.END_STONE_BRICKS, Block.Properties.create(Material.ROCK)));
     reg.register(createGate("gate_obsidian", Blocks.OBSIDIAN, Block.Properties.create(Material.ROCK)));
-    reg.register(createGate("gate_prismarine", Blocks.PRISMARINE, Block.Properties.create(Material.ROCK)));;
+    reg.register(createGate("gate_prismarine", Blocks.PRISMARINE, Block.Properties.create(Material.ROCK)));
     reg.register(createGate("gate_prismarine_brick", Blocks.PRISMARINE, Block.Properties.create(Material.ROCK)));
     reg.register(createGate("gate_prismarine_dark", Blocks.DARK_PRISMARINE, Block.Properties.create(Material.ROCK)));
     reg.register(createGate("gate_purpur", Blocks.PURPUR_BLOCK, Block.Properties.create(Material.ROCK)));
+    //
+    //
+    //
+    reg.register(createTrap("trapdoor_stone", Blocks.STONE, Block.Properties.create(Material.ROCK)));
+    //
+    //
+    //maybe later. would need custom DOOR textures
+    //  reg.register(createDoor("door_stone", Blocks.STONE, Block.Properties.create(Material.ROCK)));
   }
 
   @SubscribeEvent
   public static void onItemsRegistry(RegistryEvent.Register<Item> event) {
     Item.Properties properties = new Item.Properties().group(AbsentRegistry.itemGroup);
-    for (Block b : AbsentRegistry.BLOCKS) {
+    for (Block b : AbsentRegistry.BLOCKLIST) {
       event.getRegistry().register(new BlockItem(b, properties).setRegistryName(((IBlockAbsent) b).rawName()));
     }
   }
@@ -517,7 +527,14 @@ public class AbsentRegistry {
   }
 
   public static Block createSlab(String name, Block.Properties prop, Block block) {
-    Block b = addBlock(new BlockAbsentSlab(wrap(prop, block), name));
+    Block b = null;
+    //    if (block instanceof AbstractGlassBlock) {
+    //      //really terrible hack ik
+    //      b = addBlock(new BlockAbsentSlabGlass(wrap(prop, block), name));
+    //    }
+    //    else {
+    b = addBlock(new BlockAbsentSlab(wrap(prop, block), name));
+    //    }
     if (block == Blocks.CRYING_OBSIDIAN) {
       ((BlockAbsentSlab) b).part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
     }
@@ -539,6 +556,14 @@ public class AbsentRegistry {
 
   public static Block createGate(String name, Block block, Block.Properties p) {
     return addBlock(new BlockAbsentGate(wrap(p, block), name));
+  }
+
+  public static Block createDoor(String name, Block block, Block.Properties p) {
+    return addBlock(new DoorAbsentBlock(wrap(p, block), name));
+  }
+
+  public static Block createTrap(String name, Block block, Block.Properties p) {
+    return addBlock(new TrapDoorAbsent(wrap(p, block), name));
   }
 
   @SuppressWarnings("deprecation")
@@ -577,7 +602,7 @@ public class AbsentRegistry {
   }
 
   public static Block addBlock(Block b) {
-    BLOCKS.add(b);
+    BLOCKLIST.add(b);
     return b;
   }
 }

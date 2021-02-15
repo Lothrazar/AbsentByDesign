@@ -5,6 +5,7 @@ import java.util.Random;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.particles.BasicParticleType;
+import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
@@ -20,6 +21,12 @@ public class BlockAbsentSlab extends SlabBlock implements IBlockAbsent {
     super(properties);
     rawName = reg;
     setRegistryName(reg);
+  }
+
+  @Override
+  @OnlyIn(Dist.CLIENT)
+  public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
+    return adjacentBlockState.getBlock() == this || adjacentBlockState.isIn(this);
   }
 
   @OnlyIn(Dist.CLIENT)
