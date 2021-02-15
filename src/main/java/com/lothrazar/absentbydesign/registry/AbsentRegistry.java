@@ -495,6 +495,9 @@ public class AbsentRegistry {
     //
     //
     reg.register(createTrap("trapdoor_stone", Blocks.STONE, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_granite", Blocks.GRANITE, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_andesite", Blocks.ANDESITE, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_diorite", Blocks.DIORITE, Block.Properties.create(Material.ROCK)));
     //
     //
     //maybe later. would need custom DOOR textures
@@ -527,14 +530,7 @@ public class AbsentRegistry {
   }
 
   public static Block createSlab(String name, Block.Properties prop, Block block) {
-    Block b = null;
-    //    if (block instanceof AbstractGlassBlock) {
-    //      //really terrible hack ik
-    //      b = addBlock(new BlockAbsentSlabGlass(wrap(prop, block), name));
-    //    }
-    //    else {
-    b = addBlock(new BlockAbsentSlab(wrap(prop, block), name));
-    //    }
+    Block b = addBlock(new BlockAbsentSlab(wrap(prop, block), name));
     if (block == Blocks.CRYING_OBSIDIAN) {
       ((BlockAbsentSlab) b).part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
     }

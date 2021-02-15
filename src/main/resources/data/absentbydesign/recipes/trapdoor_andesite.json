@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:trapdoor_andesite",
+    "count": 2
+  }
+}
