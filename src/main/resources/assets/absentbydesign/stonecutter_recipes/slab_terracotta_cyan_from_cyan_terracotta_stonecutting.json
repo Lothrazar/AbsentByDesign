@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:cyan_terracotta"
+  },
+  "result": "absentbydesign:slab_terracotta_cyan",
+  "count": 2
+}
