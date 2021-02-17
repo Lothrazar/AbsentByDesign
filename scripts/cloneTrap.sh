@@ -34,7 +34,6 @@ cp "${folder}"/models/block/"${seed}"_top.json "${folder}"/models/block/"${newbl
 cp "${folder}"/models/block/"${seed}"_open.json "${folder}"/models/block/"${newblock}"_open.json
 
 
-sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
 sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_bottom.json
 sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_top.json
 sed -i -e "s/${texture_old}/${texture}/g" "${folder}"/models/block/"${newblock}"_open.json
