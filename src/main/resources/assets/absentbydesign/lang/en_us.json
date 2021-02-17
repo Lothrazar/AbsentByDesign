@@ -15,6 +15,16 @@
   "block.absentbydesign.trapdoor_stone":"Stone Trapdoor",
   "block.absentbydesign.trapdoor_andesite":"Andesite Trapdoor",
   "block.absentbydesign.trapdoor_diorite":"Diorite Trapdoor",
+  "block.absentbydesign.trapdoor_purpur":"Purpur Trapdoor",
+  "block.absentbydesign.trapdoor_quartz":"Quartz Trapdoor",
+  "block.absentbydesign.trapdoor_stone_bricks":"Stone Brick Trapdoor",
+  "block.absentbydesign.trapdoor_blackstone":"Blackstone Trapdoor",
+  "block.absentbydesign.trapdoor_blackstone_bricks":"Blackstone Brick Trapdoor",
+  "block.absentbydesign.trapdoor_end_stone":"Endstone Trapdoor",
+  "block.absentbydesign.trapdoor_bricks":"Brick Trapdoor",
+  "block.absentbydesign.trapdoor_basalt":"Basalt Trapdoor",
+  
+  
     
   "block.absentbydesign.slab_glass":"Glass Slab",
   "block.absentbydesign.slab_glass_orange":"Orange Glass Slab",

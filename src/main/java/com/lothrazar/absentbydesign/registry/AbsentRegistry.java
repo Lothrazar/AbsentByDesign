@@ -498,10 +498,19 @@ public class AbsentRegistry {
     reg.register(createTrap("trapdoor_granite", Blocks.GRANITE, Block.Properties.create(Material.ROCK)));
     reg.register(createTrap("trapdoor_andesite", Blocks.ANDESITE, Block.Properties.create(Material.ROCK)));
     reg.register(createTrap("trapdoor_diorite", Blocks.DIORITE, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_bricks", Blocks.STONE, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_stone_bricks", Blocks.STONE_BRICKS, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_blackstone", Blocks.STONE_BRICKS, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_blackstone_bricks", Blocks.STONE_BRICKS, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_basalt", Blocks.STONE, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_end_stone", Blocks.STONE, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_purpur", Blocks.PURPUR_BLOCK, Block.Properties.create(Material.ROCK)));
+    reg.register(createTrap("trapdoor_quartz", Blocks.QUARTZ_BLOCK, Block.Properties.create(Material.ROCK)));
     //
     //
     //maybe later. would need custom DOOR textures
     //  reg.register(createDoor("door_stone", Blocks.STONE, Block.Properties.create(Material.ROCK)));
+    //    reg.register(createDoor("door_purpur", Blocks.PURPUR_BLOCK, Block.Properties.create(Material.ROCK)));
   }
 
   @SubscribeEvent

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:basalt"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:trapdoor_basalt",
+    "count": 2
+  }
+}
