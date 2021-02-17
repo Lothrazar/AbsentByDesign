@@ -1,0 +1,9 @@
+  
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:lime_terracotta"
+  },
+  "result": "absentbydesign:slab_terracotta_lime",
+  "count": 2
+}
