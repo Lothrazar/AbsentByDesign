@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:sea_lantern"
+  },
+  "result": "absentbydesign:slab_sea_lantern",
+  "count": 2
+}

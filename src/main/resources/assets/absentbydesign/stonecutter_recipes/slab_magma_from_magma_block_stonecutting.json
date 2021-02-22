@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:magma_block"
+  },
+  "result": "absentbydesign:slab_magma",
+  "count": 2
+}
