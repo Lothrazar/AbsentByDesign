@@ -12,23 +12,33 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
+@SuppressWarnings("deprecation")
 public class BlockAbsentStair extends StairsBlock implements IBlockAbsent {
 
   private final String rawName;
   // could be any particle. currently only used by Crying Obs
   public BasicParticleType part = null;
 
-  @SuppressWarnings("deprecation")
   public BlockAbsentStair(Block b, Properties p, String reg) {
     super(b.getDefaultState(), p);
     rawName = reg;
     setRegistryName(reg);
   }
 
+  public boolean doVisibility = false;
+
   @Override
   @OnlyIn(Dist.CLIENT)
   public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
-    return adjacentBlockState.getBlock() == this || adjacentBlockState.isIn(this);
+    if (doVisibility) {
+      return adjacentBlockState.getBlock() == this || adjacentBlockState.isIn(this);
+    }
+    return super.isSideInvisible(state, adjacentBlockState, side); // seems to be always false
+  }
+
+  @Override
+  public void setTransparent() {
+    doVisibility = true;
   }
 
   @OnlyIn(Dist.CLIENT)

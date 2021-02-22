@@ -16,4 +16,7 @@ public class DoorAbsentBlock extends DoorBlock implements IBlockAbsent {
   public String rawName() {
     return rawName;
   }
+
+  @Override
+  public void setTransparent() {}
 }

@@ -23,10 +23,21 @@ public class BlockAbsentSlab extends SlabBlock implements IBlockAbsent {
     setRegistryName(reg);
   }
 
+  public boolean doVisibility = false;
+
+  @SuppressWarnings("deprecation")
   @Override
   @OnlyIn(Dist.CLIENT)
   public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
-    return adjacentBlockState.getBlock() == this || adjacentBlockState.isIn(this);
+    if (doVisibility) {
+      return adjacentBlockState.getBlock() == this || adjacentBlockState.isIn(this);
+    }
+    return super.isSideInvisible(state, adjacentBlockState, side); // seems to be always false
+  }
+
+  @Override
+  public void setTransparent() {
+    doVisibility = true;
   }
 
   @OnlyIn(Dist.CLIENT)

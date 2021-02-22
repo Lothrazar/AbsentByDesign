@@ -45,107 +45,107 @@ public class AbsentRegistry {
   private static final List<Block> BLOCKLIST = new ArrayList<>();
   private static final String ID = ModAbsentBD.MODID + ":";
   @ObjectHolder(ID + "wall_glass_white")
-  public static Block wall_glass_white;
+  public static BlockAbsentWall wall_glass_white;
   @ObjectHolder(ID + "wall_glass_orange")
-  public static Block wall_glass_orange;
+  public static BlockAbsentWall wall_glass_orange;
   @ObjectHolder(ID + "wall_glass_magenta")
-  public static Block wall_glass_magenta;
+  public static BlockAbsentWall wall_glass_magenta;
   @ObjectHolder(ID + "wall_glass_purple")
-  public static Block wall_glass_purple;
+  public static BlockAbsentWall wall_glass_purple;
   @ObjectHolder(ID + "wall_glass_blue")
-  public static Block wall_glass_blue;
+  public static BlockAbsentWall wall_glass_blue;
   @ObjectHolder(ID + "wall_glass_brown")
-  public static Block wall_glass_brown;
+  public static BlockAbsentWall wall_glass_brown;
   @ObjectHolder(ID + "wall_glass_black")
-  public static Block wall_glass_black;
+  public static BlockAbsentWall wall_glass_black;
   @ObjectHolder(ID + "wall_glass_cyan")
-  public static Block wall_glass_cyan;
+  public static BlockAbsentWall wall_glass_cyan;
   @ObjectHolder(ID + "wall_glass_light_gray")
-  public static Block wall_glass_light_gray;
+  public static BlockAbsentWall wall_glass_light_gray;
   @ObjectHolder(ID + "wall_glass_gray")
-  public static Block wall_glass_gray;
+  public static BlockAbsentWall wall_glass_gray;
   @ObjectHolder(ID + "wall_glass_pink")
-  public static Block wall_glass_pink;
+  public static BlockAbsentWall wall_glass_pink;
   @ObjectHolder(ID + "wall_glass_lime")
-  public static Block wall_glass_lime;
+  public static BlockAbsentWall wall_glass_lime;
   @ObjectHolder(ID + "wall_glass_light_blue")
-  public static Block wall_glass_light_blue;
+  public static BlockAbsentWall wall_glass_light_blue;
   @ObjectHolder(ID + "wall_glass_yellow")
-  public static Block wall_glass_yellow;
+  public static BlockAbsentWall wall_glass_yellow;
   @ObjectHolder(ID + "wall_glass_green")
-  public static Block wall_glass_green;
+  public static BlockAbsentWall wall_glass_green;
   @ObjectHolder(ID + "wall_glass_red")
-  public static Block wall_glass_red;
+  public static BlockAbsentWall wall_glass_red;
   @ObjectHolder(ID + "wall_glass")
-  public static Block wall_glass;
+  public static BlockAbsentWall wall_glass;
   @ObjectHolder(ID + "stairs_glass_purple")
-  public static Block stairs_glass_purple;
+  public static BlockAbsentStair stairs_glass_purple;
   @ObjectHolder(ID + "stairs_glass_blue")
-  public static Block stairs_glass_blue;
+  public static BlockAbsentStair stairs_glass_blue;
   @ObjectHolder(ID + "stairs_glass_brown")
-  public static Block stairs_glass_brown;
+  public static BlockAbsentStair stairs_glass_brown;
   @ObjectHolder(ID + "stairs_glass_red")
-  public static Block stairs_glass_red;
+  public static BlockAbsentStair stairs_glass_red;
   @ObjectHolder(ID + "stairs_glass_black")
-  public static Block stairs_glass_black;
+  public static BlockAbsentStair stairs_glass_black;
   @ObjectHolder(ID + "stairs_glass_cyan")
-  public static Block stairs_glass_cyan;
+  public static BlockAbsentStair stairs_glass_cyan;
   @ObjectHolder(ID + "stairs_glass_light_gray")
-  public static Block stairs_glass_light_gray;
+  public static BlockAbsentStair stairs_glass_light_gray;
   @ObjectHolder(ID + "stairs_glass_gray")
-  public static Block stairs_glass_gray;
+  public static BlockAbsentStair stairs_glass_gray;
   @ObjectHolder(ID + "stairs_glass_pink")
-  public static Block stairs_glass_pink;
+  public static BlockAbsentStair stairs_glass_pink;
   @ObjectHolder(ID + "stairs_glass_lime")
-  public static Block stairs_glass_lime;
+  public static BlockAbsentStair stairs_glass_lime;
   @ObjectHolder(ID + "stairs_glass_light_blue")
-  public static Block stairs_glass_light_blue;
+  public static BlockAbsentStair stairs_glass_light_blue;
   @ObjectHolder(ID + "stairs_glass_magenta")
-  public static Block stairs_glass_magenta;
+  public static BlockAbsentStair stairs_glass_magenta;
   @ObjectHolder(ID + "stairs_glass_white")
-  public static Block stairs_glass_white;
+  public static BlockAbsentStair stairs_glass_white;
   @ObjectHolder(ID + "stairs_glass_green")
-  public static Block stairs_glass_green;
+  public static BlockAbsentStair stairs_glass_green;
   @ObjectHolder(ID + "stairs_glass_yellow")
-  public static Block stairs_glass_yellow;
+  public static BlockAbsentStair stairs_glass_yellow;
   @ObjectHolder(ID + "stairs_glass_orange")
-  public static Block stairs_glass_orange;
+  public static BlockAbsentStair stairs_glass_orange;
   @ObjectHolder(ID + "stairs_glass")
-  public static Block stairs_glass;
+  public static BlockAbsentStair stairs_glass;
   @ObjectHolder(ID + "slab_glass")
-  public static Block slab_glass;
+  public static BlockAbsentSlab slab_glass;
   @ObjectHolder(ID + "slab_glass_white")
-  public static Block slab_glass_white;
+  public static BlockAbsentSlab slab_glass_white;
   @ObjectHolder(ID + "slab_glass_orange")
-  public static Block slab_glass_orange;
+  public static BlockAbsentSlab slab_glass_orange;
   @ObjectHolder(ID + "slab_glass_magenta")
-  public static Block slab_glass_magenta;
+  public static BlockAbsentSlab slab_glass_magenta;
   @ObjectHolder(ID + "slab_glass_light_blue")
-  public static Block slab_glass_light_blue;
+  public static BlockAbsentSlab slab_glass_light_blue;
   @ObjectHolder(ID + "slab_glass_yellow")
-  public static Block slab_glass_yellow;
+  public static BlockAbsentSlab slab_glass_yellow;
   @ObjectHolder(ID + "slab_glass_lime")
-  public static Block slab_glass_lime;
+  public static BlockAbsentSlab slab_glass_lime;
   @ObjectHolder(ID + "slab_glass_pink")
-  public static Block slab_glass_pink;
+  public static BlockAbsentSlab slab_glass_pink;
   @ObjectHolder(ID + "slab_glass_gray")
-  public static Block slab_glass_gray;
+  public static BlockAbsentSlab slab_glass_gray;
   @ObjectHolder(ID + "slab_glass_light_gray")
-  public static Block slab_glass_light_gray;
+  public static BlockAbsentSlab slab_glass_light_gray;
   @ObjectHolder(ID + "slab_glass_cyan")
-  public static Block slab_glass_cyan;
+  public static BlockAbsentSlab slab_glass_cyan;
   @ObjectHolder(ID + "slab_glass_purple")
-  public static Block slab_glass_purple;
+  public static BlockAbsentSlab slab_glass_purple;
   @ObjectHolder(ID + "slab_glass_blue")
-  public static Block slab_glass_blue;
+  public static BlockAbsentSlab slab_glass_blue;
   @ObjectHolder(ID + "slab_glass_brown")
-  public static Block slab_glass_brown;
+  public static BlockAbsentSlab slab_glass_brown;
   @ObjectHolder(ID + "slab_glass_green")
-  public static Block slab_glass_green;
+  public static BlockAbsentSlab slab_glass_green;
   @ObjectHolder(ID + "slab_glass_red")
-  public static Block slab_glass_red;
+  public static BlockAbsentSlab slab_glass_red;
   @ObjectHolder(ID + "slab_glass_black")
-  public static Block slab_glass_black;
+  public static BlockAbsentSlab slab_glass_black;
   @ObjectHolder(ModAbsentBD.MODID + ":fence_quartz")
   private static BlockAbsentFence FENCE_QUARTZ;
   private static ItemGroup itemGroup = new ItemGroup(ModAbsentBD.MODID) {
@@ -166,59 +166,69 @@ public class AbsentRegistry {
 
   public static void setupClient(final FMLClientSetupEvent event) {
     // walls
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass, RenderType.getCutout());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_white, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_orange, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_magenta, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_light_blue, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_yellow, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_lime, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_pink, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_gray, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_light_gray, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_cyan, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_purple, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_blue, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_brown, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_green, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_red, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.wall_glass_black, RenderType.getTranslucent());
+    setCutout(AbsentRegistry.wall_glass);
+    setTranslucent(AbsentRegistry.wall_glass_white);
+    setTranslucent(AbsentRegistry.wall_glass_orange);
+    setTranslucent(AbsentRegistry.wall_glass_magenta);
+    setTranslucent(AbsentRegistry.wall_glass_light_blue);
+    setTranslucent(AbsentRegistry.wall_glass_yellow);
+    setTranslucent(AbsentRegistry.wall_glass_lime);
+    setTranslucent(AbsentRegistry.wall_glass_pink);
+    setTranslucent(AbsentRegistry.wall_glass_gray);
+    setTranslucent(AbsentRegistry.wall_glass_light_gray);
+    setTranslucent(AbsentRegistry.wall_glass_cyan);
+    setTranslucent(AbsentRegistry.wall_glass_purple);
+    setTranslucent(AbsentRegistry.wall_glass_blue);
+    setTranslucent(AbsentRegistry.wall_glass_brown);
+    setTranslucent(AbsentRegistry.wall_glass_green);
+    setTranslucent(AbsentRegistry.wall_glass_red);
+    setTranslucent(AbsentRegistry.wall_glass_black);
     // stairs
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass, RenderType.getCutout());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_white, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_orange, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_magenta, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_light_blue, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_yellow, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_lime, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_pink, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_gray, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_light_gray, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_cyan, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_purple, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_blue, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_brown, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_green, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_red, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.stairs_glass_black, RenderType.getTranslucent());
+    setCutout(AbsentRegistry.stairs_glass);
+    setTranslucent(AbsentRegistry.stairs_glass_white);
+    setTranslucent(AbsentRegistry.stairs_glass_orange);
+    setTranslucent(AbsentRegistry.stairs_glass_magenta);
+    setTranslucent(AbsentRegistry.stairs_glass_light_blue);
+    setTranslucent(AbsentRegistry.stairs_glass_yellow);
+    setTranslucent(AbsentRegistry.stairs_glass_lime);
+    setTranslucent(AbsentRegistry.stairs_glass_pink);
+    setTranslucent(AbsentRegistry.stairs_glass_gray);
+    setTranslucent(AbsentRegistry.stairs_glass_light_gray);
+    setTranslucent(AbsentRegistry.stairs_glass_cyan);
+    setTranslucent(AbsentRegistry.stairs_glass_purple);
+    setTranslucent(AbsentRegistry.stairs_glass_blue);
+    setTranslucent(AbsentRegistry.stairs_glass_brown);
+    setTranslucent(AbsentRegistry.stairs_glass_green);
+    setTranslucent(AbsentRegistry.stairs_glass_red);
+    setTranslucent(AbsentRegistry.stairs_glass_black);
     // slabs
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass, RenderType.getCutout());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_white, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_orange, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_magenta, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_light_blue, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_yellow, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_lime, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_pink, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_gray, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_light_gray, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_cyan, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_purple, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_blue, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_brown, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_green, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_red, RenderType.getTranslucent());
-    RenderTypeLookup.setRenderLayer(AbsentRegistry.slab_glass_black, RenderType.getTranslucent());
+    setCutout(AbsentRegistry.slab_glass);
+    setTranslucent(AbsentRegistry.slab_glass_white);
+    setTranslucent(AbsentRegistry.slab_glass_orange);
+    setTranslucent(AbsentRegistry.slab_glass_magenta);
+    setTranslucent(AbsentRegistry.slab_glass_light_blue);
+    setTranslucent(AbsentRegistry.slab_glass_yellow);
+    setTranslucent(AbsentRegistry.slab_glass_lime);
+    setTranslucent(AbsentRegistry.slab_glass_pink);
+    setTranslucent(AbsentRegistry.slab_glass_gray);
+    setTranslucent(AbsentRegistry.slab_glass_light_gray);
+    setTranslucent(AbsentRegistry.slab_glass_cyan);
+    setTranslucent(AbsentRegistry.slab_glass_purple);
+    setTranslucent(AbsentRegistry.slab_glass_blue);
+    setTranslucent(AbsentRegistry.slab_glass_brown);
+    setTranslucent(AbsentRegistry.slab_glass_green);
+    setTranslucent(AbsentRegistry.slab_glass_red);
+    setTranslucent(AbsentRegistry.slab_glass_black);
+  }
+
+  private static void setCutout(IBlockAbsent block) {
+    RenderTypeLookup.setRenderLayer((Block) block, RenderType.getCutout());
+    block.setTransparent();
+  }
+
+  private static void setTranslucent(IBlockAbsent block) {
+    RenderTypeLookup.setRenderLayer((Block) block, RenderType.getTranslucent());
+    block.setTransparent();
   }
 
   @SubscribeEvent
@@ -492,7 +502,7 @@ public class AbsentRegistry {
     reg.register(createGate("gate_prismarine_dark", Blocks.DARK_PRISMARINE, Block.Properties.create(Material.ROCK)));
     reg.register(createGate("gate_purpur", Blocks.PURPUR_BLOCK, Block.Properties.create(Material.ROCK)));
     //
-    //
+    //                TRAPDOOR
     //
     reg.register(createTrap("trapdoor_stone", Blocks.STONE, Block.Properties.create(Material.ROCK)));
     reg.register(createTrap("trapdoor_granite", Blocks.GRANITE, Block.Properties.create(Material.ROCK)));
@@ -507,9 +517,10 @@ public class AbsentRegistry {
     reg.register(createTrap("trapdoor_purpur", Blocks.PURPUR_BLOCK, Block.Properties.create(Material.ROCK)));
     reg.register(createTrap("trapdoor_quartz", Blocks.QUARTZ_BLOCK, Block.Properties.create(Material.ROCK)));
     //
+    //                DOORS
     //
     //maybe later. would need custom DOOR textures
-    //  reg.register(createDoor("door_stone", Blocks.STONE, Block.Properties.create(Material.ROCK)));
+    // reg.register(createDoor("door_stone", Blocks.STONE, Block.Properties.create(Material.ROCK)));
     //    reg.register(createDoor("door_purpur", Blocks.PURPUR_BLOCK, Block.Properties.create(Material.ROCK)));
   }
 

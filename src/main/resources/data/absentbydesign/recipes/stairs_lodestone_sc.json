@@ -1,0 +1,9 @@
+
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:lodestone"
+  },
+  "result": "absentbydesign:stairs_lodestone",
+  "count": 1
+}

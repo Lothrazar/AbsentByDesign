@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:purple_stained_glass"
+  },
+  "result": "absentbydesign:stairs_glass_purple",
+  "count": 1
+}

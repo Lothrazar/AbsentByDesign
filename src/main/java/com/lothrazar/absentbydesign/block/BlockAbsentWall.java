@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.WallBlock;
 import net.minecraft.particles.BasicParticleType;
+import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,5 +37,22 @@ public class BlockAbsentWall extends WallBlock implements IBlockAbsent {
   @Override
   public String rawName() {
     return rawName;
+  }
+
+  public boolean doVisibility = false;
+
+  @SuppressWarnings("deprecation")
+  @Override
+  @OnlyIn(Dist.CLIENT)
+  public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
+    if (doVisibility) {
+      return adjacentBlockState.getBlock() == this || adjacentBlockState.isIn(this);
+    }
+    return super.isSideInvisible(state, adjacentBlockState, side); // seems to be always false
+  }
+
+  @Override
+  public void setTransparent() {
+    doVisibility = true;
   }
 }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:coarse_dirt"
+  },
+  "result": "absentbydesign:stairs_coarse_dirt",
+  "count": 1
+}

@@ -1,0 +1,9 @@
+
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:red_mushroom_block"
+  },
+  "result": "absentbydesign:stairs_red_mushroom",
+  "count": 1
+}

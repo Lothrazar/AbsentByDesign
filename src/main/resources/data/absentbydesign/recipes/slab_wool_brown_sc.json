@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:brown_wool"
+  },
+  "result": "absentbydesign:slab_wool_brown",
+  "count": 2
+}

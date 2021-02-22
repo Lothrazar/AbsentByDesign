@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:cracked_stone_bricks"
+  },
+  "result": "absentbydesign:stairs_bricks_cracked",
+  "count": 1
+}
