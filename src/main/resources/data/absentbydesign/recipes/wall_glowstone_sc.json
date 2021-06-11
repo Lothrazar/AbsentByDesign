@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:glowstone"
+  },
+  "result": "absentbydesign:wall_glowstone_smooth",
+  "count": 1
+}

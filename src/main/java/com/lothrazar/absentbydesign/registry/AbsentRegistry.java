@@ -486,6 +486,14 @@ public class AbsentRegistry {
     reg.register(createWall("wall_glass_light_blue", Block.Properties.create(Material.GLASS), Blocks.LIGHT_BLUE_STAINED_GLASS));
     reg.register(createWall("wall_glass_yellow", Block.Properties.create(Material.GLASS), Blocks.YELLOW_STAINED_GLASS));
     reg.register(createWall("wall_glass_green", Block.Properties.create(Material.GLASS), Blocks.GREEN_STAINED_GLASS));
+    reg.register(createWall("wall_oak_planks", Block.Properties.create(Material.WOOD), Blocks.OAK_PLANKS));
+    reg.register(createWall("wall_dark_oak_planks", Block.Properties.create(Material.WOOD), Blocks.DARK_OAK_PLANKS));
+    reg.register(createWall("wall_acacia_planks", Block.Properties.create(Material.WOOD), Blocks.ACACIA_PLANKS));
+    reg.register(createWall("wall_jungle_planks", Block.Properties.create(Material.WOOD), Blocks.JUNGLE_PLANKS));
+    reg.register(createWall("wall_birch_planks", Block.Properties.create(Material.WOOD), Blocks.BIRCH_PLANKS));
+    reg.register(createWall("wall_spruce_planks", Block.Properties.create(Material.WOOD), Blocks.SPRUCE_PLANKS));
+    reg.register(createWall("wall_crimson_planks", Block.Properties.create(Material.WOOD), Blocks.CRIMSON_PLANKS));
+    reg.register(createWall("wall_warped_planks", Block.Properties.create(Material.WOOD), Blocks.WARPED_PLANKS));
     //
     //                GATE 
     //
@@ -516,12 +524,6 @@ public class AbsentRegistry {
     reg.register(createTrap("trapdoor_end_stone", Blocks.STONE, Block.Properties.create(Material.ROCK)));
     reg.register(createTrap("trapdoor_purpur", Blocks.PURPUR_BLOCK, Block.Properties.create(Material.ROCK)));
     reg.register(createTrap("trapdoor_quartz", Blocks.QUARTZ_BLOCK, Block.Properties.create(Material.ROCK)));
-    //
-    //                DOORS
-    //
-    //maybe later. would need custom DOOR textures
-    // reg.register(createDoor("door_stone", Blocks.STONE, Block.Properties.create(Material.ROCK)));
-    //    reg.register(createDoor("door_purpur", Blocks.PURPUR_BLOCK, Block.Properties.create(Material.ROCK)));
   }
 
   @SubscribeEvent
