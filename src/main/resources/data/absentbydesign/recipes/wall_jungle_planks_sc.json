@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:jungle_planks"
+  },
+  "result": "absentbydesign:wall_jungle_planks",
+  "count": 1
+}
