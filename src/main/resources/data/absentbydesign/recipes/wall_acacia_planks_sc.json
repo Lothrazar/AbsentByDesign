@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "minecraft:acacia_wood"
+    "item": "minecraft:acacia_planks"
   },
-  "result": "absentbydesign:wall_acacia_log",
+  "result": "absentbydesign:wall_acacia_planks",
   "count": 1
 }

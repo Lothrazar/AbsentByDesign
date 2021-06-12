@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "minecraft:glowstone"
   },
-  "result": "absentbydesign:wall_glowstone_smooth",
+  "result": "absentbydesign:wall_glowstone",
   "count": 1
 }

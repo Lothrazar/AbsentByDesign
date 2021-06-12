@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "minecraft:magma_block"
   },
-  "result": "absentbydesign:magma",
+  "result": "absentbydesign:wall_magma",
   "count": 1
 }

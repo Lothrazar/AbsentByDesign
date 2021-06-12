@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:stripped_warped_hyphae"
+  },
+  "result": "absentbydesign:wall_stripped_warped",
+  "count": 1
+}
