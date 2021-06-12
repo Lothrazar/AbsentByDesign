@@ -588,12 +588,10 @@ public class AbsentRegistry {
   private static Block.Properties wrap(Block.Properties propIn, Block blockIn) {
     if (blockIn.properties != null
         && blockIn.properties.blockColors != null) {
-      ModAbsentBD.LOGGER.error(blockIn + " used for map color " + propIn);
       propIn.blockColors = (state) -> {
         return blockIn.properties.blockColors.apply(blockIn.getDefaultState());
       };
     }
-    else ModAbsentBD.LOGGER.error(blockIn + " null props?");
     return propIn
         .sound(blockIn.getSoundType(blockIn.getDefaultState()))
         .hardnessAndResistance(blockIn.getDefaultState().hardness);
@@ -607,15 +605,6 @@ public class AbsentRegistry {
     double xSp = (rand.nextDouble() - 0.5D) * 0.5D;
     double ySp = (rand.nextDouble() - 0.5D) * 0.5D;
     double zSp = (rand.nextDouble() - 0.5D) * 0.5D;
-    //    int k = rand.nextInt(2) * 2 - 1;
-    //    if (rand.nextBoolean()) {
-    //      z = pos.getZ() + 0.5D + 0.25D * k;
-    //      zSp = rand.nextFloat() * 2.0F * k;
-    //    }
-    //    else {
-    //      x = pos.getX() + 0.5D + 0.25D * k;
-    //      xSp = rand.nextFloat() * 2.0F * k;
-    //    }
     worldIn.addParticle(partIn, x, y, z, xSp, ySp, zSp);
   }
 
