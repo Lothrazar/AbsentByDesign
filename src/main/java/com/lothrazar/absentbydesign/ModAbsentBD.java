@@ -17,5 +17,7 @@ public class ModAbsentBD {
     //    IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
     //    AbsentRegistry.ITEMS.register(eventBus);
     //    AbsentRegistry.BLOCKS.register(eventBus);
+    //? wall_snow
+    //
   }
 }

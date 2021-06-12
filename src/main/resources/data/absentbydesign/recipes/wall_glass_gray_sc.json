@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:gray_stained_glass"
+  },
+  "result": "absentbydesign:wall_glass_gray",
+  "count": 1
+}
