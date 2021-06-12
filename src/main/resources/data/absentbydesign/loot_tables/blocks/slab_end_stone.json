@@ -2,6 +2,37 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "absentbydesign:slab_end_stone",
+                  "properties": {
+                    "type": "double"
+                  }
+                }
+              ],
+              "count": 2
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "absentbydesign:slab_end_stone"
+        }
+      ]
+    }
+  ]
+}{
+  "type": "minecraft:block",
+  "pools": [
+    {
       "name": "pool1",
       "rolls": 1,
       "entries": [
