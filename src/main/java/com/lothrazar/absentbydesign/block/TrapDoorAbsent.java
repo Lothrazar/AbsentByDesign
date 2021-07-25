@@ -1,10 +1,12 @@
 package com.lothrazar.absentbydesign.block;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.TrapDoorBlock;
-import net.minecraft.util.Direction;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.TrapDoorBlock;
+import net.minecraft.core.Direction;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class TrapDoorAbsent extends TrapDoorBlock implements IBlockAbsent {
 
@@ -26,11 +28,11 @@ public class TrapDoorAbsent extends TrapDoorBlock implements IBlockAbsent {
   @SuppressWarnings("deprecation")
   @Override
   @OnlyIn(Dist.CLIENT)
-  public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
+  public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
     if (doVisibility) {
-      return adjacentBlockState.getBlock() == this || adjacentBlockState.isIn(this);
+      return adjacentBlockState.getBlock() == this || adjacentBlockState.is(this);
     }
-    return super.isSideInvisible(state, adjacentBlockState, side); // seems to be always false
+    return super.skipRendering(state, adjacentBlockState, side); // seems to be always false
   }
 
   @Override

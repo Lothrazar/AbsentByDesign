@@ -1,8 +1,8 @@
 {
 	"homepage": "https://www.curseforge.com/minecraft/mc-mods/absent-by-design",
 	"promos": {
-		"1.16.5-latest": "1.5.0",
-		"1.16.5-recommended": "1.5.0"
+		"1.17.1-latest": "1.5.0",
+		"1.17.1-recommended": "1.5.0"
 	},
 	"1.16.5": {
 		"1.1.0": "Ported",
@@ -14,5 +14,8 @@
 		"1.4.0": "Many new stone Trapdoors added.  Glass slabs and stairs have resolved transparency to match full blocks.  Crying Obsidian particles added to match the full blocks.  ",
 		"1.4.1": "Stonecutter Recipes added with Aspyro.   Fixed sides of blocks culling placements.  ",
 		"1.5.0": "Fixed blue slab.  New Wooden Walls.  Fixed missing data tags.  Loot table fix on double placed slabs dropping 2 instead of 1.  Many stonecutter recipes added"
+	},
+	"1.17.1": {
+		"1.5.0": "ported"
 	}
 }

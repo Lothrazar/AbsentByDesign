@@ -1,9 +1,9 @@
 package com.lothrazar.absentbydesign.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.util.Direction;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.FenceBlock;
+import net.minecraft.core.Direction;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
@@ -27,11 +27,11 @@ public class BlockAbsentFence extends FenceBlock implements IBlockAbsent {
   @SuppressWarnings("deprecation")
   @Override
   @OnlyIn(Dist.CLIENT)
-  public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
+  public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
     if (doVisibility) {
-      return adjacentBlockState.getBlock() == this || adjacentBlockState.isIn(this);
+      return adjacentBlockState.getBlock() == this || adjacentBlockState.is(this);
     }
-    return super.isSideInvisible(state, adjacentBlockState, side); // seems to be always false
+    return super.skipRendering(state, adjacentBlockState, side); // seems to be always false
   }
 
   @Override
