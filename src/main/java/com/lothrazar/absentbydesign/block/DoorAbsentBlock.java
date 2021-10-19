@@ -2,8 +2,6 @@ package com.lothrazar.absentbydesign.block;
 
 import net.minecraft.world.level.block.DoorBlock;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
-
 public class DoorAbsentBlock extends DoorBlock implements IBlockAbsent {
 
   private final String rawName;
