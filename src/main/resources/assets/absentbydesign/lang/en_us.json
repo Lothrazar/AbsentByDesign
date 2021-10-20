@@ -124,6 +124,18 @@
 	"block.absentbydesign.slab_wool_silver": "Light Gray Wool Slab",
 	"block.absentbydesign.slab_wool_white": "White Wool Slab",
 	"block.absentbydesign.slab_wool_yellow": "Yellow Wool Slab",
+  "block.absentbydesign.slab_amethyst":"Amethyst Slab",
+  "block.absentbydesign.slab_calcite":"Calcite Slab",
+  "block.absentbydesign.slab_tuff":"Tuff Slab",
+  "block.absentbydesign.stairs_amethyst":"Amethyst Stairs",
+  "block.absentbydesign.stairs_tuff":"Tuff Stairs",
+  "block.absentbydesign.stairs_calcite":"Calcite Stairs",
+  
+  
+  
+  
+  
+	
 
   "block.absentbydesign.stairs_glass":"Glass Stairs",
   "block.absentbydesign.stairs_glass_red":"Red Glass Stairs",

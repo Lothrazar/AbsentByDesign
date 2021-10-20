@@ -364,9 +364,9 @@ public class AbsentRegistry {
     reg.register(createSlab("slab_red_mushroom", Block.Properties.of(Material.WOOD, MaterialColor.WOOL), Blocks.RED_MUSHROOM));
     reg.register(createSlab("slab_brown_mushroom", Block.Properties.of(Material.WOOD, MaterialColor.WOOL), Blocks.BROWN_MUSHROOM));
     reg.register(createSlab("slab_mushroom_polished", Block.Properties.of(Material.WOOD), Blocks.MUSHROOM_STEM));
-    //slab_calcite
-    //slab_amethyst
-    //slab_tuff
+    reg.register(createSlab("slab_calcite", Block.Properties.of(Material.STONE), Blocks.CALCITE));
+    reg.register(createSlab("slab_amethyst", Block.Properties.of(Material.STONE), Blocks.AMETHYST_BLOCK));
+    reg.register(createSlab("slab_tuff", Block.Properties.of(Material.STONE), Blocks.TUFF));
     //  
     //                STAIRS
     //
@@ -455,6 +455,9 @@ public class AbsentRegistry {
     reg.register(createStair("stairs_brown_mushroom", Block.Properties.of(Material.WOOD), Blocks.BROWN_MUSHROOM_BLOCK));
     reg.register(createStair("stairs_mushroom_stem", Block.Properties.of(Material.WOOD), Blocks.MUSHROOM_STEM));
     reg.register(createStair("stairs_mushroom_polished", Block.Properties.of(Material.WOOD), Blocks.MUSHROOM_STEM));
+    reg.register(createStair("stairs_calcite", Block.Properties.of(Material.STONE), Blocks.CALCITE));
+    reg.register(createStair("stairs_amethyst", Block.Properties.of(Material.STONE), Blocks.AMETHYST_BLOCK));
+    reg.register(createStair("stairs_tuff", Block.Properties.of(Material.STONE), Blocks.TUFF));
     //
     //                WALLS
     //
@@ -526,6 +529,9 @@ public class AbsentRegistry {
     reg.register(createWall("wall_spruce_planks", Block.Properties.of(Material.WOOD), Blocks.SPRUCE_PLANKS));
     reg.register(createWall("wall_crimson_planks", Block.Properties.of(Material.WOOD), Blocks.CRIMSON_PLANKS));
     reg.register(createWall("wall_warped_planks", Block.Properties.of(Material.WOOD), Blocks.WARPED_PLANKS));
+    reg.register(createWall("wall_calcite", Block.Properties.of(Material.STONE), Blocks.CALCITE));
+    reg.register(createWall("wall_amethyst", Block.Properties.of(Material.STONE), Blocks.AMETHYST_BLOCK));
+    reg.register(createWall("wall_tuff", Block.Properties.of(Material.STONE), Blocks.TUFF));
     //
     //                GATE 
     //
