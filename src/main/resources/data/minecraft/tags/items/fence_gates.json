@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "absentbydesign:gate_purpur",
+    "absentbydesign:gate_prismarine_dark",
+    "absentbydesign:gate_prismarine_brick",  
+    "absentbydesign:gate_prismarine",
+    "absentbydesign:gate_obsidian",
+    "absentbydesign:gate_bricks",
+    "absentbydesign:gate_end_stone_bricks",
+    "absentbydesign:gate_stone_bricks",
+    "absentbydesign:gate_blackstone_bricks",
+    "absentbydesign:gate_quartz",
+    "absentbydesign:gate_red_nether_bricks",
+    "absentbydesign:gate_nether_bricks"
+  ]
+}
