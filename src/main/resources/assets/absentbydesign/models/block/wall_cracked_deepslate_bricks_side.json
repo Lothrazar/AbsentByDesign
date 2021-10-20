@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/wall_side",
+  "textures": {
+    "wall": "minecraft:block/cracked_deepslate_bricks"
+  }
+}

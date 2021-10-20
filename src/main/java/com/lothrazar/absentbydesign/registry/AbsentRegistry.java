@@ -369,6 +369,7 @@ public class AbsentRegistry {
     reg.register(createSlab("slab_tuff", Block.Properties.of(Material.STONE), Blocks.TUFF));
     reg.register(createSlab("slab_smooth_basalt", Block.Properties.of(Material.STONE), Blocks.SMOOTH_BASALT));
     reg.register(createSlab("slab_cracked_nether_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_NETHER_BRICKS));
+    reg.register(createSlab("slab_cracked_deepslate_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_BRICKS));
     //  
     //                STAIRS
     //
@@ -462,6 +463,7 @@ public class AbsentRegistry {
     reg.register(createStair("stairs_tuff", Block.Properties.of(Material.STONE), Blocks.TUFF));
     reg.register(createStair("stairs_smooth_basalt", Block.Properties.of(Material.STONE), Blocks.SMOOTH_BASALT));
     reg.register(createStair("stairs_cracked_nether_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_NETHER_BRICKS));
+    reg.register(createStair("stairs_cracked_deepslate_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_BRICKS));
     //
     //                WALLS
     //
@@ -538,6 +540,7 @@ public class AbsentRegistry {
     reg.register(createWall("wall_tuff", Block.Properties.of(Material.STONE), Blocks.TUFF));
     reg.register(createWall("wall_smooth_basalt", Block.Properties.of(Material.STONE), Blocks.SMOOTH_BASALT));
     reg.register(createWall("wall_cracked_nether_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_NETHER_BRICKS));
+    reg.register(createWall("wall_cracked_deepslate_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_BRICKS));
     //
     //                GATE 
     //
@@ -657,7 +660,7 @@ public class AbsentRegistry {
     return b;
   }
   //NEW PLANS
-  //EVERYTHING: cracked_nether_bricks  , cracked_deepslate_bricks    , cracked_deepslate_tiles , 
+  //EVERYTHING:   ,     , cracked_deepslate_tiles , 
   //STAIRS AND SLABS ONLY
   // stripped_acacia_log  stripped_birch_log   stripped_crimson_stem   stripped_dark_oak_log   stripped_jungle_log   stripped_oak_log    stripped_spruce_log  stripped_warped_stem
   //WALL ONLY

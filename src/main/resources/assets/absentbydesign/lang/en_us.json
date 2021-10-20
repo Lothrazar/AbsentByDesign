@@ -20,6 +20,11 @@
   "block.absentbydesign.wall_smooth_basalt":"Smooth Basalt Wall",
   "block.absentbydesign.slab_smooth_basalt":"Smooth Basalt Slab",
   "block.absentbydesign.stairs_smooth_basalt":"Smooth Basalt Stairs",
+  "block.absentbydesign.slab_cracked_deepslate_bricks":"Cracked Deepslate Bricks Slab",
+  "block.absentbydesign.stairs_cracked_deepslate_bricks":"Cracked Deepslate Bricks Stairs",
+  "block.absentbydesign.wall_cracked_deepslate_bricks":"Cracked Deepslate Bricks Wall",
+  
+
   
   
   "block.absentbydesign.slab_cracked_nether_bricks":"Cracked Nether Bricks Slab",
