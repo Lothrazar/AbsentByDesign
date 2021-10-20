@@ -12,6 +12,12 @@
 	"block.absentbydesign.fence_quartz": "Quartz Fence",
 	"block.absentbydesign.fence_red_netherbrick": "Red Netherbrick Fence",
 	"block.absentbydesign.fence_warped": "Warped Stem Fence",
+  "block.absentbydesign.wall_amethyst":"Amethyst Wall",
+  "block.absentbydesign.wall_calcite":"Calcite Wall",
+  "block.absentbydesign.wall_tuff":"Tuff Wall",
+  
+  
+	
 	
   "block.absentbydesign.gate_prismarine_brick":"Prismarine Brick Fence Gate",
   "block.absentbydesign.gate_prismarine":"Prismarine Fence Gate",
