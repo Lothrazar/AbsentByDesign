@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:tuff"
+  },
+  "result": "absentbydesign:slab_tuff",
+  "count": 2
+}

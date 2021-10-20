@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "absentbydesign:block/slab_amethyst" },
         "type=top": { "model": "absentbydesign:block/slab_amethyst_upper" },
-        "type=double": { "model": "model:block/amethyst_block" }
+        "type=double": { "model": "minecraft:block/amethyst_block" }
     }
 }

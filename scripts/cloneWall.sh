@@ -19,6 +19,7 @@ folderdata="src/main/resources/data/${modid}"
 
 cp "${folderdata}"/loot_tables/blocks/${seed}.json "${folderdata}"/loot_tables/blocks/"${newblock}".json
 cp "${folderdata}"/recipes/${seed}.json "${folderdata}"/recipes/"${newblock}".json
+cp "${folderdata}"/recipes/${seed}_sc.json "${folderdata}"/recipes/"${newblock}_sc".json
 
 cp "${folder}"/blockstates/"${seed}".json "${folder}"/blockstates/"${newblock}".json
 
@@ -55,6 +56,7 @@ sed -i -e "s/${original}/${dest}/g" "${folder}"/blockstates/"${newblock}".json
 #
     
 echo "  \"block.absentbydesign.${newblock}\":\"${newblock} Wall\", "
-echo "  \"absentbydesign:${newblock}\",     to the blocks/walls.json data tag"
+echo "  \"absentbydesign:${newblock}\",   "
+echo "   to the blocks/walls.json data tag"
 
 echo "Files written"
