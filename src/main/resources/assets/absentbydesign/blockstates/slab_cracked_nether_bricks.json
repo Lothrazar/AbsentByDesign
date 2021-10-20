@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_cracked_nether_bricks" },
+        "type=top": { "model": "absentbydesign:block/slab_cracked_nether_bricks_upper" },
+        "type=double": { "model": "block/cracked_nether_bricks" }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:cracked_nether_brickscutting",
+  "ingredient": {
+    "item": "minecraft:cracked_nether_bricks"
+  },
+  "result": "absentbydesign:wall_cracked_nether_bricks",
+  "count": 1
+}

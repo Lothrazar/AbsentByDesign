@@ -17,9 +17,15 @@
   "block.absentbydesign.wall_tuff":"Tuff Wall",
   
   
-  "block.absentbydesign.wall_smooth_basalt":"wall_smooth_basalt Wall",
-  "block.absentbydesign.slab_smooth_basalt":"slab_smooth_basalt Slab",
-  "block.absentbydesign.stairs_smooth_basalt":"stairs_smooth_basalt Stairs",
+  "block.absentbydesign.wall_smooth_basalt":"Smooth Basalt Wall",
+  "block.absentbydesign.slab_smooth_basalt":"Smooth Basalt Slab",
+  "block.absentbydesign.stairs_smooth_basalt":"Smooth Basalt Stairs",
+  
+  
+  "block.absentbydesign.slab_cracked_nether_bricks":"Cracked Nether Bricks Slab",
+  "block.absentbydesign.wall_cracked_nether_bricks":"Cracked Nether Bricks Wall",
+  "block.absentbydesign.stairs_cracked_nether_bricks":"Cracked Nether Bricks Stairs",
+  
   
   
   
