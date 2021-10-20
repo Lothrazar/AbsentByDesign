@@ -5,7 +5,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-import net.minecraftforge.gradle.common.task.SignJar
+import net.minecraftforge.gradle.common.tasks.SignJar
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 
@@ -96,9 +96,9 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
-    compile fg.deobf("mezz.jei:${jei_version}")
+    implementation fg.deobf("mezz.jei:${jei_version}")
     
-	  implementation fg.deobf("curse.maven:cyclic-239286:3188762")
+	 // implementation fg.deobf("curse.maven:cyclic-239286:3188762")
 	  
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
