@@ -1,6 +1,8 @@
 {
 	"replace": false,
 	"values": [
+  "absentbydesign:wall_smooth_basalt",
+	
 		"absentbydesign:wall_amethyst",
 		"absentbydesign:wall_calcite",
 		"absentbydesign:wall_tuff",

@@ -39,7 +39,7 @@ sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/loot_tables/blocks/"${newblo
 
 sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/recipes/"${newblock}".json
 sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
-sed -i -e "s/${original}/${texture}/g" "${folderdata}_sc"/recipes/"${newblock}_sc".json
+sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}_sc".json
 
 
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json

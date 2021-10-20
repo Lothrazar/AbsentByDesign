@@ -38,7 +38,7 @@ cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".
 
 
 sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
-sed -i -e "s/${original}/${texture}/g" "${folderdata}_sc"/recipes/"${newblock}_sc".json
+sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}_sc".json
 
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json
 

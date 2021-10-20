@@ -37,7 +37,7 @@ rm -rf "${folder}"/models/item/"${newblock}"_double.json
 
 sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/recipes/"${newblock}".json
 sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
-sed -i -e "s/${original}/${texture}/g" "${folderdata}_sc"/recipes/"${newblock}_sc".json
+sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}_sc".json
 
 sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/loot_tables/blocks/"${newblock}".json
 

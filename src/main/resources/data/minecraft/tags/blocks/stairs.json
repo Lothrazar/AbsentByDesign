@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
+		"absentbydesign:stairs_smooth_basalt",
 		"absentbydesign:stairs_amethyst",
 		"absentbydesign:stairs_tuff",
 		"absentbydesign:stairs_calcite",

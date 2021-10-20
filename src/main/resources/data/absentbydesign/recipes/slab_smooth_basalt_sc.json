@@ -1,0 +1,9 @@
+  
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:smooth_basalt"
+  },
+  "result": "absentbydesign:slab_smooth_basalt",
+  "count": 2
+}

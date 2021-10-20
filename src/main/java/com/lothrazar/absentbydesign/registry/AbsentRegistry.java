@@ -367,6 +367,7 @@ public class AbsentRegistry {
     reg.register(createSlab("slab_calcite", Block.Properties.of(Material.STONE), Blocks.CALCITE));
     reg.register(createSlab("slab_amethyst", Block.Properties.of(Material.STONE), Blocks.AMETHYST_BLOCK));
     reg.register(createSlab("slab_tuff", Block.Properties.of(Material.STONE), Blocks.TUFF));
+    reg.register(createSlab("slab_smooth_basalt", Block.Properties.of(Material.STONE), Blocks.SMOOTH_BASALT));
     //  
     //                STAIRS
     //
@@ -458,6 +459,7 @@ public class AbsentRegistry {
     reg.register(createStair("stairs_calcite", Block.Properties.of(Material.STONE), Blocks.CALCITE));
     reg.register(createStair("stairs_amethyst", Block.Properties.of(Material.STONE), Blocks.AMETHYST_BLOCK));
     reg.register(createStair("stairs_tuff", Block.Properties.of(Material.STONE), Blocks.TUFF));
+    reg.register(createStair("stairs_smooth_basalt", Block.Properties.of(Material.STONE), Blocks.SMOOTH_BASALT));
     //
     //                WALLS
     //
@@ -532,6 +534,7 @@ public class AbsentRegistry {
     reg.register(createWall("wall_calcite", Block.Properties.of(Material.STONE), Blocks.CALCITE));
     reg.register(createWall("wall_amethyst", Block.Properties.of(Material.STONE), Blocks.AMETHYST_BLOCK));
     reg.register(createWall("wall_tuff", Block.Properties.of(Material.STONE), Blocks.TUFF));
+    reg.register(createWall("wall_smooth_basalt", Block.Properties.of(Material.STONE), Blocks.SMOOTH_BASALT));
     //
     //                GATE 
     //
@@ -651,15 +654,12 @@ public class AbsentRegistry {
     return b;
   }
   //NEW PLANS
-  //EVERYTHING:  cracked nether brick, deepslate, calcite, amethyst, tuff, cracked deepslate bricks, cracked deepsl tiles, smooth basalt, 
-  // , chiseled x8 blocks  !!!
-  //above 1.17.1 ?
-  //below 1.16.5 ?  maybe smooth basalt? 
+  //EVERYTHING: cracked_nether_bricks  , cracked_deepslate_bricks    , cracked_deepslate_tiles , 
   //STAIRS AND SLABS ONLY
-  //  stripped_ wood x 8  !!!! 
+  // stripped_acacia_log  stripped_birch_log   stripped_crimson_stem   stripped_dark_oak_log   stripped_jungle_log   stripped_oak_log    stripped_spruce_log  stripped_warped_stem
   //WALL ONLY
-  // SMOOTH_QUARTZ_WALL , have stair/slab already in vmc
+  // SMOOTH_QUARTZ_WALL (quartz_block_bottom) , have stair/slab already in vmc
   // CONCRETE x16 !!!
-  // WALL x16
+  // WOOL WALL x16
   // terracotta x17 !!! 
 }
