@@ -16,7 +16,6 @@
   "block.absentbydesign.wall_calcite":"Calcite Wall",
   "block.absentbydesign.wall_tuff":"Tuff Wall",
   
-  
   "block.absentbydesign.wall_smooth_basalt":"Smooth Basalt Wall",
   "block.absentbydesign.slab_smooth_basalt":"Smooth Basalt Slab",
   "block.absentbydesign.stairs_smooth_basalt":"Smooth Basalt Stairs",
@@ -24,8 +23,9 @@
   "block.absentbydesign.stairs_cracked_deepslate_bricks":"Cracked Deepslate Bricks Stairs",
   "block.absentbydesign.wall_cracked_deepslate_bricks":"Cracked Deepslate Bricks Wall",
   
-
-  
+  "block.absentbydesign.wall_cracked_deepslate_tiles":"Cracked Deepslate Tiles Wall",
+  "block.absentbydesign.slab_cracked_deepslate_tiles":"Cracked Deepslate Tiles Slab",
+  "block.absentbydesign.stairs_cracked_deepslate_tiles":"Cracked Deepslate Tiles Stairs",
   
   "block.absentbydesign.slab_cracked_nether_bricks":"Cracked Nether Bricks Slab",
   "block.absentbydesign.wall_cracked_nether_bricks":"Cracked Nether Bricks Wall",

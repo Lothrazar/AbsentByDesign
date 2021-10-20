@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "minecraft:acacia_wood"
+    "item": "minecraft:basalt"
   },
   "result": "absentbydesign:wall_basalt",
   "count": 1

@@ -370,6 +370,7 @@ public class AbsentRegistry {
     reg.register(createSlab("slab_smooth_basalt", Block.Properties.of(Material.STONE), Blocks.SMOOTH_BASALT));
     reg.register(createSlab("slab_cracked_nether_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_NETHER_BRICKS));
     reg.register(createSlab("slab_cracked_deepslate_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_BRICKS));
+    reg.register(createSlab("slab_cracked_deepslate_tiles", Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_TILES));
     //  
     //                STAIRS
     //
@@ -464,6 +465,7 @@ public class AbsentRegistry {
     reg.register(createStair("stairs_smooth_basalt", Block.Properties.of(Material.STONE), Blocks.SMOOTH_BASALT));
     reg.register(createStair("stairs_cracked_nether_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_NETHER_BRICKS));
     reg.register(createStair("stairs_cracked_deepslate_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_BRICKS));
+    reg.register(createStair("stairs_cracked_deepslate_tiles", Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_TILES));
     //
     //                WALLS
     //
@@ -541,6 +543,7 @@ public class AbsentRegistry {
     reg.register(createWall("wall_smooth_basalt", Block.Properties.of(Material.STONE), Blocks.SMOOTH_BASALT));
     reg.register(createWall("wall_cracked_nether_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_NETHER_BRICKS));
     reg.register(createWall("wall_cracked_deepslate_bricks", Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_BRICKS));
+    reg.register(createWall("wall_cracked_deepslate_tiles", Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_TILES));
     //
     //                GATE 
     //

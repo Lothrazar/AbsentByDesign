@@ -1,6 +1,6 @@
 {
   "parent": "absentbydesign:parent/slab_upper",
   "textures": {
-    "b": "block/light_blue_wool"
+    "b": "block/cracked_deepslate_tiles"
   }
 }
