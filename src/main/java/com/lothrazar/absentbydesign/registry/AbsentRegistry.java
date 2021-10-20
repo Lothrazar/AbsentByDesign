@@ -1,5 +1,8 @@
 package com.lothrazar.absentbydesign.registry;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import com.lothrazar.absentbydesign.ModAbsentBD;
 import com.lothrazar.absentbydesign.block.BlockAbsentFence;
 import com.lothrazar.absentbydesign.block.BlockAbsentGate;
@@ -9,27 +12,24 @@ import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import com.lothrazar.absentbydesign.block.DoorAbsentBlock;
 import com.lothrazar.absentbydesign.block.IBlockAbsent;
 import com.lothrazar.absentbydesign.block.TrapDoorAbsent;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.event.RegistryEvent;
@@ -42,6 +42,35 @@ import net.minecraftforge.registries.ObjectHolder;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AbsentRegistry {
 
+  //
+  // STONE
+  // SANDSTONE
+  // BRICKS
+  // ENDSTONE 
+  // CONCRETE
+  // WOOL
+  // GLASS
+  // MUSHROOM
+  // BASALT
+  // OBSIDIAN
+  // QUARTZ
+  // MAGMA
+  // GLOWSTONE
+  // 
+  //
+  // NO INVENTORY SCREEN BLOCKS (chest, furnace, ...)
+  // NO ORES
+  // NO RECIPE OVERRIDES / REMOVALS (example: glass walls vs glass panes, chiseled sandstone -> normal slab)
+  // NO METAL / DIAMOND / EMERALD
+  // AVOID METAL-LIKE STORAGE BLOCKS (coal, netherwart, lapis, slime, honey, bone, kelp, ... )
+  // AVOID PLANTS (leaves, coral, moss, cactus, melon ...)
+  // AVOID GRAVITY & WORLD TRIGGER BLOCKS (sand, ice, powder, grass, sponge, tinted_glass, dripstone, infested, ...)
+  // AVOID REDSTONE STUFF (levers, piston, buttons, dispenser, pressure_plates ...)
+  // AVOID NEW BLOCK TYPES (chain, lantern, glass panes, iron_bars, ...)
+  // AVOID PILLAR
+  // AVOID CHISELED
+  // AVOID GLAZED TERRACOTTA
+  // 
   private static final List<Block> BLOCKLIST = new ArrayList<>();
   private static final String ID = ModAbsentBD.MODID + ":";
   @ObjectHolder(ID + "wall_glass_white")
@@ -335,6 +364,9 @@ public class AbsentRegistry {
     reg.register(createSlab("slab_red_mushroom", Block.Properties.of(Material.WOOD, MaterialColor.WOOL), Blocks.RED_MUSHROOM));
     reg.register(createSlab("slab_brown_mushroom", Block.Properties.of(Material.WOOD, MaterialColor.WOOL), Blocks.BROWN_MUSHROOM));
     reg.register(createSlab("slab_mushroom_polished", Block.Properties.of(Material.WOOD), Blocks.MUSHROOM_STEM));
+    //slab_calcite
+    //slab_amethyst
+    //slab_tuff
     //  
     //                STAIRS
     //
@@ -612,4 +644,16 @@ public class AbsentRegistry {
     BLOCKLIST.add(b);
     return b;
   }
+  //NEW PLANS
+  //EVERYTHING:  cracked nether brick, deepslate, calcite, amethyst, tuff, cracked deepslate bricks, cracked deepsl tiles, smooth basalt, 
+  // , chiseled x8 blocks  !!!
+  //above 1.17.1 ?
+  //below 1.16.5 ?  maybe smooth basalt? 
+  //STAIRS AND SLABS ONLY
+  //  stripped_ wood x 8  !!!! 
+  //WALL ONLY
+  // SMOOTH_QUARTZ_WALL , have stair/slab already in vmc
+  // CONCRETE x16 !!!
+  // WALL x16
+  // terracotta x17 !!! 
 }
