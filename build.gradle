@@ -23,10 +23,10 @@ version = "${mc_version}-${mod_version}"
 group = 'com.lothrazar.absentbydesign' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'absentbydesign'
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(16)
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.17.1'
+    mappings channel: 'official', version: '1.18'
 	
     //makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
@@ -94,7 +94,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
     
-    implementation fg.deobf("mezz.jei:${jei_version}")
+  //  implementation fg.deobf("mezz.jei:${jei_version}")
   
 //	  implementation fg.deobf("curse.maven:cyclic-239286:3188762")
 	  
