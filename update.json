@@ -14,6 +14,6 @@
 		"1.4.1": "Stonecutter Recipes added with Aspyro.   Fixed sides of blocks culling placements.  ",
 		"1.5.0": "Fixed blue slab.  New Wooden Walls.  Fixed missing data tags.  Loot table fix on double placed slabs dropping 2 instead of 1.  Many stonecutter recipes added"
 		,"1.5.1":"Merge pull request #28 from Aspyro:   Update stairs_smooth_stone_sc.json.  Fix light blue upper wool slab bug.  Added item tags for stairs/slabs/etc by request (same as the block tags)"
-		,"1.5.2":"Update zh_tw.json #41 by StarskyXIII.  Update ru_ru.json  #40 by BardinTheDwarf  "
+		,"1.5.2":"Update zh_tw.json #41 by StarskyXIII.  Update ru_ru.json  #40 by BardinTheDwarf. Obsidian and End stone type blocks added to minecraft:dragon_immune data tag, matching their parent blocks.  Fix some walls having wrong Material (wood vs stone) "
 	}
 }

@@ -438,7 +438,7 @@ public class AbsentRegistry {
     reg.register(createWall("wall_jungle_log", Blocks.JUNGLE_LOG, Block.Properties.create(Material.WOOD)));
     reg.register(createWall("wall_oak_log", Blocks.OAK_LOG, Block.Properties.create(Material.WOOD)));
     reg.register(createWall("wall_spruce_log", Blocks.SPRUCE_LOG, Block.Properties.create(Material.WOOD)));
-    reg.register(createWall("wall_andesite_smooth", Blocks.ANDESITE, Block.Properties.create(Material.WOOD)));
+    reg.register(createWall("wall_andesite_smooth", Blocks.ANDESITE, Block.Properties.create(Material.ROCK)));
     reg.register(createWall("wall_diorite_smooth", Blocks.DIORITE, Block.Properties.create(Material.ROCK)));
     reg.register(createWall("wall_end_stone", Blocks.END_STONE, Block.Properties.create(Material.ROCK)));
     reg.register(createWall("wall_granite_smooth", Blocks.QUARTZ_BLOCK, Block.Properties.create(Material.ROCK)));
@@ -455,10 +455,10 @@ public class AbsentRegistry {
     reg.register(createWall("wall_dark_prismarine", Blocks.DARK_PRISMARINE, Block.Properties.create(Material.ROCK)));
     reg.register(createWall("wall_crimson", Blocks.CRIMSON_STEM, Block.Properties.create(Material.WOOD)));
     reg.register(createWall("wall_warped", Blocks.WARPED_STEM, Block.Properties.create(Material.WOOD)));
-    reg.register(createWall("wall_crying_obsidian", Blocks.CRYING_OBSIDIAN, Block.Properties.create(Material.WOOD).setLightLevel(state -> 10)));
-    reg.register(createWall("wall_basalt", Blocks.BASALT, Block.Properties.create(Material.WOOD)));
-    reg.register(createWall("wall_polished_basalt", Blocks.POLISHED_BASALT, Block.Properties.create(Material.WOOD)));
-    reg.register(createWall("wall_lodestone", Blocks.LODESTONE, Block.Properties.create(Material.WOOD)));
+    reg.register(createWall("wall_crying_obsidian", Blocks.CRYING_OBSIDIAN, Block.Properties.create(Material.ROCK).setLightLevel(state -> 10)));
+    reg.register(createWall("wall_basalt", Blocks.BASALT, Block.Properties.create(Material.ROCK)));
+    reg.register(createWall("wall_polished_basalt", Blocks.POLISHED_BASALT, Block.Properties.create(Material.ROCK)));
+    reg.register(createWall("wall_lodestone", Blocks.LODESTONE, Block.Properties.create(Material.ROCK)));
     reg.register(createWall("wall_stripped_crimson", Blocks.STRIPPED_CRIMSON_HYPHAE, Block.Properties.create(Material.WOOD)));
     reg.register(createWall("wall_stripped_warped", Blocks.STRIPPED_WARPED_HYPHAE, Block.Properties.create(Material.WOOD)));
     reg.register(createWall("wall_mushroom_stem", Blocks.MUSHROOM_STEM, Block.Properties.create(Material.WOOD)));
