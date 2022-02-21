@@ -1,7 +1,6 @@
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
-        jcenter()
         mavenCentral()
     }
     dependencies {
@@ -70,23 +69,6 @@ minecraft {
             }
         }
 
-        data {
-            workingDirectory project.file('run')
-
-            // Recommended logging data for a userdev environment
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-            property 'forge.logging.console.level', 'debug'
-
-            args '--mod', 'absentbydesign', '--all', '--output', file('src/generated/resources/')
-
-            mods {
-                absentbydesign {
-                    source sourceSets.main
-                }
-            }
-        }
     }
 }
 
@@ -184,6 +166,6 @@ task copyJar(type: Copy) {
     into "${dist_folder}"
 }
 
-cleanJar {
+task cleanJar {
   delete 'build/libs'
 }
