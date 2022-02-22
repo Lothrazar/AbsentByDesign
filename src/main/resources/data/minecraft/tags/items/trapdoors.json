@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "absentbydesign:trapdoor_stone",
+    "absentbydesign:trapdoor_granite",
+    "absentbydesign:trapdoor_andesite",
+    "absentbydesign:trapdoor_diorite",
+    "absentbydesign:trapdoor_bricks",
+    "absentbydesign:trapdoor_stone_bricks",
+    "absentbydesign:trapdoor_blackstone",
+    "absentbydesign:trapdoor_blackstone_bricks",
+    "absentbydesign:trapdoor_basalt",
+    "absentbydesign:trapdoor_end_stone",
+    "absentbydesign:trapdoor_purpur",
+    "absentbydesign:trapdoor_quartz"
+  ]
+}

@@ -1,8 +1,6 @@
 buildscript {
     repositories {
-	maven { url = 'https://maven.minecraftforge.net' }
-        maven { url = 'https://files.minecraftforge.net/maven' }
-        jcenter()
+	    maven { url = 'https://maven.minecraftforge.net' }
         mavenCentral()
     }
     dependencies {
@@ -26,7 +24,7 @@ archivesBaseName = 'absentbydesign'
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.18'
+    mappings channel: 'official', version: '1.18.1'
 	
     //makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
@@ -94,7 +92,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
     
-  //  implementation fg.deobf("mezz.jei:${jei_version}")
+    implementation fg.deobf("mezz.jei:${jei_version}")
   
 //	  implementation fg.deobf("curse.maven:cyclic-239286:3188762")
 	  
@@ -125,10 +123,12 @@ repositories {
     url = "https://dvs1.progwml6.com/files/maven/"
   }
   maven {
-    // location of a maven mirror for JEI files, as a fallback
-    name = "ModMaven"
-    url = "https://modmaven.k-4u.nl"
+    name = "mappings"
+    url 'https://dogforce-games.com/maven'
   }
+  maven { url = "https://modmaven.k-4u.nl"  }    
+  maven { url = "https://maven.theillusivec4.top/"    }
+  maven { url 'https://maven.blamejared.com' }   
 }
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
@@ -182,6 +182,6 @@ task copyJar(type: Copy) {
     into "${dist_folder}"
 }
 
-cleanJar {
+task cleanJar {
   delete 'build/libs'
 }

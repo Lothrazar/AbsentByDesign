@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "absentbydesign:slab_snow",
+    "absentbydesign:stairs_snow",
+    "absentbydesign:slab_coarse_dirt",
+    "absentbydesign:stairs_coarse_dirt"
+  ]
+}
