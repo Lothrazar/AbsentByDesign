@@ -1,9 +1,9 @@
 {
 	"homepage": "https://www.curseforge.com/minecraft/mc-mods/absent-by-design",
 	"promos": {
-		"1.18.1-latest": "1.6.1"
+		"1.18.2-latest": "1.6.1"
 	},
-	"1.18.1": {
+	"1.18.2": {
 		"1.5.0": "ported"
 		,"1.6.0":"Added support for: Smooth Basalt, Amethyst, Calcite, Tuff, Cracked Nether Brick, Cracked Deepslate Bricks, Cracked Deepslate Tiles"
 		,"1.6.1":"Added minecraft:trapdoor data tags to existing blocks.  Added block tags mineable/axe mineable/pickaxe mineable/shovel (please report if any are missing or incorrect. i left wool in both for now since theres no shears tag). Update zh_tw.json #41 by StarskyXIII.  Update ru_ru.json  #40 by BardinTheDwarf. Obsidian and End stone type blocks added to minecraft:dragon_immune data tag, matching their parent blocks. Fix some walls having wrong Material (wood vs stone)"
