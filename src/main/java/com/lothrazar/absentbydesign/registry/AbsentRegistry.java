@@ -15,6 +15,7 @@ import com.lothrazar.absentbydesign.block.TrapDoorAbsent;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Registry;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.world.entity.EntityType;
@@ -32,12 +33,12 @@ import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.RegisterEvent;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AbsentRegistry {
@@ -261,9 +262,10 @@ public class AbsentRegistry {
   }
 
   @SubscribeEvent
-  public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
-    IForgeRegistry<Block> reg = event.getRegistry();
+  public static void onBlocksRegistry(RegisterEvent event) {
+//    IForgeRegistry<Block> reg = event.getRegistry();
     //
+    event.register(Registry.BLOCK_REGISTRY, reg -> {
     //                FENCES
     //
     reg.register(createFence("fence_log_acacia", Blocks.ACACIA_LOG, Block.Properties.of(Material.WOOD)));
@@ -574,6 +576,8 @@ public class AbsentRegistry {
     reg.register(createTrap("trapdoor_end_stone", Blocks.STONE, Block.Properties.of(Material.STONE)));
     reg.register(createTrap("trapdoor_purpur", Blocks.PURPUR_BLOCK, Block.Properties.of(Material.STONE)));
     reg.register(createTrap("trapdoor_quartz", Blocks.QUARTZ_BLOCK, Block.Properties.of(Material.STONE)));
+
+    });
   }
 
   @SubscribeEvent
