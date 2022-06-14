@@ -1,6 +1,5 @@
 package com.lothrazar.absentbydesign.block;
 
-import java.util.Random;
 import com.lothrazar.absentbydesign.registry.AbsentRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

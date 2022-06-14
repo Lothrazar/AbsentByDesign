@@ -36,28 +36,10 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.RegisterEvent;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AbsentRegistry {
-
-  private static final String HAX = "block." + ModAbsentBD.MODID + ".";
-  //
-  // STONE
-  // SANDSTONE
-  // BRICKS
-  // ENDSTONE 
-  // CONCRETE
-  // WOOL
-  // GLASS
-  // MUSHROOM
-  // BASALT
-  // OBSIDIAN
-  // QUARTZ
-  // MAGMA
-  // GLOWSTONE
-  // 
   //
   // NO INVENTORY SCREEN BLOCKS (chest, furnace, ...)
   // NO ORES
@@ -69,112 +51,123 @@ public class AbsentRegistry {
   // AVOID REDSTONE STUFF (levers, piston, buttons, dispenser, pressure_plates ...)
   // AVOID NEW BLOCK TYPES (chain, lantern, glass panes, iron_bars, ...)
   // AVOID PILLAR
-  // AVOID CHISELED
+  // AVOID CHISELED?
   // AVOID GLAZED TERRACOTTA
   // 
+  //1.19 NEW ADD THIS 
+  //3x froglight everything
+  //mangrove log copy other logs
+  //mangrove plank walls etc
+  //mud everything
+  //mud bricks fence and gate
+  //packed mud everything
+  //reinforced deepslate everything
+  //sculk everything
+  //
+
   private static final List<Block> BLOCKLIST = new ArrayList<>();
-  private static final String ID = ModAbsentBD.MODID + ":";
+  private static final String HAX = "block." + ModAbsentBD.MODID + ".";
   // @ObjectHolder(ID + "wall_glass_white")
-  public static BlockAbsentWall wall_glass_white;
+  public static BlockAbsentWall WALL_GLASS_WHITE;
   // @ObjectHolder(ID + "wall_glass_orange")
-  public static BlockAbsentWall wall_glass_orange;
+  public static BlockAbsentWall WALL_GLASS_ORANGE;
   // @ObjectHolder(ID + "wall_glass_magenta")
-  public static BlockAbsentWall wall_glass_magenta;
+  public static BlockAbsentWall WALL_GLASS_MAGENTA;
   // @ObjectHolder(ID + "wall_glass_purple")
-  public static BlockAbsentWall wall_glass_purple;
+  public static BlockAbsentWall WALL_GLASS_PURPLE;
   // @ObjectHolder(ID + "wall_glass_blue")
-  public static BlockAbsentWall wall_glass_blue;
+  public static BlockAbsentWall WALL_GLASS_BLUE;
   // @ObjectHolder(ID + "wall_glass_brown")
-  public static BlockAbsentWall wall_glass_brown;
+  public static BlockAbsentWall WALL_GLASS_BROWN;
   // @ObjectHolder(ID + "wall_glass_black")
-  public static BlockAbsentWall wall_glass_black;
+  public static BlockAbsentWall WALL_GLASS_BLACK;
   // @ObjectHolder(ID + "wall_glass_cyan")
-  public static BlockAbsentWall wall_glass_cyan;
+  public static BlockAbsentWall WALL_GLASS_CYAN;
   // @ObjectHolder(ID + "wall_glass_light_gray")
-  public static BlockAbsentWall wall_glass_light_gray;
+  public static BlockAbsentWall WALL_GLASS_LIGHT_GRAY;
   // @ObjectHolder(ID + "wall_glass_gray")
-  public static BlockAbsentWall wall_glass_gray;
+  public static BlockAbsentWall WALL_GLASS_GRAY;
   // @ObjectHolder(ID + "wall_glass_pink")
-  public static BlockAbsentWall wall_glass_pink;
+  public static BlockAbsentWall WALL_GLASS_PINK;
   // @ObjectHolder(ID + "wall_glass_lime")
-  public static BlockAbsentWall wall_glass_lime;
+  public static BlockAbsentWall WALL_GLASS_LIME;
   // @ObjectHolder(ID + "wall_glass_light_blue")
-  public static BlockAbsentWall wall_glass_light_blue;
+  public static BlockAbsentWall WALL_GLASS_LIGHT_BLUE;
   // @ObjectHolder(ID + "wall_glass_yellow")
-  public static BlockAbsentWall wall_glass_yellow;
+  public static BlockAbsentWall WALL_GLASS_YELLOW;
   // @ObjectHolder(ID + "wall_glass_green")
-  public static BlockAbsentWall wall_glass_green;
+  public static BlockAbsentWall WALL_GLASS_GREEN;
   // @ObjectHolder(ID + "wall_glass_red")
-  public static BlockAbsentWall wall_glass_red;
+  public static BlockAbsentWall WALL_GLASS_RED;
   // @ObjectHolder(ID + "wall_glass")
-  public static BlockAbsentWall wall_glass;
+  public static BlockAbsentWall WALL_GLASS;
   // @ObjectHolder(ID + "stairs_glass_purple")
-  public static BlockAbsentStair stairs_glass_purple;
+  public static BlockAbsentStair STAIRS_GLASS_PURPLE;
   // @ObjectHolder(ID + "stairs_glass_blue")
-  public static BlockAbsentStair stairs_glass_blue;
+  public static BlockAbsentStair STAIRS_GLASS_BLUE;
   // @ObjectHolder(ID + "stairs_glass_brown")
-  public static BlockAbsentStair stairs_glass_brown;
+  public static BlockAbsentStair STAIRS_GLASS_BROWN;
   // @ObjectHolder(ID + "stairs_glass_red")
-  public static BlockAbsentStair stairs_glass_red;
+  public static BlockAbsentStair STAIRS_GLASS_RED;
   // @ObjectHolder(ID + "stairs_glass_black")
-  public static BlockAbsentStair stairs_glass_black;
+  public static BlockAbsentStair STAIRS_GLASS_BLACK;
   // @ObjectHolder(ID + "stairs_glass_cyan")
-  public static BlockAbsentStair stairs_glass_cyan;
+  public static BlockAbsentStair STAIRS_GLASS_CYAN;
   // @ObjectHolder(ID + "stairs_glass_light_gray")
-  public static BlockAbsentStair stairs_glass_light_gray;
+  public static BlockAbsentStair STAIRS_GLASS_LIGHT_GRAY;
   // @ObjectHolder(ID + "stairs_glass_gray")
-  public static BlockAbsentStair stairs_glass_gray;
+  public static BlockAbsentStair STAIRS_GLASS_GRAY;
   // @ObjectHolder(ID + "stairs_glass_pink")
-  public static BlockAbsentStair stairs_glass_pink;
+  public static BlockAbsentStair STAIRS_GLASS_PINK;
   // @ObjectHolder(ID + "stairs_glass_lime")
-  public static BlockAbsentStair stairs_glass_lime;
+  public static BlockAbsentStair STAIRS_GLASS_LIME;
   // @ObjectHolder(ID + "stairs_glass_light_blue")
-  public static BlockAbsentStair stairs_glass_light_blue;
+  public static BlockAbsentStair STAIRS_GLASS_LIGHT_BLUE;
   // @ObjectHolder(ID + "stairs_glass_magenta")
-  public static BlockAbsentStair stairs_glass_magenta;
+  public static BlockAbsentStair STAIRS_GLASS_MAGENTA;
   // @ObjectHolder(ID + "stairs_glass_white")
-  public static BlockAbsentStair stairs_glass_white;
+  public static BlockAbsentStair STAIRS_GLASS_WHITE;
   // @ObjectHolder(ID + "stairs_glass_green")
-  public static BlockAbsentStair stairs_glass_green;
+  public static BlockAbsentStair STAIRS_GLASS_GREEN;
   // @ObjectHolder(ID + "stairs_glass_yellow")
-  public static BlockAbsentStair stairs_glass_yellow;
+  public static BlockAbsentStair STAIRS_GLASS_YELLOW;
   // @ObjectHolder(ID + "stairs_glass_orange")
-  public static BlockAbsentStair stairs_glass_orange;
+  public static BlockAbsentStair STAIRS_GLASS_ORANGE;
   // @ObjectHolder(ID + "stairs_glass")
-  public static BlockAbsentStair stairs_glass;
+  public static BlockAbsentStair STAIRS_GLASS;
   // @ObjectHolder(ID + "slab_glass")
-  public static BlockAbsentSlab slab_glass;
+  public static BlockAbsentSlab SLAB_GLASS;
   // @ObjectHolder(ID + "slab_glass_white")
-  public static BlockAbsentSlab slab_glass_white;
+  public static BlockAbsentSlab SLAB_GLASS_WHITE;
   // @ObjectHolder(ID + "slab_glass_orange")
-  public static BlockAbsentSlab slab_glass_orange;
+  public static BlockAbsentSlab SLAB_GLASS_ORANGE;
   // @ObjectHolder(ID + "slab_glass_magenta")
-  public static BlockAbsentSlab slab_glass_magenta;
+  public static BlockAbsentSlab SLAB_GLASS_MAGENTA;
   // @ObjectHolder(ID + "slab_glass_light_blue")
-  public static BlockAbsentSlab slab_glass_light_blue;
+  public static BlockAbsentSlab SLAB_GLASS_LIGHT_BLUE;
   // @ObjectHolder(ID + "slab_glass_yellow")
-  public static BlockAbsentSlab slab_glass_yellow;
+  public static BlockAbsentSlab SLAB_GLASS_YELLOW;
   // @ObjectHolder(ID + "slab_glass_lime")
-  public static BlockAbsentSlab slab_glass_lime;
+  public static BlockAbsentSlab SLAB_GLASS_LIME;
   // @ObjectHolder(ID + "slab_glass_pink")
-  public static BlockAbsentSlab slab_glass_pink;
+  public static BlockAbsentSlab SLAB_GLASS_PINK;
   // @ObjectHolder(ID + "slab_glass_gray")
-  public static BlockAbsentSlab slab_glass_gray;
+  public static BlockAbsentSlab SLAB_GLASS_GRAY;
   // @ObjectHolder(ID + "slab_glass_light_gray")
-  public static BlockAbsentSlab slab_glass_light_gray;
+  public static BlockAbsentSlab SLAB_GLASS_LIGHT_GRAY;
   // @ObjectHolder(ID + "slab_glass_cyan")
-  public static BlockAbsentSlab slab_glass_cyan;
+  public static BlockAbsentSlab SLAB_GLASS_CYAN;
   // @ObjectHolder(ID + "slab_glass_purple")
-  public static BlockAbsentSlab slab_glass_purple;
+  public static BlockAbsentSlab SLAB_GLASS_PURPLE;
   // @ObjectHolder(ID + "slab_glass_blue")
-  public static BlockAbsentSlab slab_glass_blue;
+  public static BlockAbsentSlab SLAB_GLASS_BLUE;
   // @ObjectHolder(ID + "slab_glass_brown")
-  public static BlockAbsentSlab slab_glass_brown;
+  public static BlockAbsentSlab SLAB_GLASS_BROWN;
   // @ObjectHolder(ID + "slab_glass_green")
-  public static BlockAbsentSlab slab_glass_green;
+  public static BlockAbsentSlab SLAB_GLASS_GREEN;
   // @ObjectHolder(ID + "slab_glass_red")
-  public static BlockAbsentSlab slab_glass_red;
-  public static BlockAbsentSlab slab_glass_black;
+  public static BlockAbsentSlab SLAB_GLASS_RED;
+  public static BlockAbsentSlab SLAB_GLASS_BLACK;
   private static BlockAbsentFence FENCE_QUARTZ;
   private static CreativeModeTab itemGroup = new CreativeModeTab(ModAbsentBD.MODID) {
 
@@ -184,69 +177,69 @@ public class AbsentRegistry {
     }
   };
 
-  public static boolean isntSolid(BlockState state, BlockGetter reader, BlockPos pos) {
+  public static boolean never(BlockState state, BlockGetter reader, BlockPos pos) {
     return false;
   }
 
-  public static Boolean neverAllowSpawn(BlockState state, BlockGetter reader, BlockPos pos, EntityType<?> entity) {
+  public static Boolean never(BlockState state, BlockGetter reader, BlockPos pos, EntityType<?> entity) {
     return false;
   }
 
   public static void setupClient(final FMLClientSetupEvent event) {
     // walls
-    //    setCutout(AbsentRegistry.wall_glass);
-    //    setTranslucent(AbsentRegistry.wall_glass_white);
-    //    setTranslucent(AbsentRegistry.wall_glass_orange);
-    //    setTranslucent(AbsentRegistry.wall_glass_magenta);
-    //    setTranslucent(AbsentRegistry.wall_glass_light_blue);
-    //    setTranslucent(AbsentRegistry.wall_glass_yellow);
-    //    setTranslucent(AbsentRegistry.wall_glass_lime);
-    //    setTranslucent(AbsentRegistry.wall_glass_pink);
-    //    setTranslucent(AbsentRegistry.wall_glass_gray);
-    //    setTranslucent(AbsentRegistry.wall_glass_light_gray);
-    //    setTranslucent(AbsentRegistry.wall_glass_cyan);
-    //    setTranslucent(AbsentRegistry.wall_glass_purple);
-    //    setTranslucent(AbsentRegistry.wall_glass_blue);
-    //    setTranslucent(AbsentRegistry.wall_glass_brown);
-    //    setTranslucent(AbsentRegistry.wall_glass_green);
-    //    setTranslucent(AbsentRegistry.wall_glass_red);
-    //    setTranslucent(AbsentRegistry.wall_glass_black);
-    //    // stairs
-    //    setCutout(AbsentRegistry.stairs_glass);
-    //    setTranslucent(AbsentRegistry.stairs_glass_white);
-    //    setTranslucent(AbsentRegistry.stairs_glass_orange);
-    //    setTranslucent(AbsentRegistry.stairs_glass_magenta);
-    //    setTranslucent(AbsentRegistry.stairs_glass_light_blue);
-    //    setTranslucent(AbsentRegistry.stairs_glass_yellow);
-    //    setTranslucent(AbsentRegistry.stairs_glass_lime);
-    //    setTranslucent(AbsentRegistry.stairs_glass_pink);
-    //    setTranslucent(AbsentRegistry.stairs_glass_gray);
-    //    setTranslucent(AbsentRegistry.stairs_glass_light_gray);
-    //    setTranslucent(AbsentRegistry.stairs_glass_cyan);
-    //    setTranslucent(AbsentRegistry.stairs_glass_purple);
-    //    setTranslucent(AbsentRegistry.stairs_glass_blue);
-    //    setTranslucent(AbsentRegistry.stairs_glass_brown);
-    //    setTranslucent(AbsentRegistry.stairs_glass_green);
-    //    setTranslucent(AbsentRegistry.stairs_glass_red);
-    //    setTranslucent(AbsentRegistry.stairs_glass_black);
-    //    // slabs
-    //    setCutout(AbsentRegistry.slab_glass);
-    //    setTranslucent(AbsentRegistry.slab_glass_white);
-    //    setTranslucent(AbsentRegistry.slab_glass_orange);
-    //    setTranslucent(AbsentRegistry.slab_glass_magenta);
-    //    setTranslucent(AbsentRegistry.slab_glass_light_blue);
-    //    setTranslucent(AbsentRegistry.slab_glass_yellow);
-    //    setTranslucent(AbsentRegistry.slab_glass_lime);
-    //    setTranslucent(AbsentRegistry.slab_glass_pink);
-    //    setTranslucent(AbsentRegistry.slab_glass_gray);
-    //    setTranslucent(AbsentRegistry.slab_glass_light_gray);
-    //    setTranslucent(AbsentRegistry.slab_glass_cyan);
-    //    setTranslucent(AbsentRegistry.slab_glass_purple);
-    //    setTranslucent(AbsentRegistry.slab_glass_blue);
-    //    setTranslucent(AbsentRegistry.slab_glass_brown);
-    //    setTranslucent(AbsentRegistry.slab_glass_green);
-    //    setTranslucent(AbsentRegistry.slab_glass_red);
-    setTranslucent(AbsentRegistry.slab_glass_black);
+    setCutout(AbsentRegistry.WALL_GLASS);
+    setTranslucent(AbsentRegistry.WALL_GLASS_WHITE);
+    setTranslucent(AbsentRegistry.WALL_GLASS_ORANGE);
+    setTranslucent(AbsentRegistry.WALL_GLASS_MAGENTA);
+    setTranslucent(AbsentRegistry.WALL_GLASS_LIGHT_BLUE);
+    setTranslucent(AbsentRegistry.WALL_GLASS_YELLOW);
+    setTranslucent(AbsentRegistry.WALL_GLASS_LIME);
+    setTranslucent(AbsentRegistry.WALL_GLASS_PINK);
+    setTranslucent(AbsentRegistry.WALL_GLASS_GRAY);
+    setTranslucent(AbsentRegistry.WALL_GLASS_LIGHT_GRAY);
+    setTranslucent(AbsentRegistry.WALL_GLASS_CYAN);
+    setTranslucent(AbsentRegistry.WALL_GLASS_PURPLE);
+    setTranslucent(AbsentRegistry.WALL_GLASS_BLUE);
+    setTranslucent(AbsentRegistry.WALL_GLASS_BROWN);
+    setTranslucent(AbsentRegistry.WALL_GLASS_GREEN);
+    setTranslucent(AbsentRegistry.WALL_GLASS_RED);
+    setTranslucent(AbsentRegistry.WALL_GLASS_BLACK);
+    // stairs
+    setCutout(AbsentRegistry.STAIRS_GLASS);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_WHITE);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_ORANGE);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_MAGENTA);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_LIGHT_BLUE);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_YELLOW);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_LIME);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_PINK);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_GRAY);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_LIGHT_GRAY);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_CYAN);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_PURPLE);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_BLUE);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_BROWN);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_GREEN);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_RED);
+    setTranslucent(AbsentRegistry.STAIRS_GLASS_BLACK);
+    // slabs
+    setCutout(AbsentRegistry.SLAB_GLASS);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_WHITE);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_ORANGE);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_MAGENTA);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_LIGHT_BLUE);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_YELLOW);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_LIME);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_PINK);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_GRAY);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_LIGHT_GRAY);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_CYAN);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_PURPLE);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_BLUE);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_BROWN);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_GREEN);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_RED);
+    setTranslucent(AbsentRegistry.SLAB_GLASS_BLACK);
   }
 
   private static void setCutout(IBlockAbsent block) {
@@ -350,24 +343,40 @@ public class AbsentRegistry {
       reg.register("slab_terracotta_red", createSlab(Block.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_RED), Blocks.RED_GLAZED_TERRACOTTA));
       reg.register("slab_terracotta_black", createSlab(Block.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_BLACK), Blocks.BLACK_GLAZED_TERRACOTTA));
       reg.register("slab_terracotta", createSlab(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.TERRACOTTA));
-      reg.register("slab_glass", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.GLASS));
-      reg.register("slab_glass_white", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.WHITE_STAINED_GLASS));
-      reg.register("slab_glass_orange", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.ORANGE_STAINED_GLASS));
-      reg.register("slab_glass_magenta", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.MAGENTA_STAINED_GLASS));
-      reg.register("slab_glass_light_blue", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.LIGHT_BLUE_STAINED_GLASS));
-      reg.register("slab_glass_yellow", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.YELLOW_STAINED_GLASS));
-      reg.register("slab_glass_lime", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.LIME_STAINED_GLASS));
-      reg.register("slab_glass_pink", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.PINK_STAINED_GLASS));
-      reg.register("slab_glass_gray", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.GRAY_STAINED_GLASS));
-      reg.register("slab_glass_light_gray", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.LIGHT_GRAY_STAINED_GLASS));
-      reg.register("slab_glass_cyan", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.CYAN_STAINED_GLASS));
-      reg.register("slab_glass_purple", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.PURPLE_STAINED_GLASS));
-      reg.register("slab_glass_blue", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.BLUE_STAINED_GLASS));
-      reg.register("slab_glass_brown", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.BROWN_STAINED_GLASS));
-      reg.register("slab_glass_green", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.GREEN_STAINED_GLASS));
-      reg.register("slab_glass_red", createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.RED_STAINED_GLASS));
-      slab_glass_black = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.BLACK_STAINED_GLASS);
-      reg.register("slab_glass_black", slab_glass_black);
+      SLAB_GLASS = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.GLASS);
+      reg.register("slab_glass", SLAB_GLASS);
+      SLAB_GLASS_WHITE = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.WHITE_STAINED_GLASS);
+      reg.register("slab_glass_white", SLAB_GLASS_WHITE);
+      SLAB_GLASS_ORANGE = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.ORANGE_STAINED_GLASS);
+      reg.register("slab_glass_orange", SLAB_GLASS_ORANGE);
+      SLAB_GLASS_MAGENTA = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.MAGENTA_STAINED_GLASS);
+      reg.register("slab_glass_magenta", SLAB_GLASS_MAGENTA);
+      SLAB_GLASS_LIGHT_BLUE = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.LIGHT_BLUE_STAINED_GLASS);
+      reg.register("slab_glass_light_blue", SLAB_GLASS_LIGHT_BLUE);
+      SLAB_GLASS_YELLOW = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.YELLOW_STAINED_GLASS);
+      reg.register("slab_glass_yellow", SLAB_GLASS_YELLOW);
+      SLAB_GLASS_LIME = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.LIME_STAINED_GLASS);
+      reg.register("slab_glass_lime", SLAB_GLASS_LIME);
+      SLAB_GLASS_PINK = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.PINK_STAINED_GLASS);
+      reg.register("slab_glass_pink", SLAB_GLASS_PINK);
+      SLAB_GLASS_GRAY = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.GRAY_STAINED_GLASS);
+      reg.register("slab_glass_gray", SLAB_GLASS_GRAY);
+      SLAB_GLASS_LIGHT_GRAY = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.LIGHT_GRAY_STAINED_GLASS);
+      reg.register("slab_glass_light_gray", SLAB_GLASS_LIGHT_GRAY);
+      SLAB_GLASS_CYAN = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.CYAN_STAINED_GLASS);
+      reg.register("slab_glass_cyan", SLAB_GLASS_CYAN);
+      SLAB_GLASS_PURPLE = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.PURPLE_STAINED_GLASS);
+      reg.register("slab_glass_purple", SLAB_GLASS_PURPLE);
+      SLAB_GLASS_BLUE = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.BLUE_STAINED_GLASS);
+      reg.register("slab_glass_blue", SLAB_GLASS_BLUE);
+      SLAB_GLASS_BROWN = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.BROWN_STAINED_GLASS);
+      reg.register("slab_glass_brown", SLAB_GLASS_BROWN);
+      SLAB_GLASS_GREEN = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.GREEN_STAINED_GLASS);
+      reg.register("slab_glass_green", SLAB_GLASS_GREEN);
+      SLAB_GLASS_RED = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.RED_STAINED_GLASS);
+      reg.register("slab_glass_red", SLAB_GLASS_RED);
+      SLAB_GLASS_BLACK = (BlockAbsentSlab) createSlab(Block.Properties.of(Material.GLASS).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.BLACK_STAINED_GLASS);
+      reg.register("slab_glass_black", SLAB_GLASS_BLACK);
       reg.register("slab_mushroom_stem", createSlab(Block.Properties.of(Material.WOOD, MaterialColor.WOOL), Blocks.MUSHROOM_STEM));
       reg.register("slab_red_mushroom", createSlab(Block.Properties.of(Material.WOOD, MaterialColor.WOOL), Blocks.RED_MUSHROOM));
       reg.register("slab_brown_mushroom", createSlab(Block.Properties.of(Material.WOOD, MaterialColor.WOOL), Blocks.BROWN_MUSHROOM));
@@ -429,40 +438,57 @@ public class AbsentRegistry {
       reg.register("stairs_wool_silver", createStair(Block.Properties.of(Material.WOOL), Blocks.LIGHT_GRAY_WOOL));
       reg.register("stairs_wool_white", createStair(Block.Properties.of(Material.WOOL), Blocks.WHITE_WOOL));
       reg.register("stairs_wool_yellow", createStair(Block.Properties.of(Material.WOOL), Blocks.YELLOW_WOOL));
-      reg.register("stairs_terracotta", createStair(Blocks.TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_white", createStair(Blocks.WHITE_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_orange", createStair(Blocks.ORANGE_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_magenta", createStair(Blocks.MAGENTA_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_light_blue", createStair(Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_yellow", createStair(Blocks.YELLOW_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_lime", createStair(Blocks.LIME_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_pink", createStair(Blocks.PINK_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_gray", createStair(Blocks.GRAY_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_light_gray", createStair(Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_cyan", createStair(Blocks.CYAN_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_purple", createStair(Blocks.PURPLE_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_blue", createStair(Blocks.BLUE_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_brown", createStair(Blocks.BROWN_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_green", createStair(Blocks.GREEN_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_red", createStair(Blocks.RED_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_terracotta_black", createStair(Blocks.BLACK_GLAZED_TERRACOTTA, Block.Properties.of(Material.STONE, MaterialColor.CLAY)));
-      reg.register("stairs_glass", createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid), Blocks.GLASS));
-      reg.register("stairs_glass_white", createStair(Blocks.WHITE_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_orange", createStair(Blocks.ORANGE_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_magenta", createStair(Blocks.MAGENTA_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_light_blue", createStair(Blocks.LIGHT_BLUE_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_yellow", createStair(Blocks.YELLOW_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_lime", createStair(Blocks.LIME_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_pink", createStair(Blocks.PINK_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_gray", createStair(Blocks.GRAY_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_light_gray", createStair(Blocks.LIGHT_GRAY_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_cyan", createStair(Blocks.CYAN_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_purple", createStair(Blocks.PURPLE_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_blue", createStair(Blocks.BLUE_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_brown", createStair(Blocks.BROWN_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_green", createStair(Blocks.GREEN_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_red", createStair(Blocks.RED_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
-      reg.register("stairs_glass_black", createStair(Blocks.BLACK_STAINED_GLASS, Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::neverAllowSpawn).isRedstoneConductor(AbsentRegistry::isntSolid).isSuffocating(AbsentRegistry::isntSolid).isViewBlocking(AbsentRegistry::isntSolid)));
+      reg.register("stairs_terracotta", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.TERRACOTTA));
+      reg.register("stairs_terracotta_white", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.WHITE_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_orange", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.ORANGE_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_magenta", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.MAGENTA_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_light_blue", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_yellow", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.YELLOW_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_lime", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.LIME_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_pink", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.PINK_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_gray", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.GRAY_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_light_gray", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_cyan", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.CYAN_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_purple", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.PURPLE_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_blue", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.BLUE_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_brown", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.BROWN_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_green", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.GREEN_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_red", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.RED_GLAZED_TERRACOTTA));
+      reg.register("stairs_terracotta_black", createStair(Block.Properties.of(Material.STONE, MaterialColor.CLAY), Blocks.BLACK_GLAZED_TERRACOTTA));
+      STAIRS_GLASS = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.GLASS);
+      reg.register("stairs_glass", STAIRS_GLASS);
+      STAIRS_GLASS_WHITE = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.WHITE_STAINED_GLASS);
+      reg.register("stairs_glass_white", STAIRS_GLASS_WHITE);
+      STAIRS_GLASS_ORANGE = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.ORANGE_STAINED_GLASS);
+      reg.register("stairs_glass_orange", STAIRS_GLASS_ORANGE);
+      STAIRS_GLASS_MAGENTA = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.MAGENTA_STAINED_GLASS);
+      reg.register("stairs_glass_magenta", STAIRS_GLASS_MAGENTA);
+      STAIRS_GLASS_LIGHT_BLUE = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.LIGHT_BLUE_STAINED_GLASS);
+      reg.register("stairs_glass_light_blue", STAIRS_GLASS_LIGHT_BLUE);
+      STAIRS_GLASS_YELLOW = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.YELLOW_STAINED_GLASS);
+      reg.register("stairs_glass_yellow", STAIRS_GLASS_YELLOW);
+      STAIRS_GLASS_LIME = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.LIME_STAINED_GLASS);
+      reg.register("stairs_glass_lime", STAIRS_GLASS_LIME);
+      STAIRS_GLASS_PINK = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.PINK_STAINED_GLASS);
+      reg.register("stairs_glass_pink", STAIRS_GLASS_PINK);
+      STAIRS_GLASS_GRAY = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.GRAY_STAINED_GLASS);
+      reg.register("stairs_glass_gray", STAIRS_GLASS_GRAY);
+      STAIRS_GLASS_LIGHT_GRAY = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.LIGHT_GRAY_STAINED_GLASS);
+      reg.register("stairs_glass_light_gray", STAIRS_GLASS_LIGHT_GRAY);
+      STAIRS_GLASS_CYAN = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.CYAN_STAINED_GLASS);
+      reg.register("stairs_glass_cyan", STAIRS_GLASS_CYAN);
+      STAIRS_GLASS_PURPLE = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.PURPLE_STAINED_GLASS);
+      reg.register("stairs_glass_purple", STAIRS_GLASS_PURPLE);
+      STAIRS_GLASS_BLUE = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.BLUE_STAINED_GLASS);
+      reg.register("stairs_glass_blue", STAIRS_GLASS_BLUE);
+      STAIRS_GLASS_BROWN = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.BROWN_STAINED_GLASS);
+      reg.register("stairs_glass_brown", STAIRS_GLASS_BROWN);
+      STAIRS_GLASS_GREEN = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.GREEN_STAINED_GLASS);
+      reg.register("stairs_glass_green", STAIRS_GLASS_GREEN);
+      STAIRS_GLASS_RED = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.RED_STAINED_GLASS);
+      reg.register("stairs_glass_red", STAIRS_GLASS_RED);
+      STAIRS_GLASS_BLACK = createStair(Block.Properties.of(Material.GLASS, MaterialColor.CLAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.BLACK_STAINED_GLASS);
+      reg.register("stairs_glass_black", STAIRS_GLASS_BLACK);
       reg.register("stairs_red_mushroom", createStair(Block.Properties.of(Material.WOOD), Blocks.RED_MUSHROOM_BLOCK));
       reg.register("stairs_brown_mushroom", createStair(Block.Properties.of(Material.WOOD), Blocks.BROWN_MUSHROOM_BLOCK));
       reg.register("stairs_mushroom_stem", createStair(Block.Properties.of(Material.WOOD), Blocks.MUSHROOM_STEM));
@@ -477,66 +503,83 @@ public class AbsentRegistry {
       //
       //                WALLS
       //
-      reg.register("wall_stripped_acacia_log", createWall(Blocks.STRIPPED_OAK_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_stripped_birch_log", createWall(Blocks.STRIPPED_OAK_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_stripped_dark_oak_log", createWall(Blocks.STRIPPED_OAK_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_stripped_jungle_log", createWall(Blocks.STRIPPED_OAK_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_stripped_oak_log", createWall(Blocks.STRIPPED_OAK_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_stripped_spruce_log", createWall(Blocks.STRIPPED_OAK_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_acacia_log", createWall(Blocks.ACACIA_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_birch_log", createWall(Blocks.BIRCH_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_dark_oak_log", createWall(Blocks.DARK_OAK_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_jungle_log", createWall(Blocks.JUNGLE_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_oak_log", createWall(Blocks.OAK_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_spruce_log", createWall(Blocks.SPRUCE_LOG, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_andesite_smooth", createWall(Blocks.ANDESITE, Block.Properties.of(Material.STONE)));
-      reg.register("wall_diorite_smooth", createWall(Blocks.DIORITE, Block.Properties.of(Material.STONE)));
-      reg.register("wall_end_stone", createWall(Blocks.END_STONE, Block.Properties.of(Material.STONE)));
-      reg.register("wall_granite_smooth", createWall(Blocks.QUARTZ_BLOCK, Block.Properties.of(Material.STONE)));
-      reg.register("wall_purpur", createWall(Blocks.PURPUR_BLOCK, Block.Properties.of(Material.STONE)));
-      reg.register("wall_quartz", createWall(Blocks.QUARTZ_BLOCK, Block.Properties.of(Material.STONE)));
-      reg.register("wall_sandstone_red_smooth", createWall(Blocks.RED_SANDSTONE, Block.Properties.of(Material.STONE)));
-      reg.register("wall_sandstone_smooth", createWall(Blocks.SANDSTONE, Block.Properties.of(Material.STONE)));
-      reg.register("wall_stone", createWall(Blocks.STONE, Block.Properties.of(Material.STONE)));
-      reg.register("wall_stone_slab", createWall(Blocks.STONE, Block.Properties.of(Material.STONE)));
-      reg.register("wall_stonebrick_carved", createWall(Blocks.STONE_BRICKS, Block.Properties.of(Material.STONE)));
-      reg.register("wall_stonebrick_cracked", createWall(Blocks.STONE_BRICKS, Block.Properties.of(Material.STONE)));
-      reg.register("wall_obsidian", createWall(Blocks.OBSIDIAN, Block.Properties.of(Material.STONE)));
-      reg.register("wall_prismarine_bricks", createWall(Blocks.PRISMARINE, Block.Properties.of(Material.STONE)));
-      reg.register("wall_dark_prismarine", createWall(Blocks.DARK_PRISMARINE, Block.Properties.of(Material.STONE)));
-      reg.register("wall_crimson", createWall(Blocks.CRIMSON_STEM, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_warped", createWall(Blocks.WARPED_STEM, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_crying_obsidian", createWall(Blocks.CRYING_OBSIDIAN, Block.Properties.of(Material.STONE).lightLevel(state -> 10)));
-      reg.register("wall_basalt", createWall(Blocks.BASALT, Block.Properties.of(Material.STONE)));
-      reg.register("wall_polished_basalt", createWall(Blocks.POLISHED_BASALT, Block.Properties.of(Material.STONE)));
-      reg.register("wall_lodestone", createWall(Blocks.LODESTONE, Block.Properties.of(Material.STONE)));
-      reg.register("wall_stripped_crimson", createWall(Blocks.STRIPPED_CRIMSON_HYPHAE, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_stripped_warped", createWall(Blocks.STRIPPED_WARPED_HYPHAE, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_mushroom_stem", createWall(Blocks.MUSHROOM_STEM, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_red_mushroom", createWall(Blocks.RED_MUSHROOM_BLOCK, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_brown_mushroom", createWall(Blocks.BROWN_MUSHROOM_BLOCK, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_mushroom_polished", createWall(Blocks.MUSHROOM_STEM, Block.Properties.of(Material.WOOD)));
-      reg.register("wall_quartz_bricks", createWall(Blocks.QUARTZ_BRICKS, Block.Properties.of(Material.STONE)));
+      reg.register("wall_stripped_acacia_log", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_ACACIA_LOG));
+      reg.register("wall_stripped_birch_log", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_BIRCH_LOG));
+      reg.register("wall_stripped_dark_oak_log", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_DARK_OAK_LOG));
+      reg.register("wall_stripped_jungle_log", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_JUNGLE_LOG));
+      reg.register("wall_stripped_oak_log", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_OAK_LOG));
+      reg.register("wall_stripped_spruce_log", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_SPRUCE_LOG));
+      reg.register("wall_acacia_log", createWall(Block.Properties.of(Material.WOOD), Blocks.ACACIA_LOG));
+      reg.register("wall_birch_log", createWall(Block.Properties.of(Material.WOOD), Blocks.BIRCH_LOG));
+      reg.register("wall_dark_oak_log", createWall(Block.Properties.of(Material.WOOD), Blocks.DARK_OAK_LOG));
+      reg.register("wall_jungle_log", createWall(Block.Properties.of(Material.WOOD), Blocks.JUNGLE_LOG));
+      reg.register("wall_oak_log", createWall(Block.Properties.of(Material.WOOD), Blocks.OAK_LOG));
+      reg.register("wall_spruce_log", createWall(Block.Properties.of(Material.WOOD), Blocks.SPRUCE_LOG));
+      reg.register("wall_andesite_smooth", createWall(Block.Properties.of(Material.STONE), Blocks.ANDESITE));
+      reg.register("wall_diorite_smooth", createWall(Block.Properties.of(Material.STONE), Blocks.DIORITE));
+      reg.register("wall_end_stone", createWall(Block.Properties.of(Material.STONE), Blocks.END_STONE));
+      reg.register("wall_granite_smooth", createWall(Block.Properties.of(Material.STONE), Blocks.QUARTZ_BLOCK));
+      reg.register("wall_purpur", createWall(Block.Properties.of(Material.STONE), Blocks.PURPUR_BLOCK));
+      reg.register("wall_quartz", createWall(Block.Properties.of(Material.STONE), Blocks.QUARTZ_BLOCK));
+      reg.register("wall_sandstone_red_smooth", createWall(Block.Properties.of(Material.STONE), Blocks.RED_SANDSTONE));
+      reg.register("wall_sandstone_smooth", createWall(Block.Properties.of(Material.STONE), Blocks.SANDSTONE));
+      reg.register("wall_stone", createWall(Block.Properties.of(Material.STONE), Blocks.STONE));
+      reg.register("wall_stone_slab", createWall(Block.Properties.of(Material.STONE), Blocks.STONE));
+      reg.register("wall_stonebrick_carved", createWall(Block.Properties.of(Material.STONE), Blocks.STONE_BRICKS));
+      reg.register("wall_stonebrick_cracked", createWall(Block.Properties.of(Material.STONE), Blocks.STONE_BRICKS));
+      reg.register("wall_obsidian", createWall(Block.Properties.of(Material.STONE), Blocks.OBSIDIAN));
+      reg.register("wall_prismarine_bricks", createWall(Block.Properties.of(Material.STONE), Blocks.PRISMARINE));
+      reg.register("wall_dark_prismarine", createWall(Block.Properties.of(Material.STONE), Blocks.DARK_PRISMARINE));
+      reg.register("wall_crimson", createWall(Block.Properties.of(Material.WOOD), Blocks.CRIMSON_STEM));
+      reg.register("wall_warped", createWall(Block.Properties.of(Material.WOOD), Blocks.WARPED_STEM));
+      reg.register("wall_crying_obsidian", createWall(Block.Properties.of(Material.STONE).lightLevel(state -> 10), Blocks.CRYING_OBSIDIAN));
+      reg.register("wall_basalt", createWall(Block.Properties.of(Material.STONE), Blocks.BASALT));
+      reg.register("wall_polished_basalt", createWall(Block.Properties.of(Material.STONE), Blocks.POLISHED_BASALT));
+      reg.register("wall_lodestone", createWall(Block.Properties.of(Material.STONE), Blocks.LODESTONE));
+      reg.register("wall_stripped_crimson", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_CRIMSON_HYPHAE));
+      reg.register("wall_stripped_warped", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_WARPED_HYPHAE));
+      reg.register("wall_mushroom_stem", createWall(Block.Properties.of(Material.WOOD), Blocks.MUSHROOM_STEM));
+      reg.register("wall_red_mushroom", createWall(Block.Properties.of(Material.WOOD), Blocks.RED_MUSHROOM_BLOCK));
+      reg.register("wall_brown_mushroom", createWall(Block.Properties.of(Material.WOOD), Blocks.BROWN_MUSHROOM_BLOCK));
+      reg.register("wall_mushroom_polished", createWall(Block.Properties.of(Material.WOOD), Blocks.MUSHROOM_STEM)); // ??
+      reg.register("wall_quartz_bricks", createWall(Block.Properties.of(Material.STONE), Blocks.QUARTZ_BRICKS));
       reg.register("wall_magma", createWall(Block.Properties.of(Material.STONE, MaterialColor.NETHER).lightLevel(s -> 3), Blocks.MAGMA_BLOCK));
       reg.register("wall_glowstone", createWall(Block.Properties.of(Material.STONE, MaterialColor.SAND).sound(SoundType.GLASS).lightLevel(s -> 15), Blocks.GLOWSTONE));
       reg.register("wall_sea_lantern", createWall(Block.Properties.of(Material.STONE, MaterialColor.SAND).sound(SoundType.GLASS).lightLevel(s -> 15), Blocks.SEA_LANTERN));
-      reg.register("wall_glass", createWall(Block.Properties.of(Material.GLASS), Blocks.GLASS));
-      reg.register("wall_glass_white", createWall(Block.Properties.of(Material.GLASS), Blocks.WHITE_STAINED_GLASS));
-      reg.register("wall_glass_orange", createWall(Block.Properties.of(Material.GLASS), Blocks.ORANGE_STAINED_GLASS));
-      reg.register("wall_glass_magenta", createWall(Block.Properties.of(Material.GLASS), Blocks.MAGENTA_STAINED_GLASS));
-      reg.register("wall_glass_purple", createWall(Block.Properties.of(Material.GLASS), Blocks.PURPLE_STAINED_GLASS));
-      reg.register("wall_glass_blue", createWall(Block.Properties.of(Material.GLASS), Blocks.BLUE_STAINED_GLASS));
-      reg.register("wall_glass_brown", createWall(Block.Properties.of(Material.GLASS), Blocks.BROWN_STAINED_GLASS));
-      reg.register("wall_glass_red", createWall(Block.Properties.of(Material.GLASS), Blocks.RED_STAINED_GLASS));
-      reg.register("wall_glass_black", createWall(Block.Properties.of(Material.GLASS), Blocks.BLACK_STAINED_GLASS));
-      reg.register("wall_glass_cyan", createWall(Block.Properties.of(Material.GLASS), Blocks.CYAN_STAINED_GLASS));
-      reg.register("wall_glass_light_gray", createWall(Block.Properties.of(Material.GLASS), Blocks.LIGHT_GRAY_STAINED_GLASS));
-      reg.register("wall_glass_gray", createWall(Block.Properties.of(Material.GLASS), Blocks.GRAY_STAINED_GLASS));
-      reg.register("wall_glass_pink", createWall(Block.Properties.of(Material.GLASS), Blocks.PINK_STAINED_GLASS));
-      reg.register("wall_glass_lime", createWall(Block.Properties.of(Material.GLASS), Blocks.LIME_STAINED_GLASS));
-      reg.register("wall_glass_light_blue", createWall(Block.Properties.of(Material.GLASS), Blocks.LIGHT_BLUE_STAINED_GLASS));
-      reg.register("wall_glass_yellow", createWall(Block.Properties.of(Material.GLASS), Blocks.YELLOW_STAINED_GLASS));
-      reg.register("wall_glass_green", createWall(Block.Properties.of(Material.GLASS), Blocks.GREEN_STAINED_GLASS));
+      WALL_GLASS = createWall(Block.Properties.of(Material.GLASS), Blocks.GLASS);
+      reg.register("wall_glass", WALL_GLASS);
+      WALL_GLASS_WHITE = createWall(Block.Properties.of(Material.GLASS), Blocks.WHITE_STAINED_GLASS);
+      reg.register("wall_glass_white", WALL_GLASS_WHITE);
+      WALL_GLASS_ORANGE = createWall(Block.Properties.of(Material.GLASS), Blocks.ORANGE_STAINED_GLASS);
+      reg.register("wall_glass_orange", WALL_GLASS_ORANGE);
+      WALL_GLASS_MAGENTA = createWall(Block.Properties.of(Material.GLASS), Blocks.MAGENTA_STAINED_GLASS);
+      reg.register("wall_glass_magenta", WALL_GLASS_MAGENTA);
+      WALL_GLASS_PURPLE = createWall(Block.Properties.of(Material.GLASS), Blocks.PURPLE_STAINED_GLASS);
+      reg.register("wall_glass_purple", WALL_GLASS_PURPLE);
+      WALL_GLASS_BLUE = createWall(Block.Properties.of(Material.GLASS), Blocks.BLUE_STAINED_GLASS);
+      reg.register("wall_glass_blue", WALL_GLASS_BLUE);
+      WALL_GLASS_BROWN = createWall(Block.Properties.of(Material.GLASS), Blocks.BROWN_STAINED_GLASS);
+      reg.register("wall_glass_brown", WALL_GLASS_BROWN);
+      WALL_GLASS_RED = createWall(Block.Properties.of(Material.GLASS), Blocks.RED_STAINED_GLASS);
+      reg.register("wall_glass_red", WALL_GLASS_RED);
+      WALL_GLASS_BLACK = createWall(Block.Properties.of(Material.GLASS), Blocks.BLACK_STAINED_GLASS);
+      reg.register("wall_glass_black", WALL_GLASS_BLACK);
+      WALL_GLASS_CYAN = createWall(Block.Properties.of(Material.GLASS), Blocks.CYAN_STAINED_GLASS);
+      reg.register("wall_glass_cyan", WALL_GLASS_CYAN);
+      WALL_GLASS_LIGHT_GRAY = createWall(Block.Properties.of(Material.GLASS), Blocks.LIGHT_GRAY_STAINED_GLASS);
+      reg.register("wall_glass_light_gray", WALL_GLASS_LIGHT_GRAY);
+      WALL_GLASS_GRAY = createWall(Block.Properties.of(Material.GLASS), Blocks.GRAY_STAINED_GLASS);
+      reg.register("wall_glass_gray", WALL_GLASS_GRAY);
+      WALL_GLASS_PINK = createWall(Block.Properties.of(Material.GLASS), Blocks.PINK_STAINED_GLASS);
+      reg.register("wall_glass_pink", WALL_GLASS_PINK);
+      WALL_GLASS_LIME = createWall(Block.Properties.of(Material.GLASS), Blocks.LIME_STAINED_GLASS);
+      reg.register("wall_glass_lime", WALL_GLASS_LIME);
+      WALL_GLASS_LIGHT_BLUE = createWall(Block.Properties.of(Material.GLASS), Blocks.LIGHT_BLUE_STAINED_GLASS);
+      reg.register("wall_glass_light_blue", WALL_GLASS_LIGHT_BLUE);
+      WALL_GLASS_YELLOW = createWall(Block.Properties.of(Material.GLASS), Blocks.YELLOW_STAINED_GLASS);
+      reg.register("wall_glass_yellow", WALL_GLASS_YELLOW);
+      WALL_GLASS_GREEN = createWall(Block.Properties.of(Material.GLASS), Blocks.GREEN_STAINED_GLASS);
+      reg.register("wall_glass_green", WALL_GLASS_GREEN);
       reg.register("wall_oak_planks", createWall(Block.Properties.of(Material.WOOD), Blocks.OAK_PLANKS));
       reg.register("wall_dark_oak_planks", createWall(Block.Properties.of(Material.WOOD), Blocks.DARK_OAK_PLANKS));
       reg.register("wall_acacia_planks", createWall(Block.Properties.of(Material.WOOD), Blocks.ACACIA_PLANKS));
@@ -589,38 +632,31 @@ public class AbsentRegistry {
     return addBlock(new BlockAbsentFence(wrap(p, block)));
   }
 
-  public static Block createWall(Block.Properties p, Block block) {
-    Block b = addBlock(new BlockAbsentWall(wrap(p, block)));
+  public static BlockAbsentWall createWall(Block.Properties p, Block block) {
+    BlockAbsentWall wall = new BlockAbsentWall(wrap(p, block));
+    addBlock(wall);
     if (block == Blocks.CRYING_OBSIDIAN) {
-      ((BlockAbsentWall) b).part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
+      wall.part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
     }
-    return b;
-  }
-
-  @Deprecated
-  public static Block createWall(Block block, Block.Properties p) {
-    return createWall(p, block);
+    return wall;
   }
 
   public static Block createSlab(Block.Properties prop, Block block) {
-    Block b = addBlock(new BlockAbsentSlab(wrap(prop, block)));
+    BlockAbsentSlab slab = new BlockAbsentSlab(wrap(prop, block));
+    addBlock(slab);
     if (block == Blocks.CRYING_OBSIDIAN) {
-      ((BlockAbsentSlab) b).part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
+      slab.part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
     }
-    return b;
+    return slab;
   }
 
-  public static Block createStair(Block.Properties prop, Block block) {
-    Block b = addBlock(new BlockAbsentStair(block, wrap(prop, block)));
+  public static BlockAbsentStair createStair(Block.Properties prop, Block block) {
+    BlockAbsentStair stair = new BlockAbsentStair(block, wrap(prop, block));
+    addBlock(stair);
     if (block == Blocks.CRYING_OBSIDIAN) {
-      ((BlockAbsentStair) b).part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
+      stair.part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
     }
-    return b;
-  }
-
-  @Deprecated
-  public static Block createStair(Block block, Block.Properties prop) {
-    return createStair(prop, block);
+    return stair;
   }
 
   public static Block createGate(Block block, Block.Properties p) {
@@ -663,13 +699,4 @@ public class AbsentRegistry {
     BLOCKLIST.add(b);
     return b;
   }
-  //NEW PLANS
-  //EVERYTHING:   ,     , cracked_deepslate_tiles , 
-  //STAIRS AND SLABS ONLY
-  // stripped_acacia_log  stripped_birch_log   stripped_crimson_stem   stripped_dark_oak_log   stripped_jungle_log   stripped_oak_log    stripped_spruce_log  stripped_warped_stem
-  //WALL ONLY
-  // SMOOTH_QUARTZ_WALL (quartz_block_bottom) , have stair/slab already in vmc
-  // CONCRETE x16 !!!
-  // WOOL WALL x16
-  // terracotta x17 !!! 
 }
