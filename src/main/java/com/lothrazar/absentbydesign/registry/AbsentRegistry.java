@@ -55,14 +55,43 @@ public class AbsentRegistry {
   // AVOID GLAZED TERRACOTTA
   // 
   //1.19 NEW ADD THIS 
-  //3x froglight everything
-  //mangrove log copy other logs
-  //mangrove plank walls etc
-  //mud everything
-  //mud bricks fence and gate
-  //packed mud everything
-  //reinforced deepslate everything
-  //sculk everything
+  //
+  //slab_sculk
+  //slab_mud
+  //slab_packed_mud
+  //slab_ochre_froglight
+  //slab_verdant_froglight
+  //slab_pearlescent_froglight
+  //slab_reinforced_deepslate
+  //
+  //stairs_sculk
+  //stairs_mud
+  //stairs_packed_mud
+  //stairs_ochre_froglight
+  //stairs_verdant_froglight
+  //stairs_pearlescent_froglight
+  //stairs_reinforced_deepslate
+  //
+  //wall_sculk
+  //wall_mud
+  //wall_packed_mud
+  //wall_ochre_froglight
+  //wall_verdant_froglight
+  //wall_pearlescent_froglight
+  //wall_mangrove_log
+  //wall_mangrove_planks
+  //wall_stripped_mangrove_log
+  //wall_reinforced_deepslate
+  //
+  //fence_ochre_froglight
+  //fence_verdant_froglight
+  //fence_pearlescent_froglight
+  //fence_log_mangrove
+  //
+  //gate_mud_bricks
+  //
+  //
+  //
   //
 
   private static final List<Block> BLOCKLIST = new ArrayList<>();
