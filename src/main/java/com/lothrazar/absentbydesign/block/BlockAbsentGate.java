@@ -8,17 +8,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class BlockAbsentGate extends FenceGateBlock implements IBlockAbsent {
 
-  private String rawName;
-
-  public BlockAbsentGate(Properties p, String reg) {
+  public BlockAbsentGate(Properties p) {
     super(p);
-    this.rawName = reg;
-    setRegistryName(reg);
-  }
-
-  @Override
-  public String rawName() {
-    return rawName;
   }
 
   public boolean doVisibility = false;

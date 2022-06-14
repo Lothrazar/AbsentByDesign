@@ -2,6 +2,7 @@ package com.lothrazar.absentbydesign.block;
 
 import com.lothrazar.absentbydesign.registry.AbsentRegistry;
 import java.util.Random;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.WallBlock;
@@ -14,29 +15,21 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class BlockAbsentWall extends WallBlock implements IBlockAbsent {
 
-  private final String rawName;
   // could be any particle. currently only used by Crying Obs
   public SimpleParticleType part = null;
 
-  public BlockAbsentWall(Block.Properties p, String reg) {
+  public BlockAbsentWall(Block.Properties p) {
     super(p);
-    rawName = reg;
-    setRegistryName(reg);
   }
 
   @OnlyIn(Dist.CLIENT)
   @Override
-  public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, Random rand) {
+  public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, RandomSource rand) {
     if (part != null
         && worldIn.random.nextDouble() < 0.2) {
       // make sure its not WAY too many
       AbsentRegistry.spawnBlockParticles(part, worldIn, pos, rand);
     }
-  }
-
-  @Override
-  public String rawName() {
-    return rawName;
   }
 
   public boolean doVisibility = false;

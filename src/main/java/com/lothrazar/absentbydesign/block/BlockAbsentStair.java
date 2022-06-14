@@ -5,6 +5,7 @@ import com.lothrazar.absentbydesign.registry.AbsentRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.StairBlock;
@@ -15,14 +16,11 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 @SuppressWarnings("deprecation")
 public class BlockAbsentStair extends StairBlock implements IBlockAbsent {
 
-  private final String rawName;
   // could be any particle. currently only used by Crying Obs
   public SimpleParticleType part = null;
 
-  public BlockAbsentStair(Block b, Properties p, String reg) {
+  public BlockAbsentStair(Block b, Properties p) {
     super(b.defaultBlockState(), p);
-    rawName = reg;
-    setRegistryName(reg);
   }
 
   public boolean doVisibility = false;
@@ -43,15 +41,10 @@ public class BlockAbsentStair extends StairBlock implements IBlockAbsent {
 
   @OnlyIn(Dist.CLIENT)
   @Override
-  public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, Random rand) {
+  public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, RandomSource rand) {
     if (part != null
         && worldIn.random.nextDouble() < 0.2) {
       AbsentRegistry.spawnBlockParticles(part, worldIn, pos, rand);
     }
-  }
-
-  @Override
-  public String rawName() {
-    return rawName;
   }
 }

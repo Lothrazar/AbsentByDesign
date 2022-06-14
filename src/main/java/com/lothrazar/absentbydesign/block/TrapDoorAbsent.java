@@ -8,17 +8,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class TrapDoorAbsent extends TrapDoorBlock implements IBlockAbsent {
 
-  private final String rawName;
-
-  public TrapDoorAbsent(Properties properties, String reg) {
+  public TrapDoorAbsent(Properties properties) {
     super(properties);
-    rawName = reg;
-    setRegistryName(reg);
-  }
-
-  @Override
-  public String rawName() {
-    return rawName;
   }
 
   public boolean doVisibility = false;

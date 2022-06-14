@@ -5,6 +5,7 @@ import com.lothrazar.absentbydesign.registry.AbsentRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -13,14 +14,11 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class BlockAbsentSlab extends SlabBlock implements IBlockAbsent {
 
-  private final String rawName;
   // could be any particle. currently only used by Crying Obs
   public SimpleParticleType part = null;
 
-  public BlockAbsentSlab(Properties properties, String reg) {
+  public BlockAbsentSlab(Properties properties) {
     super(properties);
-    rawName = reg;
-    setRegistryName(reg);
   }
 
   public boolean doVisibility = false;
@@ -42,15 +40,10 @@ public class BlockAbsentSlab extends SlabBlock implements IBlockAbsent {
 
   @OnlyIn(Dist.CLIENT)
   @Override
-  public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, Random rand) {
+  public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, RandomSource rand) {
     if (part != null
         && worldIn.random.nextDouble() < 0.2) {
       AbsentRegistry.spawnBlockParticles(part, worldIn, pos, rand);
     }
-  }
-
-  @Override
-  public String rawName() {
-    return rawName;
   }
 }
