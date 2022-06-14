@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "absentbydesign:block/slab_verdant_froglight" },
+        "type=top": { "model": "absentbydesign:block/slab_verdant_froglight_upper" },
+        "type=double": { "model": "block/verdant_froglight" }
+    }
+}

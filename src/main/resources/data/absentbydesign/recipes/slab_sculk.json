@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:sculk"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:slab_sculk",
+    "count": 6
+  }
+}

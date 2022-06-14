@@ -56,21 +56,6 @@ public class AbsentRegistry {
   // 
   //1.19 NEW ADD THIS 
   //
-  //slab_sculk
-  //slab_mud
-  //slab_packed_mud
-  //slab_ochre_froglight
-  //slab_verdant_froglight
-  //slab_pearlescent_froglight
-  //slab_reinforced_deepslate
-  //
-  //stairs_sculk
-  //stairs_mud
-  //stairs_packed_mud
-  //stairs_ochre_froglight
-  //stairs_verdant_froglight
-  //stairs_pearlescent_froglight
-  //stairs_reinforced_deepslate
   //
   //wall_sculk
   //wall_mud
@@ -417,6 +402,13 @@ public class AbsentRegistry {
       reg.register("slab_cracked_nether_bricks", createSlab(Block.Properties.of(Material.STONE), Blocks.CRACKED_NETHER_BRICKS));
       reg.register("slab_cracked_deepslate_bricks", createSlab(Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_BRICKS));
       reg.register("slab_cracked_deepslate_tiles", createSlab(Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_TILES));
+      reg.register("slab_sculk", createSlab(Block.Properties.of(Material.SCULK), Blocks.SCULK));
+      reg.register("slab_mud", createSlab(Block.Properties.of(Material.DIRT), Blocks.MUD));
+      reg.register("slab_packed_mud", createSlab(Block.Properties.of(Material.DIRT), Blocks.PACKED_MUD));
+      reg.register("slab_reinforced_deepslate", createSlab(Block.Properties.of(Material.STONE), Blocks.REINFORCED_DEEPSLATE));
+      reg.register("slab_ochre_froglight", createSlab(Block.Properties.of(Material.FROGLIGHT).lightLevel(s -> 15), Blocks.OCHRE_FROGLIGHT));
+      reg.register("slab_pearlescent_froglight", createSlab(Block.Properties.of(Material.FROGLIGHT).lightLevel(s -> 15), Blocks.PEARLESCENT_FROGLIGHT));
+      reg.register("slab_verdant_froglight", createSlab(Block.Properties.of(Material.FROGLIGHT).lightLevel(s -> 15), Blocks.VERDANT_FROGLIGHT));
       //
       //                STAIRS
       //
@@ -529,6 +521,14 @@ public class AbsentRegistry {
       reg.register("stairs_cracked_nether_bricks", createStair(Block.Properties.of(Material.STONE), Blocks.CRACKED_NETHER_BRICKS));
       reg.register("stairs_cracked_deepslate_bricks", createStair(Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_BRICKS));
       reg.register("stairs_cracked_deepslate_tiles", createStair(Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_TILES));
+      //
+      //stairs_sculk
+      //stairs_mud
+      //stairs_packed_mud
+      //stairs_ochre_froglight
+      //stairs_verdant_froglight
+      //stairs_pearlescent_froglight
+      //stairs_reinforced_deepslate
       //
       //                WALLS
       //

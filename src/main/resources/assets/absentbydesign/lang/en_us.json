@@ -1,6 +1,20 @@
 {
   "itemGroup.absentbydesign": "Absent by Design",
 
+  "block.absentbydesign.slab_sculk":"Sculk Slab",
+  "block.absentbydesign.slab_mud":"Mud Slab",
+  "block.absentbydesign.slab_packed_mud":"Packed Mud Slab",
+  
+  "block.absentbydesign.slab_reinforced_deepslate":"Reinforced Deepslate Slab",
+  
+  
+  "block.absentbydesign.slab_ochre_froglight":"Ochre Froglight Slab",
+  "block.absentbydesign.slab_verdant_froglight":"Verdant Froglight Slab",
+  "block.absentbydesign.slab_pearlescent_froglight":"Pearlescent Froglight Slab",
+  
+  
+  
+
 	"block.absentbydesign.fence_crimson": "Crimson Stem Fence",
 	"block.absentbydesign.fence_log_acacia": "Acacia Log Fence",
 	"block.absentbydesign.fence_log_birch": "Birch Log Fence",

@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/slab",
+  "textures": {
+    "b": "block/reinforced_deepslate_bottom"
+  }
+}

@@ -1,0 +1,9 @@
+  
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:pearlescent_froglight"
+  },
+  "result": "absentbydesign:slab_pearlescent_froglight",
+  "count": 2
+}

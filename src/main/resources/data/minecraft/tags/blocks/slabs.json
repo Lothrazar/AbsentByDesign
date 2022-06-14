@@ -1,6 +1,19 @@
 {
   "replace": false,
   "values": [
+  	"absentbydesign:slab_sculk",
+  "absentbydesign:slab_mud",
+  	
+  "absentbydesign:slab_packed_mud",
+  	
+  "absentbydesign:slab_ochre_froglight",
+  "absentbydesign:slab_verdant_froglight",
+
+  "absentbydesign:slab_pearlescent_froglight",
+
+  "absentbydesign:slab_reinforced_deepslate",
+  	
+  
     "absentbydesign:slab_smooth_basalt",
     "absentbydesign:slab_cracked_deepslate_tiles",
     "absentbydesign:slab_cracked_nether_bricks",
