@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:sculk"
+  },
+  "result": "absentbydesign:stairs_sculk",
+  "count": 1
+}

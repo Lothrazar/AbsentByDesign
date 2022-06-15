@@ -1,6 +1,18 @@
 {
   "replace": false,
   "values": [
+  "absentbydesign:stairs_sculk",
+  "absentbydesign:stairs_mud",
+  
+  "absentbydesign:stairs_packed_mud",
+  "absentbydesign:stairs_ochre_froglight",
+  "absentbydesign:stairs_pearlescent_froglight",
+  "absentbydesign:stairs_verdant_froglight",
+  "absentbydesign:stairs_reinforced_deepslate",
+  
+  
+  
+
     "absentbydesign:stairs_cracked_nether_bricks",
     "absentbydesign:stairs_cracked_deepslate_tiles",
     "absentbydesign:stairs_cracked_deepslate_bricks",

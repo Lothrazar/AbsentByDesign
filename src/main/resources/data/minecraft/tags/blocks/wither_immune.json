@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "absentbydesign:slab_reinforced_deepslate"
+    "absentbydesign:slab_reinforced_deepslate",
+    "absentbydesign:stairs_reinforced_deepslate"
   ]
 }

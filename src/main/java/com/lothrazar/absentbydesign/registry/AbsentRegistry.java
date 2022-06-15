@@ -521,14 +521,13 @@ public class AbsentRegistry {
       reg.register("stairs_cracked_nether_bricks", createStair(Block.Properties.of(Material.STONE), Blocks.CRACKED_NETHER_BRICKS));
       reg.register("stairs_cracked_deepslate_bricks", createStair(Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_BRICKS));
       reg.register("stairs_cracked_deepslate_tiles", createStair(Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_TILES));
-      //
-      //stairs_sculk
-      //stairs_mud
-      //stairs_packed_mud
-      //stairs_ochre_froglight
-      //stairs_verdant_froglight
-      //stairs_pearlescent_froglight
-      //stairs_reinforced_deepslate
+      reg.register("stairs_sculk", createStair(Block.Properties.of(Material.SCULK), Blocks.SCULK));
+      reg.register("stairs_mud", createStair(Block.Properties.of(Material.DIRT), Blocks.MUD));
+      reg.register("stairs_packed_mud", createStair(Block.Properties.of(Material.DIRT), Blocks.PACKED_MUD));
+      reg.register("stairs_reinforced_deepslate", createStair(Block.Properties.of(Material.STONE), Blocks.REINFORCED_DEEPSLATE));
+      reg.register("stairs_ochre_froglight", createStair(Block.Properties.of(Material.FROGLIGHT).lightLevel(s -> 15), Blocks.OCHRE_FROGLIGHT));
+      reg.register("stairs_pearlescent_froglight", createStair(Block.Properties.of(Material.FROGLIGHT).lightLevel(s -> 15), Blocks.PEARLESCENT_FROGLIGHT));
+      reg.register("stairs_verdant_froglight", createStair(Block.Properties.of(Material.FROGLIGHT).lightLevel(s -> 15), Blocks.VERDANT_FROGLIGHT));
       //
       //                WALLS
       //

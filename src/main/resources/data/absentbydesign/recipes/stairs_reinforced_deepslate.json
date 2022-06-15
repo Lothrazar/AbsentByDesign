@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:reinforced_deepslate"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:stairs_reinforced_deepslate",
+    "count": 4
+  }
+}

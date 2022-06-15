@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:ochre_froglight"
+  },
+  "result": "absentbydesign:stairs_ochre_froglight",
+  "count": 1
+}
