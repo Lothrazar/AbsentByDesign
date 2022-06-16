@@ -1,5 +1,12 @@
 {
 	"itemGroup.absentbydesign": "Absent by Design",
+  "block.absentbydesign.wall_sculk":"Sculk Wall",
+  
+  "block.absentbydesign.wall_mud":"Mud Wall",
+  "block.absentbydesign.wall_packed_mud":"Packed Mud Wall",
+  
+  
+	
 	"block.absentbydesign.slab_sculk": "Sculk Slab",
 	"block.absentbydesign.slab_mud": "Mud Slab",
 	"block.absentbydesign.slab_packed_mud": "Packed Mud Slab",

@@ -6,7 +6,7 @@ echo "Useage: ./_.sh <dest> <texture>"
 dest=$1
 texture=$2
 newblock="wall_${dest}"
-original="basalt"
+original="calcite"
 seed="wall_${original}"
 modid="absentbydesign"
 folder="src/main/resources/assets/${modid}"

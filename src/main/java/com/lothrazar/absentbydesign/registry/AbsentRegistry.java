@@ -28,6 +28,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
@@ -57,16 +58,6 @@ public class AbsentRegistry {
   //1.19 NEW ADD THIS 
   //
   //
-  //wall_sculk
-  //wall_mud
-  //wall_packed_mud
-  //wall_ochre_froglight
-  //wall_verdant_froglight
-  //wall_pearlescent_froglight
-  //wall_mangrove_log
-  //wall_mangrove_planks
-  //wall_stripped_mangrove_log
-  //wall_reinforced_deepslate
   //
   //fence_ochre_froglight
   //fence_verdant_froglight
@@ -623,7 +614,20 @@ public class AbsentRegistry {
       reg.register("wall_cracked_nether_bricks", createWall(Block.Properties.of(Material.STONE), Blocks.CRACKED_NETHER_BRICKS));
       reg.register("wall_cracked_deepslate_bricks", createWall(Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_BRICKS));
       reg.register("wall_cracked_deepslate_tiles", createWall(Block.Properties.of(Material.STONE), Blocks.CRACKED_DEEPSLATE_TILES));
-      //
+      reg.register("wall_sculk", createWall(Block.Properties.of(Material.SCULK), Blocks.SCULK));
+      reg.register("wall_mud", createWall(BlockBehaviour.Properties.copy(Blocks.DIRT), Blocks.MUD));
+      reg.register("wall_packed_mud", createWall(BlockBehaviour.Properties.copy(Blocks.DIRT), Blocks.PACKED_MUD));
+
+      //wall_sculk
+      //wall_mud
+      //wall_packed_mud
+      //wall_ochre_froglight
+      //wall_verdant_froglight
+      //wall_pearlescent_froglight
+      //wall_mangrove_log
+      //wall_mangrove_planks
+      //wall_stripped_mangrove_log
+      //wall_reinforced_deepslate    //
       //                GATE
       //
       reg.register("gate_nether_bricks", createGate(Blocks.NETHER_BRICKS, Block.Properties.of(Material.STONE)));
