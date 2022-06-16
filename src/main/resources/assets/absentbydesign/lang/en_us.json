@@ -1,7 +1,14 @@
 {
 	"itemGroup.absentbydesign": "Absent by Design",
+  "block.absentbydesign.gate_mud_bricks":"Mud Brick Gate",
+	
+  "block.absentbydesign.trapdoor_mud_bricks":"Mud Brick Trapdoor",
+	
 	"block.absentbydesign.wall_sculk": "Sculk Wall",
 	"block.absentbydesign.wall_mud": "Mud Wall",
+	"block.absentbydesign.wall_mangrove_log": "Mangrove Log Wall",
+	"block.absentbydesign.wall_mangrove_planks": "Mangrove Planks Wall",
+	"block.absentbydesign.wall_stripped_mangrove_log": "Stripped Mangrove Log Wall",
 	"block.absentbydesign.wall_packed_mud": "Packed Mud Wall",
 	"block.absentbydesign.wall_ochre_froglight": "Ochre Froglight Wall",
 	"block.absentbydesign.wall_pearlescent_froglight": "Pearlescent Froglight Wall",

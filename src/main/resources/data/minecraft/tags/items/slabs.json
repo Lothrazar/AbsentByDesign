@@ -1,20 +1,29 @@
 {
   "replace": false,
   "values": [
-  "absentbydesign:slab_smooth_basalt",
+  	"absentbydesign:slab_sculk",
+  "absentbydesign:slab_mud",
+  	
+  "absentbydesign:slab_packed_mud",
+  	
+  "absentbydesign:slab_ochre_froglight",
+  "absentbydesign:slab_verdant_froglight",
+
+  "absentbydesign:slab_pearlescent_froglight",
+
+  "absentbydesign:slab_reinforced_deepslate",
+  	
   
-  "absentbydesign:slab_cracked_deepslate_tiles",
-  
-  "absentbydesign:slab_cracked_nether_bricks",
-  "absentbydesign:slab_cracked_deepslate_bricks",
-  
-  
-    "absentbydesign:slab_amethyst",  
-    "absentbydesign:slab_calcite",    
-    "absentbydesign:slab_tuff",  
-  	"absentbydesign:slab_basalt",
+    "absentbydesign:slab_smooth_basalt",
+    "absentbydesign:slab_cracked_deepslate_tiles",
+    "absentbydesign:slab_cracked_nether_bricks",
+    "absentbydesign:slab_cracked_deepslate_bricks",
+    "absentbydesign:slab_amethyst",
+    "absentbydesign:slab_calcite",
+    "absentbydesign:slab_tuff",
+    "absentbydesign:slab_basalt",
     "absentbydesign:slab_bricks_cracked",
-    "absentbydesign:slab_brown_mushroom",  
+    "absentbydesign:slab_brown_mushroom",
     "absentbydesign:slab_coarse_dirt",
     "absentbydesign:slab_concrete_black",
     "absentbydesign:slab_concrete_blue",
@@ -31,8 +40,8 @@
     "absentbydesign:slab_concrete_red",
     "absentbydesign:slab_concrete_silver",
     "absentbydesign:slab_concrete_white",
-  	"absentbydesign:slab_crying_obsidian",
-  	"absentbydesign:slab_end_stone",
+    "absentbydesign:slab_crying_obsidian",
+    "absentbydesign:slab_end_stone",
     "absentbydesign:slab_glass",
     "absentbydesign:slab_glass_black",
     "absentbydesign:slab_glass_blue",
@@ -40,25 +49,25 @@
     "absentbydesign:slab_glass_cyan",
     "absentbydesign:slab_glass_gray",
     "absentbydesign:slab_glass_green",
-    "absentbydesign:slab_glass_light_blue",    
+    "absentbydesign:slab_glass_light_blue",
     "absentbydesign:slab_glass_light_gray",
     "absentbydesign:slab_glass_lime",
     "absentbydesign:slab_glass_magenta",
     "absentbydesign:slab_glass_orange",
     "absentbydesign:slab_glass_pink",
     "absentbydesign:slab_glass_purple",
-	  "absentbydesign:slab_glass_red",
+    "absentbydesign:slab_glass_red",
     "absentbydesign:slab_glass_white",
     "absentbydesign:slab_glass_yellow",
     "absentbydesign:slab_glowstone",
-  	"absentbydesign:slab_lodestone",
+    "absentbydesign:slab_lodestone",
     "absentbydesign:slab_magma",
     "absentbydesign:slab_mushroom_polished",
     "absentbydesign:slab_mushroom_stem",
-  	"absentbydesign:slab_netherrack",
+    "absentbydesign:slab_netherrack",
     "absentbydesign:slab_obsidian",
-  	"absentbydesign:slab_polished_basalt",
-    "absentbydesign:slab_quartz_bricks",  
+    "absentbydesign:slab_polished_basalt",
+    "absentbydesign:slab_quartz_bricks",
     "absentbydesign:slab_red_mushroom",
     "absentbydesign:slab_sea_lantern",
     "absentbydesign:slab_snow",
@@ -93,7 +102,7 @@
     "absentbydesign:slab_wool_purple",
     "absentbydesign:slab_wool_red",
     "absentbydesign:slab_wool_silver",
-    "absentbydesign:slab_wool_white",    
-	  "absentbydesign:slab_wool_yellow"
+    "absentbydesign:slab_wool_white",
+    "absentbydesign:slab_wool_yellow"
   ]
 }

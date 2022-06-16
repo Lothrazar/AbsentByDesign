@@ -1,6 +1,9 @@
 {
 	"replace": false,
 	"values": [
+		"absentbydesign:wall_mangrove_log",
+		"absentbydesign:wall_stripped_mangrove_log",
+		"absentbydesign:wall_mangrove_planks",
 		"absentbydesign:wall_smooth_basalt",
 		"absentbydesign:wall_cracked_deepslate_tiles",
 		"absentbydesign:wall_cracked_nether_bricks",

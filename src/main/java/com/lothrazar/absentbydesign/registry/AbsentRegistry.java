@@ -59,13 +59,6 @@ public class AbsentRegistry {
   //
   //
   //
-  //fence_ochre_froglight
-  //fence_verdant_froglight
-  //fence_pearlescent_froglight
-  //fence_log_mangrove
-  //
-  //gate_mud_bricks
-  //
   //
   //
   //
@@ -528,12 +521,14 @@ public class AbsentRegistry {
       reg.register("wall_stripped_jungle_log", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_JUNGLE_LOG));
       reg.register("wall_stripped_oak_log", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_OAK_LOG));
       reg.register("wall_stripped_spruce_log", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_SPRUCE_LOG));
+      reg.register("wall_stripped_mangrove_log", createWall(Block.Properties.of(Material.WOOD), Blocks.STRIPPED_MANGROVE_LOG));
       reg.register("wall_acacia_log", createWall(Block.Properties.of(Material.WOOD), Blocks.ACACIA_LOG));
       reg.register("wall_birch_log", createWall(Block.Properties.of(Material.WOOD), Blocks.BIRCH_LOG));
       reg.register("wall_dark_oak_log", createWall(Block.Properties.of(Material.WOOD), Blocks.DARK_OAK_LOG));
       reg.register("wall_jungle_log", createWall(Block.Properties.of(Material.WOOD), Blocks.JUNGLE_LOG));
       reg.register("wall_oak_log", createWall(Block.Properties.of(Material.WOOD), Blocks.OAK_LOG));
       reg.register("wall_spruce_log", createWall(Block.Properties.of(Material.WOOD), Blocks.SPRUCE_LOG));
+      reg.register("wall_mangrove_log", createWall(Block.Properties.of(Material.WOOD), Blocks.MANGROVE_LOG));
       reg.register("wall_andesite_smooth", createWall(Block.Properties.of(Material.STONE), Blocks.ANDESITE));
       reg.register("wall_diorite_smooth", createWall(Block.Properties.of(Material.STONE), Blocks.DIORITE));
       reg.register("wall_end_stone", createWall(Block.Properties.of(Material.STONE), Blocks.END_STONE));
@@ -605,6 +600,7 @@ public class AbsentRegistry {
       reg.register("wall_jungle_planks", createWall(Block.Properties.of(Material.WOOD), Blocks.JUNGLE_PLANKS));
       reg.register("wall_birch_planks", createWall(Block.Properties.of(Material.WOOD), Blocks.BIRCH_PLANKS));
       reg.register("wall_spruce_planks", createWall(Block.Properties.of(Material.WOOD), Blocks.SPRUCE_PLANKS));
+      reg.register("wall_mangrove_planks", createWall(Block.Properties.of(Material.WOOD), Blocks.MANGROVE_PLANKS));
       reg.register("wall_crimson_planks", createWall(Block.Properties.of(Material.WOOD), Blocks.CRIMSON_PLANKS));
       reg.register("wall_warped_planks", createWall(Block.Properties.of(Material.WOOD), Blocks.WARPED_PLANKS));
       reg.register("wall_calcite", createWall(Block.Properties.of(Material.STONE), Blocks.CALCITE));
@@ -622,9 +618,6 @@ public class AbsentRegistry {
       reg.register("wall_verdant_froglight", createWall(Block.Properties.of(Material.FROGLIGHT).lightLevel(s -> 15), Blocks.VERDANT_FROGLIGHT));
       reg.register("wall_reinforced_deepslate", createWall(Block.Properties.of(Material.STONE), Blocks.REINFORCED_DEEPSLATE));
       //
-      //wall_mangrove_log
-      //wall_mangrove_planks
-      //wall_stripped_mangrove_log
       //
       //                GATE
       //
@@ -640,6 +633,7 @@ public class AbsentRegistry {
       reg.register("gate_prismarine_brick", createGate(Blocks.PRISMARINE, Block.Properties.of(Material.STONE)));
       reg.register("gate_prismarine_dark", createGate(Blocks.DARK_PRISMARINE, Block.Properties.of(Material.STONE)));
       reg.register("gate_purpur", createGate(Blocks.PURPUR_BLOCK, Block.Properties.of(Material.STONE)));
+      reg.register("gate_mud_bricks", createGate(Blocks.MUD_BRICKS, Block.Properties.of(Material.STONE)));
       //
       //                TRAPDOOR
       //
@@ -655,6 +649,7 @@ public class AbsentRegistry {
       reg.register("trapdoor_end_stone", createTrap(Blocks.STONE, Block.Properties.of(Material.STONE)));
       reg.register("trapdoor_purpur", createTrap(Blocks.PURPUR_BLOCK, Block.Properties.of(Material.STONE)));
       reg.register("trapdoor_quartz", createTrap(Blocks.QUARTZ_BLOCK, Block.Properties.of(Material.STONE)));
+      reg.register("trapdoor_mud_bricks", createTrap(Blocks.MUD_BRICKS, Block.Properties.of(Material.STONE)));
     });
   }
 

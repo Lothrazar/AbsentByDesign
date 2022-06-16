@@ -1,14 +1,20 @@
 {
 	"replace": false,
 	"values": [
-  "absentbydesign:wall_smooth_basalt",
-	
-  "absentbydesign:wall_cracked_deepslate_tiles",
-	
-  "absentbydesign:wall_cracked_nether_bricks",
-	
-  "absentbydesign:wall_cracked_deepslate_bricks",
-	
+		"absentbydesign:wall_mangrove_log",
+		"absentbydesign:wall_stripped_mangrove_log",
+		"absentbydesign:wall_mangrove_planks",
+		"absentbydesign:wall_smooth_basalt",
+		"absentbydesign:wall_cracked_deepslate_tiles",
+		"absentbydesign:wall_cracked_nether_bricks",
+		"absentbydesign:wall_cracked_deepslate_bricks",
+		"absentbydesign:wall_sculk",
+		"absentbydesign:wall_packed_mud",
+		"absentbydesign:wall_mud",
+		"absentbydesign:wall_ochre_froglight",
+		"absentbydesign:wall_pearlescent_froglight",
+		"absentbydesign:wall_verdant_froglight",
+		"absentbydesign:wall_reinforced_deepslate",
 		"absentbydesign:wall_amethyst",
 		"absentbydesign:wall_calcite",
 		"absentbydesign:wall_tuff",
