@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/wall_post",
+  "textures": {
+    "wall": "minecraft:block/ochre_froglight_top"
+  }
+}

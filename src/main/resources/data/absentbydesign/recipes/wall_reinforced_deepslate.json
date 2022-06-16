@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:reinforced_deepslate"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:wall_reinforced_deepslate",
+    "count": 6
+  }
+}

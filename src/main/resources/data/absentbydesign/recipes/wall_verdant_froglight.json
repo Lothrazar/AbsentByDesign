@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:verdant_froglight"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:wall_verdant_froglight",
+    "count": 6
+  }
+}

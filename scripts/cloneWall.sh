@@ -37,9 +37,9 @@ cp "${folder}"/models/item/"${seed}".json "${folder}"/models/item/"${newblock}".
 sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/loot_tables/blocks/"${newblock}".json
 
 
-sed -i -e "s/${seed}/${newblock}/g" "${folderdata}"/recipes/"${newblock}".json
-sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}".json
-sed -i -e "s/${original}/${texture}/g" "${folderdata}"/recipes/"${newblock}_sc".json
+sed -i -e "s/${seed}/${dest}/g" "${folderdata}"/recipes/"${newblock}".json
+sed -i -e "s/${original}/${dest}/g" "${folderdata}"/recipes/"${newblock}".json
+sed -i -e "s/${original}/${dest}/g" "${folderdata}"/recipes/"${newblock}_sc".json
 
 
 sed -i -e "s/${seed}/${newblock}/g" "${folder}"/models/item/"${newblock}".json

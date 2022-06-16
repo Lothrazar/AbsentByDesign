@@ -617,17 +617,15 @@ public class AbsentRegistry {
       reg.register("wall_sculk", createWall(Block.Properties.of(Material.SCULK), Blocks.SCULK));
       reg.register("wall_mud", createWall(BlockBehaviour.Properties.copy(Blocks.DIRT), Blocks.MUD));
       reg.register("wall_packed_mud", createWall(BlockBehaviour.Properties.copy(Blocks.DIRT), Blocks.PACKED_MUD));
-
-      //wall_sculk
-      //wall_mud
-      //wall_packed_mud
-      //wall_ochre_froglight
-      //wall_verdant_froglight
-      //wall_pearlescent_froglight
+      reg.register("wall_ochre_froglight", createWall(Block.Properties.of(Material.FROGLIGHT).lightLevel(s -> 15), Blocks.OCHRE_FROGLIGHT));
+      reg.register("wall_pearlescent_froglight", createWall(Block.Properties.of(Material.FROGLIGHT).lightLevel(s -> 15), Blocks.PEARLESCENT_FROGLIGHT));
+      reg.register("wall_verdant_froglight", createWall(Block.Properties.of(Material.FROGLIGHT).lightLevel(s -> 15), Blocks.VERDANT_FROGLIGHT));
+      reg.register("wall_reinforced_deepslate", createWall(Block.Properties.of(Material.STONE), Blocks.REINFORCED_DEEPSLATE));
+      //
       //wall_mangrove_log
       //wall_mangrove_planks
       //wall_stripped_mangrove_log
-      //wall_reinforced_deepslate    //
+      //
       //                GATE
       //
       reg.register("gate_nether_bricks", createGate(Blocks.NETHER_BRICKS, Block.Properties.of(Material.STONE)));
