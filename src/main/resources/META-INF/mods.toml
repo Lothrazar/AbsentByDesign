@@ -19,7 +19,7 @@ version="${file.jarVersion}" #mandatory
  # A display name for the mod
 displayName="Absent By Design Mod" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
-updateJSONURL="https://raw.githubusercontent.com/Lothrazar/AbsentByDesign/trunk/1.18/update.json" #optional
+updateJSONURL="https://raw.githubusercontent.com/Lothrazar/AbsentByDesign/trunk/1.19/update.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="https://www.curseforge.com/minecraft/mc-mods/absent-by-design" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
@@ -39,7 +39,7 @@ Adds slabs, stairs, walls fences, trapdoors based on existing blocks.  Texture p
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
     # The version range of the dependency
-    versionRange="[39,)" #mandatory
+    versionRange="[41,)" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
@@ -48,6 +48,6 @@ Adds slabs, stairs, walls fences, trapdoors based on existing blocks.  Texture p
 [[dependencies.absentbydesign]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18,)"
+    versionRange="[1.19,)"
     ordering="NONE"
     side="BOTH"
