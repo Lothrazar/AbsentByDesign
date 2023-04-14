@@ -10,19 +10,17 @@ import com.lothrazar.absentbydesign.block.BlockAbsentStair;
 import com.lothrazar.absentbydesign.block.BlockAbsentWall;
 import com.lothrazar.absentbydesign.block.DoorAbsentBlock;
 import com.lothrazar.absentbydesign.block.TrapDoorAbsent;
+import com.lothrazar.library.util.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -32,8 +30,6 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -483,11 +479,11 @@ public class AbsentRegistry {
   }
 
   public static Block createFence(Block block, Block.Properties p) {
-    return addBlock(new BlockAbsentFence(wrap(p, block)));
+    return addBlock(new BlockAbsentFence(BlockUtil.wrap(p, block)));
   }
 
   public static BlockAbsentWall createWall(Block.Properties p, Block block) {
-    BlockAbsentWall wall = new BlockAbsentWall(wrap(p, block));
+    BlockAbsentWall wall = new BlockAbsentWall(BlockUtil.wrap(p, block));
     addBlock(wall);
     if (block == Blocks.CRYING_OBSIDIAN) {
       wall.part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
@@ -496,7 +492,7 @@ public class AbsentRegistry {
   }
 
   public static Block createSlab(Block.Properties prop, Block block) {
-    BlockAbsentSlab slab = new BlockAbsentSlab(wrap(prop, block));
+    BlockAbsentSlab slab = new BlockAbsentSlab(BlockUtil.wrap(prop, block));
     addBlock(slab);
     if (block == Blocks.CRYING_OBSIDIAN) {
       slab.part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
@@ -505,7 +501,7 @@ public class AbsentRegistry {
   }
 
   public static BlockAbsentStair createStair(Block.Properties prop, Block block) {
-    BlockAbsentStair stair = new BlockAbsentStair(block, wrap(prop, block));
+    BlockAbsentStair stair = new BlockAbsentStair(block, BlockUtil.wrap(prop, block));
     addBlock(stair);
     if (block == Blocks.CRYING_OBSIDIAN) {
       stair.part = ParticleTypes.DRIPPING_OBSIDIAN_TEAR;
@@ -514,39 +510,15 @@ public class AbsentRegistry {
   }
 
   public static Block createGate(Block block, Block.Properties p, WoodType type) {
-    return addBlock(new BlockAbsentGate(wrap(p, block), type));
+    return addBlock(new BlockAbsentGate(BlockUtil.wrap(p, block), type));
   }
 
   public static Block createDoor(Block block, Block.Properties p, BlockSetType type) {
-    return addBlock(new DoorAbsentBlock(wrap(p, block), type));
+    return addBlock(new DoorAbsentBlock(BlockUtil.wrap(p, block), type));
   }
 
   public static Block createTrap(Block block, Block.Properties p, BlockSetType type) {
-    return addBlock(new TrapDoorAbsent(wrap(p, block), type));
-  }
-
-  @SuppressWarnings("deprecation")
-  private static Block.Properties wrap(Block.Properties propIn, Block blockIn) {
-    if (blockIn.properties != null
-        && blockIn.properties.materialColor != null) {
-      propIn.materialColor = (state) -> {
-        return blockIn.properties.materialColor.apply(blockIn.defaultBlockState());
-      };
-    }
-    return propIn
-        .sound(blockIn.getSoundType(blockIn.defaultBlockState()))
-        .strength(blockIn.defaultBlockState().destroySpeed);
-  }
-
-  @OnlyIn(Dist.CLIENT)
-  public static void spawnBlockParticles(SimpleParticleType partIn, Level worldIn, BlockPos pos, RandomSource rand) {
-    double x = pos.getX() + rand.nextDouble();
-    double y = pos.getY() + rand.nextDouble();
-    double z = pos.getZ() + rand.nextDouble();
-    double xSp = (rand.nextDouble() - 0.5D) * 0.5D;
-    double ySp = (rand.nextDouble() - 0.5D) * 0.5D;
-    double zSp = (rand.nextDouble() - 0.5D) * 0.5D;
-    worldIn.addParticle(partIn, x, y, z, xSp, ySp, zSp);
+    return addBlock(new TrapDoorAbsent(BlockUtil.wrap(p, block), type));
   }
 
   public static Block addBlock(Block b) {

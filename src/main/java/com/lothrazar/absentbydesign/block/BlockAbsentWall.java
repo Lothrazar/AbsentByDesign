@@ -1,14 +1,14 @@
 package com.lothrazar.absentbydesign.block;
 
-import com.lothrazar.absentbydesign.registry.AbsentRegistry;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.WallBlock;
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.core.Direction;
+import com.lothrazar.library.util.ParticleUtil;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
@@ -27,7 +27,7 @@ public class BlockAbsentWall extends WallBlock implements IBlockAbsent {
     if (part != null
         && worldIn.random.nextDouble() < 0.2) {
       // make sure its not WAY too many
-      AbsentRegistry.spawnBlockParticles(part, worldIn, pos, rand);
+      ParticleUtil.spawnBlockParticles(part, worldIn, pos, rand);
     }
   }
 

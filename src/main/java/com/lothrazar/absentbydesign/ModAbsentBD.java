@@ -10,10 +10,5 @@ public class ModAbsentBD {
   public static final String MODID = "absentbydesign";
   public static final Logger LOGGER = LogManager.getLogger();
 
-  public ModAbsentBD() {
-    //    FMLJavaModLoadingContext.get().getModEventBus().addListener(AbsentRegistry::setupClient);
-    //    IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-    //    AbsentRegistry.ITEMS.register(eventBus);
-    //    AbsentRegistry.BLOCKS.register(eventBus);
-  }
+  public ModAbsentBD() {}
 }

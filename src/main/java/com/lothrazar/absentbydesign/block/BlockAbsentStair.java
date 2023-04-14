@@ -1,6 +1,6 @@
 package com.lothrazar.absentbydesign.block;
 
-import com.lothrazar.absentbydesign.registry.AbsentRegistry;
+import com.lothrazar.library.util.ParticleUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.SimpleParticleType;
@@ -43,7 +43,7 @@ public class BlockAbsentStair extends StairBlock implements IBlockAbsent {
   public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, RandomSource rand) {
     if (part != null
         && worldIn.random.nextDouble() < 0.2) {
-      AbsentRegistry.spawnBlockParticles(part, worldIn, pos, rand);
+      ParticleUtil.spawnBlockParticles(part, worldIn, pos, rand);
     }
   }
 }
