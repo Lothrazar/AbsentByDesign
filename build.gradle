@@ -3,21 +3,16 @@ plugins {
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
+import net.minecraftforge.gradle.common.tasks.SignJar
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 
 version = "${mc_version}-${mod_version}"
 group = 'com.lothrazar.absentbydesign' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'absentbydesign'
 
-// apply from: 'https://raw.githubusercontent.com/SizableShrimp/Forge-Class-Remapper/main/classremapper.gradle'
-
-import net.minecraftforge.gradle.common.tasks.SignJar
-import groovy.json.JsonSlurper
-import groovy.json.JsonOutput
-
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
-
 minecraft {
-    mappings channel: 'official', version: '1.19'
+    mappings channel: 'official', version: "${mc_version}"
 	
     //makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
@@ -83,15 +78,16 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
+    implementation fg.deobf("blank:flib-${mc_version}:${flib_version}")
 
 	 // https://github.com/mezz/JustEnoughItems/wiki/Getting-Started-%5BJEI-10-or-higher-for-Forge-or-Fabric%5D#repositories
-	  compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
-	  compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
+	//  compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
+	//  compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
 	  // at runtime, use the full JEI
-	  runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-common:${jei_version}")
+	//  runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-common:${jei_version}")
 	  runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
 	  
-    implementation fg.deobf("top.theillusivec4.curios:curios-forge:${mc_version}-${curios_version}")
+  //  implementation fg.deobf("top.theillusivec4.curios:curios-forge:${mc_version}-${curios_version}")
   
 //	  implementation fg.deobf("curse.maven:cyclic-239286:3188762")
 	  
@@ -115,20 +111,29 @@ dependencies {
 
 }
 repositories {
-  maven { url 'https://www.cursemaven.com'  } 
+  flatDir {
+      dir 'libs'
+  }
   maven {
     // location of the maven that hosts JEI files
     name = "Progwml6 maven"
-    url = "https://dvs1.progwml6.com/files/maven/"
+    url = 'https://dvs1.progwml6.com/files/maven/'
   }
-  maven { url = "https://modmaven.dev"  }   
   maven {
     name = "mappings"
-    url 'https://dogforce-games.com/maven'
+    url = 'https://dogforce-games.com/maven'
   }
-  maven { url = "https://modmaven.k-4u.nl"  }    
-  maven { url = "https://maven.theillusivec4.top/"    }
-  maven { url 'https://maven.blamejared.com' }   
+  maven {
+    // location of a maven mirror for JEI files, as a fallback
+    name = "ModMaven"
+    url = 'https://modmaven.dev'
+  }
+  maven {
+  	name = "curios"
+    url = 'https://maven.theillusivec4.top/'
+  }
+  maven { url = 'https://maven.blamejared.com' }    
+  maven { url = 'https://www.cursemaven.com'  }
 }
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {

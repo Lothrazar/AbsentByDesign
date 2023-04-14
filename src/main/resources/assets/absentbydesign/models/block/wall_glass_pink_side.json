@@ -1,5 +1,6 @@
 {
   "parent": "absentbydesign:parent/wall_side",
+  "render_type": "translucent",
   "textures": {
     "wall": "minecraft:block/pink_stained_glass"
   }

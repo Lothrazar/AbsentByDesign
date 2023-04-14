@@ -1,5 +1,6 @@
 {
   "parent": "absentbydesign:parent/slab_upper",
+  "render_type": "translucent",
   "textures": {
     "b": "block/lime_stained_glass"
   }

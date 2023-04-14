@@ -1,5 +1,6 @@
 {
   "parent": "absentbydesign:parent/wall_post",
+  "render_type": "translucent",
   "textures": {
     "wall": "minecraft:block/red_stained_glass"
   }

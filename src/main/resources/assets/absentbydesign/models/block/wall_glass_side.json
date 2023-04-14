@@ -1,5 +1,6 @@
 {
   "parent": "absentbydesign:parent/wall_side",
+  "render_type": "cutout",
   "textures": {
     "wall": "minecraft:block/glass"
   }

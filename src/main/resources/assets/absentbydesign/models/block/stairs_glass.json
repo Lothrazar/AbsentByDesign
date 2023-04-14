@@ -1,5 +1,6 @@
 {
     "parent": "absentbydesign:parent/stairs",
+  "render_type": "cutout",
     "textures": {
         "b": "block/glass"
     }

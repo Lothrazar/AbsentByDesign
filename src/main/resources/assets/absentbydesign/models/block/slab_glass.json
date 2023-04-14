@@ -1,5 +1,6 @@
 {
   "parent": "absentbydesign:parent/slab",
+  "render_type": "cutout",
   "textures": {
     "b": "block/glass"
   }

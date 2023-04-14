@@ -1,5 +1,6 @@
 {
   "parent": "block/wall_inventory",
+  "render_type": "translucent",
   "textures": {
     "wall": "minecraft:block/red_stained_glass"
   }

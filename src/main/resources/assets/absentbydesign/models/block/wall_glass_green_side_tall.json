@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_side_tall",
+  "render_type": "translucent",
   "textures": {
     "wall": "minecraft:block/green_stained_glass"
   }
