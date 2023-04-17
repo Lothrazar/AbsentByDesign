@@ -76,11 +76,6 @@ public class AbsentRegistry {
     //    RegistryFactory.buildTab(event, ModAbsentBD.MODID, new ItemStack(FENCE_QUARTZ.asItem()), null);
   }
 
-  @SubscribeEvent
-  public static void buildTabContents(CreativeModeTabEvent.BuildContents event) {
-    //nope
-  }
-
   public static boolean never(BlockState state, BlockGetter reader, BlockPos pos) {
     return false;
   }
