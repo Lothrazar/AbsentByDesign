@@ -106,7 +106,7 @@ public class AbsentRegistry {
       reg.register("fence_log_spruce", createFence(Blocks.SPRUCE_LOG, Block.Properties.of(Material.WOOD)));
       reg.register("fence_red_netherbrick", createFence(Blocks.RED_NETHER_BRICKS, Block.Properties.of(Material.STONE)));
       reg.register("fence_crimson", createFence(Blocks.CRIMSON_STEM, Block.Properties.of(Material.WOOD)));
-      reg.register("fence_warped", createFence(Blocks.OBSIDIAN, Block.Properties.of(Material.STONE)));
+      reg.register("fence_warped", createFence(Blocks.WARPED_STEM, Block.Properties.of(Material.WOOD)));
       reg.register("fence_obsidian", createFence(Blocks.OBSIDIAN, Block.Properties.of(Material.STONE)));
       FENCE_QUARTZ = (BlockAbsentFence) createFence(Blocks.QUARTZ_BLOCK, Block.Properties.of(Material.STONE));
       reg.register("fence_quartz", FENCE_QUARTZ);
