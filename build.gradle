@@ -1,7 +1,8 @@
 plugins {
     id 'eclipse'
+    id 'idea'
     id 'maven-publish'
-    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 import net.minecraftforge.gradle.common.tasks.SignJar
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -10,10 +11,11 @@ println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty '
 version = "${mc_version}-${mod_version}"
 group = 'com.lothrazar.absentbydesign' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'absentbydesign'
-
+base {    archivesName = '${mod_id}'  }	
 minecraft {
     mappings channel: 'official', version: "${mc_version}"
-	
+   	copyIdeResources = true
+ 	enableEclipsePrepareRuns = true
     //makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -29,7 +31,7 @@ minecraft {
 
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
-
+ property 'forge.enabledGameTestNamespaces', mod_id
             mods {
                 absentbydesign {
                     source sourceSets.main
@@ -45,7 +47,7 @@ minecraft {
 
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
-
+ property 'forge.enabledGameTestNamespaces', mod_id
             mods {
                 absentbydesign {
                     source sourceSets.main
@@ -78,8 +80,8 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
-    implementation fg.deobf("blank:flib-${mc_version}:${flib_version}")
-
+ //   implementation fg.deobf("blank:flib-${mc_version}:${flib_version}")
+implementation fg.deobf("curse.maven:flib-661261:4583429")
 	 // https://github.com/mezz/JustEnoughItems/wiki/Getting-Started-%5BJEI-10-or-higher-for-Forge-or-Fabric%5D#repositories
 	//  compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
 	//  compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
@@ -135,6 +137,19 @@ repositories {
   maven { url = 'https://maven.blamejared.com' }    
   maven { url = 'https://www.cursemaven.com'  }
 }
+def resourceTargets = ['META-INF/mods.toml', 'pack.mcmeta']
+def replaceProperties = [
+        mod_id: mod_id,  mod_version: mod_version,  version: version
+]
+processResources {
+    inputs.properties replaceProperties
+    replaceProperties.put 'project', project
+
+    filesMatching(resourceTargets) {
+        expand replaceProperties
+    }
+}
+
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
     manifest {
