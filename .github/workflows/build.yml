@@ -18,3 +18,5 @@ jobs:
         run: chmod +x ./gradlew
       - name: build
         run: ./gradlew build
+      - name: setup
+        run: ./gradlew eclipse # or idea
