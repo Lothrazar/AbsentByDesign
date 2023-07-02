@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+  "absentbydesign:fence_cherry", 
+  "absentbydesign:fence_mangrove",   
     "absentbydesign:fence_log_acacia",
     "absentbydesign:fence_log_birch",
     "absentbydesign:fence_log_darkoak",

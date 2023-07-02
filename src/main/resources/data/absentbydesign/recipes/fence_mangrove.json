@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#",
+    "#-#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:mangrove_log"
+    },
+    "-": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "absentbydesign:fence_mangrove",
+    "count": 6
+  }
+}

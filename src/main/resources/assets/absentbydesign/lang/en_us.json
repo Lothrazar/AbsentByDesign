@@ -1,9 +1,13 @@
 {
 	"itemGroup.absentbydesign": "Absent by Design",
   "block.absentbydesign.gate_mud_bricks":"Mud Brick Gate",
-	
   "block.absentbydesign.trapdoor_mud_bricks":"Mud Brick Trapdoor",
-	
+  "block.absentbydesign.wall_cherry_planks":"Cherry Planks Wall",
+  "block.absentbydesign.wall_cherry_log":"Cherry Log Wall",
+  "block.absentbydesign.wall_cherry_stripped_log":"Cherry Stripped Log Wall",
+  "block.absentbydesign.wall_bamboo_planks":"Bamboo Planks Wall",
+  "block.absentbydesign.wall_bamboo_mosaic":"Bamboo Mosaic Wall",
+  
 	"block.absentbydesign.wall_sculk": "Sculk Wall",
 	"block.absentbydesign.wall_mud": "Mud Wall",
 	"block.absentbydesign.wall_mangrove_log": "Mangrove Log Wall",
@@ -39,6 +43,10 @@
 	"block.absentbydesign.fence_quartz": "Quartz Fence",
 	"block.absentbydesign.fence_red_netherbrick": "Red Netherbrick Fence",
 	"block.absentbydesign.fence_warped": "Warped Stem Fence",
+ 	"block.absentbydesign.fence_cherry":"Cherry Log Fence",
+  	"block.absentbydesign.fence_mangrove":"Mangrove Log Fence",
+ 	
+	
 	"block.absentbydesign.wall_amethyst": "Amethyst Wall",
 	"block.absentbydesign.wall_calcite": "Calcite Wall",
 	"block.absentbydesign.wall_tuff": "Tuff Wall",

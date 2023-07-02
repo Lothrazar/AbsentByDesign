@@ -3,11 +3,14 @@
 echo "Useage: ./_.sh <dest> <texture>"
 # for example, to make stairs_andesite block, use _.sh andesite stone_andesite
 
+[[ -z "$1" ]] && { echo "dest is empty" ; exit 1; }
+[[ -z "$2" ]] && { echo "texture is empty" ; exit 1; }
+
 # I just happened to make granite first
 dest=$1
 texture=$2
 newblock="fence_${dest}"
-original="quartz"
+original="crimson"
 seed="fence_${original}"
 texture_old="${original}_block_side"
 modid="absentbydesign"

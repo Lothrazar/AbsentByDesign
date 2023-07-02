@@ -100,6 +100,8 @@ public class AbsentRegistry {
         //        ITEMS.register(id, () -> new BlockItem(b, properties));
       }
     });
+    /// "_bamboo_mosaic"
+    //
     event.register(Registries.BLOCK, reg -> {
       //                FENCES
       //
@@ -115,6 +117,11 @@ public class AbsentRegistry {
       reg.register("fence_obsidian", createFence(Blocks.OBSIDIAN, Block.Properties.of()));
       FENCE_QUARTZ = (BlockAbsentFence) createFence(Blocks.QUARTZ_BLOCK, Block.Properties.of());
       reg.register("fence_quartz", FENCE_QUARTZ);
+      //??mangrove log?
+      reg.register("fence_mangrove", createFence(Blocks.CHERRY_LOG, Block.Properties.of()));
+      reg.register("fence_cherry", createFence(Blocks.CHERRY_LOG, Block.Properties.of()));
+      
+      
       //
       //                SLABS
       //
@@ -441,6 +448,11 @@ public class AbsentRegistry {
       reg.register("wall_pearlescent_froglight", createWall(Block.Properties.of().pushReaction(PushReaction.DESTROY).lightLevel(s -> 15), Blocks.PEARLESCENT_FROGLIGHT));
       reg.register("wall_verdant_froglight", createWall(Block.Properties.of().pushReaction(PushReaction.DESTROY).lightLevel(s -> 15), Blocks.VERDANT_FROGLIGHT));
       reg.register("wall_reinforced_deepslate", createWall(Block.Properties.of(), Blocks.REINFORCED_DEEPSLATE));
+      reg.register("wall_cherry_planks", createWall(Block.Properties.of(), Blocks.CHERRY_PLANKS));
+      reg.register("wall_cherry_stripped_log", createWall(Block.Properties.of(), Blocks.STRIPPED_CHERRY_LOG));
+      reg.register("wall_cherry_log", createWall(Block.Properties.of(), Blocks.CHERRY_LOG)); 
+      reg.register("wall_bamboo_planks", createWall(Block.Properties.of(), Blocks.STRIPPED_BAMBOO_BLOCK));
+      reg.register("wall_bamboo_mosaic", createWall(Block.Properties.of(), Blocks.BAMBOO_MOSAIC)); 
       //
       //
       //                GATE
