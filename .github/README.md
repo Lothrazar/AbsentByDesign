@@ -4,6 +4,10 @@ A Minecraft mod built on the Forge API [https://files.minecraftforge.net/](https
 
 Project page with releases: https://www.curseforge.com/minecraft/mc-mods/absent-by-design
 
+https://modrinth.com/mod/absent-by-design
+
+
+
 
 [![](http://cf.way2muchnoise.eu/305840.svg)](https://minecraft.curseforge.com/projects/absent-by-design) 
 [![](http://cf.way2muchnoise.eu/versions/305840.svg)](https://minecraft.curseforge.com/projects/absent-by-design)
