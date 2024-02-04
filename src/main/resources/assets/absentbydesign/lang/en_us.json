@@ -7,7 +7,7 @@
   "block.absentbydesign.wall_cherry_stripped_log":"Cherry Stripped Log Wall",
   "block.absentbydesign.wall_bamboo_planks":"Bamboo Planks Wall",
   "block.absentbydesign.wall_bamboo_mosaic":"Bamboo Mosaic Wall",
-  
+
 	"block.absentbydesign.wall_sculk": "Sculk Wall",
 	"block.absentbydesign.wall_mud": "Mud Wall",
 	"block.absentbydesign.wall_mangrove_log": "Mangrove Log Wall",
@@ -45,8 +45,8 @@
 	"block.absentbydesign.fence_warped": "Warped Stem Fence",
  	"block.absentbydesign.fence_cherry":"Cherry Log Fence",
   	"block.absentbydesign.fence_mangrove":"Mangrove Log Fence",
- 	
-	
+
+
 	"block.absentbydesign.wall_amethyst": "Amethyst Wall",
 	"block.absentbydesign.wall_calcite": "Calcite Wall",
 	"block.absentbydesign.wall_tuff": "Tuff Wall",
@@ -175,6 +175,7 @@
 	"block.absentbydesign.slab_amethyst": "Amethyst Slab",
 	"block.absentbydesign.slab_calcite": "Calcite Slab",
 	"block.absentbydesign.slab_tuff": "Tuff Slab",
+	"block.absentbydesign.slab_gold": "Gold Slab",
 	"block.absentbydesign.stairs_amethyst": "Amethyst Stairs",
 	"block.absentbydesign.stairs_tuff": "Tuff Stairs",
 	"block.absentbydesign.stairs_calcite": "Calcite Stairs",
@@ -277,6 +278,7 @@
 	"block.absentbydesign.stairs_wool_silver": "Light Gray Wool Stairs",
 	"block.absentbydesign.stairs_wool_white": "White Wool Stairs",
 	"block.absentbydesign.stairs_wool_yellow": "Yellow Wool Stairs",
+	"block.absentbydesign.stairs_gold":"Gold Stairs",
 	"block.absentbydesign.trapdoor_granite": "Granite Trapdoor",
 	"block.absentbydesign.trapdoor_stone": "Stone Trapdoor",
 	"block.absentbydesign.trapdoor_andesite": "Andesite Trapdoor",
@@ -365,5 +367,6 @@
 	"block.absentbydesign.wall_spruce_planks": "Spruce Wall",
 	"block.absentbydesign.wall_warped_planks": "Warped Wall",
 	"block.absentbydesign.wall_crimson_planks": "Crimson Wall",
-	"block.absentbydesign.wall_warped": "Warped Wall"
+	"block.absentbydesign.wall_warped": "Warped Wall",
+	"block.absentbydesign.wall_gold": "Gold Wall"
 }

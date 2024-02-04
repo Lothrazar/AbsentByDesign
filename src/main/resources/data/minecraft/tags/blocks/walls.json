@@ -6,7 +6,7 @@
 	  "absentbydesign:wall_cherry_log",
 	  "absentbydesign:wall_bamboo_planks",
 	  "absentbydesign:wall_bamboo_mosaic",
-	
+
 		"absentbydesign:wall_mangrove_log",
 		"absentbydesign:wall_stripped_mangrove_log",
 		"absentbydesign:wall_mangrove_planks",
@@ -91,6 +91,7 @@
 		"absentbydesign:wall_oak_log",
 		"absentbydesign:wall_spruce_log",
 		"absentbydesign:wall_prismarine_bricks",
-		"absentbydesign:wall_dark_prismarine"
+		"absentbydesign:wall_dark_prismarine",
+        "absentbydesign:wall_gold"
 	]
 }
