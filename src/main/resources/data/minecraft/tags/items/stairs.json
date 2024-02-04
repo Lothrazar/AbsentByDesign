@@ -60,6 +60,7 @@
     "absentbydesign:stairs_glass_white",
     "absentbydesign:stairs_glass_yellow",
     "absentbydesign:stairs_glowstone",
+    "absentbydesign:stairs_gold",
     "absentbydesign:stairs_lodestone",
     "absentbydesign:stairs_magma",
     "absentbydesign:stairs_mushroom_polished",
@@ -102,7 +103,6 @@
     "absentbydesign:stairs_wool_red",
     "absentbydesign:stairs_wool_silver",
     "absentbydesign:stairs_wool_white",
-    "absentbydesign:stairs_wool_yellow",
-    "absentbydesign:stairs_gold"
+    "absentbydesign:stairs_wool_yellow"
   ]
 }

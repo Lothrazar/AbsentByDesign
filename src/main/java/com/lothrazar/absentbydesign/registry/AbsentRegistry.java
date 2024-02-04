@@ -241,6 +241,7 @@ public class AbsentRegistry {
       reg.register("slab_ochre_froglight", createSlab(Block.Properties.of().pushReaction(PushReaction.DESTROY).lightLevel(s -> 15), Blocks.OCHRE_FROGLIGHT));
       reg.register("slab_pearlescent_froglight", createSlab(Block.Properties.of().pushReaction(PushReaction.DESTROY).lightLevel(s -> 15), Blocks.PEARLESCENT_FROGLIGHT));
       reg.register("slab_verdant_froglight", createSlab(Block.Properties.of().pushReaction(PushReaction.DESTROY).lightLevel(s -> 15), Blocks.VERDANT_FROGLIGHT));
+      reg.register("slab_gold", createSlab(Block.Properties.of(), Blocks.GOLD_BLOCK));
       //
       //                STAIRS
       //
