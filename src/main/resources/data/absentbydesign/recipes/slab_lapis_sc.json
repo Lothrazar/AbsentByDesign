@@ -1,9 +1,0 @@
-  
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:lapis_block"
-  },
-  "result": "absentbydesign:slab_lapis",
-  "count": 2
-}

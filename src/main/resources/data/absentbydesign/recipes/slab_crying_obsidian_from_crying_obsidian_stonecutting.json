@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:crying_obsidian"
-  },
-  "result": "absentbydesign:slab_crying_obsidian",
-  "count": 2
-}

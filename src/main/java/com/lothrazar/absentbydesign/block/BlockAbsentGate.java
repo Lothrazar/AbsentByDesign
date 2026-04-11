@@ -4,13 +4,13 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 
 public class BlockAbsentGate extends FenceGateBlock implements IBlockAbsent {
 
   public BlockAbsentGate(Properties p, WoodType type) {
-    super(p, type);
+    super(type, p);
   }
 
   public boolean doVisibility = false;

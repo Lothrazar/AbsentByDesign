@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:glass"
+  },
+  "result": {
+    "id": "absentbydesign:slab_glass",
+    "count": 2
+  }
+}

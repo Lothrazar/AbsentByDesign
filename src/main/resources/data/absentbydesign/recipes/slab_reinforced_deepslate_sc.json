@@ -1,9 +1,0 @@
-  
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:reinforced_deepslate"
-  },
-  "result": "absentbydesign:slab_reinforced_deepslate",
-  "count": 2
-}

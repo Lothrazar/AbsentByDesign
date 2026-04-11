@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:mud"
+  },
+  "result": {
+    "id": "absentbydesign:slab_mud",
+    "count": 2
+  }
+}

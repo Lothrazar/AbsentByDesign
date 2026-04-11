@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:muddy_mangrove_roots"
-  },
-  "result": "absentbydesign:wall_muddy_mangrove_roots",
-  "count": 1
-}

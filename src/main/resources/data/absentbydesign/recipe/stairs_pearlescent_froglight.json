@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:pearlescent_froglight"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "absentbydesign:stairs_pearlescent_froglight"
+  }
+}

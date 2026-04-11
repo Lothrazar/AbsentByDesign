@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:stripped_birch_wood"
-  },
-  "result": "absentbydesign:wall_stripped_birch_log",
-  "count": 1
-}

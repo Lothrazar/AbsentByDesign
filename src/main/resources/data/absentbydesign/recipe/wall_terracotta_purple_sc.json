@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:purple_terracotta"
+  },
+  "result": {
+    "id": "absentbydesign:wall_terracotta_purple",
+    "count": 1
+  }
+}

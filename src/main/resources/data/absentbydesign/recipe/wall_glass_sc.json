@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:glass"
+  },
+  "result": {
+    "id": "absentbydesign:wall_glass",
+    "count": 1
+  }
+}

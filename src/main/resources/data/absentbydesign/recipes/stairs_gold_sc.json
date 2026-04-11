@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:gold_block"
-  },
-  "result": "absentbydesign:stairs_gold",
-  "count": 1
-}

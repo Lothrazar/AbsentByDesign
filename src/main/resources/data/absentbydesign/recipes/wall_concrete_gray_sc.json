@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:gray_concrete"
-  },
-  "result": "absentbydesign:wall_concrete_gray",
-  "count": 1
-}

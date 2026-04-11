@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:sculk"
+  },
+  "result": {
+    "id": "absentbydesign:slab_sculk",
+    "count": 2
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:lime_stained_glass"
-  },
-  "result": "absentbydesign:slab_glass_lime",
-  "count": 2
-}

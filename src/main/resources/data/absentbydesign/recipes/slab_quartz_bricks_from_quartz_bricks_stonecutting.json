@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:quartz_bricks"
-  },
-  "result": "absentbydesign:slab_quartz_bricks",
-  "count": 2
-}

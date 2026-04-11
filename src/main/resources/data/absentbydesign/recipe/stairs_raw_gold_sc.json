@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:raw_gold_block"
+  },
+  "result": {
+    "id": "absentbydesign:stairs_raw_gold",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:stone"
+  },
+  "result": {
+    "id": "absentbydesign:wall_stone",
+    "count": 1
+  }
+}

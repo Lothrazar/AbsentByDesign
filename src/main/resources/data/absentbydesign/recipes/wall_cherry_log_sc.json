@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:cherry_wood"
-  },
-  "result": "absentbydesign:wall_cherry_log",
-  "count": 1
-}

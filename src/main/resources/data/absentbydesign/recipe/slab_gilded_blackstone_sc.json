@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:gilded_blackstone"
+  },
+  "result": {
+    "id": "absentbydesign:slab_gilded_blackstone",
+    "count": 2
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:stripped_crimson_hyphae"
-  },
-  "result": "absentbydesign:wall_stripped_crimson",
-  "count": 1
-}

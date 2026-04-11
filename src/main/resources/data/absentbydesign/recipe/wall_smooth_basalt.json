@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_basalt"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "absentbydesign:wall_smooth_basalt"
+  }
+}

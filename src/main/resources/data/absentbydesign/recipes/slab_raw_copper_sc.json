@@ -1,9 +1,0 @@
-  
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:raw_copper_block"
-  },
-  "result": "absentbydesign:slab_raw_copper",
-  "count": 2
-}

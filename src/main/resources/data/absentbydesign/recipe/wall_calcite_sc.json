@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:calcite"
+  },
+  "result": {
+    "id": "absentbydesign:wall_calcite",
+    "count": 1
+  }
+}

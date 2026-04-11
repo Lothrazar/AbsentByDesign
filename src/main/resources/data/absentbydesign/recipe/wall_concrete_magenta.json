@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "magenta_concrete"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "absentbydesign:wall_concrete_magenta"
+  }
+}

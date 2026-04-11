@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:mangrove_planks"
-  },
-  "result": "absentbydesign:wall_mangrove_planks",
-  "count": 1
-}

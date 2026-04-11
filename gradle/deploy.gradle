@@ -1,0 +1,47 @@
+// ---------------------------------------------------------------------------
+// deployLocal — copies the built JAR to every folder listed in deploy.properties
+// deploy.properties is gitignored; each developer maintains their own copy.
+//
+// Runs automatically after 'publish' via finalizedBy.
+// Can also be run standalone with: gradlew deployLocal
+//   (depends only on 'jar' so it won't trigger a full publish cycle standalone)
+// ---------------------------------------------------------------------------
+def deployProps = new Properties()
+def deployFile = rootProject.file('deploy.properties')
+if (deployFile.exists()) {
+    deployFile.withInputStream { deployProps.load(it) }
+}
+
+tasks.register('deployLocal') {
+    description = 'Copies build jar to all destinations in deploy.properties'
+    group = 'distribution'
+    dependsOn 'jar'
+
+    def jarFile = layout.buildDirectory.file("libs/${base.archivesName.get()}-${version}.jar")
+
+    def destinations = deployProps.getProperty('destinations', '')
+            .split(',')
+            .collect { it.trim() }
+            .findAll { it }
+
+    onlyIf { !destinations.isEmpty() }
+
+    // doLast avoids configuration cache errors from project.copy() references
+    doLast {
+        def source = jarFile.get().asFile
+        destinations.each { dest ->
+            def destDir = new File(dest)
+            destDir.mkdirs()
+            java.nio.file.Files.copy(
+                source.toPath(),
+                new File(destDir, source.name).toPath(),
+                java.nio.file.StandardCopyOption.REPLACE_EXISTING
+            )
+            logger.lifecycle("Deployed ${source.name} -> ${dest}")
+        }
+    }
+}
+
+tasks.named('publish') {
+    finalizedBy 'deployLocal'
+}

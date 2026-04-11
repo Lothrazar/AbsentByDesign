@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:glowstone"
+  },
+  "result": {
+    "id": "absentbydesign:stairs_glowstone",
+    "count": 1
+  }
+}

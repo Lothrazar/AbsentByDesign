@@ -65,6 +65,12 @@ ${mod_description}
     versionRange="[${minecraft_version},)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="flib"
+    type="required"
+    versionRange="[0.1.0,)"
+    ordering="NONE"
+    side="BOTH"
 
 #[features.${mod_id}]
 #openGLVersion="[3.2,)"

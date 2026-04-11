@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:jungle_wood"
+  },
+  "result": {
+    "id": "absentbydesign:wall_jungle_log",
+    "count": 1
+  }
+}

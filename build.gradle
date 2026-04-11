@@ -4,6 +4,11 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.141'
     id 'idea'
 }
+def localProps = new Properties()
+def localFile = file("mod.properties")
+localFile.withInputStream { localProps.load(it) }
+localProps.each { k, v -> project.ext.set(k, v) }
+
 tasks.named('wrapper', Wrapper).configure {
     // Define wrapper values here so as to not have to always do so when updating gradlew.properties.
     // Switching this to Wrapper.DistributionType.ALL will download the full gradle sources that comes with
@@ -12,7 +17,7 @@ tasks.named('wrapper', Wrapper).configure {
     // (Verify by checking gradle/wrapper/gradle-wrapper.properties to see if distributionUrl now points to `-all`)
     distributionType = Wrapper.DistributionType.BIN
 }
-version = "${mc_version}-${mod_version}"
+version = "${minecraft_version}-${mod_version}"
 group = mod_group_id
 
 sourceSets.main.resources {
@@ -30,12 +35,12 @@ repositories {
 //    mavenLocal()
   flatDir { dir 'libs' }
 
-    // maven {
-//      name = "curios"
-    //    url = 'https://maven.theillusivec4.top/'
-    // }
-    // maven { url = 'https://maven.blamejared.com' }
-//  maven { url = 'https://www.cursemaven.com'  }
+  maven {
+      name = "curios"
+      url = 'https://maven.theillusivec4.top/'
+  }
+  maven { url = 'https://maven.blamejared.com' }
+  maven { url = 'https://www.cursemaven.com'  }
 }
 
 base {
@@ -136,30 +141,30 @@ configurations {
 
 
 dependencies {
-    // example if: /libs/my-mod-1.0.0-SNAPSHOT.jar
-    implementation "local.mods:flib:1.21.1-1.0.0-SNAPSHOT"
 
-    // Example optional mod dependency with JEI
-    // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
-    // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
-    // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
-    // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
+    // for other mods depending on THIS FLIB library, use
+    implementation "local.mods:flib:${minecraft_version}-${flib_version}"
 
- //   runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}+${mc_version}")
- //   compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}+${mc_version}:api")
 
- //   implementation fg.deobf("com.blamejared.crafttweaker:CraftTweaker-forge-${mc_version}:${crafttweaker_version}")
+  //these mods have API jars for compile as well as the full mod for local
+  compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+  localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
 
-     
-     
+ // compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}+${minecraft_version}"
+ // localRuntime "top.theillusivec4.curios:curios-neoforge:${curios_version}+${minecraft_version}"
+
+  // no APIs
+ // compileOnly "vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-NEOFORGE"
+ // compileOnly "com.blamejared.crafttweaker:CraftTweaker-neoforge-${minecraft_version}:${crafttweaker_version}"
+
+
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
-    // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
+    // This maps to ./libs/coolmod-${minecraft_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
-    // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
+    // implementation "blank:coolmod-${minecraft_version}:${coolmod_version}"
 
     // Example mod dependency using a file as dependency
-    // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
+    // implementation files("libs/coolmod-${minecraft_version}-${coolmod_version}.jar")
 
     // Example project dependency using a sister or child project:
     // implementation project(":myproject")
@@ -225,6 +230,8 @@ publishing {
         }
     }
 }
+
+apply from: 'gradle/deploy.gradle'
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
