@@ -1,5 +1,185 @@
 {
 	"itemGroup.absentbydesign": "Absent by Design",
+	
+  "block.absentbydesign.slab_raw_copper":"銅の原石のハーフブロック",
+  "block.absentbydesign.slab_raw_gold":"金の原石のハーフブロック",
+  "block.absentbydesign.slab_raw_iron":"鉄の原石のハーフブロック",
+  "block.absentbydesign.wall_raw_iron":"鉄の原石の塀",
+  "block.absentbydesign.wall_raw_gold":"金の原石の塀",
+  "block.absentbydesign.wall_raw_copper":"銅の原石の塀",
+  "block.absentbydesign.stairs_raw_copper":"銅の原石の階段",
+  "block.absentbydesign.stairs_raw_gold":"金の原石の階段",
+  "block.absentbydesign.stairs_raw_iron":"鉄の原石の階段",
+  
+  
+  
+  
+  
+  
+	
+  "block.absentbydesign.gate_basalt":"玄武岩のフェンスゲート",
+  "block.absentbydesign.gate_sandstone":"砂岩のフェンスゲート",
+  "block.absentbydesign.gate_red_sandstone":"赤い砂岩のフェンスゲート",
+  "block.absentbydesign.gate_blackstone":"ブラックストーンのフェンスゲート",
+  "block.absentbydesign.gate_stone":"石のフェンスゲート",
+  "block.absentbydesign.gate_cobblestone":"丸石のフェンスゲート",
+  
+	
+  "block.absentbydesign.trapdoor_diamond":"ダイヤモンドのトラップドア",
+  "block.absentbydesign.trapdoor_lapis":"ラピスラズリのトラップドア",
+  "block.absentbydesign.trapdoor_emerald":"エメラルドのトラップドア",
+  
+
+  "block.absentbydesign.trapdoor_amethyst":"アメジストのトラップドア",
+  "block.absentbydesign.trapdoor_quartz_bricks":"クォーツレンガのトラップドア",
+  "block.absentbydesign.trapdoor_obsidian":"黒曜石のトラップドア",
+  "block.absentbydesign.trapdoor_crying_obsidian":"泣く黒曜石のトラップドア",
+	
+  "block.absentbydesign.trapdoor_gold":"金のトラップドア",
+	
+  "block.absentbydesign.slab_iron":"鉄のハーフブロック",
+  "block.absentbydesign.stairs_iron":"鉄の階段",
+  "block.absentbydesign.wall_iron":"鉄の塀",
+  
+  
+	
+  "block.absentbydesign.wall_netherite":"ネザライトの塀",
+  "block.absentbydesign.stairs_netherite":"ネザライトの階段",
+  "block.absentbydesign.slab_netherite":"ネザライトのハーフブロック",
+  
+  
+	
+  "block.absentbydesign.slab_bone":"骨のハーフブロック",
+  "block.absentbydesign.wall_bone":"骨の塀",
+  "block.absentbydesign.stairs_bone":"骨の階段",
+	
+  "block.absentbydesign.wall_diamond":"ダイヤモンドの塀",
+  "block.absentbydesign.stairs_diamond":"ダイヤモンドの階段",
+  "block.absentbydesign.slab_diamond":"ダイヤモンドのハーフブロック",
+  "block.absentbydesign.slab_emerald":"エメラルドのハーフブロック",
+  "block.absentbydesign.wall_emerald":"エメラルドの塀",
+  "block.absentbydesign.stairs_emerald":"エメラルドの階段",
+  "block.absentbydesign.stairs_lapis":"ラピスラズリの階段",
+  "block.absentbydesign.slab_lapis":"ラピスラズリのハーフブロック",
+  "block.absentbydesign.wall_lapis":"ラピスラズリの塀",
+	
+  "block.absentbydesign.stairs_honeycomb":"ハニカムの階段",
+  "block.absentbydesign.slab_honeycomb":"ハニカムのハーフブロック",
+  "block.absentbydesign.wall_honeycomb":"ハニカムの塀",
+	
+  "block.absentbydesign.wall_packed_ice":"氷塊の塀",
+  "block.absentbydesign.stairs_packed_ice":"氷塊の階段",
+  "block.absentbydesign.slab_packed_ice":"氷塊のハーフブロック",
+  "block.absentbydesign.slab_blue_ice":"青氷のハーフブロック",
+  "block.absentbydesign.stairs_blue_ice":"青氷の階段",
+  "block.absentbydesign.wall_blue_ice":"青氷の塀",
+  
+  
+  
+  
+	
+  "block.absentbydesign.stairs_soul_soil":"ソウルソイルの階段",
+  "block.absentbydesign.wall_soul_soil":"ソウルソイルの塀",
+  "block.absentbydesign.slab_soul_soil":"ソウルソイルのハーフブロック",
+	
+  "block.absentbydesign.stairs_soul_sand":"ソウルサンドの階段",
+  "block.absentbydesign.slab_soul_sand":"ソウルサンドのハーフブロック",
+  "block.absentbydesign.wall_soul_sand":"ソウルサンドの塀",
+  
+  
+	
+  "block.absentbydesign.stairs_moss":"苔の階段",
+  "block.absentbydesign.wall_moss":"苔の塀",
+  "block.absentbydesign.slab_moss":"苔のハーフブロック",
+	
+  "block.absentbydesign.stairs_gilded_blackstone":"きらめくブラックストーンの階段",
+  "block.absentbydesign.wall_gilded_blackstone":"きらめくブラックストーンの塀",
+  "block.absentbydesign.slab_gilded_blackstone":"きらめくブラックストーンのハーフブロック",
+	
+  "block.absentbydesign.wall_shroomlight":"シュルームライトの塀",
+  "block.absentbydesign.stairs_shroomlight":"シュルームライトの階段",
+  "block.absentbydesign.slab_shroomlight":"シュルームライトのハーフブロック",
+	
+  "block.absentbydesign.slab_dripstone":"鍾乳石のハーフブロック",
+  "block.absentbydesign.wall_dripstone":"鍾乳石の塀",
+  "block.absentbydesign.stairs_dripstone":"鍾乳石の階段",
+  
+  
+	
+  "block.absentbydesign.slab_cracked_polished_blackstone_bricks":"ひび割れた磨かれたブラックストーンレンガのハーフブロック",
+  "block.absentbydesign.stairs_cracked_polished_blackstone_bricks":"ひび割れた磨かれたブラックストーンレンガの階段",
+  "block.absentbydesign.wall_cracked_polished_blackstone_bricks":"ひび割れた磨かれたブラックストーンレンガの塀",
+  "block.absentbydesign.slab_deepslate":"深層岩のハーフブロック",
+  "block.absentbydesign.stairs_deepslate":"深層岩の階段",
+  "block.absentbydesign.wall_deepslate":"深層岩の塀",
+  "block.absentbydesign.stairs_rooted_dirt":"根付いた土の階段",
+  "block.absentbydesign.slab_rooted_dirt":"根付いた土のハーフブロック",
+  "block.absentbydesign.wall_rooted_dirt":"根付いた土の塀",
+  "block.absentbydesign.slab_muddy_mangrove_roots":"泥だらけのマングローブの根のハーフブロック",
+  "block.absentbydesign.stairs_muddy_mangrove_roots":"泥だらけのマングローブの根の階段",
+  "block.absentbydesign.wall_muddy_mangrove_roots":"泥だらけのマングローブの根の塀",
+  "block.absentbydesign.wall_snow":"雪の塀",
+  "block.absentbydesign.wall_netherrack":"ネザーラックの塀",
+  "block.absentbydesign.wall_coarse_dirt":"粗い土の塀",
+  "block.absentbydesign.wall_concrete_black":"黒色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_blue":"青色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_brown":"茶色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_cyan":"青緑色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_gray":"灰色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_green":"緑色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_light_blue":"空色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_light_gray":"薄灰色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_lime":"黄緑色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_magenta":"赤紫色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_orange":"橙色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_pink":"桃色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_purple":"紫色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_red":"赤色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_white":"白色のコンクリートの塀",
+  "block.absentbydesign.wall_concrete_yellow":"黄色のコンクリートの塀",
+  
+  "block.absentbydesign.wall_terracotta_black":"黒色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_blue":"青色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_brown":"茶色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_cyan":"青緑色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_gray":"灰色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_green":"緑色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_light_blue":"空色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_light_gray":"薄灰色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_lime":"黄緑色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_magenta":"赤紫色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_orange":"橙色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_pink":"桃色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_purple":"紫色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_red":"赤色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_white":"白色のテラコッタの塀",
+  "block.absentbydesign.wall_terracotta_yellow":"黄色のテラコッタの塀",
+  
+  
+  "block.absentbydesign.wall_wool_black":"黒色の羊毛の塀",
+  "block.absentbydesign.wall_wool_blue":"青色の羊毛の塀",
+  "block.absentbydesign.wall_wool_brown":"茶色の羊毛の塀",
+  "block.absentbydesign.wall_wool_cyan":"青緑色の羊毛の塀",
+  "block.absentbydesign.wall_wool_gray":"灰色の羊毛の塀",
+  "block.absentbydesign.wall_wool_green":"緑色の羊毛の塀",
+  "block.absentbydesign.wall_wool_light_blue":"空色の羊毛の塀",
+  "block.absentbydesign.wall_wool_light_gray":"薄灰色の羊毛の塀",
+  "block.absentbydesign.wall_wool_lime":"黄緑色の羊毛の塀",
+  "block.absentbydesign.wall_wool_magenta":"赤紫色の羊毛の塀",
+  "block.absentbydesign.wall_wool_orange":"橙色の羊毛の塀",
+  "block.absentbydesign.wall_wool_pink":"桃色の羊毛の塀",
+  "block.absentbydesign.wall_wool_purple":"紫色の羊毛の塀",
+  "block.absentbydesign.wall_wool_red":"赤色の羊毛の塀",
+  "block.absentbydesign.wall_wool_white":"白色の羊毛の塀",
+  "block.absentbydesign.wall_wool_yellow":"黄色の羊毛の塀",
+  
+  
+  
+  
+  
+  
+
+
   "block.absentbydesign.gate_mud_bricks":"泥レンガのフェンスゲート",
   "block.absentbydesign.trapdoor_mud_bricks":"泥レンガのトラップドア",
   "block.absentbydesign.wall_cherry_planks":"サクラの塀",
@@ -7,7 +187,7 @@
   "block.absentbydesign.wall_cherry_stripped_log":"樹皮を剥いだサクラの原木の塀",
   "block.absentbydesign.wall_bamboo_planks":"竹の塀",
   "block.absentbydesign.wall_bamboo_mosaic":"竹細工の塀",
-  
+
 	"block.absentbydesign.wall_sculk": "スカルクの塀",
 	"block.absentbydesign.wall_mud": "泥の塀",
 	"block.absentbydesign.wall_mangrove_log": "マングローブの原木の塀",
@@ -45,8 +225,8 @@
 	"block.absentbydesign.fence_warped": "歪んだ幹のフェンス",
  	"block.absentbydesign.fence_cherry":"サクラの原木のフェンス",
   	"block.absentbydesign.fence_mangrove":"マングローブの原木のフェンス",
- 	
-	
+
+
 	"block.absentbydesign.wall_amethyst": "アメジストの塀",
 	"block.absentbydesign.wall_calcite": "方解石の塀",
 	"block.absentbydesign.wall_tuff": "凝灰岩の塀",
@@ -175,6 +355,7 @@
 	"block.absentbydesign.slab_amethyst": "アメジストのハーフブロック",
 	"block.absentbydesign.slab_calcite": "方解石のハーフブロック",
 	"block.absentbydesign.slab_tuff": "凝灰岩のハーフブロック",
+	"block.absentbydesign.slab_gold": "金のハーフブロック",
 	"block.absentbydesign.stairs_amethyst": "アメジストの階段",
 	"block.absentbydesign.stairs_tuff": "凝灰岩の階段",
 	"block.absentbydesign.stairs_calcite": "方解石の階段",
@@ -277,6 +458,7 @@
 	"block.absentbydesign.stairs_wool_silver": "薄灰色の羊毛の階段",
 	"block.absentbydesign.stairs_wool_white": "白色の羊毛の階段",
 	"block.absentbydesign.stairs_wool_yellow": "黄色の羊毛の階段",
+	"block.absentbydesign.stairs_gold":"金の階段",
 	"block.absentbydesign.trapdoor_granite": "花崗岩のトラップドア",
 	"block.absentbydesign.trapdoor_stone": "石のトラップドア",
 	"block.absentbydesign.trapdoor_andesite": "安山岩のトラップドア",
@@ -306,16 +488,16 @@
 	"block.absentbydesign.wall_glass_white": "白色の色付きガラスの塀",
 	"block.absentbydesign.wall_glass_green": "緑色の色付きガラスの塀",
 	"block.absentbydesign.wall_glass_black": "黒色の色付きガラスの塀",
-	"block.absentbydesign.wall_acacia_log": "アカシアの木の塀",
+	"block.absentbydesign.wall_acacia_log": "アカシアの原木の塀",
 	"block.absentbydesign.wall_andesite": "安山岩の塀",
 	"block.absentbydesign.wall_andesite_smooth": "磨かれた安山岩の塀",
 	"block.absentbydesign.wall_basalt": "玄武岩の塀",
-	"block.absentbydesign.wall_birch_log": "シラカバの木の塀",
+	"block.absentbydesign.wall_birch_log": "シラカバの原木の塀",
 	"block.absentbydesign.wall_brick": "レンガの塀",
 	"block.absentbydesign.wall_brown_mushroom": "茶色のキノコの塀",
-	"block.absentbydesign.wall_crimson": "真紅の菌糸の塀",
+	"block.absentbydesign.wall_crimson": "真紅の幹の塀",
 	"block.absentbydesign.wall_crying_obsidian": "泣く黒曜石の塀",
-	"block.absentbydesign.wall_dark_oak_log": "ダークオークの木の塀",
+	"block.absentbydesign.wall_dark_oak_log": "ダークオークの原木の塀",
 	"block.absentbydesign.wall_dark_prismarine": "ダークプリズマリンの塀",
 	"block.absentbydesign.wall_diorite": "閃緑岩の塀",
 	"block.absentbydesign.wall_diorite_smooth": "磨かれた閃緑岩の塀",
@@ -324,12 +506,12 @@
 	"block.absentbydesign.wall_glowstone": "グロウストーンの塀",
 	"block.absentbydesign.wall_granite": "花崗岩の塀",
 	"block.absentbydesign.wall_granite_smooth": "磨かれた花崗岩の塀",
-	"block.absentbydesign.wall_jungle_log": "ジャングルの木の塀",
+	"block.absentbydesign.wall_jungle_log": "ジャングルの原木の塀",
 	"block.absentbydesign.wall_lodestone": "ロードストーンの塀",
 	"block.absentbydesign.wall_magma": "マグマの塀",
 	"block.absentbydesign.wall_mushroom_polished": "磨かれたキノコの塀",
 	"block.absentbydesign.wall_mushroom_stem": "キノコの柄の塀",
-	"block.absentbydesign.wall_oak_log": "オークの木の塀",
+	"block.absentbydesign.wall_oak_log": "オークの原木の塀",
 	"block.absentbydesign.wall_obsidian": "黒曜石の塀",
 	"block.absentbydesign.wall_polished_basalt": "磨かれた玄武岩の塀",
 	"block.absentbydesign.wall_prismarine_bricks": "プリズマリンレンガの塀",
@@ -342,21 +524,21 @@
 	"block.absentbydesign.wall_sandstone_red_smooth": "滑らかな赤い砂岩の塀",
 	"block.absentbydesign.wall_sandstone_smooth": "滑らかな砂岩の塀",
 	"block.absentbydesign.wall_sea_lantern": "シーランタンの塀",
-	"block.absentbydesign.wall_spruce_log": "トウヒの木の塀",
+	"block.absentbydesign.wall_spruce_log": "トウヒの原木の塀",
 	"block.absentbydesign.wall_stone": "石の塀",
 	"block.absentbydesign.wall_stone_slab": "滑らかな石の塀",
 	"block.absentbydesign.wall_stonebrick": "石レンガの塀",
 	"block.absentbydesign.wall_stonebrick_carved": "模様入りの石レンガの塀",
 	"block.absentbydesign.wall_stonebrick_cracked": "ひび割れた石レンガの塀",
 	"block.absentbydesign.wall_stonebrick_mossy": "苔むした石レンガの塀",
-	"block.absentbydesign.wall_stripped_acacia_log": "樹皮を剥いだアカシアの木の塀",
-	"block.absentbydesign.wall_stripped_birch_log": "樹皮を剥いだシラカバの木の塀",
-	"block.absentbydesign.wall_stripped_crimson": "表皮を剥いだ真紅の菌糸の塀",
-	"block.absentbydesign.wall_stripped_dark_oak_log": "樹皮を剥いだダークオークの木の塀",
-	"block.absentbydesign.wall_stripped_jungle_log": "樹皮を剥いだジャングルの木の塀",
-	"block.absentbydesign.wall_stripped_oak_log": "樹皮を剥いだオークの木の塀",
-	"block.absentbydesign.wall_stripped_spruce_log": "樹皮を剥いだトウヒの木の塀",
-	"block.absentbydesign.wall_stripped_warped": "表皮を剥いだ歪んだ菌糸の塀",
+	"block.absentbydesign.wall_stripped_acacia_log": "樹皮を剥いだアカシアの原木の塀",
+	"block.absentbydesign.wall_stripped_birch_log": "樹皮を剥いだシラカバの原木の塀",
+	"block.absentbydesign.wall_stripped_crimson": "表皮を剥いだ真紅の幹の塀",
+	"block.absentbydesign.wall_stripped_dark_oak_log": "樹皮を剥いだダークオークの原木の塀",
+	"block.absentbydesign.wall_stripped_jungle_log": "樹皮を剥いだジャングルの原木の塀",
+	"block.absentbydesign.wall_stripped_oak_log": "樹皮を剥いだオークの原木の塀",
+	"block.absentbydesign.wall_stripped_spruce_log": "樹皮を剥いだトウヒの原木の塀",
+	"block.absentbydesign.wall_stripped_warped": "表皮を剥いだ歪んだ幹の塀",
 	"block.absentbydesign.wall_oak_planks": "オークの塀",
 	"block.absentbydesign.wall_dark_oak_planks": "ダークオークの塀",
 	"block.absentbydesign.wall_acacia_planks": "アカシアの塀",
@@ -365,5 +547,6 @@
 	"block.absentbydesign.wall_spruce_planks": "トウヒの塀",
 	"block.absentbydesign.wall_warped_planks": "歪んだ塀",
 	"block.absentbydesign.wall_crimson_planks": "真紅の塀",
-	"block.absentbydesign.wall_warped": "歪んだ菌糸の塀"
+	"block.absentbydesign.wall_warped": "歪んだ幹の塀",
+	"block.absentbydesign.wall_gold": "金の塀"
 }

@@ -2,7 +2,8 @@
 	"homepage": "https://www.curseforge.com/minecraft/mc-mods/absent-by-design",
 	"promos": {
 		"1.19.4-latest": "1.7.1",
-		"1.20.1-latest": "1.8.1"
+		"1.20.1-latest": "1.9.1",
+		"1.21.1-latest": "1.9.1"
 	},
 	"1.19.4": {
 		"1.5.0": "ported",
@@ -14,6 +15,7 @@
 	},
 	"1.20.1":{
        "1.8.0":"Ported",
-	   "1.9.0":" Fix fence_warped being a variant of Obsidian -Merge pull request #53 from nitrodynamite18 .  Merge pull request #59 from Abbage230  Create ja_jp.json.  Merge pull request #57 from TheAnaxMan Updated ru_ru.json.    Merge pull request #62 from smoong951   Update ko_kr.json .     Merge pull request #60 from Kentaarka add gold slabs, stairs and walls.  Fixed incorrect block mineable tags.  Added new blocks: non-cobbled Deepslate; Dripstone, Shroomlight, Soul Sand, Moss, Cracked Blackstone brick, Rooted Dirt; Muddy Mangrove Roots; Snow wall; Netherrack Wall; Emerald, Netherite, Iron, Lapis, Bone, Diamond blocks; Coarse Dirt Wall; Add 16 Concrete Walls; Add 16 terracotta walls, and many others "
+	   "1.9.0":" Fix fence_warped being a variant of Obsidian -Merge pull request #53 from nitrodynamite18 .  Merge pull request #59 from Abbage230  Create ja_jp.json.  Merge pull request #57 from TheAnaxMan Updated ru_ru.json.    Merge pull request #62 from smoong951   Update ko_kr.json .     Merge pull request #60 from Kentaarka add gold slabs, stairs and walls.  Fixed incorrect block mineable tags.  Added new blocks: non-cobbled Deepslate; Dripstone, Shroomlight, Soul Sand, Moss, Cracked Blackstone brick, Rooted Dirt; Muddy Mangrove Roots; Snow wall; Netherrack Wall; Emerald, Netherite, Iron, Lapis, Bone, Diamond blocks; Coarse Dirt Wall; Add 16 Concrete Walls; Add 16 terracotta walls, and many others ",
+       "1.9.1": "Updated ja_jp.json by Abbage230"
 	}
 }
