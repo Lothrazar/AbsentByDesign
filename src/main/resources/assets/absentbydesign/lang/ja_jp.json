@@ -229,7 +229,6 @@
 
 	"block.absentbydesign.wall_amethyst": "アメジストの塀",
 	"block.absentbydesign.wall_calcite": "方解石の塀",
-	"block.absentbydesign.wall_tuff": "凝灰岩の塀",
 	"block.absentbydesign.wall_smooth_basalt": "滑らかな玄武岩の塀",
 	"block.absentbydesign.slab_smooth_basalt": "滑らかな玄武岩のハーフブロック",
 	"block.absentbydesign.stairs_smooth_basalt": "滑らかな玄武岩の階段",
@@ -354,10 +353,8 @@
 	"block.absentbydesign.slab_wool_yellow": "黄色の羊毛のハーフブロック",
 	"block.absentbydesign.slab_amethyst": "アメジストのハーフブロック",
 	"block.absentbydesign.slab_calcite": "方解石のハーフブロック",
-	"block.absentbydesign.slab_tuff": "凝灰岩のハーフブロック",
 	"block.absentbydesign.slab_gold": "金のハーフブロック",
 	"block.absentbydesign.stairs_amethyst": "アメジストの階段",
-	"block.absentbydesign.stairs_tuff": "凝灰岩の階段",
 	"block.absentbydesign.stairs_calcite": "方解石の階段",
 	"block.absentbydesign.stairs_glass": "ガラスの階段",
 	"block.absentbydesign.stairs_glass_red": "赤色の色付きガラスの階段",

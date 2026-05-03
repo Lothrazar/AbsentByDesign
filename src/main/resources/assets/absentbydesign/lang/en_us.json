@@ -229,7 +229,6 @@
 
 	"block.absentbydesign.wall_amethyst": "Amethyst Wall",
 	"block.absentbydesign.wall_calcite": "Calcite Wall",
-	"block.absentbydesign.wall_tuff": "Tuff Wall",
 	"block.absentbydesign.wall_smooth_basalt": "Smooth Basalt Wall",
 	"block.absentbydesign.slab_smooth_basalt": "Smooth Basalt Slab",
 	"block.absentbydesign.stairs_smooth_basalt": "Smooth Basalt Stairs",
@@ -354,10 +353,8 @@
 	"block.absentbydesign.slab_wool_yellow": "Yellow Wool Slab",
 	"block.absentbydesign.slab_amethyst": "Amethyst Slab",
 	"block.absentbydesign.slab_calcite": "Calcite Slab",
-	"block.absentbydesign.slab_tuff": "Tuff Slab",
 	"block.absentbydesign.slab_gold": "Gold Slab",
 	"block.absentbydesign.stairs_amethyst": "Amethyst Stairs",
-	"block.absentbydesign.stairs_tuff": "Tuff Stairs",
 	"block.absentbydesign.stairs_calcite": "Calcite Stairs",
 	"block.absentbydesign.stairs_glass": "Glass Stairs",
 	"block.absentbydesign.stairs_glass_red": "Red Glass Stairs",
