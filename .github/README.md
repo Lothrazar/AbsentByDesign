@@ -1,6 +1,6 @@
 ﻿# Absent by Design
 
-A Minecraft mod built on the Forge API [https://files.minecraftforge.net/](https://files.minecraftforge.net)
+A Minecraft mod built on the NeoForge API [https://neoforged.net/](https://neoforged.net/)
 
 [![CurseForge](https://img.shields.io/badge/CurseForge-F16436?style=flat-square&logo=curseforge&logoColor=white)](https://www.curseforge.com/minecraft/mc-mods/absent-by-design)
 [![Modrinth](https://img.shields.io/badge/Modrinth-1bd96a?style=flat-square&logo=modrinth&logoColor=white)](https://modrinth.com/mod/absent-by-design)
