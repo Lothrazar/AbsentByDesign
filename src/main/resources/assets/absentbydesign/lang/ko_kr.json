@@ -49,7 +49,6 @@
 	
 	"block.absentbydesign.wall_amethyst": "자수정 담장",
 	"block.absentbydesign.wall_calcite": "방해석 담장",
-	"block.absentbydesign.wall_tuff": "응회암 담장",
 	"block.absentbydesign.wall_smooth_basalt": "매끄러운 현무암 담장",
 	"block.absentbydesign.slab_smooth_basalt": "매끄러운 현무암 반 블록",
 	"block.absentbydesign.stairs_smooth_basalt": "매끄러운 현무암 계단",
@@ -174,9 +173,7 @@
 	"block.absentbydesign.slab_wool_yellow": "노란색 양털 반 블록",
 	"block.absentbydesign.slab_amethyst": "자수정 반 블록",
 	"block.absentbydesign.slab_calcite": "방해석 반 블록",
-	"block.absentbydesign.slab_tuff": "응회암 반 블록",
 	"block.absentbydesign.stairs_amethyst": "자수정 계단",
-	"block.absentbydesign.stairs_tuff": "응회암 계단",
 	"block.absentbydesign.stairs_calcite": "방해석 계단",
 	"block.absentbydesign.stairs_glass": "유리 계단",
 	"block.absentbydesign.stairs_glass_red": "빨간색 색유리 계단",

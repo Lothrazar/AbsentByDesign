@@ -38,7 +38,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.registries.RegisterEvent;
 
-@EventBusSubscriber(modid = ModAbsentBD.MODID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = ModAbsentBD.MODID)
 public class AbsentRegistry {
   //
   // NO INVENTORY SCREEN BLOCKS (chest, furnace, ...)
@@ -220,7 +220,8 @@ public class AbsentRegistry {
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_mushroom_polished"), createSlab(Block.Properties.of().ignitedByLava(), Blocks.MUSHROOM_STEM));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_calcite"), createSlab(Block.Properties.of(), Blocks.CALCITE));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_amethyst"), createSlab(Block.Properties.of(), Blocks.AMETHYST_BLOCK));
-      reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_tuff"), createSlab(Block.Properties.of(), Blocks.TUFF));
+      reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_chiseled_tuff"), createSlab(Block.Properties.of(), Blocks.CHISELED_TUFF));
+      reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_chiseled_tuff_bricks"), createSlab(Block.Properties.of(), Blocks.CHISELED_TUFF_BRICKS));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_smooth_basalt"), createSlab(Block.Properties.of(), Blocks.SMOOTH_BASALT));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_cracked_nether_bricks"), createSlab(Block.Properties.of(), Blocks.CRACKED_NETHER_BRICKS));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_deepslate"), createSlab(Block.Properties.of(), Blocks.DEEPSLATE));
@@ -362,7 +363,8 @@ public class AbsentRegistry {
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_mushroom_polished"), createStair(Block.Properties.of().ignitedByLava(), Blocks.MUSHROOM_STEM));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_calcite"), createStair(Block.Properties.of(), Blocks.CALCITE));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_amethyst"), createStair(Block.Properties.of(), Blocks.AMETHYST_BLOCK));
-      reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_tuff"), createStair(Block.Properties.of(), Blocks.TUFF));
+      reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_chiseled_tuff"), createStair(Block.Properties.of(), Blocks.CHISELED_TUFF));
+      reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_chiseled_tuff_bricks"), createStair(Block.Properties.of(), Blocks.CHISELED_TUFF_BRICKS));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_smooth_basalt"), createStair(Block.Properties.of(), Blocks.SMOOTH_BASALT));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_cracked_nether_bricks"), createStair(Block.Properties.of(), Blocks.CRACKED_NETHER_BRICKS));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_deepslate"), createStair(Block.Properties.of(), Blocks.DEEPSLATE));
@@ -473,7 +475,8 @@ public class AbsentRegistry {
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_warped_planks"), createWall(Block.Properties.of().ignitedByLava(), Blocks.WARPED_PLANKS));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_calcite"), createWall(Block.Properties.of(), Blocks.CALCITE));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_amethyst"), createWall(Block.Properties.of(), Blocks.AMETHYST_BLOCK));
-      reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_tuff"), createWall(Block.Properties.of(), Blocks.TUFF));
+      reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_chiseled_tuff"), createWall(Block.Properties.of(), Blocks.CHISELED_TUFF));
+      reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_chiseled_tuff_bricks"), createWall(Block.Properties.of(), Blocks.CHISELED_TUFF_BRICKS));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_smooth_basalt"), createWall(Block.Properties.of(), Blocks.SMOOTH_BASALT));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_cracked_nether_bricks"), createWall(Block.Properties.of(), Blocks.CRACKED_NETHER_BRICKS));
       reg.register(ResourceLocation.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_deepslate"), createWall(Block.Properties.of(), Blocks.DEEPSLATE));
