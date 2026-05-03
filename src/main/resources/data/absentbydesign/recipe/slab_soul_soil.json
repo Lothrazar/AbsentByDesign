@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:soul_soil"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "absentbydesign:slab_soul_soil"
+  }
+}

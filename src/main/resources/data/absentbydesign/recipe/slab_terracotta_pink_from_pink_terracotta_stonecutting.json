@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:pink_terracotta"
+  },
+  "result": {
+    "id": "absentbydesign:slab_terracotta_pink",
+    "count": 2
+  }
+}

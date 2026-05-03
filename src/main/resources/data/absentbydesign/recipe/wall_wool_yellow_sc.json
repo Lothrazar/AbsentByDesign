@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:yellow_wool"
+  },
+  "result": {
+    "id": "absentbydesign:wall_wool_yellow",
+    "count": 1
+  }
+}

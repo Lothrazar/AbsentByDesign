@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:snow_block"
+  },
+  "result": {
+    "id": "absentbydesign:slab_snow",
+    "count": 2
+  }
+}

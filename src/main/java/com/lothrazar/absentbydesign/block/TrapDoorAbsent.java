@@ -4,13 +4,13 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 
 public class TrapDoorAbsent extends TrapDoorBlock implements IBlockAbsent {
 
   public TrapDoorAbsent(Properties properties, BlockSetType type) {
-    super(properties, type);
+    super(type, properties);
   }
 
   public boolean doVisibility = false;

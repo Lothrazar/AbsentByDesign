@@ -1,9 +1,0 @@
-  
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:netherite_block"
-  },
-  "result": "absentbydesign:slab_netherite",
-  "count": 2
-}

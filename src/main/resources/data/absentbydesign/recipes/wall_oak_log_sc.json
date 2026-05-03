@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:oak_wood"
-  },
-  "result": "absentbydesign:wall_oak_log",
-  "count": 1
-}

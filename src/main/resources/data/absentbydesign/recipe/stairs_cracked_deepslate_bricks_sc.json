@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:cracked_deepslate_bricks"
+  },
+  "result": {
+    "id": "absentbydesign:stairs_cracked_deepslate_bricks",
+    "count": 1
+  }
+}

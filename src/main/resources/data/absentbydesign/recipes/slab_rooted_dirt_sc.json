@@ -1,9 +1,0 @@
-  
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:rooted_dirt"
-  },
-  "result": "absentbydesign:slab_rooted_dirt",
-  "count": 2
-}

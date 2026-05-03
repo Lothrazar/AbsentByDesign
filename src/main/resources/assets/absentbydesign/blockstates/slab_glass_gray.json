@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "absentbydesign:block/slab_glass_gray" },
         "type=top": { "model": "absentbydesign:block/slab_glass_gray_upper" },
-        "type=double": { "model": "block/gray_stained_glass" }
+        "type=double": { "model": "absentbydesign:block/slab_glass_gray_double" }
     }
 }

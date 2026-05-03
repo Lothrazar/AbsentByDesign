@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:lapis_block"
-  },
-  "result": "absentbydesign:stairs_lapis",
-  "count": 1
-}

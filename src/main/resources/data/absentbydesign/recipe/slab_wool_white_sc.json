@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:white_wool"
+  },
+  "result": {
+    "id": "absentbydesign:slab_wool_white",
+    "count": 2
+  }
+}

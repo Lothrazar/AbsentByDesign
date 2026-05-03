@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:magenta_terracotta"
+  },
+  "result": {
+    "id": "absentbydesign:stairs_terracotta_magenta",
+    "count": 1
+  }
+}

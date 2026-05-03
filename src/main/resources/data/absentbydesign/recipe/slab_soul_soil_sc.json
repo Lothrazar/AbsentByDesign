@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:soul_soil"
+  },
+  "result": {
+    "id": "absentbydesign:slab_soul_soil",
+    "count": 2
+  }
+}

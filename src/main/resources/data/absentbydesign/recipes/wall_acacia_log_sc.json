@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:acacia_wood"
-  },
-  "result": "absentbydesign:wall_acacia_log",
-  "count": 1
-}

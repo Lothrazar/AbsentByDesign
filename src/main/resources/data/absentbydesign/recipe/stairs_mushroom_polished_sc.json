@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "absentbydesign:stairs_mushroom_stem"
+  },
+  "result": {
+    "id": "absentbydesign:stairs_mushroom_polished",
+    "count": 1
+  }
+}

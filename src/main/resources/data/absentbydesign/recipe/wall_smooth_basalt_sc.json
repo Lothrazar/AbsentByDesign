@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:smooth_basalt"
+  },
+  "result": {
+    "id": "absentbydesign:wall_smooth_basalt",
+    "count": 1
+  }
+}

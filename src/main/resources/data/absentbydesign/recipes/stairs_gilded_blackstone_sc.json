@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:gilded_blackstone"
-  },
-  "result": "absentbydesign:stairs_gilded_blackstone",
-  "count": 1
-}

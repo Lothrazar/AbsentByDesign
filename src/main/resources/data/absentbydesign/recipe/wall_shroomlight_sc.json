@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:shroomlight"
+  },
+  "result": {
+    "id": "absentbydesign:wall_shroomlight",
+    "count": 1
+  }
+}

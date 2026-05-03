@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:bone_block"
+  },
+  "result": {
+    "id": "absentbydesign:slab_bone",
+    "count": 2
+  }
+}
