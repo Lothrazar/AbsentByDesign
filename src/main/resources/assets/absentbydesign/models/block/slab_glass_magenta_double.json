@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "render_type": "translucent",
+  "textures": {
+    "all": "block/magenta_stained_glass"
+  }
+}

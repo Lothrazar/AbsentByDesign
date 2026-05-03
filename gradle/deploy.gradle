@@ -45,3 +45,71 @@ tasks.register('deployLocal') {
 tasks.named('publish') {
     finalizedBy 'deployLocal'
 }
+
+// ---------------------------------------------------------------------------
+// publishCurseForge / publishModrinth / release / publishAll
+// API keys are read from ~/.gradle/gradle.properties, deploy.properties, or env vars.
+//
+// ~/.gradle/gradle.properties (recommended):
+//   curseforge_api_key=...
+//   modrinth_token=...
+//
+// Run individually:
+//   gradlew publishCurseForge
+//   gradlew publishModrinth
+// Run all at once:
+//   gradlew publishAll
+// ---------------------------------------------------------------------------
+apply plugin: 'com.modrinth.minotaur'
+
+def changelogText = (new groovy.json.JsonSlurper().parse(file('update.json'))[minecraft_version]?[mod_version] ?: '') as String
+def mrToken       = findProperty('modrinth_token') ?: deployProps.getProperty('modrinth_token', '') ?: System.getenv('MODRINTH_TOKEN') ?: ''
+
+// Exposed as ext so publishCurseForge in build.gradle can read them after apply from:
+ext.cfApiKey  = findProperty('curseforge_api_key') ?: deployProps.getProperty('curseforge_api_key', '') ?: System.getenv('CURSEFORGE_API_KEY') ?: ''
+ext.changelog = changelogText
+
+// --- Modrinth ---
+modrinth {
+  token         = mrToken
+  projectId     = modrinth_id
+  versionNumber = project.version
+  versionType   = 'release'
+  uploadFile    = jar
+  gameVersions  = [minecraft_version]
+  loaders       = ['neoforge']
+  changelog     = changelogText
+}
+
+// important: unlike curseforge, modrinth has no problem with you making many copies of the same version
+//so we have to hand roll up our own checke
+tasks.named('modrinth').configure {
+  notCompatibleWithConfigurationCache('Minotaur is not configuration-cache compatible')
+
+  doFirst {
+    def versions = new groovy.json.JsonSlurper()
+        .parse(new URI("https://api.modrinth.com/v2/project/${modrinth_id}/version").toURL())
+    if (versions.any { it.version_number == project.version }) {
+      throw new GradleException("Modrinth version ${modrinth_id}-${project.version} already exists — bump mod_version before publishing.")
+    }
+  }
+}
+
+tasks.register('publishModrinth') {
+  group       = 'publishing'
+  description = 'Uploads the mod jar to Modrinth.'
+  dependsOn 'modrinth'
+}
+
+// --- Combined tasks ---
+tasks.register('release') {
+  group       = 'publishing'
+  description = 'Publishes to CurseForge, Modrinth, and Maven.'
+  dependsOn 'publishCurseForge', 'publishModrinth', 'publish'
+}
+
+//tasks.register('publishAll') {
+//  group       = 'publishing'
+//  description = 'Uploads to CurseForge and Modrinth, and deploys locally.'
+//  dependsOn 'publishCurseForge', 'publishModrinth', 'deployLocal'
+//}
