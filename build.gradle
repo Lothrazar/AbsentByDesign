@@ -250,7 +250,6 @@ def changelog = ext.changelog
 // --- CurseForge ---
 // Defined here (not deploy.gradle) so TaskPublishCurseForge resolves against
 // the plugins {} block classpath.
-// it will safely fail if the version already exists: will not overwrite or create a duplicate entry
 tasks.register('publishCurseForge', TaskPublishCurseForge) {
   group       = 'publishing'
   description = 'Uploads the mod jar to CurseForge.'
@@ -265,6 +264,19 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
   mainFile.addGameVersion('Java 21')
   mainFile.changelog     = changelog
   mainFile.changelogType = 'markdown'
+
+  doFirst {
+    def coreKey = project.findProperty('curseforge_core_api_key') ?: ''
+    def url = new URI("https://api.curseforge.com/v1/mods/${curse_id}/files").toURL()
+    def connection = url.openConnection()
+    connection.setRequestProperty('x-api-key', coreKey)
+    connection.setRequestProperty('Accept', 'application/json')
+    def response = new groovy.json.JsonSlurper().parse(connection.inputStream)
+    if (response.data.any { it.displayName?.contains(project.version as String) }) {
+      logger.warn("\n⚠️  CurseForge: version ${project.version} already exists for ${mod_name} — skipping upload.\n")
+      throw new StopExecutionException()
+    }
+  }
 }
 
 tasks.withType(JavaCompile).configureEach {
