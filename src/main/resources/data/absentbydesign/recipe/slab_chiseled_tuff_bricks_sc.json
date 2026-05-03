@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:chiseled_tuff_bricks"
+  },
+  "result": {
+    "id": "absentbydesign:slab_chiseled_tuff_bricks",
+    "count": 2
+  }
+}
