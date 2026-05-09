@@ -15,6 +15,5 @@ A Minecraft mod built on the NeoForge API [https://neoforged.net/](https://neofo
 [![Build](https://github.com/Lothrazar/AbsentByDesign/actions/workflows/build.yml/badge.svg)](https://github.com/Lothrazar/AbsentByDesign/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![links](https://img.shields.io/badge/more-links-ff69b4.svg)](https://allmylinks.com/lothrazar)
-
 [![Support](https://img.shields.io/badge/Patreon-Support-orange.svg?logo=Patreon)](https://www.patreon.com/Lothrazar)
 

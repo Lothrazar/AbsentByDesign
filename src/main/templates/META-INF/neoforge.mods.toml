@@ -22,9 +22,9 @@ version="${mod_version}" #mandatory
 
 displayName="${mod_name}" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
-updateJSONURL="https://raw.githubusercontent.com/Lothrazar/${mod_id}/trunk/${minecraft_version}/update.json" #optional
+# updateJSONURL="https://raw.githubusercontent.com/Lothrazar/${mod_id}/trunk/${minecraft_version}/update.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI # replace with your website
-displayURL="https://www.curseforge.com/minecraft/mc-mods/${mod_id}"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/${curse_slug}"
 
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="logoFile.png" #optional
@@ -40,6 +40,8 @@ ${mod_description}
 #[[mixins]]
 #config="${mod_id}.mixins.json"
 
+#[features.${mod_id}]
+#openGLVersion="[3.2,)"
 
 # The [[accessTransformers]] block allows you to declare where your AT file is.
 # If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg
@@ -58,19 +60,16 @@ ${mod_description}
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-# Here's another dependency
 [[dependencies.${mod_id}]]
     modId="minecraft"
     type="required" # was mandatory=true
     versionRange="[${minecraft_version},)"
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.${mod_id}]]
     modId="flib"
     type="required"
-    versionRange="[0.1.0,)"
+    versionRange="[${flib_version},)"
     ordering="NONE"
     side="BOTH"
-
-#[features.${mod_id}]
-#openGLVersion="[3.2,)"
