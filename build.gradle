@@ -88,7 +88,7 @@ neoForge {
 
         server {
             server()
-            programArgument '--nogui'
+            // programArgument '--nogui'
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
@@ -117,7 +117,7 @@ neoForge {
             // "SCAN": For mods scan.
             // "REGISTRIES": For firing of registry events.
             // "REGISTRYDUMP": For getting the contents of all registries.
-            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            systemProperty 'neoforge.logging.markers', 'REGISTRIES'
 
             // Recommended logging level for the console
             // You can set various levels here.
@@ -180,6 +180,8 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+  if (file('extra.gradle').exists()) { apply from: 'extra.gradle' }
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -290,4 +292,43 @@ idea {
         downloadSources = true
         downloadJavadoc = true
     }
+}
+
+tasks.register('syncExampleConfigs') {
+  group = 'documentation'
+  description = 'Copies generated example config files from run/config/ into examples/.'
+
+  doLast {
+    def modId   = project.mod_id
+    def srcDir  = file('run/config')
+    def destDir = file('examples')
+
+    if (!srcDir.exists()) {
+      logger.lifecycle("[${project.name}] run/config/ not found — nothing to sync.")
+      return
+    }
+
+    def found = [
+      "${modId}.json",
+      "${modId}.toml",
+      "${modId}-common.toml",
+      "${modId}-client.toml",
+      "${modId}-server.toml"
+    ].collect { new File(srcDir, it) }.findAll { it.exists() }
+
+    if (found.isEmpty()) {
+      logger.lifecycle("[${project.name}] No matching config files in run/config/ for '${modId}'.")
+      return
+    }
+
+    destDir.mkdirs()
+    found.each { src ->
+      java.nio.file.Files.copy(
+        src.toPath(),
+        new File(destDir, src.name).toPath(),
+        java.nio.file.StandardCopyOption.REPLACE_EXISTING
+      )
+      logger.lifecycle("[${project.name}] Synced: ${src.name} → examples/")
+    }
+  }
 }
