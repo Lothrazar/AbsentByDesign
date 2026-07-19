@@ -4,8 +4,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 
 public class BlockAbsentGate extends FenceGateBlock implements IBlockAbsent {
 
@@ -17,7 +15,6 @@ public class BlockAbsentGate extends FenceGateBlock implements IBlockAbsent {
 
   @SuppressWarnings("deprecation")
   @Override
-  @OnlyIn(Dist.CLIENT)
   public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
     if (doVisibility) {
       return adjacentBlockState.getBlock() == this || adjacentBlockState.is(this);

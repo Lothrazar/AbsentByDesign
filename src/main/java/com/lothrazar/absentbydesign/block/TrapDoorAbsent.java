@@ -4,8 +4,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 
 public class TrapDoorAbsent extends TrapDoorBlock implements IBlockAbsent {
 
@@ -17,7 +15,6 @@ public class TrapDoorAbsent extends TrapDoorBlock implements IBlockAbsent {
 
   @SuppressWarnings("deprecation")
   @Override
-  @OnlyIn(Dist.CLIENT)
   public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
     if (doVisibility) {
       return adjacentBlockState.getBlock() == this || adjacentBlockState.is(this);

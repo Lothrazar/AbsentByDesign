@@ -9,8 +9,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 
 @SuppressWarnings("deprecation")
 public class BlockAbsentStair extends StairBlock implements IBlockAbsent {
@@ -25,7 +23,6 @@ public class BlockAbsentStair extends StairBlock implements IBlockAbsent {
   public boolean doVisibility = false;
 
   @Override
-  @OnlyIn(Dist.CLIENT)
   public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
     if (doVisibility) {
       return adjacentBlockState.getBlock() == this || adjacentBlockState.is(this);
@@ -38,11 +35,10 @@ public class BlockAbsentStair extends StairBlock implements IBlockAbsent {
     doVisibility = true;
   }
 
-  @OnlyIn(Dist.CLIENT)
   @Override
   public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, RandomSource rand) {
     if (part != null
-        && worldIn.random.nextDouble() < 0.2) {
+        && worldIn.getRandom().nextDouble() < 0.2) {
       ParticleUtil.spawnBlockParticles(part, worldIn, pos, rand);
     }
   }

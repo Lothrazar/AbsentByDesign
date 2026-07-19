@@ -9,8 +9,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 
 public class BlockAbsentWall extends WallBlock implements IBlockAbsent {
 
@@ -21,11 +19,10 @@ public class BlockAbsentWall extends WallBlock implements IBlockAbsent {
     super(p);
   }
 
-  @OnlyIn(Dist.CLIENT)
   @Override
   public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, RandomSource rand) {
     if (part != null
-        && worldIn.random.nextDouble() < 0.2) {
+        && worldIn.getRandom().nextDouble() < 0.2) {
       // make sure its not WAY too many
       ParticleUtil.spawnBlockParticles(part, worldIn, pos, rand);
     }
@@ -35,7 +32,6 @@ public class BlockAbsentWall extends WallBlock implements IBlockAbsent {
 
   @SuppressWarnings("deprecation")
   @Override
-  @OnlyIn(Dist.CLIENT)
   public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
     if (doVisibility) {
       return adjacentBlockState.getBlock() == this || adjacentBlockState.is(this);

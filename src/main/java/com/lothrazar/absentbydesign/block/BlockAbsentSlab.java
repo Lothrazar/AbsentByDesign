@@ -8,8 +8,6 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 
 public class BlockAbsentSlab extends SlabBlock implements IBlockAbsent {
 
@@ -24,7 +22,6 @@ public class BlockAbsentSlab extends SlabBlock implements IBlockAbsent {
 
   @SuppressWarnings("deprecation")
   @Override
-  @OnlyIn(Dist.CLIENT)
   public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
     if (doVisibility) {
       return adjacentBlockState.getBlock() == this || adjacentBlockState.is(this);
@@ -37,11 +34,10 @@ public class BlockAbsentSlab extends SlabBlock implements IBlockAbsent {
     doVisibility = true;
   }
 
-  @OnlyIn(Dist.CLIENT)
   @Override
   public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, RandomSource rand) {
     if (part != null
-        && worldIn.random.nextDouble() < 0.2) {
+        && worldIn.getRandom().nextDouble() < 0.2) {
       ParticleUtil.spawnBlockParticles(part, worldIn, pos, rand);
     }
   }
