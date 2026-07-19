@@ -273,6 +273,7 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
   mainFile.addGameVersion(minecraft_version)
   mainFile.addGameVersion('NeoForge')
   mainFile.addGameVersion('Java 25')
+  mainFile.addEnvironment('Client', 'Server')
   mainFile.changelog     = changelog
   mainFile.changelogType = 'markdown'
 }
