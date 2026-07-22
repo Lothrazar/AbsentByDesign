@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "absentbydesign:block/slab_chiseled_resin"
+    },
+    "type=top": {
+      "model": "absentbydesign:block/slab_chiseled_resin_upper"
+    },
+    "type=double": {
+      "model": "block/chiseled_resin_bricks"
+    }
+  }
+}

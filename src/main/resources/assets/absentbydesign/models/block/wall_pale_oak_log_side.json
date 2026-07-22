@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/wall_side",
+  "textures": {
+    "wall": "block/pale_oak_log"
+  }
+}

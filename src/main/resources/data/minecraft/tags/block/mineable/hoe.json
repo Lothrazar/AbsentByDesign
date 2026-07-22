@@ -1,17 +1,17 @@
 {
   "replace": false,
-  "values": [ 
-  
-  "absentbydesign:wall_moss",
-  "absentbydesign:slab_moss",
-  "absentbydesign:stairs_moss",
-  
-  "absentbydesign:wall_sculk",
-  "absentbydesign:stairs_sculk",
-  "absentbydesign:slab_sculk",
-  
-  "absentbydesign:wall_shroomlight",
-  "absentbydesign:stairs_shroomlight",
-    "absentbydesign:slab_shroomlight"
+  "values": [
+    "absentbydesign:wall_moss",
+    "absentbydesign:slab_moss",
+    "absentbydesign:stairs_moss",
+    "absentbydesign:wall_sculk",
+    "absentbydesign:stairs_sculk",
+    "absentbydesign:slab_sculk",
+    "absentbydesign:wall_shroomlight",
+    "absentbydesign:stairs_shroomlight",
+    "absentbydesign:slab_shroomlight",
+    "absentbydesign:slab_pale_moss",
+    "absentbydesign:stairs_pale_moss",
+    "absentbydesign:wall_pale_moss"
   ]
 }

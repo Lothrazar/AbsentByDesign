@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "absentbydesign:block/slab_pale_moss"
+    },
+    "type=top": {
+      "model": "absentbydesign:block/slab_pale_moss_upper"
+    },
+    "type=double": {
+      "model": "block/pale_moss_block"
+    }
+  }
+}

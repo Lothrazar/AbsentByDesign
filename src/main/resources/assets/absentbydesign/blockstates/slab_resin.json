@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "absentbydesign:block/slab_resin"
+    },
+    "type=top": {
+      "model": "absentbydesign:block/slab_resin_upper"
+    },
+    "type=double": {
+      "model": "block/resin_block"
+    }
+  }
+}

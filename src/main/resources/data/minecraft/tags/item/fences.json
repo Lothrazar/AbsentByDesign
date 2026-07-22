@@ -1,16 +1,19 @@
 {
   "replace": false,
   "values": [
+    "absentbydesign:fence_cherry",
+    "absentbydesign:fence_crimson",
     "absentbydesign:fence_log_acacia",
     "absentbydesign:fence_log_birch",
     "absentbydesign:fence_log_darkoak",
     "absentbydesign:fence_log_jungle",
     "absentbydesign:fence_log_oak",
+    "absentbydesign:fence_log_pale_oak",
     "absentbydesign:fence_log_spruce",
+    "absentbydesign:fence_mangrove",
     "absentbydesign:fence_obsidian",
     "absentbydesign:fence_quartz",
     "absentbydesign:fence_red_netherbrick",
-    "absentbydesign:fence_crimson",
     "absentbydesign:fence_warped"
   ]
 }

@@ -187,6 +187,11 @@
 		"absentbydesign:wall_spruce_log",
 		"absentbydesign:wall_prismarine_bricks",
 		"absentbydesign:wall_dark_prismarine",
-        "absentbydesign:wall_gold"
+        "absentbydesign:wall_gold",
+        "absentbydesign:wall_resin",
+        "absentbydesign:wall_chiseled_resin",
+        "absentbydesign:wall_pale_moss",
+        "absentbydesign:wall_pale_oak_log",
+        "absentbydesign:wall_stripped_pale_oak_log"
 	]
 }

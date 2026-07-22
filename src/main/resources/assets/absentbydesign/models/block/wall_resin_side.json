@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/wall_side",
+  "textures": {
+    "wall": "block/resin_block"
+  }
+}

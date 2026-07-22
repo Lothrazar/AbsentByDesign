@@ -551,5 +551,18 @@
 	"block.absentbydesign.wall_warped_planks": "Warped Wall",
 	"block.absentbydesign.wall_crimson_planks": "Crimson Wall",
 	"block.absentbydesign.wall_warped": "Warped Wall",
-	"block.absentbydesign.wall_gold": "Gold Wall"
+	"block.absentbydesign.wall_gold": "Gold Wall",
+
+	"block.absentbydesign.slab_resin": "Resin Slab",
+	"block.absentbydesign.stairs_resin": "Resin Stairs",
+	"block.absentbydesign.wall_resin": "Resin Wall",
+	"block.absentbydesign.slab_chiseled_resin": "Chiseled Resin Slab",
+	"block.absentbydesign.stairs_chiseled_resin": "Chiseled Resin Stairs",
+	"block.absentbydesign.wall_chiseled_resin": "Chiseled Resin Wall",
+	"block.absentbydesign.slab_pale_moss": "Pale Moss Slab",
+	"block.absentbydesign.stairs_pale_moss": "Pale Moss Stairs",
+	"block.absentbydesign.wall_pale_moss": "Pale Moss Wall",
+	"block.absentbydesign.fence_log_pale_oak": "Pale Oak Log Fence",
+	"block.absentbydesign.wall_pale_oak_log": "Pale Oak Log Wall",
+	"block.absentbydesign.wall_stripped_pale_oak_log": "Stripped Pale Oak Log Wall"
 }

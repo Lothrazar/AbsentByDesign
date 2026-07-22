@@ -149,6 +149,9 @@
     "absentbydesign:wall_oak_planks",
     "absentbydesign:wall_spruce_planks",
     "absentbydesign:wall_cherry_planks",
-    "absentbydesign:wall_mangrove_planks"
+    "absentbydesign:wall_mangrove_planks",
+    "absentbydesign:fence_log_pale_oak",
+    "absentbydesign:wall_pale_oak_log",
+    "absentbydesign:wall_stripped_pale_oak_log"
   ]
 }

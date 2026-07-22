@@ -21,5 +21,8 @@
 	"1.21.1":{
 		"1.9.1": "Updated ja_jp.json by Abbage230. ",
 		"1.9.2":"Removed Tuff Stair, wall, slab duplicates.  Add Stair,Wall,Slab for Chiseled Tuff and Chiseled Tuff Brick. "
-	}
+	},
+  "26.1.2":{
+    "1.9.2":"Ported to Minecraft 26.1.2.  Added 12 new blocks: Resin Slab, Resin Stairs, Resin Wall, Chiseled Resin Slab, Chiseled Resin Stairs, Chiseled Resin Wall, Pale Moss Slab, Pale Moss Stairs, Pale Moss Wall, Pale Oak Log Fence, Pale Oak Log Wall, Stripped Pale Oak Log Wall. "
+  }
 }
