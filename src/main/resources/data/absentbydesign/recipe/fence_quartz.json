@@ -5,12 +5,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:quartz_block"
-    },
-    "-": {
-      "item": "minecraft:nether_brick"
-    }
+    "#": "minecraft:quartz_block",
+    "-": "minecraft:nether_brick"
   },
   "result": {
     "count": 6,

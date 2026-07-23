@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:green_stained_glass"
-    }
+    "#": "minecraft:green_stained_glass"
   },
   "result": {
     "count": 6,

@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:red_wool"
-  },
+  "ingredient": "minecraft:red_wool",
   "result": {
     "id": "absentbydesign:stairs_wool_red",
     "count": 1

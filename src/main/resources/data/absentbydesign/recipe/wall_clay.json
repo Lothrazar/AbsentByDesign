@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:clay"
+  },
+  "result": {
+    "count": 6,
+    "id": "absentbydesign:wall_clay"
+  }
+}

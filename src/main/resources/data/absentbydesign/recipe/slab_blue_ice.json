@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:blue_ice"
-    }
+    "#": "minecraft:blue_ice"
   },
   "result": {
     "count": 6,

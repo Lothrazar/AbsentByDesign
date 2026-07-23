@@ -258,6 +258,12 @@
     "absentbydesign:stairs_packed_mud",
     "absentbydesign:slab_chiseled_resin",
     "absentbydesign:stairs_chiseled_resin",
-    "absentbydesign:wall_chiseled_resin"
+    "absentbydesign:wall_chiseled_resin",
+    "absentbydesign:slab_coal",
+    "absentbydesign:stairs_coal",
+    "absentbydesign:wall_coal",
+    "absentbydesign:slab_tinted_glass",
+    "absentbydesign:stairs_tinted_glass",
+    "absentbydesign:wall_tinted_glass"
   ]
 }

@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:dark_oak_planks"
-  },
+  "ingredient": "minecraft:dark_oak_planks",
   "result": {
     "id": "absentbydesign:wall_dark_oak_planks",
     "count": 1

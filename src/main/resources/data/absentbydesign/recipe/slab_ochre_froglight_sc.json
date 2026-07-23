@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:ochre_froglight"
-  },
+  "ingredient": "minecraft:ochre_froglight",
   "result": {
     "id": "absentbydesign:slab_ochre_froglight",
     "count": 2

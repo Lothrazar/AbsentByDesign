@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:sculk"
-    }
+    "#": "minecraft:sculk"
   },
   "result": {
     "count": 6,

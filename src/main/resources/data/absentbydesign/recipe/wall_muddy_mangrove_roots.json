@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:muddy_mangrove_roots"
-    }
+    "#": "minecraft:muddy_mangrove_roots"
   },
   "result": {
     "count": 6,

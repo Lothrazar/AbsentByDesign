@@ -5,12 +5,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:jungle_log"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:jungle_log",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 6,

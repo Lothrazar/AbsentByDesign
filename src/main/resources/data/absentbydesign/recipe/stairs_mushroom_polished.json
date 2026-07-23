@@ -4,9 +4,7 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "absentbydesign:stairs_mushroom_stem"
-    }
+    "#": "absentbydesign:stairs_mushroom_stem"
   },
   "result": {
     "count": 1,

@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:magma_block"
-    }
+    "#": "minecraft:magma_block"
   },
   "result": {
     "count": 6,

@@ -5,9 +5,7 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:lapis_lazuli"
-    }
+    "#": "minecraft:lapis_lazuli"
   },
   "result": {
     "count": 1,

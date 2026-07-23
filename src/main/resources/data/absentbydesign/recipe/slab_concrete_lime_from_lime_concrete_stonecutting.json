@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:lime_concrete"
-  },
+  "ingredient": "minecraft:lime_concrete",
   "result": {
     "id": "absentbydesign:slab_concrete_lime",
     "count": 2

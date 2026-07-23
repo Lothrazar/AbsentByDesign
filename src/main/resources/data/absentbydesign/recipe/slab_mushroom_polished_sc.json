@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "absentbydesign:slab_mushroom_stem"
-  },
+  "ingredient": "absentbydesign:slab_mushroom_stem",
   "result": {
     "id": "absentbydesign:slab_mushroom_polished",
     "count": 2

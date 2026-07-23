@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:sea_lantern"
-    }
+    "#": "minecraft:sea_lantern"
   },
   "result": {
     "count": 6,

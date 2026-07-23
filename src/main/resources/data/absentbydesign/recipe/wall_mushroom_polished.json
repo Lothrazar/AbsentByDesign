@@ -4,9 +4,7 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "absentbydesign:wall_mushroom_stem"
-    }
+    "#": "absentbydesign:wall_mushroom_stem"
   },
   "result": {
     "count": 1,

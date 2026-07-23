@@ -1,0 +1,6 @@
+{
+  "parent": "absentbydesign:parent/wall_post",
+  "textures": {
+    "wall": "minecraft:block/hay_block_side"
+  }
+}

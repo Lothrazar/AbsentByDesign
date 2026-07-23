@@ -5,9 +5,7 @@
     "# #"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:bamboo_mosaic"
-    }
+    "#": "minecraft:bamboo_mosaic"
   },
   "result": {
     "count": 6,

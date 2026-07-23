@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:coal_block",
+  "result": {
+    "id": "absentbydesign:slab_coal",
+    "count": 2
+  }
+}

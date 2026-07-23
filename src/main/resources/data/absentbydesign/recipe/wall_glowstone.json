@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:glowstone"
-    }
+    "#": "minecraft:glowstone"
   },
   "result": {
     "count": 6,

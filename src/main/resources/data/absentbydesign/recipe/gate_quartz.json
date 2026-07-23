@@ -5,12 +5,8 @@
     "-#-"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:quartz_block"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:quartz_block",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 1,

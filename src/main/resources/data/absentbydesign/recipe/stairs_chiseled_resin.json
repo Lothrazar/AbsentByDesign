@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:chiseled_resin_bricks"
+  },
+  "result": {
+    "count": 4,
+    "id": "absentbydesign:stairs_chiseled_resin"
+  }
+}

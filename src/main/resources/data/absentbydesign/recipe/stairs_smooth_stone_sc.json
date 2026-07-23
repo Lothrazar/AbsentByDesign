@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:smooth_stone"
-  },
+  "ingredient": "minecraft:smooth_stone",
   "result": {
     "id": "absentbydesign:stairs_smooth_stone",
     "count": 1

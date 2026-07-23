@@ -4,9 +4,7 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "absentbydesign:slab_mushroom_stem"
-    }
+    "#": "absentbydesign:slab_mushroom_stem"
   },
   "result": {
     "count": 1,

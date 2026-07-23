@@ -5,12 +5,8 @@
     "-#-"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:prismarine"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:prismarine",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 1,

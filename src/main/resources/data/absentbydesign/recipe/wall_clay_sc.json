@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:clay",
+  "result": {
+    "id": "absentbydesign:wall_clay",
+    "count": 1
+  }
+}

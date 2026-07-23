@@ -5,12 +5,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "absentbydesign:slab_netherite"
-    }
+    "#": "absentbydesign:slab_netherite"
   },
   "result": {
-    "item": "minecraft:netherite_block",
-    "count": 1
+    "count": 1,
+    "id": "minecraft:netherite_block"
   }
 }

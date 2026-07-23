@@ -5,12 +5,8 @@
     "-#-"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:polished_blackstone_bricks"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:polished_blackstone_bricks",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 1,

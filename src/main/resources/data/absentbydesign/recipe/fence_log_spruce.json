@@ -5,12 +5,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:spruce_log"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:spruce_log",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 6,

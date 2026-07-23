@@ -4,8 +4,6 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "gold",
-  "ingredient": {
-    "item": "absentbydesign:wall_raw_gold"
-  },
+  "ingredient": "absentbydesign:wall_raw_gold",
   "result": "minecraft:raw_gold_block"
 }

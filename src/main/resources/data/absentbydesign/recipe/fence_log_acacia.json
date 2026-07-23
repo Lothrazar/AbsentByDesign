@@ -5,12 +5,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:acacia_log"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:acacia_log",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 6,

@@ -5,12 +5,8 @@
     "-#-"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:mud_bricks"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:mud_bricks",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 1,

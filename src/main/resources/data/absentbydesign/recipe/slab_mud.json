@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:mud"
-    }
+    "#": "minecraft:mud"
   },
   "result": {
     "count": 6,

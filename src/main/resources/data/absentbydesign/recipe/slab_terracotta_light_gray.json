@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:light_gray_terracotta"
-    }
+    "#": "minecraft:light_gray_terracotta"
   },
   "result": {
     "count": 6,

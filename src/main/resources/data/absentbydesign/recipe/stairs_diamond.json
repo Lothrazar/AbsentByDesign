@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:diamond_block"
-    }
+    "#": "minecraft:diamond_block"
   },
   "result": {
     "count": 4,

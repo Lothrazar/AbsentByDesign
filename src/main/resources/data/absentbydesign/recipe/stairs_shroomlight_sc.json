@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:shroomlight"
-  },
+  "ingredient": "minecraft:shroomlight",
   "result": {
     "id": "absentbydesign:stairs_shroomlight",
     "count": 1

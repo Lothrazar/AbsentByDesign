@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:bamboo_planks"
-  },
+  "ingredient": "minecraft:bamboo_planks",
   "result": {
     "id": "absentbydesign:wall_bamboo_planks",
     "count": 1

@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:end_stone"
-  },
+  "ingredient": "minecraft:end_stone",
   "result": {
     "id": "absentbydesign:wall_end_stone",
     "count": 1

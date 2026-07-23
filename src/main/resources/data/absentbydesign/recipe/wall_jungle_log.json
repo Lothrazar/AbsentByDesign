@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:jungle_wood"
-    }
+    "#": "minecraft:jungle_wood"
   },
   "result": {
     "count": 6,

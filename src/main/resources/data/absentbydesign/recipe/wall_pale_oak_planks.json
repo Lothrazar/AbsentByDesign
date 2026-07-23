@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:pale_oak_planks"
+  },
+  "result": {
+    "count": 6,
+    "id": "absentbydesign:wall_pale_oak_planks"
+  }
+}

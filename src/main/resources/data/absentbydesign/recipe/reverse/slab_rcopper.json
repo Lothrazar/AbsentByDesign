@@ -5,12 +5,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "absentbydesign:slab_raw_copper"
-    }
+    "#": "absentbydesign:slab_raw_copper"
   },
   "result": {
-    "item": "minecraft:raw_copper_block",
-    "count": 1
+    "count": 1,
+    "id": "minecraft:raw_copper_block"
   }
 }

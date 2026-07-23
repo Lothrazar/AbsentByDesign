@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:netherite_block"
-    }
+    "#": "minecraft:netherite_block"
   },
   "result": {
     "count": 6,

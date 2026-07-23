@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cyan_terracotta"
-    }
+    "#": "minecraft:cyan_terracotta"
   },
   "result": {
     "count": 6,

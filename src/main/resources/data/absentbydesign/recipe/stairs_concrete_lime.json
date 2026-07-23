@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:lime_concrete"
-    }
+    "#": "minecraft:lime_concrete"
   },
   "result": {
     "count": 4,

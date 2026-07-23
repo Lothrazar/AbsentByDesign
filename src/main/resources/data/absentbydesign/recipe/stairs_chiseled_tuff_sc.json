@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:chiseled_tuff"
-  },
+  "ingredient": "minecraft:chiseled_tuff",
   "result": {
     "id": "absentbydesign:stairs_chiseled_tuff",
     "count": 1

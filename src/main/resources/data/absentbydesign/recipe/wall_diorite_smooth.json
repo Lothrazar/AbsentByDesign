@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:polished_diorite"
-    }
+    "#": "minecraft:polished_diorite"
   },
   "result": {
     "count": 6,

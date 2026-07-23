@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:orange_concrete"
-  },
+  "ingredient": "minecraft:orange_concrete",
   "result": {
     "id": "absentbydesign:wall_concrete_orange",
     "count": 1

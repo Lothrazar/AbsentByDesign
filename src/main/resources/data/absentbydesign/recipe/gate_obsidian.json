@@ -5,12 +5,8 @@
     "-#-"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:obsidian"
-    },
-    "-": {
-      "item": "minecraft:nether_brick"
-    }
+    "#": "minecraft:obsidian",
+    "-": "minecraft:nether_brick"
   },
   "result": {
     "count": 6,

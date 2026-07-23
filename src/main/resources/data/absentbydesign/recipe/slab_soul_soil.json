@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:soul_soil"
-    }
+    "#": "minecraft:soul_soil"
   },
   "result": {
     "count": 6,

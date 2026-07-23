@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:jungle_planks"
-  },
+  "ingredient": "minecraft:jungle_planks",
   "result": {
     "id": "minecraft:jungle_slab",
     "count": 2

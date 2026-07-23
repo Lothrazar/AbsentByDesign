@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:packed_ice"
-    }
+    "#": "minecraft:packed_ice"
   },
   "result": {
     "count": 6,

@@ -6,9 +6,7 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:snow"
-    }
+    "#": "minecraft:snow"
   },
   "result": {
     "count": 1,

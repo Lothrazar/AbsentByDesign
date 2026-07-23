@@ -5,9 +5,7 @@
     "# #"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:stone_bricks"
-    }
+    "#": "minecraft:stone_bricks"
   },
   "result": {
     "count": 2,

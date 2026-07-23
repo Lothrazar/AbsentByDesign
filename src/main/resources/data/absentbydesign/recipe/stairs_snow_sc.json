@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:snow_block"
-  },
+  "ingredient": "minecraft:snow_block",
   "result": {
     "id": "absentbydesign:stairs_snow",
     "count": 1

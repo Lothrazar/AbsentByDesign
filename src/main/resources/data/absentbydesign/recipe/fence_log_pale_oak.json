@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#",
+    "#-#"
+  ],
+  "key": {
+    "#": "minecraft:pale_oak_log",
+    "-": "minecraft:stick"
+  },
+  "result": {
+    "count": 6,
+    "id": "absentbydesign:fence_log_pale_oak"
+  }
+}

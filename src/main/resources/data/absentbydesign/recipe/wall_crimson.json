@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:crimson_hyphae"
-    }
+    "#": "minecraft:crimson_hyphae"
   },
   "result": {
     "count": 6,

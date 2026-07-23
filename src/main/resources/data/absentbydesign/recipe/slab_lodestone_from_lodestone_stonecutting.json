@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:lodestone"
-  },
+  "ingredient": "minecraft:lodestone",
   "result": {
     "id": "absentbydesign:slab_lodestone",
     "count": 2

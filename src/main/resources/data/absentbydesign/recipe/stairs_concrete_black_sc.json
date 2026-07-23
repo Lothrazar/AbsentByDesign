@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:black_concrete"
-  },
+  "ingredient": "minecraft:black_concrete",
   "result": {
     "id": "absentbydesign:stairs_concrete_black",
     "count": 1

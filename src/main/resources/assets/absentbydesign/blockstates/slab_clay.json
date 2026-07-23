@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "absentbydesign:block/slab_clay"
+    },
+    "type=top": {
+      "model": "absentbydesign:block/slab_clay_upper"
+    },
+    "type=double": {
+      "model": "block/clay"
+    }
+  }
+}

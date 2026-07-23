@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:light_gray_wool"
-    }
+    "#": "minecraft:light_gray_wool"
   },
   "result": {
     "count": 6,

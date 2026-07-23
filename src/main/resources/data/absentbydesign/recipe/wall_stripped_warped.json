@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:stripped_warped_hyphae"
-    }
+    "#": "minecraft:stripped_warped_hyphae"
   },
   "result": {
     "count": 6,

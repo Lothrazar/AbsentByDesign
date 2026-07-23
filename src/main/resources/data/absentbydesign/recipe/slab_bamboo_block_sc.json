@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:bamboo_block",
+  "result": {
+    "id": "absentbydesign:slab_bamboo_block",
+    "count": 2
+  }
+}

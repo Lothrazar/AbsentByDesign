@@ -152,6 +152,13 @@
     "absentbydesign:wall_mangrove_planks",
     "absentbydesign:fence_log_pale_oak",
     "absentbydesign:wall_pale_oak_log",
-    "absentbydesign:wall_stripped_pale_oak_log"
+    "absentbydesign:wall_stripped_pale_oak_log",
+    "absentbydesign:wall_pale_oak_planks",
+    "absentbydesign:slab_tinted_glass",
+    "absentbydesign:stairs_tinted_glass",
+    "absentbydesign:wall_tinted_glass",
+    "absentbydesign:slab_bamboo_block",
+    "absentbydesign:stairs_bamboo_block",
+    "absentbydesign:wall_bamboo_block"
   ]
 }

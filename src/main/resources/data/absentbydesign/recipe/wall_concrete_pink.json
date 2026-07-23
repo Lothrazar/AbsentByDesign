@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:pink_concrete"
-    }
+    "#": "minecraft:pink_concrete"
   },
   "result": {
     "count": 6,

@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:smooth_stone"
-    }
+    "#": "minecraft:smooth_stone"
   },
   "result": {
     "count": 6,

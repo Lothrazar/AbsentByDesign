@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:chiseled_resin_bricks"
+  },
+  "result": {
+    "count": 6,
+    "id": "absentbydesign:slab_chiseled_resin"
+  }
+}

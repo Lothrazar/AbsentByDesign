@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cracked_stone_bricks"
-    }
+    "#": "minecraft:cracked_stone_bricks"
   },
   "result": {
     "count": 4,

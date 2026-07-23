@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "absentbydesign:wall_mushroom_stem"
-  },
+  "ingredient": "absentbydesign:wall_mushroom_stem",
   "result": {
     "id": "absentbydesign:wall_mushroom_polished",
     "count": 1

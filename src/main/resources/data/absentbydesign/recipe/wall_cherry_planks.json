@@ -5,9 +5,7 @@
     "# #"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cherry_planks"
-    }
+    "#": "minecraft:cherry_planks"
   },
   "result": {
     "count": 6,

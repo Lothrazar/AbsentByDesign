@@ -5,9 +5,7 @@
     "# #"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:mangrove_log"
-    }
+    "#": "minecraft:mangrove_log"
   },
   "result": {
     "count": 6,

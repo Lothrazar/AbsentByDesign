@@ -5,12 +5,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "absentbydesign:slab_raw_gold"
-    }
+    "#": "absentbydesign:slab_raw_gold"
   },
   "result": {
-    "item": "minecraft:raw_gold_block",
-    "count": 1
+    "count": 1,
+    "id": "minecraft:raw_gold_block"
   }
 }

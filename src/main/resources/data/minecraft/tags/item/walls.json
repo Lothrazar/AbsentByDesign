@@ -170,6 +170,10 @@
     "absentbydesign:wall_wool_purple",
     "absentbydesign:wall_wool_red",
     "absentbydesign:wall_wool_white",
-    "absentbydesign:wall_wool_yellow"
+    "absentbydesign:wall_wool_yellow",
+    "absentbydesign:wall_pale_oak_planks",
+    "absentbydesign:wall_clay",
+    "absentbydesign:wall_coal",
+    "absentbydesign:wall_tinted_glass"
   ]
 }

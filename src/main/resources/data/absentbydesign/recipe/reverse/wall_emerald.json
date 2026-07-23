@@ -4,8 +4,6 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "gold",
-  "ingredient": {
-    "item": "absentbydesign:wall_emerald"
-  },
+  "ingredient": "absentbydesign:wall_emerald",
   "result": "minecraft:emerald_block"
 }

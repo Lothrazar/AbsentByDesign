@@ -5,9 +5,7 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:emerald"
-    }
+    "#": "minecraft:emerald"
   },
   "result": {
     "count": 1,

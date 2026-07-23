@@ -5,12 +5,8 @@
     "-#-"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:stone"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:stone",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 1,

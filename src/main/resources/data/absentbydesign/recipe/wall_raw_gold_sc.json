@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:raw_gold_block"
-  },
+  "ingredient": "minecraft:raw_gold_block",
   "result": {
     "id": "absentbydesign:wall_raw_gold",
     "count": 1

@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:chiseled_tuff_bricks"
-    }
+    "#": "minecraft:chiseled_tuff_bricks"
   },
   "result": {
     "count": 4,

@@ -5,12 +5,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "absentbydesign:slab_diamond"
-    }
+    "#": "absentbydesign:slab_diamond"
   },
   "result": {
-    "item": "minecraft:diamond_block",
-    "count": 1
+    "count": 1,
+    "id": "minecraft:diamond_block"
   }
 }

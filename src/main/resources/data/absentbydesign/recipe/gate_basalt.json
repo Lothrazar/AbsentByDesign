@@ -5,12 +5,8 @@
     "-#-"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:basalt"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:basalt",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 1,

@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:orange_wool"
-  },
+  "ingredient": "minecraft:orange_wool",
   "result": {
     "id": "absentbydesign:slab_wool_orange",
     "count": 2

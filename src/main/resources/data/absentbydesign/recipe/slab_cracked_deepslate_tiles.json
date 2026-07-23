@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cracked_deepslate_tiles"
-    }
+    "#": "minecraft:cracked_deepslate_tiles"
   },
   "result": {
     "count": 6,

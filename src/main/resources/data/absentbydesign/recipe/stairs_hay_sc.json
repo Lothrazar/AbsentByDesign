@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:hay_block",
+  "result": {
+    "id": "absentbydesign:stairs_hay",
+    "count": 1
+  }
+}

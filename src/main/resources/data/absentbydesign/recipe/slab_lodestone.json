@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:lodestone"
-    }
+    "#": "minecraft:lodestone"
   },
   "result": {
     "count": 6,

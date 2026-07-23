@@ -5,12 +5,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:mangrove_log"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:mangrove_log",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 6,

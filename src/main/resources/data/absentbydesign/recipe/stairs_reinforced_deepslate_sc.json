@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:reinforced_deepslate"
-  },
+  "ingredient": "minecraft:reinforced_deepslate",
   "result": {
     "id": "absentbydesign:stairs_reinforced_deepslate",
     "count": 1

@@ -5,12 +5,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:crimson_stem"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:crimson_stem",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 6,

@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:smooth_stone"
-  },
+  "ingredient": "minecraft:smooth_stone",
   "result": {
     "id": "absentbydesign:wall_stone_slab",
     "count": 1

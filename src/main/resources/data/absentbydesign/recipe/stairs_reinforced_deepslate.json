@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:reinforced_deepslate"
-    }
+    "#": "minecraft:reinforced_deepslate"
   },
   "result": {
     "count": 4,

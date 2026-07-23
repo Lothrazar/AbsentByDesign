@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "magenta_concrete"
-    }
+    "#": "magenta_concrete"
   },
   "result": {
     "count": 6,

@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:white_stained_glass"
-  },
+  "ingredient": "minecraft:white_stained_glass",
   "result": {
     "id": "absentbydesign:slab_glass_white",
     "count": 2

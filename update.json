@@ -23,6 +23,6 @@
 		"1.9.2":"Removed Tuff Stair, wall, slab duplicates.  Add Stair,Wall,Slab for Chiseled Tuff and Chiseled Tuff Brick. "
 	},
   "26.1.2":{
-    "1.9.2":"Ported to Minecraft 26.1.2.  Added 12 new blocks: Resin Slab, Resin Stairs, Resin Wall, Chiseled Resin Slab, Chiseled Resin Stairs, Chiseled Resin Wall, Pale Moss Slab, Pale Moss Stairs, Pale Moss Wall, Pale Oak Log Fence, Pale Oak Log Wall, Stripped Pale Oak Log Wall. "
+    "1.9.2":"Ported to Minecraft 26.1.2.  Added 28 new blocks: Resin Slab, Resin Stairs, Resin Wall, Chiseled Resin Slab, Chiseled Resin Stairs, Chiseled Resin Wall, Pale Moss Slab, Pale Moss Stairs, Pale Moss Wall, Pale Oak Log Fence, Pale Oak Log Wall, Stripped Pale Oak Log Wall, Pale Oak Planks Wall, Clay Slab, Clay Stairs, Clay Wall, Coal Slab, Coal Stairs, Coal Wall, Tinted Glass Slab, Tinted Glass Stairs, Tinted Glass Wall, Hay Slab, Hay Stairs, Hay Wall, Block of Bamboo Slab, Block of Bamboo Stairs, Block of Bamboo Wall.  Coal Slab/Stairs/Wall burn like wood and work as furnace fuel.  Tinted Glass Slab/Stairs/Wall block light the same as the base block.   "
   }
 }

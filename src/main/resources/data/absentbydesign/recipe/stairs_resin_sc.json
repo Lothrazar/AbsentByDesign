@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:resin_block",
+  "result": {
+    "id": "absentbydesign:stairs_resin",
+    "count": 1
+  }
+}

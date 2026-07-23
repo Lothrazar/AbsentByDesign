@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:ochre_froglight"
-    }
+    "#": "minecraft:ochre_froglight"
   },
   "result": {
     "count": 6,

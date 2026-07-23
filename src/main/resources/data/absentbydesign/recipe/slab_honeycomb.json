@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:honeycomb_block"
-    }
+    "#": "minecraft:honeycomb_block"
   },
   "result": {
     "count": 6,

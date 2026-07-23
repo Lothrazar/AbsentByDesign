@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:gilded_blackstone"
-    }
+    "#": "minecraft:gilded_blackstone"
   },
   "result": {
     "count": 6,

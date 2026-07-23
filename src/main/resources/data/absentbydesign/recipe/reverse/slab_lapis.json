@@ -5,12 +5,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "absentbydesign:slab_lapis"
-    }
+    "#": "absentbydesign:slab_lapis"
   },
   "result": {
-    "item": "minecraft:lapis_block",
-    "count": 1
+    "count": 1,
+    "id": "minecraft:lapis_block"
   }
 }

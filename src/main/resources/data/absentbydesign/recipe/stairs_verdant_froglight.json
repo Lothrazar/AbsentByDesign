@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:verdant_froglight"
-    }
+    "#": "minecraft:verdant_froglight"
   },
   "result": {
     "count": 4,

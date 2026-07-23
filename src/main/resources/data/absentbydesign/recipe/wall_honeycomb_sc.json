@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:honeycomb"
-  },
+  "ingredient": "minecraft:honeycomb",
   "result": {
     "id": "absentbydesign:wall_honeycomb",
     "count": 1

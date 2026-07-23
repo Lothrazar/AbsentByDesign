@@ -4,8 +4,6 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "gold",
-  "ingredient": {
-    "item": "absentbydesign:stairs_lapis"
-  },
+  "ingredient": "absentbydesign:stairs_lapis",
   "result": "minecraft:lapis_block"
 }

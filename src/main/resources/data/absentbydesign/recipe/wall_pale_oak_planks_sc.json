@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:pale_oak_planks",
+  "result": {
+    "id": "absentbydesign:wall_pale_oak_planks",
+    "count": 1
+  }
+}

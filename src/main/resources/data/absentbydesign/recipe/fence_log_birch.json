@@ -5,12 +5,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:birch_log"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:birch_log",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 6,

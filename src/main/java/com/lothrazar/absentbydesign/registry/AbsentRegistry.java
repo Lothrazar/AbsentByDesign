@@ -12,6 +12,7 @@ import com.lothrazar.absentbydesign.block.DoorAbsentBlock;
 import com.lothrazar.absentbydesign.block.TrapDoorAbsent;
 import com.lothrazar.library.util.BlockUtil;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -261,6 +262,39 @@ public class AbsentRegistry {
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_resin"), createSlab(Block.Properties.of(), Blocks.RESIN_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_resin")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_chiseled_resin"), createSlab(Block.Properties.of(), Blocks.CHISELED_RESIN_BRICKS, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_chiseled_resin")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_pale_moss"), createSlab(Block.Properties.of(), Blocks.PALE_MOSS_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_pale_moss")));
+      reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_clay"), createSlab(Block.Properties.of(), Blocks.CLAY, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_clay")));
+      Identifier idSlabCoal = Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_coal");
+      BlockAbsentSlab slabCoal = new BlockAbsentSlab(BlockUtil.wrap(Block.Properties.of().requiresCorrectToolForDrops().ignitedByLava(), Blocks.COAL_BLOCK, idSlabCoal)) {
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+          return 5;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+          return 5;
+        }
+      };
+      addBlock(slabCoal);
+      reg.register(idSlabCoal, slabCoal);
+      Identifier idSlabTintedGlass = Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_tinted_glass");
+      BlockAbsentSlab slabTintedGlass = new BlockAbsentSlab(BlockUtil.wrap(Block.Properties.of().mapColor(MapColor.COLOR_GRAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.TINTED_GLASS, idSlabTintedGlass)) {
+
+        @Override
+        protected int getLightDampening(BlockState state) {
+          return 15;
+        }
+
+        @Override
+        protected boolean propagatesSkylightDown(BlockState state) {
+          return false;
+        }
+      };
+      addBlock(slabTintedGlass);
+      reg.register(idSlabTintedGlass, slabTintedGlass);
+      reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_hay"), createSlab(Block.Properties.of().ignitedByLava(), Blocks.HAY_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_hay")));
+      reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_bamboo_block"), createSlab(Block.Properties.of().ignitedByLava(), Blocks.BAMBOO_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "slab_bamboo_block")));
       //
       //                STAIRS
       //
@@ -407,6 +441,39 @@ public class AbsentRegistry {
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_resin"), createStair(Block.Properties.of(), Blocks.RESIN_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_resin")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_chiseled_resin"), createStair(Block.Properties.of(), Blocks.CHISELED_RESIN_BRICKS, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_chiseled_resin")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_pale_moss"), createStair(Block.Properties.of(), Blocks.PALE_MOSS_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_pale_moss")));
+      reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_clay"), createStair(Block.Properties.of(), Blocks.CLAY, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_clay")));
+      Identifier idStairsCoal = Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_coal");
+      BlockAbsentStair stairsCoal = new BlockAbsentStair(Blocks.COAL_BLOCK, BlockUtil.wrap(Block.Properties.of().requiresCorrectToolForDrops().ignitedByLava(), Blocks.COAL_BLOCK, idStairsCoal)) {
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+          return 5;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+          return 5;
+        }
+      };
+      addBlock(stairsCoal);
+      reg.register(idStairsCoal, stairsCoal);
+      Identifier idStairsTintedGlass = Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_tinted_glass");
+      BlockAbsentStair stairsTintedGlass = new BlockAbsentStair(Blocks.TINTED_GLASS, BlockUtil.wrap(Block.Properties.of().mapColor(MapColor.COLOR_GRAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.TINTED_GLASS, idStairsTintedGlass)) {
+
+        @Override
+        protected int getLightDampening(BlockState state) {
+          return 15;
+        }
+
+        @Override
+        protected boolean propagatesSkylightDown(BlockState state) {
+          return false;
+        }
+      };
+      addBlock(stairsTintedGlass);
+      reg.register(idStairsTintedGlass, stairsTintedGlass);
+      reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_hay"), createStair(Block.Properties.of().ignitedByLava(), Blocks.HAY_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_hay")));
+      reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_bamboo_block"), createStair(Block.Properties.of().ignitedByLava(), Blocks.BAMBOO_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "stairs_bamboo_block")));
       //
       //                WALLS
       //
@@ -498,6 +565,7 @@ public class AbsentRegistry {
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_verdant_froglight"), createWall(Block.Properties.of().pushReaction(PushReaction.DESTROY).lightLevel(s -> 15), Blocks.VERDANT_FROGLIGHT, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_verdant_froglight")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_reinforced_deepslate"), createWall(Block.Properties.of(), Blocks.REINFORCED_DEEPSLATE, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_reinforced_deepslate")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_cherry_planks"), createWall(Block.Properties.of(), Blocks.CHERRY_PLANKS, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_cherry_planks")));
+      reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_pale_oak_planks"), createWall(Block.Properties.of().ignitedByLava(), Blocks.PALE_OAK_PLANKS, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_pale_oak_planks")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_cherry_stripped_log"), createWall(Block.Properties.of(), Blocks.STRIPPED_CHERRY_LOG, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_cherry_stripped_log")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_cherry_log"), createWall(Block.Properties.of(), Blocks.CHERRY_LOG, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_cherry_log")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_bamboo_planks"), createWall(Block.Properties.of(), Blocks.STRIPPED_BAMBOO_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_bamboo_planks")));
@@ -578,6 +646,39 @@ public class AbsentRegistry {
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_resin"), createWall(Block.Properties.of(), Blocks.RESIN_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_resin")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_chiseled_resin"), createWall(Block.Properties.of(), Blocks.CHISELED_RESIN_BRICKS, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_chiseled_resin")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_pale_moss"), createWall(Block.Properties.of(), Blocks.PALE_MOSS_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_pale_moss")));
+      reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_clay"), createWall(Block.Properties.of(), Blocks.CLAY, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_clay")));
+      Identifier idWallCoal = Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_coal");
+      BlockAbsentWall wallCoal = new BlockAbsentWall(BlockUtil.wrap(Block.Properties.of().requiresCorrectToolForDrops().ignitedByLava(), Blocks.COAL_BLOCK, idWallCoal)) {
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+          return 5;
+        }
+
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+          return 5;
+        }
+      };
+      addBlock(wallCoal);
+      reg.register(idWallCoal, wallCoal);
+      Identifier idWallTintedGlass = Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_tinted_glass");
+      BlockAbsentWall wallTintedGlass = new BlockAbsentWall(BlockUtil.wrap(Block.Properties.of().mapColor(MapColor.COLOR_GRAY).noOcclusion().isValidSpawn(AbsentRegistry::never).isRedstoneConductor(AbsentRegistry::never).isSuffocating(AbsentRegistry::never).isViewBlocking(AbsentRegistry::never), Blocks.TINTED_GLASS, idWallTintedGlass)) {
+
+        @Override
+        protected int getLightDampening(BlockState state) {
+          return 15;
+        }
+
+        @Override
+        protected boolean propagatesSkylightDown(BlockState state) {
+          return false;
+        }
+      };
+      addBlock(wallTintedGlass);
+      reg.register(idWallTintedGlass, wallTintedGlass);
+      reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_hay"), createWall(Block.Properties.of().ignitedByLava(), Blocks.HAY_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_hay")));
+      reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_bamboo_block"), createWall(Block.Properties.of().ignitedByLava(), Blocks.BAMBOO_BLOCK, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_bamboo_block")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_pale_oak_log"), createWall(Block.Properties.of().ignitedByLava(), Blocks.PALE_OAK_LOG, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_pale_oak_log")));
       reg.register(Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_stripped_pale_oak_log"), createWall(Block.Properties.of().ignitedByLava(), Blocks.STRIPPED_PALE_OAK_LOG, Identifier.fromNamespaceAndPath(ModAbsentBD.MODID, "wall_stripped_pale_oak_log")));
       //

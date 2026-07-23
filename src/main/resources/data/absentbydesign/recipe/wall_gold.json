@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:gold_block"
-    }
+    "#": "minecraft:gold_block"
   },
   "result": {
     "count": 6,

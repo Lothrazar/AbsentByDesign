@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:crying_obsidian"
-    }
+    "#": "minecraft:crying_obsidian"
   },
   "result": {
     "count": 4,

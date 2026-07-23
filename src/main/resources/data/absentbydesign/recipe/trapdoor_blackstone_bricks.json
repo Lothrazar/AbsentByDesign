@@ -5,9 +5,7 @@
     "# #"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:polished_blackstone_bricks"
-    }
+    "#": "minecraft:polished_blackstone_bricks"
   },
   "result": {
     "count": 2,

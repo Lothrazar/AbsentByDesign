@@ -5,9 +5,7 @@
     "# #"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:andesite"
-    }
+    "#": "minecraft:andesite"
   },
   "result": {
     "count": 2,

@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:coarse_dirt"
-    }
+    "#": "minecraft:coarse_dirt"
   },
   "result": {
     "count": 6,

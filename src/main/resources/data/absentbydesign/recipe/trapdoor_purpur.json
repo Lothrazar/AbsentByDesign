@@ -5,9 +5,7 @@
     "# #"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:purpur_block"
-    }
+    "#": "minecraft:purpur_block"
   },
   "result": {
     "count": 2,

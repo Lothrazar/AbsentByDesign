@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:pale_moss_block"
+  },
+  "result": {
+    "count": 6,
+    "id": "absentbydesign:wall_pale_moss"
+  }
+}

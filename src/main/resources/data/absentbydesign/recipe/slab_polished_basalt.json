@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:polished_basalt"
-    }
+    "#": "minecraft:polished_basalt"
   },
   "result": {
     "count": 6,

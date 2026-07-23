@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:light_blue_stained_glass"
-  },
+  "ingredient": "minecraft:light_blue_stained_glass",
   "result": {
     "id": "absentbydesign:stairs_glass_light_blue",
     "count": 1

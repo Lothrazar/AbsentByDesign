@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:pale_moss_block"
+  },
+  "result": {
+    "count": 6,
+    "id": "absentbydesign:slab_pale_moss"
+  }
+}

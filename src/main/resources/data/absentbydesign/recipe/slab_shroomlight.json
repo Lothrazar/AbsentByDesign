@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:shroomlight"
-    }
+    "#": "minecraft:shroomlight"
   },
   "result": {
     "count": 6,

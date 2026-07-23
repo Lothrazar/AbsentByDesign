@@ -1,0 +1,13 @@
+{
+  "values": {
+    "absentbydesign:slab_coal": {
+      "burn_time": 8000
+    },
+    "absentbydesign:stairs_coal": {
+      "burn_time": 16000
+    },
+    "absentbydesign:wall_coal": {
+      "burn_time": 16000
+    }
+  }
+}

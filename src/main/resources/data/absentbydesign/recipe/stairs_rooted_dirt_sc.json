@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:rooted_dirt"
-  },
+  "ingredient": "minecraft:rooted_dirt",
   "result": {
     "id": "absentbydesign:stairs_rooted_dirt",
     "count": 1

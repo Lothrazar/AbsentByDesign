@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:stripped_birch_wood"
-    }
+    "#": "minecraft:stripped_birch_wood"
   },
   "result": {
     "count": 6,

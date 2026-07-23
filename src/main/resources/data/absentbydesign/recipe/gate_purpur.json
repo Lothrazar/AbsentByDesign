@@ -5,12 +5,8 @@
     "-#-"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:purpur_block"
-    },
-    "-": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:purpur_block",
+    "-": "minecraft:stick"
   },
   "result": {
     "count": 1,

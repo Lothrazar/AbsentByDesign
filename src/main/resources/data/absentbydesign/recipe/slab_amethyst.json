@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:amethyst_block"
-    }
+    "#": "minecraft:amethyst_block"
   },
   "result": {
     "count": 6,

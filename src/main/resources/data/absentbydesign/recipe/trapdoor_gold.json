@@ -5,9 +5,7 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:gold_ingot"
-    }
+    "#": "minecraft:gold_ingot"
   },
   "result": {
     "count": 1,

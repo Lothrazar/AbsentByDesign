@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:light_blue_terracotta"
-  },
+  "ingredient": "minecraft:light_blue_terracotta",
   "result": {
     "id": "absentbydesign:slab_terracotta_light_blue",
     "count": 2

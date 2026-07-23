@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:pale_moss_block",
+  "result": {
+    "id": "absentbydesign:stairs_pale_moss",
+    "count": 1
+  }
+}

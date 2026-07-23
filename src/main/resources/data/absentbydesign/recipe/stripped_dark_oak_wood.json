@@ -5,9 +5,7 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:stripped_dark_oak_log"
-    }
+    "#": "minecraft:stripped_dark_oak_log"
   },
   "result": {
     "count": 2,

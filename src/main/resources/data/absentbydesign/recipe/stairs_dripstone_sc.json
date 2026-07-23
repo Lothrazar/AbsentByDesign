@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:dripstone_block"
-  },
+  "ingredient": "minecraft:dripstone_block",
   "result": {
     "id": "absentbydesign:stairs_dripstone",
     "count": 1

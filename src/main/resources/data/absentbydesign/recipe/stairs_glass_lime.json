@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:lime_stained_glass"
-    }
+    "#": "minecraft:lime_stained_glass"
   },
   "result": {
     "count": 4,

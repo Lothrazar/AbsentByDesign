@@ -5,9 +5,7 @@
     "# #"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:basalt"
-    }
+    "#": "minecraft:basalt"
   },
   "result": {
     "count": 2,

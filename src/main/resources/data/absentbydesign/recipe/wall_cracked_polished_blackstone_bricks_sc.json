@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:cracked_polished_blackstone_bricks"
-  },
+  "ingredient": "minecraft:cracked_polished_blackstone_bricks",
   "result": {
     "id": "absentbydesign:wall_cracked_polished_blackstone_bricks",
     "count": 1

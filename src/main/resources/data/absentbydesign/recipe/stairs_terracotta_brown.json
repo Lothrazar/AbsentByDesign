@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:brown_terracotta"
-    }
+    "#": "minecraft:brown_terracotta"
   },
   "result": {
     "count": 4,

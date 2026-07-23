@@ -1,30 +1,29 @@
 {
   "replace": false,
   "values": [
-  "absentbydesign:stairs_soul_soil",
-  "absentbydesign:wall_soul_soil",
-  "absentbydesign:slab_soul_soil",
-  
-  "absentbydesign:slab_soul_sand",  
-  "absentbydesign:wall_soul_sand",  
-  "absentbydesign:stairs_soul_sand",
-  
-  "absentbydesign:stairs_muddy_mangrove_roots",
-  "absentbydesign:slab_muddy_mangrove_roots",
-  "absentbydesign:wall_muddy_mangrove_roots",
-  "absentbydesign:wall_coarse_dirt",
-  
+    "absentbydesign:stairs_soul_soil",
+    "absentbydesign:wall_soul_soil",
+    "absentbydesign:slab_soul_soil",
+    "absentbydesign:slab_soul_sand",
+    "absentbydesign:wall_soul_sand",
+    "absentbydesign:stairs_soul_sand",
+    "absentbydesign:stairs_muddy_mangrove_roots",
+    "absentbydesign:slab_muddy_mangrove_roots",
+    "absentbydesign:wall_muddy_mangrove_roots",
+    "absentbydesign:wall_coarse_dirt",
     "absentbydesign:slab_snow",
     "absentbydesign:stairs_snow",
-  "absentbydesign:wall_snow",
-    
+    "absentbydesign:wall_snow",
     "absentbydesign:slab_mud",
     "absentbydesign:stairs_mud",
     "absentbydesign:wall_mud",
     "absentbydesign:slab_coarse_dirt",
     "absentbydesign:stairs_coarse_dirt",
-  "absentbydesign:slab_rooted_dirt",
-  "absentbydesign:stairs_rooted_dirt",
-  "absentbydesign:wall_rooted_dirt"
+    "absentbydesign:slab_rooted_dirt",
+    "absentbydesign:stairs_rooted_dirt",
+    "absentbydesign:wall_rooted_dirt",
+    "absentbydesign:slab_clay",
+    "absentbydesign:stairs_clay",
+    "absentbydesign:wall_clay"
   ]
 }

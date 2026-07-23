@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:lapis_block"
-    }
+    "#": "minecraft:lapis_block"
   },
   "result": {
     "count": 6,
